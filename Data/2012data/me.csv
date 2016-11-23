@@ -1,0 +1,137 @@
+fips,county,candidate,votes
+23001,Androscoggin,"Johnson, Gary E.",837
+23001,Androscoggin,"Obama, Barack",28989
+23001,Androscoggin,"Romney, Mitt",22232
+23001,Androscoggin,"Stein, Jill",607
+23001,Androscoggin,"Anderson, Ross C.",1
+23001,Androscoggin,"Paul, Ronald E.",194
+23001,Androscoggin,"Reed, Jill Ann",2
+23001,Androscoggin,BLANK,1201
+23003,Aroostook,"Johnson, Gary E.",430
+23003,Aroostook,"Obama, Barack",17777
+23003,Aroostook,"Romney, Mitt",15196
+23003,Aroostook,"Stein, Jill",358
+23003,Aroostook,"Anderson, Ross C.",1
+23003,Aroostook,"Paul, Ronald E.",97
+23003,Aroostook,"Reed, Jill Ann",1
+23003,Aroostook,BLANK,656
+23005,Cumberland,"Johnson, Gary E.",1901
+23005,Cumberland,"Obama, Barack",101950
+23005,Cumberland,"Romney, Mitt",57821
+23005,Cumberland,"Stein, Jill",1723
+23005,Cumberland,"Anderson, Ross C.",11
+23005,Cumberland,"Paul, Ronald E.",380
+23005,Cumberland,"Reed, Jill Ann",0
+23005,Cumberland,BLANK,1743
+23007,Franklin,"Johnson, Gary E.",280
+23007,Franklin,"Obama, Barack",9367
+23007,Franklin,"Romney, Mitt",6369
+23007,Franklin,"Stein, Jill",232
+23007,Franklin,"Anderson, Ross C.",0
+23007,Franklin,"Paul, Ronald E.",34
+23007,Franklin,"Reed, Jill Ann",0
+23007,Franklin,BLANK,533
+23009,Hancock,"Johnson, Gary E.",423
+23009,Hancock,"Obama, Barack",17569
+23009,Hancock,"Romney, Mitt",12324
+23009,Hancock,"Stein, Jill",393
+23009,Hancock,"Anderson, Ross C.",7
+23009,Hancock,"Paul, Ronald E.",80
+23009,Hancock,"Reed, Jill Ann",3
+23009,Hancock,BLANK,464
+23011,Kennebec,"Johnson, Gary E.",908
+23011,Kennebec,"Obama, Barack",35068
+23011,Kennebec,"Romney, Mitt",26519
+23011,Kennebec,"Stein, Jill",810
+23011,Kennebec,"Anderson, Ross C.",2
+23011,Kennebec,"Paul, Ronald E.",190
+23011,Kennebec,"Reed, Jill Ann",0
+23011,Kennebec,BLANK,1099
+23013,Knox,"Johnson, Gary E.",275
+23013,Knox,"Obama, Barack",13223
+23013,Knox,"Romney, Mitt",8248
+23013,Knox,"Stein, Jill",257
+23013,Knox,"Anderson, Ross C.",6
+23013,Knox,"Paul, Ronald E.",57
+23013,Knox,"Reed, Jill Ann",1
+23013,Knox,BLANK,454
+23015,Lincoln,"Johnson, Gary E.",254
+23015,Lincoln,"Obama, Barack",11315
+23015,Lincoln,"Romney, Mitt",8899
+23015,Lincoln,"Stein, Jill",232
+23015,Lincoln,"Anderson, Ross C.",9
+23015,Lincoln,"Paul, Ronald E.",48
+23015,Lincoln,"Reed, Jill Ann",0
+23015,Lincoln,BLANK,244
+23017,Oxford,"Johnson, Gary E.",505
+23017,Oxford,"Obama, Barack",16330
+23017,Oxford,"Romney, Mitt",11996
+23017,Oxford,"Stein, Jill",449
+23017,Oxford,"Anderson, Ross C.",1
+23017,Oxford,"Paul, Ronald E.",132
+23017,Oxford,"Reed, Jill Ann",7
+23017,Oxford,BLANK,654
+23019,Penobscot,"Johnson, Gary E.",968
+23019,Penobscot,"Obama, Barack",38811
+23019,Penobscot,"Romney, Mitt",36547
+23019,Penobscot,"Stein, Jill",773
+23019,Penobscot,"Anderson, Ross C.",9
+23019,Penobscot,"Paul, Ronald E.",193
+23019,Penobscot,"Reed, Jill Ann",5
+23019,Penobscot,BLANK,1474
+23021,Piscataquis,"Johnson, Gary E.",135
+23021,Piscataquis,"Obama, Barack",4149
+23021,Piscataquis,"Romney, Mitt",4530
+23021,Piscataquis,"Stein, Jill",111
+23021,Piscataquis,"Anderson, Ross C.",1
+23021,Piscataquis,"Paul, Ronald E.",29
+23021,Piscataquis,"Reed, Jill Ann",0
+23021,Piscataquis,BLANK,151
+23023,Sagadahoc,"Johnson, Gary E.",247
+23023,Sagadahoc,"Obama, Barack",11821
+23023,Sagadahoc,"Romney, Mitt",8429
+23023,Sagadahoc,"Stein, Jill",237
+23023,Sagadahoc,"Anderson, Ross C.",0
+23023,Sagadahoc,"Paul, Ronald E.",59
+23023,Sagadahoc,"Reed, Jill Ann",1
+23023,Sagadahoc,BLANK,474
+23025,Somerset,"Johnson, Gary E.",328
+23025,Somerset,"Obama, Barack",12216
+23025,Somerset,"Romney, Mitt",11800
+23025,Somerset,"Stein, Jill",369
+23025,Somerset,"Anderson, Ross C.",3
+23025,Somerset,"Paul, Ronald E.",71
+23025,Somerset,"Reed, Jill Ann",0
+23025,Somerset,BLANK,444
+23027,Waldo,"Johnson, Gary E.",297
+23027,Waldo,"Obama, Barack",11296
+23027,Waldo,"Romney, Mitt",9058
+23027,Waldo,"Stein, Jill",334
+23027,Waldo,"Anderson, Ross C.",3
+23027,Waldo,"Paul, Ronald E.",71
+23027,Waldo,"Reed, Jill Ann",2
+23027,Waldo,BLANK,275
+23029,Washington,"Johnson, Gary E.",246
+23029,Washington,"Obama, Barack",7803
+23029,Washington,"Romney, Mitt",7550
+23029,Washington,"Stein, Jill",175
+23029,Washington,"Anderson, Ross C.",3
+23029,Washington,"Paul, Ronald E.",54
+23029,Washington,"Reed, Jill Ann",5
+23029,Washington,BLANK,273
+23031,York,"Johnson, Gary E.",1260
+23031,York,"Obama, Barack",61551
+23031,York,"Romney, Mitt",43900
+23031,York,"Stein, Jill",1008
+23031,York,"Anderson, Ross C.",3
+23031,York,"Paul, Ronald E.",332
+23031,York,"Reed, Jill Ann",3
+23031,York,BLANK,1426
+,STATE UOCAVA,"Johnson, Gary E.",58
+,STATE UOCAVA,"Obama, Barack",2071
+,STATE UOCAVA,"Romney, Mitt",858
+,STATE UOCAVA,"Stein, Jill",51
+,STATE UOCAVA,"Anderson, Ross C.",2
+,STATE UOCAVA,"Paul, Ronald E.",14
+,STATE UOCAVA,"Reed, Jill Ann",0
+,STATE UOCAVA,BLANK,13

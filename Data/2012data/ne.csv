@@ -1,0 +1,456 @@
+fips,county,candidate,votes
+31001,Adams,Mitt Romney,8316
+31001,Adams,Barack Obama,4062
+31001,Adams,Gary Johnson,180
+31001,Adams,Randall A. Terry,46
+31001,Adams,Scattering,66
+31003,Antelope,Mitt Romney,2596
+31003,Antelope,Barack Obama,571
+31003,Antelope,Gary Johnson,39
+31003,Antelope,Randall A. Terry,15
+31003,Antelope,Scattering,11
+31005,Arthur,Mitt Romney,227
+31005,Arthur,Barack Obama,30
+31005,Arthur,Gary Johnson,4
+31005,Arthur,Scattering,1
+31007,Banner,Mitt Romney,346
+31007,Banner,Barack Obama,55
+31007,Banner,Gary Johnson,6
+31007,Banner,Randall A. Terry,2
+31007,Banner,Scattering,2
+31009,Blaine,Mitt Romney,268
+31009,Blaine,Barack Obama,29
+31009,Blaine,Gary Johnson,4
+31009,Blaine,Scattering,2
+31011,Boone,Mitt Romney,2138
+31011,Boone,Barack Obama,615
+31011,Boone,Gary Johnson,31
+31011,Boone,Randall A. Terry,17
+31011,Boone,Scattering,5
+31013,Box Butte,Mitt Romney,2869
+31013,Box Butte,Barack Obama,1692
+31013,Box Butte,Gary Johnson,96
+31013,Box Butte,Randall A. Terry,24
+31013,Box Butte,Scattering,24
+31015,Boyd,Mitt Romney,873
+31015,Boyd,Barack Obama,188
+31015,Boyd,Gary Johnson,5
+31015,Boyd,Randall A. Terry,5
+31017,Brown,Mitt Romney,1302
+31017,Brown,Barack Obama,224
+31017,Brown,Gary Johnson,17
+31017,Brown,Randall A. Terry,7
+31017,Brown,Scattering,5
+31019,Buffalo,Mitt Romney,13570
+31019,Buffalo,Barack Obama,5365
+31019,Buffalo,Gary Johnson,356
+31019,Buffalo,Randall A. Terry,64
+31019,Buffalo,Scattering,98
+31021,Burt,Mitt Romney,2029
+31021,Burt,Barack Obama,1291
+31021,Burt,Gary Johnson,33
+31021,Burt,Randall A. Terry,14
+31021,Burt,Scattering,8
+31023,Butler,Mitt Romney,2738
+31023,Butler,Barack Obama,1045
+31023,Butler,Gary Johnson,51
+31023,Butler,Randall A. Terry,11
+31023,Butler,Scattering,14
+31025,Cass,Mitt Romney,7556
+31025,Cass,Barack Obama,4367
+31025,Cass,Gary Johnson,174
+31025,Cass,Randall A. Terry,30
+31025,Cass,Scattering,53
+31027,Cedar,Mitt Romney,3278
+31027,Cedar,Barack Obama,958
+31027,Cedar,Gary Johnson,61
+31027,Cedar,Randall A. Terry,16
+31027,Cedar,Scattering,21
+31029,Chase,Mitt Romney,1584
+31029,Chase,Barack Obama,254
+31029,Chase,Gary Johnson,17
+31029,Chase,Randall A. Terry,7
+31029,Chase,Scattering,5
+31031,Cherry,Mitt Romney,2557
+31031,Cherry,Barack Obama,436
+31031,Cherry,Gary Johnson,47
+31031,Cherry,Randall A. Terry,12
+31031,Cherry,Scattering,12
+31033,Cheyenne,Mitt Romney,3449
+31033,Cheyenne,Barack Obama,1084
+31033,Cheyenne,Gary Johnson,69
+31033,Cheyenne,Randall A. Terry,22
+31033,Cheyenne,Scattering,25
+31035,Clay,Mitt Romney,2232
+31035,Clay,Barack Obama,667
+31035,Clay,Gary Johnson,31
+31035,Clay,Randall A. Terry,11
+31035,Clay,Scattering,6
+31037,Colfax,Mitt Romney,2051
+31037,Colfax,Barack Obama,969
+31037,Colfax,Gary Johnson,31
+31037,Colfax,Randall A. Terry,12
+31037,Colfax,Scattering,6
+31039,Cuming,Mitt Romney,2876
+31039,Cuming,Barack Obama,1031
+31039,Cuming,Gary Johnson,41
+31039,Cuming,Randall A. Terry,14
+31039,Cuming,Scattering,14
+31041,Custer,Mitt Romney,4296
+31041,Custer,Barack Obama,1083
+31041,Custer,Gary Johnson,79
+31041,Custer,Randall A. Terry,22
+31041,Custer,Scattering,18
+31043,Dakota,Mitt Romney,3094
+31043,Dakota,Barack Obama,2922
+31043,Dakota,Gary Johnson,82
+31043,Dakota,Randall A. Terry,18
+31043,Dakota,Scattering,20
+31045,Dawes,Mitt Romney,2478
+31045,Dawes,Barack Obama,1132
+31045,Dawes,Gary Johnson,71
+31045,Dawes,Randall A. Terry,30
+31045,Dawes,Scattering,17
+31047,Dawson,Mitt Romney,5460
+31047,Dawson,Barack Obama,2199
+31047,Dawson,Gary Johnson,113
+31047,Dawson,Randall A. Terry,42
+31047,Dawson,Scattering,45
+31049,Deuel,Mitt Romney,763
+31049,Deuel,Barack Obama,215
+31049,Deuel,Gary Johnson,25
+31049,Deuel,Randall A. Terry,9
+31049,Deuel,Scattering,5
+31051,Dixon,Mitt Romney,1745
+31051,Dixon,Barack Obama,870
+31051,Dixon,Gary Johnson,37
+31051,Dixon,Randall A. Terry,12
+31051,Dixon,Scattering,22
+31053,Dodge,Mitt Romney,8995
+31053,Dodge,Barack Obama,5673
+31053,Dodge,Gary Johnson,187
+31053,Dodge,Randall A. Terry,48
+31053,Dodge,Scattering,47
+31055,Douglas,Mitt Romney,113220
+31055,Douglas,Barack Obama,106456
+31055,Douglas,Gary Johnson,2763
+31055,Douglas,Randall A. Terry,389
+31055,Douglas,Scattering,1099
+31057,Dundy,Mitt Romney,792
+31057,Dundy,Barack Obama,176
+31057,Dundy,Gary Johnson,11
+31057,Dundy,Randall A. Terry,3
+31057,Dundy,Scattering,3
+31059,Fillmore,Mitt Romney,2007
+31059,Fillmore,Barack Obama,807
+31059,Fillmore,Gary Johnson,32
+31059,Fillmore,Randall A. Terry,18
+31059,Fillmore,Scattering,15
+31061,Franklin,Mitt Romney,1112
+31061,Franklin,Barack Obama,384
+31061,Franklin,Gary Johnson,26
+31061,Franklin,Randall A. Terry,10
+31061,Franklin,Scattering,4
+31063,Frontier,Mitt Romney,1007
+31063,Frontier,Barack Obama,271
+31063,Frontier,Gary Johnson,15
+31063,Frontier,Randall A. Terry,6
+31063,Frontier,Scattering,6
+31065,Furnas,Mitt Romney,1782
+31065,Furnas,Barack Obama,423
+31065,Furnas,Gary Johnson,17
+31065,Furnas,Randall A. Terry,10
+31065,Furnas,Scattering,8
+31067,Gage,Mitt Romney,5513
+31067,Gage,Barack Obama,3903
+31067,Gage,Gary Johnson,158
+31067,Gage,Randall A. Terry,59
+31067,Gage,Scattering,28
+31069,Garden,Mitt Romney,829
+31069,Garden,Barack Obama,242
+31069,Garden,Gary Johnson,10
+31069,Garden,Randall A. Terry,7
+31069,Garden,Scattering,3
+31071,Garfield,Mitt Romney,769
+31071,Garfield,Barack Obama,149
+31071,Garfield,Gary Johnson,13
+31071,Garfield,Randall A. Terry,6
+31071,Garfield,Scattering,3
+31073,Gosper,Mitt Romney,734
+31073,Gosper,Barack Obama,230
+31073,Gosper,Gary Johnson,9
+31073,Gosper,Randall A. Terry,4
+31073,Gosper,Scattering,1
+31075,Grant,Mitt Romney,322
+31075,Grant,Barack Obama,30
+31075,Grant,Gary Johnson,7
+31075,Grant,Randall A. Terry,4
+31077,Greeley,Mitt Romney,820
+31077,Greeley,Barack Obama,340
+31077,Greeley,Gary Johnson,12
+31077,Greeley,Randall A. Terry,9
+31077,Greeley,Scattering,4
+31079,Hall,Mitt Romney,12646
+31079,Hall,Barack Obama,7161
+31079,Hall,Gary Johnson,275
+31079,Hall,Randall A. Terry,70
+31079,Hall,Scattering,77
+31081,Hamilton,Mitt Romney,3600
+31081,Hamilton,Barack Obama,1146
+31081,Hamilton,Gary Johnson,80
+31081,Hamilton,Randall A. Terry,26
+31081,Hamilton,Scattering,19
+31083,Harlan,Mitt Romney,1395
+31083,Harlan,Barack Obama,354
+31083,Harlan,Gary Johnson,20
+31083,Harlan,Randall A. Terry,6
+31083,Harlan,Scattering,3
+31085,Hayes,Mitt Romney,476
+31085,Hayes,Barack Obama,51
+31085,Hayes,Gary Johnson,11
+31085,Hayes,Randall A. Terry,1
+31087,Hitchcock,Mitt Romney,1178
+31087,Hitchcock,Barack Obama,274
+31087,Hitchcock,Gary Johnson,27
+31087,Hitchcock,Randall A. Terry,13
+31087,Hitchcock,Scattering,3
+31089,Holt,Mitt Romney,3922
+31089,Holt,Barack Obama,882
+31089,Holt,Gary Johnson,69
+31089,Holt,Randall A. Terry,38
+31089,Holt,Scattering,28
+31091,Hooker,Mitt Romney,330
+31091,Hooker,Barack Obama,59
+31091,Hooker,Gary Johnson,2
+31091,Hooker,Randall A. Terry,3
+31091,Hooker,Scattering,1
+31093,Howard,Mitt Romney,1890
+31093,Howard,Barack Obama,914
+31093,Howard,Gary Johnson,33
+31093,Howard,Randall A. Terry,19
+31093,Howard,Scattering,14
+31095,Jefferson,Mitt Romney,2166
+31095,Jefferson,Barack Obama,1195
+31095,Jefferson,Gary Johnson,59
+31095,Jefferson,Randall A. Terry,16
+31095,Jefferson,Scattering,10
+31097,Johnson,Mitt Romney,1225
+31097,Johnson,Barack Obama,790
+31097,Johnson,Gary Johnson,36
+31097,Johnson,Randall A. Terry,8
+31097,Johnson,Scattering,4
+31099,Kearney,Mitt Romney,2349
+31099,Kearney,Barack Obama,773
+31099,Kearney,Gary Johnson,43
+31099,Kearney,Randall A. Terry,11
+31099,Kearney,Scattering,4
+31101,Keith,Mitt Romney,3044
+31101,Keith,Barack Obama,928
+31101,Keith,Gary Johnson,58
+31101,Keith,Randall A. Terry,13
+31101,Keith,Scattering,15
+31103,Keya Paha,Mitt Romney,393
+31103,Keya Paha,Barack Obama,80
+31103,Keya Paha,Gary Johnson,7
+31103,Keya Paha,Randall A. Terry,2
+31103,Keya Paha,Scattering,2
+31105,Kimball,Mitt Romney,1235
+31105,Kimball,Barack Obama,395
+31105,Kimball,Gary Johnson,38
+31105,Kimball,Randall A. Terry,14
+31105,Kimball,Scattering,5
+31107,Knox,Mitt Romney,2885
+31107,Knox,Barack Obama,1059
+31107,Knox,Gary Johnson,57
+31107,Knox,Randall A. Terry,25
+31107,Knox,Scattering,10
+31109,Lancaster,Mitt Romney,62434
+31109,Lancaster,Barack Obama,62015
+31109,Lancaster,Gary Johnson,1874
+31109,Lancaster,Randall A. Terry,298
+31109,Lancaster,Scattering,734
+31111,Lincoln,Mitt Romney,10728
+31111,Lincoln,Barack Obama,4450
+31111,Lincoln,Gary Johnson,315
+31111,Lincoln,Randall A. Terry,60
+31111,Lincoln,Scattering,102
+31113,Logan,Mitt Romney,356
+31113,Logan,Barack Obama,68
+31113,Logan,Gary Johnson,5
+31113,Logan,Randall A. Terry,2
+31115,Loup,Mitt Romney,290
+31115,Loup,Barack Obama,62
+31115,Loup,Gary Johnson,4
+31115,Loup,Scattering,2
+31119,Madison,Mitt Romney,10062
+31119,Madison,Barack Obama,3485
+31119,Madison,Gary Johnson,225
+31119,Madison,Randall A. Terry,56
+31119,Madison,Scattering,57
+31117,McPherson,Mitt Romney,237
+31117,McPherson,Barack Obama,41
+31117,McPherson,Gary Johnson,6
+31117,McPherson,Randall A. Terry,6
+31117,McPherson,Scattering,1
+31121,Merrick,Mitt Romney,2490
+31121,Merrick,Barack Obama,925
+31121,Merrick,Gary Johnson,46
+31121,Merrick,Randall A. Terry,14
+31121,Merrick,Scattering,14
+31123,Morrill,Mitt Romney,1681
+31123,Morrill,Barack Obama,455
+31123,Morrill,Gary Johnson,32
+31123,Morrill,Randall A. Terry,12
+31123,Morrill,Scattering,10
+31125,Nance,Mitt Romney,1106
+31125,Nance,Barack Obama,481
+31125,Nance,Gary Johnson,18
+31125,Nance,Randall A. Terry,12
+31125,Nance,Scattering,4
+31127,Nemaha,Mitt Romney,2012
+31127,Nemaha,Barack Obama,1128
+31127,Nemaha,Gary Johnson,44
+31127,Nemaha,Randall A. Terry,17
+31127,Nemaha,Scattering,13
+31129,Nuckolls,Mitt Romney,1574
+31129,Nuckolls,Barack Obama,568
+31129,Nuckolls,Gary Johnson,34
+31129,Nuckolls,Randall A. Terry,10
+31129,Nuckolls,Scattering,5
+31131,Otoe,Mitt Romney,4258
+31131,Otoe,Barack Obama,2561
+31131,Otoe,Gary Johnson,108
+31131,Otoe,Randall A. Terry,29
+31131,Otoe,Scattering,26
+31133,Pawnee,Mitt Romney,899
+31133,Pawnee,Barack Obama,400
+31133,Pawnee,Gary Johnson,26
+31133,Pawnee,Randall A. Terry,12
+31133,Pawnee,Scattering,4
+31135,Perkins,Mitt Romney,1135
+31135,Perkins,Barack Obama,238
+31135,Perkins,Gary Johnson,15
+31135,Perkins,Randall A. Terry,6
+31137,Phelps,Mitt Romney,3400
+31137,Phelps,Barack Obama,880
+31137,Phelps,Gary Johnson,72
+31137,Phelps,Randall A. Terry,10
+31137,Phelps,Scattering,18
+31139,Pierce,Mitt Romney,2707
+31139,Pierce,Barack Obama,637
+31139,Pierce,Gary Johnson,57
+31139,Pierce,Randall A. Terry,13
+31139,Pierce,Scattering,17
+31141,Platte,Mitt Romney,10061
+31141,Platte,Barack Obama,3148
+31141,Platte,Gary Johnson,139
+31141,Platte,Randall A. Terry,61
+31141,Platte,Scattering,64
+31143,Polk,Mitt Romney,1890
+31143,Polk,Barack Obama,528
+31143,Polk,Gary Johnson,24
+31143,Polk,Randall A. Terry,9
+31143,Polk,Scattering,6
+31145,Red Willow,Mitt Romney,3891
+31145,Red Willow,Barack Obama,952
+31145,Red Willow,Gary Johnson,55
+31145,Red Willow,Randall A. Terry,18
+31145,Red Willow,Scattering,20
+31147,Richardson,Mitt Romney,2443
+31147,Richardson,Barack Obama,1191
+31147,Richardson,Gary Johnson,67
+31147,Richardson,Randall A. Terry,26
+31147,Richardson,Scattering,12
+31149,Rock,Mitt Romney,672
+31149,Rock,Barack Obama,103
+31149,Rock,Gary Johnson,8
+31149,Rock,Randall A. Terry,4
+31149,Rock,Scattering,2
+31151,Saline,Mitt Romney,2557
+31151,Saline,Barack Obama,2289
+31151,Saline,Gary Johnson,64
+31151,Saline,Randall A. Terry,18
+31151,Saline,Scattering,30
+31153,Sarpy,Mitt Romney,43213
+31153,Sarpy,Barack Obama,26671
+31153,Sarpy,Gary Johnson,1106
+31153,Sarpy,Randall A. Terry,149
+31153,Sarpy,Scattering,351
+31155,Saunders,Mitt Romney,6770
+31155,Saunders,Barack Obama,3307
+31155,Saunders,Gary Johnson,167
+31155,Saunders,Randall A. Terry,33
+31155,Saunders,Scattering,35
+31157,Scotts Bluff,Mitt Romney,9648
+31157,Scotts Bluff,Barack Obama,4327
+31157,Scotts Bluff,Gary Johnson,185
+31157,Scotts Bluff,Randall A. Terry,69
+31157,Scotts Bluff,Scattering,58
+31159,Seward,Mitt Romney,5003
+31159,Seward,Barack Obama,2386
+31159,Seward,Gary Johnson,110
+31159,Seward,Randall A. Terry,29
+31159,Seward,Scattering,45
+31161,Sheridan,Mitt Romney,2021
+31161,Sheridan,Barack Obama,390
+31161,Sheridan,Gary Johnson,44
+31161,Sheridan,Randall A. Terry,7
+31161,Sheridan,Scattering,10
+31163,Sherman,Mitt Romney,927
+31163,Sherman,Barack Obama,552
+31163,Sherman,Gary Johnson,29
+31163,Sherman,Randall A. Terry,12
+31163,Sherman,Scattering,10
+31165,Sioux,Mitt Romney,624
+31165,Sioux,Barack Obama,101
+31165,Sioux,Gary Johnson,10
+31165,Sioux,Randall A. Terry,1
+31165,Sioux,Scattering,3
+31167,Stanton,Mitt Romney,1949
+31167,Stanton,Barack Obama,614
+31167,Stanton,Gary Johnson,49
+31167,Stanton,Randall A. Terry,22
+31167,Stanton,Scattering,10
+31169,Thayer,Mitt Romney,1874
+31169,Thayer,Barack Obama,728
+31169,Thayer,Gary Johnson,41
+31169,Thayer,Randall A. Terry,9
+31169,Thayer,Scattering,7
+31171,Thomas,Mitt Romney,360
+31171,Thomas,Barack Obama,42
+31171,Thomas,Gary Johnson,1
+31171,Thomas,Randall A. Terry,5
+31173,Thurston,Mitt Romney,939
+31173,Thurston,Barack Obama,1247
+31173,Thurston,Gary Johnson,20
+31173,Thurston,Randall A. Terry,1
+31173,Thurston,Scattering,8
+31175,Valley,Mitt Romney,1657
+31175,Valley,Barack Obama,498
+31175,Valley,Gary Johnson,25
+31175,Valley,Randall A. Terry,7
+31175,Valley,Scattering,8
+31177,Washington,Mitt Romney,6899
+31177,Washington,Barack Obama,3132
+31177,Washington,Gary Johnson,136
+31177,Washington,Randall A. Terry,26
+31177,Washington,Scattering,53
+31179,Wayne,Mitt Romney,2493
+31179,Wayne,Barack Obama,1074
+31179,Wayne,Gary Johnson,73
+31179,Wayne,Randall A. Terry,19
+31179,Wayne,Scattering,23
+31181,Webster,Mitt Romney,1258
+31181,Webster,Barack Obama,442
+31181,Webster,Gary Johnson,31
+31181,Webster,Randall A. Terry,6
+31181,Webster,Scattering,5
+31183,Wheeler,Mitt Romney,345
+31183,Wheeler,Barack Obama,93
+31183,Wheeler,Gary Johnson,8
+31183,Wheeler,Scattering,2
+31185,York,Mitt Romney,4874
+31185,York,Barack Obama,1373
+31185,York,Gary Johnson,61
+31185,York,Randall A. Terry,20
+31185,York,Scattering,27

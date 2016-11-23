@@ -1,0 +1,889 @@
+fips,county,candidate,votes
+24510,Baltimore City,"Fred Donald Dickson, Jr.",2
+24510,Baltimore City,"Theodis (Ted)  Brown, Sr.",0
+24510,Baltimore City,Anderson/ Rodriguez,27
+24510,Baltimore City,Andre  Barnett,5
+24510,Baltimore City,Barbara A. Prokopich,0
+24510,Baltimore City,Briscoe/ Ogle,3
+24510,Baltimore City,Bruce  Mlynski,0
+24510,Baltimore City,Cecil James Roth,0
+24510,Baltimore City,Chehade/ McAllister,2
+24510,Baltimore City,Christensen/ Gibbs,0
+24510,Baltimore City,Darrell  Hykes,0
+24510,Baltimore City,David M. Crosby,0
+24510,Baltimore City,Dean  Morstad,0
+24510,Baltimore City,Dennis  Knill,0
+24510,Baltimore City,Deonia  Neveu,0
+24510,Baltimore City,Durham/ Lopez,5
+24510,Baltimore City,Dwight Kenneth French,0
+24510,Baltimore City,James  Clymer,3
+24510,Baltimore City,Johnson/ Gray,1924
+24510,Baltimore City,Kevin M. Thorne,0
+24510,Baltimore City,Leon Leo Ray,0
+24510,Baltimore City,Matthew  Lydick,2
+24510,Baltimore City,Michael David Boyles,1
+24510,Baltimore City,Miller/ Bertram,3
+24510,Baltimore City,Nelson  Keyton,0
+24510,Baltimore City,Obama/ Biden,221478
+24510,Baltimore City,Other Write-Ins,573
+24510,Baltimore City,Reed/ Cary,0
+24510,Baltimore City,Richard  Duncan,2
+24510,Baltimore City,Robert William Dietz,0
+24510,Baltimore City,Romney/ Ryan,28171
+24510,Baltimore City,Roseanne  Barr,8
+24510,Baltimore City,Santa  Claus,38
+24510,Baltimore City,Sheila  Tittle,0
+24510,Baltimore City,Stein/ Honkala,1737
+24510,Baltimore City,Terrance James O'Hara,0
+24510,Baltimore City,Virgil  Goode,21
+24001,Allegany,"Fred Donald Dickson, Jr.",0
+24001,Allegany,"Theodis (Ted)  Brown, Sr.",0
+24001,Allegany,Anderson/ Rodriguez,2
+24001,Allegany,Andre  Barnett,0
+24001,Allegany,Barbara A. Prokopich,0
+24001,Allegany,Briscoe/ Ogle,0
+24001,Allegany,Bruce  Mlynski,0
+24001,Allegany,Cecil James Roth,0
+24001,Allegany,Chehade/ McAllister,0
+24001,Allegany,Christensen/ Gibbs,0
+24001,Allegany,Darrell  Hykes,0
+24001,Allegany,David M. Crosby,1
+24001,Allegany,Dean  Morstad,0
+24001,Allegany,Dennis  Knill,0
+24001,Allegany,Deonia  Neveu,0
+24001,Allegany,Durham/ Lopez,0
+24001,Allegany,Dwight Kenneth French,0
+24001,Allegany,James  Clymer,0
+24001,Allegany,Johnson/ Gray,448
+24001,Allegany,Kevin M. Thorne,0
+24001,Allegany,Leon Leo Ray,0
+24001,Allegany,Matthew  Lydick,0
+24001,Allegany,Michael David Boyles,0
+24001,Allegany,Miller/ Bertram,2
+24001,Allegany,Nelson  Keyton,0
+24001,Allegany,Obama/ Biden,9805
+24001,Allegany,Other Write-Ins,87
+24001,Allegany,Reed/ Cary,0
+24001,Allegany,Richard  Duncan,0
+24001,Allegany,Robert William Dietz,0
+24001,Allegany,Romney/ Ryan,19230
+24001,Allegany,Roseanne  Barr,4
+24001,Allegany,Santa  Claus,10
+24001,Allegany,Sheila  Tittle,0
+24001,Allegany,Stein/ Honkala,256
+24001,Allegany,Terrance James O'Hara,0
+24001,Allegany,Virgil  Goode,5
+24003,Anne Arundel,"Fred Donald Dickson, Jr.",0
+24003,Anne Arundel,"Theodis (Ted)  Brown, Sr.",0
+24003,Anne Arundel,Anderson/ Rodriguez,22
+24003,Anne Arundel,Andre  Barnett,0
+24003,Anne Arundel,Barbara A. Prokopich,2
+24003,Anne Arundel,Briscoe/ Ogle,1
+24003,Anne Arundel,Bruce  Mlynski,0
+24003,Anne Arundel,Cecil James Roth,0
+24003,Anne Arundel,Chehade/ McAllister,2
+24003,Anne Arundel,Christensen/ Gibbs,0
+24003,Anne Arundel,Darrell  Hykes,0
+24003,Anne Arundel,David M. Crosby,0
+24003,Anne Arundel,Dean  Morstad,0
+24003,Anne Arundel,Dennis  Knill,0
+24003,Anne Arundel,Deonia  Neveu,0
+24003,Anne Arundel,Durham/ Lopez,0
+24003,Anne Arundel,Dwight Kenneth French,0
+24003,Anne Arundel,James  Clymer,3
+24003,Anne Arundel,Johnson/ Gray,3765
+24003,Anne Arundel,Kevin M. Thorne,0
+24003,Anne Arundel,Leon Leo Ray,0
+24003,Anne Arundel,Matthew  Lydick,2
+24003,Anne Arundel,Michael David Boyles,0
+24003,Anne Arundel,Miller/ Bertram,2
+24003,Anne Arundel,Nelson  Keyton,0
+24003,Anne Arundel,Obama/ Biden,126635
+24003,Anne Arundel,Other Write-Ins,995
+24003,Anne Arundel,Reed/ Cary,0
+24003,Anne Arundel,Richard  Duncan,2
+24003,Anne Arundel,Robert William Dietz,0
+24003,Anne Arundel,Romney/ Ryan,126832
+24003,Anne Arundel,Roseanne  Barr,11
+24003,Anne Arundel,Santa  Claus,96
+24003,Anne Arundel,Sheila  Tittle,0
+24003,Anne Arundel,Stein/ Honkala,1727
+24003,Anne Arundel,Terrance James O'Hara,0
+24003,Anne Arundel,Virgil  Goode,58
+24005,Baltimore,"Fred Donald Dickson, Jr.",2
+24005,Baltimore,"Theodis (Ted)  Brown, Sr.",0
+24005,Baltimore,Anderson/ Rodriguez,25
+24005,Baltimore,Andre  Barnett,1
+24005,Baltimore,Barbara A. Prokopich,0
+24005,Baltimore,Briscoe/ Ogle,2
+24005,Baltimore,Bruce  Mlynski,0
+24005,Baltimore,Cecil James Roth,0
+24005,Baltimore,Chehade/ McAllister,1
+24005,Baltimore,Christensen/ Gibbs,0
+24005,Baltimore,Darrell  Hykes,0
+24005,Baltimore,David M. Crosby,2
+24005,Baltimore,Dean  Morstad,1
+24005,Baltimore,Dennis  Knill,0
+24005,Baltimore,Deonia  Neveu,0
+24005,Baltimore,Durham/ Lopez,4
+24005,Baltimore,Dwight Kenneth French,0
+24005,Baltimore,James  Clymer,10
+24005,Baltimore,Johnson/ Gray,5051
+24005,Baltimore,Kevin M. Thorne,0
+24005,Baltimore,Leon Leo Ray,0
+24005,Baltimore,Matthew  Lydick,3
+24005,Baltimore,Michael David Boyles,0
+24005,Baltimore,Miller/ Bertram,0
+24005,Baltimore,Nelson  Keyton,0
+24005,Baltimore,Obama/ Biden,220322
+24005,Baltimore,Other Write-Ins,1476
+24005,Baltimore,Reed/ Cary,0
+24005,Baltimore,Richard  Duncan,5
+24005,Baltimore,Robert William Dietz,0
+24005,Baltimore,Romney/ Ryan,154908
+24005,Baltimore,Roseanne  Barr,9
+24005,Baltimore,Santa  Claus,151
+24005,Baltimore,Sheila  Tittle,0
+24005,Baltimore,Stein/ Honkala,2750
+24005,Baltimore,Terrance James O'Hara,0
+24005,Baltimore,Virgil  Goode,59
+24009,Calvert,"Fred Donald Dickson, Jr.",1
+24009,Calvert,"Theodis (Ted)  Brown, Sr.",0
+24009,Calvert,Anderson/ Rodriguez,8
+24009,Calvert,Andre  Barnett,0
+24009,Calvert,Barbara A. Prokopich,0
+24009,Calvert,Briscoe/ Ogle,0
+24009,Calvert,Bruce  Mlynski,0
+24009,Calvert,Cecil James Roth,0
+24009,Calvert,Chehade/ McAllister,0
+24009,Calvert,Christensen/ Gibbs,0
+24009,Calvert,Darrell  Hykes,2
+24009,Calvert,David M. Crosby,0
+24009,Calvert,Dean  Morstad,0
+24009,Calvert,Dennis  Knill,0
+24009,Calvert,Deonia  Neveu,0
+24009,Calvert,Durham/ Lopez,0
+24009,Calvert,Dwight Kenneth French,0
+24009,Calvert,James  Clymer,1
+24009,Calvert,Johnson/ Gray,581
+24009,Calvert,Kevin M. Thorne,0
+24009,Calvert,Leon Leo Ray,0
+24009,Calvert,Matthew  Lydick,0
+24009,Calvert,Michael David Boyles,0
+24009,Calvert,Miller/ Bertram,0
+24009,Calvert,Nelson  Keyton,0
+24009,Calvert,Obama/ Biden,20529
+24009,Calvert,Other Write-Ins,133
+24009,Calvert,Reed/ Cary,0
+24009,Calvert,Richard  Duncan,1
+24009,Calvert,Robert William Dietz,0
+24009,Calvert,Romney/ Ryan,23952
+24009,Calvert,Roseanne  Barr,5
+24009,Calvert,Santa  Claus,20
+24009,Calvert,Sheila  Tittle,0
+24009,Calvert,Stein/ Honkala,279
+24009,Calvert,Terrance James O'Hara,0
+24009,Calvert,Virgil  Goode,6
+24011,Caroline,"Fred Donald Dickson, Jr.",0
+24011,Caroline,"Theodis (Ted)  Brown, Sr.",0
+24011,Caroline,Anderson/ Rodriguez,0
+24011,Caroline,Andre  Barnett,0
+24011,Caroline,Barbara A. Prokopich,0
+24011,Caroline,Briscoe/ Ogle,0
+24011,Caroline,Bruce  Mlynski,0
+24011,Caroline,Cecil James Roth,0
+24011,Caroline,Chehade/ McAllister,0
+24011,Caroline,Christensen/ Gibbs,0
+24011,Caroline,Darrell  Hykes,0
+24011,Caroline,David M. Crosby,0
+24011,Caroline,Dean  Morstad,0
+24011,Caroline,Dennis  Knill,0
+24011,Caroline,Deonia  Neveu,0
+24011,Caroline,Durham/ Lopez,0
+24011,Caroline,Dwight Kenneth French,0
+24011,Caroline,James  Clymer,1
+24011,Caroline,Johnson/ Gray,182
+24011,Caroline,Kevin M. Thorne,0
+24011,Caroline,Leon Leo Ray,0
+24011,Caroline,Matthew  Lydick,0
+24011,Caroline,Michael David Boyles,0
+24011,Caroline,Miller/ Bertram,0
+24011,Caroline,Nelson  Keyton,0
+24011,Caroline,Obama/ Biden,4970
+24011,Caroline,Other Write-Ins,38
+24011,Caroline,Reed/ Cary,0
+24011,Caroline,Richard  Duncan,0
+24011,Caroline,Robert William Dietz,0
+24011,Caroline,Romney/ Ryan,8098
+24011,Caroline,Roseanne  Barr,0
+24011,Caroline,Santa  Claus,3
+24011,Caroline,Sheila  Tittle,0
+24011,Caroline,Stein/ Honkala,64
+24011,Caroline,Terrance James O'Hara,0
+24011,Caroline,Virgil  Goode,1
+24013,Carroll,"Fred Donald Dickson, Jr.",0
+24013,Carroll,"Theodis (Ted)  Brown, Sr.",0
+24013,Carroll,Anderson/ Rodriguez,1
+24013,Carroll,Andre  Barnett,1
+24013,Carroll,Barbara A. Prokopich,0
+24013,Carroll,Briscoe/ Ogle,1
+24013,Carroll,Bruce  Mlynski,0
+24013,Carroll,Cecil James Roth,0
+24013,Carroll,Chehade/ McAllister,0
+24013,Carroll,Christensen/ Gibbs,0
+24013,Carroll,Darrell  Hykes,0
+24013,Carroll,David M. Crosby,0
+24013,Carroll,Dean  Morstad,0
+24013,Carroll,Dennis  Knill,2
+24013,Carroll,Deonia  Neveu,0
+24013,Carroll,Durham/ Lopez,0
+24013,Carroll,Dwight Kenneth French,0
+24013,Carroll,James  Clymer,0
+24013,Carroll,Johnson/ Gray,1614
+24013,Carroll,Kevin M. Thorne,0
+24013,Carroll,Leon Leo Ray,0
+24013,Carroll,Matthew  Lydick,0
+24013,Carroll,Michael David Boyles,0
+24013,Carroll,Miller/ Bertram,0
+24013,Carroll,Nelson  Keyton,0
+24013,Carroll,Obama/ Biden,27939
+24013,Carroll,Other Write-Ins,495
+24013,Carroll,Reed/ Cary,0
+24013,Carroll,Richard  Duncan,0
+24013,Carroll,Robert William Dietz,0
+24013,Carroll,Romney/ Ryan,56761
+24013,Carroll,Roseanne  Barr,1
+24013,Carroll,Santa  Claus,30
+24013,Carroll,Sheila  Tittle,0
+24013,Carroll,Stein/ Honkala,674
+24013,Carroll,Terrance James O'Hara,0
+24013,Carroll,Virgil  Goode,17
+24015,Cecil,"Fred Donald Dickson, Jr.",0
+24015,Cecil,"Theodis (Ted)  Brown, Sr.",0
+24015,Cecil,Anderson/ Rodriguez,5
+24015,Cecil,Andre  Barnett,0
+24015,Cecil,Barbara A. Prokopich,0
+24015,Cecil,Briscoe/ Ogle,1
+24015,Cecil,Bruce  Mlynski,0
+24015,Cecil,Cecil James Roth,0
+24015,Cecil,Chehade/ McAllister,0
+24015,Cecil,Christensen/ Gibbs,0
+24015,Cecil,Darrell  Hykes,0
+24015,Cecil,David M. Crosby,0
+24015,Cecil,Dean  Morstad,0
+24015,Cecil,Dennis  Knill,0
+24015,Cecil,Deonia  Neveu,0
+24015,Cecil,Durham/ Lopez,0
+24015,Cecil,Dwight Kenneth French,0
+24015,Cecil,James  Clymer,0
+24015,Cecil,Johnson/ Gray,643
+24015,Cecil,Kevin M. Thorne,0
+24015,Cecil,Leon Leo Ray,0
+24015,Cecil,Matthew  Lydick,0
+24015,Cecil,Michael David Boyles,0
+24015,Cecil,Miller/ Bertram,0
+24015,Cecil,Nelson  Keyton,0
+24015,Cecil,Obama/ Biden,16557
+24015,Cecil,Other Write-Ins,151
+24015,Cecil,Reed/ Cary,0
+24015,Cecil,Richard  Duncan,0
+24015,Cecil,Robert William Dietz,0
+24015,Cecil,Romney/ Ryan,24806
+24015,Cecil,Roseanne  Barr,2
+24015,Cecil,Santa  Claus,12
+24015,Cecil,Sheila  Tittle,0
+24015,Cecil,Stein/ Honkala,290
+24015,Cecil,Terrance James O'Hara,0
+24015,Cecil,Virgil  Goode,13
+24017,Charles,"Fred Donald Dickson, Jr.",0
+24017,Charles,"Theodis (Ted)  Brown, Sr.",0
+24017,Charles,Anderson/ Rodriguez,0
+24017,Charles,Andre  Barnett,1
+24017,Charles,Barbara A. Prokopich,0
+24017,Charles,Briscoe/ Ogle,0
+24017,Charles,Bruce  Mlynski,0
+24017,Charles,Cecil James Roth,0
+24017,Charles,Chehade/ McAllister,0
+24017,Charles,Christensen/ Gibbs,0
+24017,Charles,Darrell  Hykes,0
+24017,Charles,David M. Crosby,0
+24017,Charles,Dean  Morstad,0
+24017,Charles,Dennis  Knill,0
+24017,Charles,Deonia  Neveu,0
+24017,Charles,Durham/ Lopez,0
+24017,Charles,Dwight Kenneth French,0
+24017,Charles,James  Clymer,0
+24017,Charles,Johnson/ Gray,657
+24017,Charles,Kevin M. Thorne,0
+24017,Charles,Leon Leo Ray,0
+24017,Charles,Matthew  Lydick,0
+24017,Charles,Michael David Boyles,0
+24017,Charles,Miller/ Bertram,2
+24017,Charles,Nelson  Keyton,0
+24017,Charles,Obama/ Biden,48774
+24017,Charles,Other Write-Ins,251
+24017,Charles,Reed/ Cary,0
+24017,Charles,Richard  Duncan,0
+24017,Charles,Robert William Dietz,0
+24017,Charles,Romney/ Ryan,25178
+24017,Charles,Roseanne  Barr,2
+24017,Charles,Santa  Claus,10
+24017,Charles,Sheila  Tittle,0
+24017,Charles,Stein/ Honkala,332
+24017,Charles,Terrance James O'Hara,0
+24017,Charles,Virgil  Goode,15
+24019,Dorchester,"Fred Donald Dickson, Jr.",0
+24019,Dorchester,"Theodis (Ted)  Brown, Sr.",0
+24019,Dorchester,Anderson/ Rodriguez,0
+24019,Dorchester,Andre  Barnett,0
+24019,Dorchester,Barbara A. Prokopich,0
+24019,Dorchester,Briscoe/ Ogle,0
+24019,Dorchester,Bruce  Mlynski,0
+24019,Dorchester,Cecil James Roth,0
+24019,Dorchester,Chehade/ McAllister,0
+24019,Dorchester,Christensen/ Gibbs,0
+24019,Dorchester,Darrell  Hykes,0
+24019,Dorchester,David M. Crosby,0
+24019,Dorchester,Dean  Morstad,0
+24019,Dorchester,Dennis  Knill,0
+24019,Dorchester,Deonia  Neveu,0
+24019,Dorchester,Durham/ Lopez,0
+24019,Dorchester,Dwight Kenneth French,0
+24019,Dorchester,James  Clymer,0
+24019,Dorchester,Johnson/ Gray,116
+24019,Dorchester,Kevin M. Thorne,0
+24019,Dorchester,Leon Leo Ray,0
+24019,Dorchester,Matthew  Lydick,0
+24019,Dorchester,Michael David Boyles,1
+24019,Dorchester,Miller/ Bertram,0
+24019,Dorchester,Nelson  Keyton,0
+24019,Dorchester,Obama/ Biden,7257
+24019,Dorchester,Other Write-Ins,23
+24019,Dorchester,Reed/ Cary,0
+24019,Dorchester,Richard  Duncan,0
+24019,Dorchester,Robert William Dietz,0
+24019,Dorchester,Romney/ Ryan,7976
+24019,Dorchester,Roseanne  Barr,0
+24019,Dorchester,Santa  Claus,1
+24019,Dorchester,Sheila  Tittle,0
+24019,Dorchester,Stein/ Honkala,68
+24019,Dorchester,Terrance James O'Hara,0
+24019,Dorchester,Virgil  Goode,2
+24021,Frederick,"Fred Donald Dickson, Jr.",0
+24021,Frederick,"Theodis (Ted)  Brown, Sr.",0
+24021,Frederick,Anderson/ Rodriguez,9
+24021,Frederick,Andre  Barnett,0
+24021,Frederick,Barbara A. Prokopich,0
+24021,Frederick,Briscoe/ Ogle,1
+24021,Frederick,Bruce  Mlynski,0
+24021,Frederick,Cecil James Roth,0
+24021,Frederick,Chehade/ McAllister,2
+24021,Frederick,Christensen/ Gibbs,0
+24021,Frederick,Darrell  Hykes,0
+24021,Frederick,David M. Crosby,0
+24021,Frederick,Dean  Morstad,0
+24021,Frederick,Dennis  Knill,0
+24021,Frederick,Deonia  Neveu,0
+24021,Frederick,Durham/ Lopez,0
+24021,Frederick,Dwight Kenneth French,0
+24021,Frederick,James  Clymer,0
+24021,Frederick,Johnson/ Gray,1819
+24021,Frederick,Kevin M. Thorne,0
+24021,Frederick,Leon Leo Ray,0
+24021,Frederick,Matthew  Lydick,1
+24021,Frederick,Michael David Boyles,0
+24021,Frederick,Miller/ Bertram,0
+24021,Frederick,Nelson  Keyton,1
+24021,Frederick,Obama/ Biden,55146
+24021,Frederick,Other Write-Ins,422
+24021,Frederick,Reed/ Cary,5
+24021,Frederick,Richard  Duncan,0
+24021,Frederick,Robert William Dietz,0
+24021,Frederick,Romney/ Ryan,58798
+24021,Frederick,Roseanne  Barr,2
+24021,Frederick,Santa  Claus,40
+24021,Frederick,Sheila  Tittle,0
+24021,Frederick,Stein/ Honkala,831
+24021,Frederick,Terrance James O'Hara,0
+24021,Frederick,Virgil  Goode,38
+24023,Garrett,"Fred Donald Dickson, Jr.",0
+24023,Garrett,"Theodis (Ted)  Brown, Sr.",0
+24023,Garrett,Anderson/ Rodriguez,0
+24023,Garrett,Andre  Barnett,0
+24023,Garrett,Barbara A. Prokopich,0
+24023,Garrett,Briscoe/ Ogle,0
+24023,Garrett,Bruce  Mlynski,0
+24023,Garrett,Cecil James Roth,0
+24023,Garrett,Chehade/ McAllister,0
+24023,Garrett,Christensen/ Gibbs,0
+24023,Garrett,Darrell  Hykes,0
+24023,Garrett,David M. Crosby,0
+24023,Garrett,Dean  Morstad,0
+24023,Garrett,Dennis  Knill,0
+24023,Garrett,Deonia  Neveu,0
+24023,Garrett,Durham/ Lopez,0
+24023,Garrett,Dwight Kenneth French,0
+24023,Garrett,James  Clymer,0
+24023,Garrett,Johnson/ Gray,146
+24023,Garrett,Kevin M. Thorne,0
+24023,Garrett,Leon Leo Ray,0
+24023,Garrett,Matthew  Lydick,0
+24023,Garrett,Michael David Boyles,0
+24023,Garrett,Miller/ Bertram,0
+24023,Garrett,Nelson  Keyton,0
+24023,Garrett,Obama/ Biden,3124
+24023,Garrett,Other Write-Ins,41
+24023,Garrett,Reed/ Cary,0
+24023,Garrett,Richard  Duncan,0
+24023,Garrett,Robert William Dietz,0
+24023,Garrett,Romney/ Ryan,9743
+24023,Garrett,Roseanne  Barr,2
+24023,Garrett,Santa  Claus,5
+24023,Garrett,Sheila  Tittle,0
+24023,Garrett,Stein/ Honkala,94
+24023,Garrett,Terrance James O'Hara,0
+24023,Garrett,Virgil  Goode,2
+24025,Harford,"Fred Donald Dickson, Jr.",0
+24025,Harford,"Theodis (Ted)  Brown, Sr.",0
+24025,Harford,Anderson/ Rodriguez,3
+24025,Harford,Andre  Barnett,0
+24025,Harford,Barbara A. Prokopich,0
+24025,Harford,Briscoe/ Ogle,0
+24025,Harford,Bruce  Mlynski,0
+24025,Harford,Cecil James Roth,1
+24025,Harford,Chehade/ McAllister,0
+24025,Harford,Christensen/ Gibbs,0
+24025,Harford,Darrell  Hykes,0
+24025,Harford,David M. Crosby,0
+24025,Harford,Dean  Morstad,0
+24025,Harford,Dennis  Knill,0
+24025,Harford,Deonia  Neveu,0
+24025,Harford,Durham/ Lopez,1
+24025,Harford,Dwight Kenneth French,0
+24025,Harford,James  Clymer,8
+24025,Harford,Johnson/ Gray,1856
+24025,Harford,Kevin M. Thorne,0
+24025,Harford,Leon Leo Ray,0
+24025,Harford,Matthew  Lydick,0
+24025,Harford,Michael David Boyles,0
+24025,Harford,Miller/ Bertram,6
+24025,Harford,Nelson  Keyton,2
+24025,Harford,Obama/ Biden,49729
+24025,Harford,Other Write-Ins,497
+24025,Harford,Reed/ Cary,0
+24025,Harford,Richard  Duncan,2
+24025,Harford,Robert William Dietz,0
+24025,Harford,Romney/ Ryan,72911
+24025,Harford,Roseanne  Barr,0
+24025,Harford,Santa  Claus,65
+24025,Harford,Sheila  Tittle,0
+24025,Harford,Stein/ Honkala,850
+24025,Harford,Terrance James O'Hara,0
+24025,Harford,Virgil  Goode,23
+24027,Howard,"Fred Donald Dickson, Jr.",1
+24027,Howard,"Theodis (Ted)  Brown, Sr.",0
+24027,Howard,Anderson/ Rodriguez,8
+24027,Howard,Andre  Barnett,3
+24027,Howard,Barbara A. Prokopich,0
+24027,Howard,Briscoe/ Ogle,0
+24027,Howard,Bruce  Mlynski,0
+24027,Howard,Cecil James Roth,0
+24027,Howard,Chehade/ McAllister,1
+24027,Howard,Christensen/ Gibbs,0
+24027,Howard,Darrell  Hykes,0
+24027,Howard,David M. Crosby,0
+24027,Howard,Dean  Morstad,0
+24027,Howard,Dennis  Knill,0
+24027,Howard,Deonia  Neveu,0
+24027,Howard,Durham/ Lopez,6
+24027,Howard,Dwight Kenneth French,0
+24027,Howard,James  Clymer,0
+24027,Howard,Johnson/ Gray,2242
+24027,Howard,Kevin M. Thorne,0
+24027,Howard,Leon Leo Ray,0
+24027,Howard,Matthew  Lydick,7
+24027,Howard,Michael David Boyles,0
+24027,Howard,Miller/ Bertram,1
+24027,Howard,Nelson  Keyton,0
+24027,Howard,Obama/ Biden,91393
+24027,Howard,Other Write-Ins,522
+24027,Howard,Reed/ Cary,0
+24027,Howard,Richard  Duncan,1
+24027,Howard,Robert William Dietz,0
+24027,Howard,Romney/ Ryan,57758
+24027,Howard,Roseanne  Barr,0
+24027,Howard,Santa  Claus,38
+24027,Howard,Sheila  Tittle,0
+24027,Howard,Stein/ Honkala,1092
+24027,Howard,Terrance James O'Hara,0
+24027,Howard,Virgil  Goode,35
+24029,Kent,"Fred Donald Dickson, Jr.",1
+24029,Kent,"Theodis (Ted)  Brown, Sr.",0
+24029,Kent,Anderson/ Rodriguez,3
+24029,Kent,Andre  Barnett,0
+24029,Kent,Barbara A. Prokopich,0
+24029,Kent,Briscoe/ Ogle,0
+24029,Kent,Bruce  Mlynski,0
+24029,Kent,Cecil James Roth,0
+24029,Kent,Chehade/ McAllister,0
+24029,Kent,Christensen/ Gibbs,0
+24029,Kent,Darrell  Hykes,0
+24029,Kent,David M. Crosby,0
+24029,Kent,Dean  Morstad,0
+24029,Kent,Dennis  Knill,0
+24029,Kent,Deonia  Neveu,0
+24029,Kent,Durham/ Lopez,0
+24029,Kent,Dwight Kenneth French,0
+24029,Kent,James  Clymer,0
+24029,Kent,Johnson/ Gray,105
+24029,Kent,Kevin M. Thorne,0
+24029,Kent,Leon Leo Ray,0
+24029,Kent,Matthew  Lydick,0
+24029,Kent,Michael David Boyles,0
+24029,Kent,Miller/ Bertram,0
+24029,Kent,Nelson  Keyton,0
+24029,Kent,Obama/ Biden,4842
+24029,Kent,Other Write-Ins,21
+24029,Kent,Reed/ Cary,0
+24029,Kent,Richard  Duncan,0
+24029,Kent,Robert William Dietz,0
+24029,Kent,Romney/ Ryan,4870
+24029,Kent,Roseanne  Barr,0
+24029,Kent,Santa  Claus,1
+24029,Kent,Sheila  Tittle,0
+24029,Kent,Stein/ Honkala,60
+24029,Kent,Terrance James O'Hara,0
+24029,Kent,Virgil  Goode,1
+24031,Montgomery,"Fred Donald Dickson, Jr.",0
+24031,Montgomery,"Theodis (Ted)  Brown, Sr.",0
+24031,Montgomery,Anderson/ Rodriguez,70
+24031,Montgomery,Andre  Barnett,5
+24031,Montgomery,Barbara A. Prokopich,0
+24031,Montgomery,Briscoe/ Ogle,1
+24031,Montgomery,Bruce  Mlynski,0
+24031,Montgomery,Cecil James Roth,0
+24031,Montgomery,Chehade/ McAllister,0
+24031,Montgomery,Christensen/ Gibbs,0
+24031,Montgomery,Darrell  Hykes,0
+24031,Montgomery,David M. Crosby,1
+24031,Montgomery,Dean  Morstad,0
+24031,Montgomery,Dennis  Knill,0
+24031,Montgomery,Deonia  Neveu,0
+24031,Montgomery,Durham/ Lopez,3
+24031,Montgomery,Dwight Kenneth French,2
+24031,Montgomery,James  Clymer,2
+24031,Montgomery,Johnson/ Gray,4382
+24031,Montgomery,Kevin M. Thorne,0
+24031,Montgomery,Leon Leo Ray,0
+24031,Montgomery,Matthew  Lydick,2
+24031,Montgomery,Michael David Boyles,1
+24031,Montgomery,Miller/ Bertram,8
+24031,Montgomery,Nelson  Keyton,0
+24031,Montgomery,Obama/ Biden,323400
+24031,Montgomery,Other Write-Ins,1376
+24031,Montgomery,Reed/ Cary,1
+24031,Montgomery,Richard  Duncan,1
+24031,Montgomery,Robert William Dietz,0
+24031,Montgomery,Romney/ Ryan,123353
+24031,Montgomery,Roseanne  Barr,7
+24031,Montgomery,Santa  Claus,43
+24031,Montgomery,Sheila  Tittle,0
+24031,Montgomery,Stein/ Honkala,3282
+24031,Montgomery,Terrance James O'Hara,0
+24031,Montgomery,Virgil  Goode,52
+24033,Prince George's,"Fred Donald Dickson, Jr.",0
+24033,Prince George's,"Theodis (Ted)  Brown, Sr.",0
+24033,Prince George's,Anderson/ Rodriguez,7
+24033,Prince George's,Andre  Barnett,2
+24033,Prince George's,Barbara A. Prokopich,0
+24033,Prince George's,Briscoe/ Ogle,4
+24033,Prince George's,Bruce  Mlynski,0
+24033,Prince George's,Cecil James Roth,0
+24033,Prince George's,Chehade/ McAllister,4
+24033,Prince George's,Christensen/ Gibbs,0
+24033,Prince George's,Darrell  Hykes,3
+24033,Prince George's,David M. Crosby,2
+24033,Prince George's,Dean  Morstad,0
+24033,Prince George's,Dennis  Knill,0
+24033,Prince George's,Deonia  Neveu,0
+24033,Prince George's,Durham/ Lopez,0
+24033,Prince George's,Dwight Kenneth French,0
+24033,Prince George's,James  Clymer,3
+24033,Prince George's,Johnson/ Gray,1732
+24033,Prince George's,Kevin M. Thorne,0
+24033,Prince George's,Leon Leo Ray,0
+24033,Prince George's,Matthew  Lydick,0
+24033,Prince George's,Michael David Boyles,1
+24033,Prince George's,Miller/ Bertram,1
+24033,Prince George's,Nelson  Keyton,0
+24033,Prince George's,Obama/ Biden,347938
+24033,Prince George's,Other Write-Ins,935
+24033,Prince George's,Reed/ Cary,1
+24033,Prince George's,Richard  Duncan,1
+24033,Prince George's,Robert William Dietz,1
+24033,Prince George's,Romney/ Ryan,35734
+24033,Prince George's,Roseanne  Barr,4
+24033,Prince George's,Santa  Claus,19
+24033,Prince George's,Sheila  Tittle,0
+24033,Prince George's,Stein/ Honkala,1332
+24033,Prince George's,Terrance James O'Hara,0
+24033,Prince George's,Virgil  Goode,20
+24035,Queen Anne's,"Fred Donald Dickson, Jr.",1
+24035,Queen Anne's,"Theodis (Ted)  Brown, Sr.",0
+24035,Queen Anne's,Anderson/ Rodriguez,1
+24035,Queen Anne's,Andre  Barnett,1
+24035,Queen Anne's,Barbara A. Prokopich,0
+24035,Queen Anne's,Briscoe/ Ogle,1
+24035,Queen Anne's,Bruce  Mlynski,0
+24035,Queen Anne's,Cecil James Roth,0
+24035,Queen Anne's,Chehade/ McAllister,0
+24035,Queen Anne's,Christensen/ Gibbs,0
+24035,Queen Anne's,Darrell  Hykes,0
+24035,Queen Anne's,David M. Crosby,0
+24035,Queen Anne's,Dean  Morstad,0
+24035,Queen Anne's,Dennis  Knill,0
+24035,Queen Anne's,Deonia  Neveu,0
+24035,Queen Anne's,Durham/ Lopez,0
+24035,Queen Anne's,Dwight Kenneth French,0
+24035,Queen Anne's,James  Clymer,0
+24035,Queen Anne's,Johnson/ Gray,282
+24035,Queen Anne's,Kevin M. Thorne,0
+24035,Queen Anne's,Leon Leo Ray,0
+24035,Queen Anne's,Matthew  Lydick,1
+24035,Queen Anne's,Michael David Boyles,0
+24035,Queen Anne's,Miller/ Bertram,0
+24035,Queen Anne's,Nelson  Keyton,0
+24035,Queen Anne's,Obama/ Biden,8556
+24035,Queen Anne's,Other Write-Ins,80
+24035,Queen Anne's,Reed/ Cary,0
+24035,Queen Anne's,Richard  Duncan,0
+24035,Queen Anne's,Robert William Dietz,0
+24035,Queen Anne's,Romney/ Ryan,15823
+24035,Queen Anne's,Roseanne  Barr,0
+24035,Queen Anne's,Santa  Claus,8
+24035,Queen Anne's,Sheila  Tittle,0
+24035,Queen Anne's,Stein/ Honkala,126
+24035,Queen Anne's,Terrance James O'Hara,0
+24035,Queen Anne's,Virgil  Goode,8
+24037,St. Mary's,"Fred Donald Dickson, Jr.",0
+24037,St. Mary's,"Theodis (Ted)  Brown, Sr.",0
+24037,St. Mary's,Anderson/ Rodriguez,3
+24037,St. Mary's,Andre  Barnett,0
+24037,St. Mary's,Barbara A. Prokopich,0
+24037,St. Mary's,Briscoe/ Ogle,1
+24037,St. Mary's,Bruce  Mlynski,0
+24037,St. Mary's,Cecil James Roth,0
+24037,St. Mary's,Chehade/ McAllister,0
+24037,St. Mary's,Christensen/ Gibbs,0
+24037,St. Mary's,Darrell  Hykes,0
+24037,St. Mary's,David M. Crosby,0
+24037,St. Mary's,Dean  Morstad,0
+24037,St. Mary's,Dennis  Knill,0
+24037,St. Mary's,Deonia  Neveu,0
+24037,St. Mary's,Durham/ Lopez,0
+24037,St. Mary's,Dwight Kenneth French,0
+24037,St. Mary's,James  Clymer,2
+24037,St. Mary's,Johnson/ Gray,769
+24037,St. Mary's,Kevin M. Thorne,0
+24037,St. Mary's,Leon Leo Ray,0
+24037,St. Mary's,Matthew  Lydick,0
+24037,St. Mary's,Michael David Boyles,0
+24037,St. Mary's,Miller/ Bertram,0
+24037,St. Mary's,Nelson  Keyton,0
+24037,St. Mary's,Obama/ Biden,19711
+24037,St. Mary's,Other Write-Ins,189
+24037,St. Mary's,Reed/ Cary,0
+24037,St. Mary's,Richard  Duncan,0
+24037,St. Mary's,Robert William Dietz,0
+24037,St. Mary's,Romney/ Ryan,26797
+24037,St. Mary's,Roseanne  Barr,0
+24037,St. Mary's,Santa  Claus,9
+24037,St. Mary's,Sheila  Tittle,0
+24037,St. Mary's,Stein/ Honkala,328
+24037,St. Mary's,Terrance James O'Hara,0
+24037,St. Mary's,Virgil  Goode,15
+24039,Somerset,"Fred Donald Dickson, Jr.",0
+24039,Somerset,"Theodis (Ted)  Brown, Sr.",0
+24039,Somerset,Anderson/ Rodriguez,2
+24039,Somerset,Andre  Barnett,0
+24039,Somerset,Barbara A. Prokopich,0
+24039,Somerset,Briscoe/ Ogle,1
+24039,Somerset,Bruce  Mlynski,0
+24039,Somerset,Cecil James Roth,0
+24039,Somerset,Chehade/ McAllister,0
+24039,Somerset,Christensen/ Gibbs,0
+24039,Somerset,Darrell  Hykes,0
+24039,Somerset,David M. Crosby,0
+24039,Somerset,Dean  Morstad,0
+24039,Somerset,Dennis  Knill,0
+24039,Somerset,Deonia  Neveu,0
+24039,Somerset,Durham/ Lopez,0
+24039,Somerset,Dwight Kenneth French,0
+24039,Somerset,James  Clymer,0
+24039,Somerset,Johnson/ Gray,71
+24039,Somerset,Kevin M. Thorne,0
+24039,Somerset,Leon Leo Ray,0
+24039,Somerset,Matthew  Lydick,0
+24039,Somerset,Michael David Boyles,0
+24039,Somerset,Miller/ Bertram,0
+24039,Somerset,Nelson  Keyton,0
+24039,Somerset,Obama/ Biden,5240
+24039,Somerset,Other Write-Ins,8
+24039,Somerset,Reed/ Cary,0
+24039,Somerset,Richard  Duncan,0
+24039,Somerset,Robert William Dietz,0
+24039,Somerset,Romney/ Ryan,5042
+24039,Somerset,Roseanne  Barr,0
+24039,Somerset,Santa  Claus,2
+24039,Somerset,Sheila  Tittle,0
+24039,Somerset,Stein/ Honkala,33
+24039,Somerset,Terrance James O'Hara,0
+24039,Somerset,Virgil  Goode,0
+24041,Talbot,"Fred Donald Dickson, Jr.",0
+24041,Talbot,"Theodis (Ted)  Brown, Sr.",0
+24041,Talbot,Anderson/ Rodriguez,2
+24041,Talbot,Andre  Barnett,0
+24041,Talbot,Barbara A. Prokopich,0
+24041,Talbot,Briscoe/ Ogle,1
+24041,Talbot,Bruce  Mlynski,0
+24041,Talbot,Cecil James Roth,0
+24041,Talbot,Chehade/ McAllister,0
+24041,Talbot,Christensen/ Gibbs,0
+24041,Talbot,Darrell  Hykes,0
+24041,Talbot,David M. Crosby,0
+24041,Talbot,Dean  Morstad,0
+24041,Talbot,Dennis  Knill,0
+24041,Talbot,Deonia  Neveu,0
+24041,Talbot,Durham/ Lopez,0
+24041,Talbot,Dwight Kenneth French,0
+24041,Talbot,James  Clymer,0
+24041,Talbot,Johnson/ Gray,187
+24041,Talbot,Kevin M. Thorne,0
+24041,Talbot,Leon Leo Ray,0
+24041,Talbot,Matthew  Lydick,0
+24041,Talbot,Michael David Boyles,1
+24041,Talbot,Miller/ Bertram,0
+24041,Talbot,Nelson  Keyton,0
+24041,Talbot,Obama/ Biden,8808
+24041,Talbot,Other Write-Ins,41
+24041,Talbot,Reed/ Cary,0
+24041,Talbot,Richard  Duncan,0
+24041,Talbot,Robert William Dietz,0
+24041,Talbot,Romney/ Ryan,11339
+24041,Talbot,Roseanne  Barr,0
+24041,Talbot,Santa  Claus,3
+24041,Talbot,Sheila  Tittle,0
+24041,Talbot,Stein/ Honkala,76
+24041,Talbot,Terrance James O'Hara,0
+24041,Talbot,Virgil  Goode,1
+24043,Washington,"Fred Donald Dickson, Jr.",0
+24043,Washington,"Theodis (Ted)  Brown, Sr.",0
+24043,Washington,Anderson/ Rodriguez,3
+24043,Washington,Andre  Barnett,0
+24043,Washington,Barbara A. Prokopich,0
+24043,Washington,Briscoe/ Ogle,0
+24043,Washington,Bruce  Mlynski,0
+24043,Washington,Cecil James Roth,0
+24043,Washington,Chehade/ McAllister,1
+24043,Washington,Christensen/ Gibbs,0
+24043,Washington,Darrell  Hykes,2
+24043,Washington,David M. Crosby,1
+24043,Washington,Dean  Morstad,0
+24043,Washington,Dennis  Knill,0
+24043,Washington,Deonia  Neveu,0
+24043,Washington,Durham/ Lopez,0
+24043,Washington,Dwight Kenneth French,0
+24043,Washington,James  Clymer,2
+24043,Washington,Johnson/ Gray,870
+24043,Washington,Kevin M. Thorne,0
+24043,Washington,Leon Leo Ray,0
+24043,Washington,Matthew  Lydick,0
+24043,Washington,Michael David Boyles,0
+24043,Washington,Miller/ Bertram,0
+24043,Washington,Nelson  Keyton,0
+24043,Washington,Obama/ Biden,25042
+24043,Washington,Other Write-Ins,241
+24043,Washington,Reed/ Cary,0
+24043,Washington,Richard  Duncan,0
+24043,Washington,Robert William Dietz,0
+24043,Washington,Romney/ Ryan,36074
+24043,Washington,Roseanne  Barr,4
+24043,Washington,Santa  Claus,17
+24043,Washington,Sheila  Tittle,0
+24043,Washington,Stein/ Honkala,480
+24043,Washington,Terrance James O'Hara,1
+24043,Washington,Virgil  Goode,17
+24045,Wicomico,"Fred Donald Dickson, Jr.",0
+24045,Wicomico,"Theodis (Ted)  Brown, Sr.",0
+24045,Wicomico,Anderson/ Rodriguez,3
+24045,Wicomico,Andre  Barnett,0
+24045,Wicomico,Barbara A. Prokopich,0
+24045,Wicomico,Briscoe/ Ogle,0
+24045,Wicomico,Bruce  Mlynski,0
+24045,Wicomico,Cecil James Roth,0
+24045,Wicomico,Chehade/ McAllister,0
+24045,Wicomico,Christensen/ Gibbs,0
+24045,Wicomico,Darrell  Hykes,0
+24045,Wicomico,David M. Crosby,0
+24045,Wicomico,Dean  Morstad,0
+24045,Wicomico,Dennis  Knill,0
+24045,Wicomico,Deonia  Neveu,0
+24045,Wicomico,Durham/ Lopez,0
+24045,Wicomico,Dwight Kenneth French,0
+24045,Wicomico,James  Clymer,0
+24045,Wicomico,Johnson/ Gray,487
+24045,Wicomico,Kevin M. Thorne,0
+24045,Wicomico,Leon Leo Ray,0
+24045,Wicomico,Matthew  Lydick,0
+24045,Wicomico,Michael David Boyles,0
+24045,Wicomico,Miller/ Bertram,0
+24045,Wicomico,Nelson  Keyton,0
+24045,Wicomico,Obama/ Biden,19635
+24045,Wicomico,Other Write-Ins,136
+24045,Wicomico,Reed/ Cary,0
+24045,Wicomico,Richard  Duncan,0
+24045,Wicomico,Robert William Dietz,0
+24045,Wicomico,Romney/ Ryan,21764
+24045,Wicomico,Roseanne  Barr,2
+24045,Wicomico,Santa  Claus,4
+24045,Wicomico,Sheila  Tittle,0
+24045,Wicomico,Stein/ Honkala,221
+24045,Wicomico,Terrance James O'Hara,0
+24045,Wicomico,Virgil  Goode,7
+24047,Worcester,"Fred Donald Dickson, Jr.",0
+24047,Worcester,"Theodis (Ted)  Brown, Sr.",0
+24047,Worcester,Anderson/ Rodriguez,0
+24047,Worcester,Andre  Barnett,0
+24047,Worcester,Barbara A. Prokopich,0
+24047,Worcester,Briscoe/ Ogle,0
+24047,Worcester,Bruce  Mlynski,0
+24047,Worcester,Cecil James Roth,0
+24047,Worcester,Chehade/ McAllister,0
+24047,Worcester,Christensen/ Gibbs,0
+24047,Worcester,Darrell  Hykes,0
+24047,Worcester,David M. Crosby,0
+24047,Worcester,Dean  Morstad,0
+24047,Worcester,Dennis  Knill,0
+24047,Worcester,Deonia  Neveu,0
+24047,Worcester,Durham/ Lopez,0
+24047,Worcester,Dwight Kenneth French,0
+24047,Worcester,James  Clymer,0
+24047,Worcester,Johnson/ Gray,266
+24047,Worcester,Kevin M. Thorne,0
+24047,Worcester,Leon Leo Ray,0
+24047,Worcester,Matthew  Lydick,0
+24047,Worcester,Michael David Boyles,0
+24047,Worcester,Miller/ Bertram,1
+24047,Worcester,Nelson  Keyton,0
+24047,Worcester,Obama/ Biden,11014
+24047,Worcester,Other Write-Ins,57
+24047,Worcester,Reed/ Cary,0
+24047,Worcester,Richard  Duncan,0
+24047,Worcester,Robert William Dietz,0
+24047,Worcester,Romney/ Ryan,15951
+24047,Worcester,Roseanne  Barr,1
+24047,Worcester,Santa  Claus,0
+24047,Worcester,Sheila  Tittle,0
+24047,Worcester,Stein/ Honkala,128
+24047,Worcester,Terrance James O'Hara,0
+24047,Worcester,Virgil  Goode,2

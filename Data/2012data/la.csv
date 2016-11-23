@@ -1,0 +1,705 @@
+fips,county,candidate,votes
+22001,Acadia,"Barack Obama, Joe Biden Democratic",6560
+22001,Acadia,"Jill Stein, Cheri Honkala Green",101
+22001,Acadia,"Gary Johnson, James P. Gray Libertarian",144
+22001,Acadia,"Mitt Romney, Paul Ryan Republican",19931
+22001,Acadia,"Virgil Goode, James Clymer Constitution",26
+22001,Acadia,"Ross Anderson, Luis Rodriguez Justice",23
+22001,Acadia,"Jack Fellure, Toby Davis Prohibition",8
+22001,Acadia,"Peta Lindsay, Yari Osorio Socialism and Liberation",9
+22001,Acadia,"Jerry White, Phyllis Scherrer Socialist Equality",7
+22001,Acadia,"James Harris, Alyson Kennedy Socialist Workers",2
+22001,Acadia,"Sheila Tittle, Matthew Turner We The People",24
+22003,Allen,"Barack Obama, Joe Biden Democratic",2617
+22003,Allen,"Jill Stein, Cheri Honkala Green",52
+22003,Allen,"Gary Johnson, James P. Gray Libertarian",73
+22003,Allen,"Mitt Romney, Paul Ryan Republican",6495
+22003,Allen,"Virgil Goode, James Clymer Constitution",17
+22003,Allen,"Ross Anderson, Luis Rodriguez Justice",15
+22003,Allen,"Jack Fellure, Toby Davis Prohibition",3
+22003,Allen,"Peta Lindsay, Yari Osorio Socialism and Liberation",1
+22003,Allen,"Jerry White, Phyllis Scherrer Socialist Equality",5
+22003,Allen,"James Harris, Alyson Kennedy Socialist Workers",2
+22003,Allen,"Sheila Tittle, Matthew Turner We The People",27
+22005,Ascension,"Barack Obama, Joe Biden Democratic",16349
+22005,Ascension,"Jill Stein, Cheri Honkala Green",123
+22005,Ascension,"Gary Johnson, James P. Gray Libertarian",538
+22005,Ascension,"Mitt Romney, Paul Ryan Republican",33856
+22005,Ascension,"Virgil Goode, James Clymer Constitution",53
+22005,Ascension,"Ross Anderson, Luis Rodriguez Justice",44
+22005,Ascension,"Jack Fellure, Toby Davis Prohibition",20
+22005,Ascension,"Peta Lindsay, Yari Osorio Socialism and Liberation",11
+22005,Ascension,"Jerry White, Phyllis Scherrer Socialist Equality",9
+22005,Ascension,"James Harris, Alyson Kennedy Socialist Workers",10
+22005,Ascension,"Sheila Tittle, Matthew Turner We The People",60
+22007,Assumption,"Barack Obama, Joe Biden Democratic",4754
+22007,Assumption,"Jill Stein, Cheri Honkala Green",34
+22007,Assumption,"Gary Johnson, James P. Gray Libertarian",70
+22007,Assumption,"Mitt Romney, Paul Ryan Republican",6083
+22007,Assumption,"Virgil Goode, James Clymer Constitution",16
+22007,Assumption,"Ross Anderson, Luis Rodriguez Justice",5
+22007,Assumption,"Jack Fellure, Toby Davis Prohibition",1
+22007,Assumption,"Peta Lindsay, Yari Osorio Socialism and Liberation",5
+22007,Assumption,"Jerry White, Phyllis Scherrer Socialist Equality",6
+22007,Assumption,"James Harris, Alyson Kennedy Socialist Workers",2
+22007,Assumption,"Sheila Tittle, Matthew Turner We The People",16
+22009,Avoyelles,"Barack Obama, Joe Biden Democratic",6077
+22009,Avoyelles,"Jill Stein, Cheri Honkala Green",80
+22009,Avoyelles,"Gary Johnson, James P. Gray Libertarian",98
+22009,Avoyelles,"Mitt Romney, Paul Ryan Republican",10670
+22009,Avoyelles,"Virgil Goode, James Clymer Constitution",22
+22009,Avoyelles,"Ross Anderson, Luis Rodriguez Justice",18
+22009,Avoyelles,"Jack Fellure, Toby Davis Prohibition",10
+22009,Avoyelles,"Peta Lindsay, Yari Osorio Socialism and Liberation",4
+22009,Avoyelles,"Jerry White, Phyllis Scherrer Socialist Equality",7
+22009,Avoyelles,"James Harris, Alyson Kennedy Socialist Workers",6
+22009,Avoyelles,"Sheila Tittle, Matthew Turner We The People",40
+22011,Beauregard,"Barack Obama, Joe Biden Democratic",2828
+22011,Beauregard,"Jill Stein, Cheri Honkala Green",53
+22011,Beauregard,"Gary Johnson, James P. Gray Libertarian",145
+22011,Beauregard,"Mitt Romney, Paul Ryan Republican",11112
+22011,Beauregard,"Virgil Goode, James Clymer Constitution",27
+22011,Beauregard,"Ross Anderson, Luis Rodriguez Justice",17
+22011,Beauregard,"Jack Fellure, Toby Davis Prohibition",2
+22011,Beauregard,"Peta Lindsay, Yari Osorio Socialism and Liberation",2
+22011,Beauregard,"Jerry White, Phyllis Scherrer Socialist Equality",3
+22011,Beauregard,"James Harris, Alyson Kennedy Socialist Workers",7
+22011,Beauregard,"Sheila Tittle, Matthew Turner We The People",29
+22013,Bienville,"Barack Obama, Joe Biden Democratic",3490
+22013,Bienville,"Jill Stein, Cheri Honkala Green",21
+22013,Bienville,"Gary Johnson, James P. Gray Libertarian",25
+22013,Bienville,"Mitt Romney, Paul Ryan Republican",3641
+22013,Bienville,"Virgil Goode, James Clymer Constitution",11
+22013,Bienville,"Ross Anderson, Luis Rodriguez Justice",3
+22013,Bienville,"Jack Fellure, Toby Davis Prohibition",1
+22013,Bienville,"Peta Lindsay, Yari Osorio Socialism and Liberation",4
+22013,Bienville,"Jerry White, Phyllis Scherrer Socialist Equality",0
+22013,Bienville,"James Harris, Alyson Kennedy Socialist Workers",1
+22013,Bienville,"Sheila Tittle, Matthew Turner We The People",6
+22015,Bossier,"Barack Obama, Joe Biden Democratic",12956
+22015,Bossier,"Jill Stein, Cheri Honkala Green",109
+22015,Bossier,"Gary Johnson, James P. Gray Libertarian",390
+22015,Bossier,"Mitt Romney, Paul Ryan Republican",34988
+22015,Bossier,"Virgil Goode, James Clymer Constitution",55
+22015,Bossier,"Ross Anderson, Luis Rodriguez Justice",9
+22015,Bossier,"Jack Fellure, Toby Davis Prohibition",10
+22015,Bossier,"Peta Lindsay, Yari Osorio Socialism and Liberation",8
+22015,Bossier,"Jerry White, Phyllis Scherrer Socialist Equality",5
+22015,Bossier,"James Harris, Alyson Kennedy Socialist Workers",4
+22015,Bossier,"Sheila Tittle, Matthew Turner We The People",28
+22017,Caddo,"Barack Obama, Joe Biden Democratic",58042
+22017,Caddo,"Jill Stein, Cheri Honkala Green",258
+22017,Caddo,"Gary Johnson, James P. Gray Libertarian",763
+22017,Caddo,"Mitt Romney, Paul Ryan Republican",52459
+22017,Caddo,"Virgil Goode, James Clymer Constitution",88
+22017,Caddo,"Ross Anderson, Luis Rodriguez Justice",41
+22017,Caddo,"Jack Fellure, Toby Davis Prohibition",13
+22017,Caddo,"Peta Lindsay, Yari Osorio Socialism and Liberation",14
+22017,Caddo,"Jerry White, Phyllis Scherrer Socialist Equality",14
+22017,Caddo,"James Harris, Alyson Kennedy Socialist Workers",23
+22017,Caddo,"Sheila Tittle, Matthew Turner We The People",50
+22019,Calcasieu,"Barack Obama, Joe Biden Democratic",28359
+22019,Calcasieu,"Jill Stein, Cheri Honkala Green",289
+22019,Calcasieu,"Gary Johnson, James P. Gray Libertarian",818
+22019,Calcasieu,"Mitt Romney, Paul Ryan Republican",51850
+22019,Calcasieu,"Virgil Goode, James Clymer Constitution",161
+22019,Calcasieu,"Ross Anderson, Luis Rodriguez Justice",52
+22019,Calcasieu,"Jack Fellure, Toby Davis Prohibition",27
+22019,Calcasieu,"Peta Lindsay, Yari Osorio Socialism and Liberation",21
+22019,Calcasieu,"Jerry White, Phyllis Scherrer Socialist Equality",16
+22019,Calcasieu,"James Harris, Alyson Kennedy Socialist Workers",16
+22019,Calcasieu,"Sheila Tittle, Matthew Turner We The People",117
+22021,Caldwell,"Barack Obama, Joe Biden Democratic",1016
+22021,Caldwell,"Jill Stein, Cheri Honkala Green",19
+22021,Caldwell,"Gary Johnson, James P. Gray Libertarian",18
+22021,Caldwell,"Mitt Romney, Paul Ryan Republican",3640
+22021,Caldwell,"Virgil Goode, James Clymer Constitution",8
+22021,Caldwell,"Ross Anderson, Luis Rodriguez Justice",2
+22021,Caldwell,"Jack Fellure, Toby Davis Prohibition",1
+22021,Caldwell,"Peta Lindsay, Yari Osorio Socialism and Liberation",1
+22021,Caldwell,"Jerry White, Phyllis Scherrer Socialist Equality",2
+22021,Caldwell,"James Harris, Alyson Kennedy Socialist Workers",2
+22021,Caldwell,"Sheila Tittle, Matthew Turner We The People",7
+22023,Cameron,"Barack Obama, Joe Biden Democratic",408
+22023,Cameron,"Jill Stein, Cheri Honkala Green",20
+22023,Cameron,"Gary Johnson, James P. Gray Libertarian",26
+22023,Cameron,"Mitt Romney, Paul Ryan Republican",3260
+22023,Cameron,"Virgil Goode, James Clymer Constitution",5
+22023,Cameron,"Ross Anderson, Luis Rodriguez Justice",2
+22023,Cameron,"Jack Fellure, Toby Davis Prohibition",1
+22023,Cameron,"Peta Lindsay, Yari Osorio Socialism and Liberation",0
+22023,Cameron,"Jerry White, Phyllis Scherrer Socialist Equality",1
+22023,Cameron,"James Harris, Alyson Kennedy Socialist Workers",1
+22023,Cameron,"Sheila Tittle, Matthew Turner We The People",20
+22025,Catahoula,"Barack Obama, Joe Biden Democratic",1408
+22025,Catahoula,"Jill Stein, Cheri Honkala Green",10
+22025,Catahoula,"Gary Johnson, James P. Gray Libertarian",15
+22025,Catahoula,"Mitt Romney, Paul Ryan Republican",2744
+22025,Catahoula,"Virgil Goode, James Clymer Constitution",5
+22025,Catahoula,"Ross Anderson, Luis Rodriguez Justice",2
+22025,Catahoula,"Jack Fellure, Toby Davis Prohibition",2
+22025,Catahoula,"Peta Lindsay, Yari Osorio Socialism and Liberation",1
+22025,Catahoula,"Jerry White, Phyllis Scherrer Socialist Equality",0
+22025,Catahoula,"James Harris, Alyson Kennedy Socialist Workers",1
+22025,Catahoula,"Sheila Tittle, Matthew Turner We The People",5
+22027,Claiborne,"Barack Obama, Joe Biden Democratic",3014
+22027,Claiborne,"Jill Stein, Cheri Honkala Green",23
+22027,Claiborne,"Gary Johnson, James P. Gray Libertarian",20
+22027,Claiborne,"Mitt Romney, Paul Ryan Republican",3649
+22027,Claiborne,"Virgil Goode, James Clymer Constitution",5
+22027,Claiborne,"Ross Anderson, Luis Rodriguez Justice",6
+22027,Claiborne,"Jack Fellure, Toby Davis Prohibition",2
+22027,Claiborne,"Peta Lindsay, Yari Osorio Socialism and Liberation",0
+22027,Claiborne,"Jerry White, Phyllis Scherrer Socialist Equality",1
+22027,Claiborne,"James Harris, Alyson Kennedy Socialist Workers",3
+22027,Claiborne,"Sheila Tittle, Matthew Turner We The People",9
+22029,Concordia,"Barack Obama, Joe Biden Democratic",3833
+22029,Concordia,"Jill Stein, Cheri Honkala Green",18
+22029,Concordia,"Gary Johnson, James P. Gray Libertarian",40
+22029,Concordia,"Mitt Romney, Paul Ryan Republican",5450
+22029,Concordia,"Virgil Goode, James Clymer Constitution",17
+22029,Concordia,"Ross Anderson, Luis Rodriguez Justice",6
+22029,Concordia,"Jack Fellure, Toby Davis Prohibition",3
+22029,Concordia,"Peta Lindsay, Yari Osorio Socialism and Liberation",0
+22029,Concordia,"Jerry White, Phyllis Scherrer Socialist Equality",2
+22029,Concordia,"James Harris, Alyson Kennedy Socialist Workers",2
+22029,Concordia,"Sheila Tittle, Matthew Turner We The People",9
+22031,De Soto,"Barack Obama, Joe Biden Democratic",5553
+22031,De Soto,"Jill Stein, Cheri Honkala Green",29
+22031,De Soto,"Gary Johnson, James P. Gray Libertarian",68
+22031,De Soto,"Mitt Romney, Paul Ryan Republican",7353
+22031,De Soto,"Virgil Goode, James Clymer Constitution",15
+22031,De Soto,"Ross Anderson, Luis Rodriguez Justice",11
+22031,De Soto,"Jack Fellure, Toby Davis Prohibition",2
+22031,De Soto,"Peta Lindsay, Yari Osorio Socialism and Liberation",3
+22031,De Soto,"Jerry White, Phyllis Scherrer Socialist Equality",2
+22031,De Soto,"James Harris, Alyson Kennedy Socialist Workers",3
+22031,De Soto,"Sheila Tittle, Matthew Turner We The People",12
+22033,East Baton Rouge,"Barack Obama, Joe Biden Democratic",102656
+22033,East Baton Rouge,"Jill Stein, Cheri Honkala Green",620
+22033,East Baton Rouge,"Gary Johnson, James P. Gray Libertarian",1957
+22033,East Baton Rouge,"Mitt Romney, Paul Ryan Republican",92292
+22033,East Baton Rouge,"Virgil Goode, James Clymer Constitution",244
+22033,East Baton Rouge,"Ross Anderson, Luis Rodriguez Justice",122
+22033,East Baton Rouge,"Jack Fellure, Toby Davis Prohibition",51
+22033,East Baton Rouge,"Peta Lindsay, Yari Osorio Socialism and Liberation",66
+22033,East Baton Rouge,"Jerry White, Phyllis Scherrer Socialist Equality",33
+22033,East Baton Rouge,"James Harris, Alyson Kennedy Socialist Workers",31
+22033,East Baton Rouge,"Sheila Tittle, Matthew Turner We The People",99
+22035,East Carroll,"Barack Obama, Joe Biden Democratic",2478
+22035,East Carroll,"Jill Stein, Cheri Honkala Green",6
+22035,East Carroll,"Gary Johnson, James P. Gray Libertarian",4
+22035,East Carroll,"Mitt Romney, Paul Ryan Republican",1508
+22035,East Carroll,"Virgil Goode, James Clymer Constitution",0
+22035,East Carroll,"Ross Anderson, Luis Rodriguez Justice",3
+22035,East Carroll,"Jack Fellure, Toby Davis Prohibition",0
+22035,East Carroll,"Peta Lindsay, Yari Osorio Socialism and Liberation",3
+22035,East Carroll,"Jerry White, Phyllis Scherrer Socialist Equality",0
+22035,East Carroll,"James Harris, Alyson Kennedy Socialist Workers",4
+22035,East Carroll,"Sheila Tittle, Matthew Turner We The People",2
+22037,East Feliciana,"Barack Obama, Joe Biden Democratic",4648
+22037,East Feliciana,"Jill Stein, Cheri Honkala Green",30
+22037,East Feliciana,"Gary Johnson, James P. Gray Libertarian",62
+22037,East Feliciana,"Mitt Romney, Paul Ryan Republican",5397
+22037,East Feliciana,"Virgil Goode, James Clymer Constitution",28
+22037,East Feliciana,"Ross Anderson, Luis Rodriguez Justice",10
+22037,East Feliciana,"Jack Fellure, Toby Davis Prohibition",12
+22037,East Feliciana,"Peta Lindsay, Yari Osorio Socialism and Liberation",6
+22037,East Feliciana,"Jerry White, Phyllis Scherrer Socialist Equality",4
+22037,East Feliciana,"James Harris, Alyson Kennedy Socialist Workers",1
+22037,East Feliciana,"Sheila Tittle, Matthew Turner We The People",11
+22039,Evangeline,"Barack Obama, Joe Biden Democratic",5330
+22039,Evangeline,"Jill Stein, Cheri Honkala Green",72
+22039,Evangeline,"Gary Johnson, James P. Gray Libertarian",93
+22039,Evangeline,"Mitt Romney, Paul Ryan Republican",10181
+22039,Evangeline,"Virgil Goode, James Clymer Constitution",29
+22039,Evangeline,"Ross Anderson, Luis Rodriguez Justice",22
+22039,Evangeline,"Jack Fellure, Toby Davis Prohibition",6
+22039,Evangeline,"Peta Lindsay, Yari Osorio Socialism and Liberation",5
+22039,Evangeline,"Jerry White, Phyllis Scherrer Socialist Equality",6
+22039,Evangeline,"James Harris, Alyson Kennedy Socialist Workers",6
+22039,Evangeline,"Sheila Tittle, Matthew Turner We The People",20
+22041,Franklin,"Barack Obama, Joe Biden Democratic",2921
+22041,Franklin,"Jill Stein, Cheri Honkala Green",28
+22041,Franklin,"Gary Johnson, James P. Gray Libertarian",60
+22041,Franklin,"Mitt Romney, Paul Ryan Republican",6294
+22041,Franklin,"Virgil Goode, James Clymer Constitution",12
+22041,Franklin,"Ross Anderson, Luis Rodriguez Justice",4
+22041,Franklin,"Jack Fellure, Toby Davis Prohibition",1
+22041,Franklin,"Peta Lindsay, Yari Osorio Socialism and Liberation",6
+22041,Franklin,"Jerry White, Phyllis Scherrer Socialist Equality",3
+22041,Franklin,"James Harris, Alyson Kennedy Socialist Workers",4
+22041,Franklin,"Sheila Tittle, Matthew Turner We The People",3
+22043,Grant,"Barack Obama, Joe Biden Democratic",1422
+22043,Grant,"Jill Stein, Cheri Honkala Green",30
+22043,Grant,"Gary Johnson, James P. Gray Libertarian",67
+22043,Grant,"Mitt Romney, Paul Ryan Republican",7082
+22043,Grant,"Virgil Goode, James Clymer Constitution",16
+22043,Grant,"Ross Anderson, Luis Rodriguez Justice",10
+22043,Grant,"Jack Fellure, Toby Davis Prohibition",6
+22043,Grant,"Peta Lindsay, Yari Osorio Socialism and Liberation",5
+22043,Grant,"Jerry White, Phyllis Scherrer Socialist Equality",4
+22043,Grant,"James Harris, Alyson Kennedy Socialist Workers",3
+22043,Grant,"Sheila Tittle, Matthew Turner We The People",22
+22045,Iberia,"Barack Obama, Joe Biden Democratic",12132
+22045,Iberia,"Jill Stein, Cheri Honkala Green",100
+22045,Iberia,"Gary Johnson, James P. Gray Libertarian",158
+22045,Iberia,"Mitt Romney, Paul Ryan Republican",20892
+22045,Iberia,"Virgil Goode, James Clymer Constitution",35
+22045,Iberia,"Ross Anderson, Luis Rodriguez Justice",27
+22045,Iberia,"Jack Fellure, Toby Davis Prohibition",8
+22045,Iberia,"Peta Lindsay, Yari Osorio Socialism and Liberation",6
+22045,Iberia,"Jerry White, Phyllis Scherrer Socialist Equality",6
+22045,Iberia,"James Harris, Alyson Kennedy Socialist Workers",2
+22045,Iberia,"Sheila Tittle, Matthew Turner We The People",31
+22047,Iberville,"Barack Obama, Joe Biden Democratic",9548
+22047,Iberville,"Jill Stein, Cheri Honkala Green",60
+22047,Iberville,"Gary Johnson, James P. Gray Libertarian",79
+22047,Iberville,"Mitt Romney, Paul Ryan Republican",7271
+22047,Iberville,"Virgil Goode, James Clymer Constitution",13
+22047,Iberville,"Ross Anderson, Luis Rodriguez Justice",14
+22047,Iberville,"Jack Fellure, Toby Davis Prohibition",4
+22047,Iberville,"Peta Lindsay, Yari Osorio Socialism and Liberation",4
+22047,Iberville,"Jerry White, Phyllis Scherrer Socialist Equality",6
+22047,Iberville,"James Harris, Alyson Kennedy Socialist Workers",6
+22047,Iberville,"Sheila Tittle, Matthew Turner We The People",9
+22049,Jackson,"Barack Obama, Joe Biden Democratic",2305
+22049,Jackson,"Jill Stein, Cheri Honkala Green",22
+22049,Jackson,"Gary Johnson, James P. Gray Libertarian",37
+22049,Jackson,"Mitt Romney, Paul Ryan Republican",5132
+22049,Jackson,"Virgil Goode, James Clymer Constitution",10
+22049,Jackson,"Ross Anderson, Luis Rodriguez Justice",3
+22049,Jackson,"Jack Fellure, Toby Davis Prohibition",1
+22049,Jackson,"Peta Lindsay, Yari Osorio Socialism and Liberation",4
+22049,Jackson,"Jerry White, Phyllis Scherrer Socialist Equality",3
+22049,Jackson,"James Harris, Alyson Kennedy Socialist Workers",0
+22049,Jackson,"Sheila Tittle, Matthew Turner We The People",12
+22051,Jefferson,"Barack Obama, Joe Biden Democratic",70384
+22051,Jefferson,"Jill Stein, Cheri Honkala Green",681
+22051,Jefferson,"Gary Johnson, James P. Gray Libertarian",2160
+22051,Jefferson,"Mitt Romney, Paul Ryan Republican",102536
+22051,Jefferson,"Virgil Goode, James Clymer Constitution",172
+22051,Jefferson,"Ross Anderson, Luis Rodriguez Justice",110
+22051,Jefferson,"Jack Fellure, Toby Davis Prohibition",45
+22051,Jefferson,"Peta Lindsay, Yari Osorio Socialism and Liberation",38
+22051,Jefferson,"Jerry White, Phyllis Scherrer Socialist Equality",25
+22051,Jefferson,"James Harris, Alyson Kennedy Socialist Workers",27
+22051,Jefferson,"Sheila Tittle, Matthew Turner We The People",165
+22053,Jefferson Davis,"Barack Obama, Joe Biden Democratic",3484
+22053,Jefferson Davis,"Jill Stein, Cheri Honkala Green",58
+22053,Jefferson Davis,"Gary Johnson, James P. Gray Libertarian",97
+22053,Jefferson Davis,"Mitt Romney, Paul Ryan Republican",10014
+22053,Jefferson Davis,"Virgil Goode, James Clymer Constitution",21
+22053,Jefferson Davis,"Ross Anderson, Luis Rodriguez Justice",13
+22053,Jefferson Davis,"Jack Fellure, Toby Davis Prohibition",6
+22053,Jefferson Davis,"Peta Lindsay, Yari Osorio Socialism and Liberation",10
+22053,Jefferson Davis,"Jerry White, Phyllis Scherrer Socialist Equality",4
+22053,Jefferson Davis,"James Harris, Alyson Kennedy Socialist Workers",3
+22053,Jefferson Davis,"Sheila Tittle, Matthew Turner We The People",24
+22055,Lafayette,"Barack Obama, Joe Biden Democratic",31768
+22055,Lafayette,"Jill Stein, Cheri Honkala Green",367
+22055,Lafayette,"Gary Johnson, James P. Gray Libertarian",1228
+22055,Lafayette,"Mitt Romney, Paul Ryan Republican",64992
+22055,Lafayette,"Virgil Goode, James Clymer Constitution",109
+22055,Lafayette,"Ross Anderson, Luis Rodriguez Justice",60
+22055,Lafayette,"Jack Fellure, Toby Davis Prohibition",17
+22055,Lafayette,"Peta Lindsay, Yari Osorio Socialism and Liberation",27
+22055,Lafayette,"Jerry White, Phyllis Scherrer Socialist Equality",9
+22055,Lafayette,"James Harris, Alyson Kennedy Socialist Workers",14
+22055,Lafayette,"Sheila Tittle, Matthew Turner We The People",51
+22057,Lafourche,"Barack Obama, Joe Biden Democratic",9623
+22057,Lafourche,"Jill Stein, Cheri Honkala Green",217
+22057,Lafourche,"Gary Johnson, James P. Gray Libertarian",424
+22057,Lafourche,"Mitt Romney, Paul Ryan Republican",28592
+22057,Lafourche,"Virgil Goode, James Clymer Constitution",50
+22057,Lafourche,"Ross Anderson, Luis Rodriguez Justice",36
+22057,Lafourche,"Jack Fellure, Toby Davis Prohibition",21
+22057,Lafourche,"Peta Lindsay, Yari Osorio Socialism and Liberation",13
+22057,Lafourche,"Jerry White, Phyllis Scherrer Socialist Equality",11
+22057,Lafourche,"James Harris, Alyson Kennedy Socialist Workers",15
+22057,Lafourche,"Sheila Tittle, Matthew Turner We The People",73
+22059,La Salle,"Barack Obama, Joe Biden Democratic",764
+22059,La Salle,"Jill Stein, Cheri Honkala Green",20
+22059,La Salle,"Gary Johnson, James P. Gray Libertarian",25
+22059,La Salle,"Mitt Romney, Paul Ryan Republican",5726
+22059,La Salle,"Virgil Goode, James Clymer Constitution",10
+22059,La Salle,"Ross Anderson, Luis Rodriguez Justice",7
+22059,La Salle,"Jack Fellure, Toby Davis Prohibition",1
+22059,La Salle,"Peta Lindsay, Yari Osorio Socialism and Liberation",7
+22059,La Salle,"Jerry White, Phyllis Scherrer Socialist Equality",0
+22059,La Salle,"James Harris, Alyson Kennedy Socialist Workers",1
+22059,La Salle,"Sheila Tittle, Matthew Turner We The People",11
+22061,Lincoln,"Barack Obama, Joe Biden Democratic",7956
+22061,Lincoln,"Jill Stein, Cheri Honkala Green",45
+22061,Lincoln,"Gary Johnson, James P. Gray Libertarian",187
+22061,Lincoln,"Mitt Romney, Paul Ryan Republican",10739
+22061,Lincoln,"Virgil Goode, James Clymer Constitution",31
+22061,Lincoln,"Ross Anderson, Luis Rodriguez Justice",9
+22061,Lincoln,"Jack Fellure, Toby Davis Prohibition",8
+22061,Lincoln,"Peta Lindsay, Yari Osorio Socialism and Liberation",3
+22061,Lincoln,"Jerry White, Phyllis Scherrer Socialist Equality",3
+22061,Lincoln,"James Harris, Alyson Kennedy Socialist Workers",2
+22061,Lincoln,"Sheila Tittle, Matthew Turner We The People",10
+22063,Livingston,"Barack Obama, Joe Biden Democratic",7451
+22063,Livingston,"Jill Stein, Cheri Honkala Green",204
+22063,Livingston,"Gary Johnson, James P. Gray Libertarian",634
+22063,Livingston,"Mitt Romney, Paul Ryan Republican",45513
+22063,Livingston,"Virgil Goode, James Clymer Constitution",90
+22063,Livingston,"Ross Anderson, Luis Rodriguez Justice",44
+22063,Livingston,"Jack Fellure, Toby Davis Prohibition",14
+22063,Livingston,"Peta Lindsay, Yari Osorio Socialism and Liberation",20
+22063,Livingston,"Jerry White, Phyllis Scherrer Socialist Equality",4
+22063,Livingston,"James Harris, Alyson Kennedy Socialist Workers",9
+22063,Livingston,"Sheila Tittle, Matthew Turner We The People",79
+22065,Madison,"Barack Obama, Joe Biden Democratic",3154
+22065,Madison,"Jill Stein, Cheri Honkala Green",7
+22065,Madison,"Gary Johnson, James P. Gray Libertarian",9
+22065,Madison,"Mitt Romney, Paul Ryan Republican",2000
+22065,Madison,"Virgil Goode, James Clymer Constitution",5
+22065,Madison,"Ross Anderson, Luis Rodriguez Justice",4
+22065,Madison,"Jack Fellure, Toby Davis Prohibition",1
+22065,Madison,"Peta Lindsay, Yari Osorio Socialism and Liberation",2
+22065,Madison,"Jerry White, Phyllis Scherrer Socialist Equality",2
+22065,Madison,"James Harris, Alyson Kennedy Socialist Workers",1
+22065,Madison,"Sheila Tittle, Matthew Turner We The People",2
+22067,Morehouse,"Barack Obama, Joe Biden Democratic",5888
+22067,Morehouse,"Jill Stein, Cheri Honkala Green",35
+22067,Morehouse,"Gary Johnson, James P. Gray Libertarian",45
+22067,Morehouse,"Mitt Romney, Paul Ryan Republican",6591
+22067,Morehouse,"Virgil Goode, James Clymer Constitution",15
+22067,Morehouse,"Ross Anderson, Luis Rodriguez Justice",11
+22067,Morehouse,"Jack Fellure, Toby Davis Prohibition",7
+22067,Morehouse,"Peta Lindsay, Yari Osorio Socialism and Liberation",8
+22067,Morehouse,"Jerry White, Phyllis Scherrer Socialist Equality",2
+22067,Morehouse,"James Harris, Alyson Kennedy Socialist Workers",3
+22067,Morehouse,"Sheila Tittle, Matthew Turner We The People",9
+22069,Natchitoches,"Barack Obama, Joe Biden Democratic",7942
+22069,Natchitoches,"Jill Stein, Cheri Honkala Green",44
+22069,Natchitoches,"Gary Johnson, James P. Gray Libertarian",135
+22069,Natchitoches,"Mitt Romney, Paul Ryan Republican",9077
+22069,Natchitoches,"Virgil Goode, James Clymer Constitution",21
+22069,Natchitoches,"Ross Anderson, Luis Rodriguez Justice",7
+22069,Natchitoches,"Jack Fellure, Toby Davis Prohibition",1
+22069,Natchitoches,"Peta Lindsay, Yari Osorio Socialism and Liberation",6
+22069,Natchitoches,"Jerry White, Phyllis Scherrer Socialist Equality",5
+22069,Natchitoches,"James Harris, Alyson Kennedy Socialist Workers",4
+22069,Natchitoches,"Sheila Tittle, Matthew Turner We The People",16
+22071,Orleans,"Barack Obama, Joe Biden Democratic",126722
+22071,Orleans,"Jill Stein, Cheri Honkala Green",830
+22071,Orleans,"Gary Johnson, James P. Gray Libertarian",1859
+22071,Orleans,"Mitt Romney, Paul Ryan Republican",28003
+22071,Orleans,"Virgil Goode, James Clymer Constitution",110
+22071,Orleans,"Ross Anderson, Luis Rodriguez Justice",116
+22071,Orleans,"Jack Fellure, Toby Davis Prohibition",27
+22071,Orleans,"Peta Lindsay, Yari Osorio Socialism and Liberation",30
+22071,Orleans,"Jerry White, Phyllis Scherrer Socialist Equality",21
+22071,Orleans,"James Harris, Alyson Kennedy Socialist Workers",38
+22071,Orleans,"Sheila Tittle, Matthew Turner We The People",57
+22073,Ouachita,"Barack Obama, Joe Biden Democratic",26645
+22073,Ouachita,"Jill Stein, Cheri Honkala Green",155
+22073,Ouachita,"Gary Johnson, James P. Gray Libertarian",526
+22073,Ouachita,"Mitt Romney, Paul Ryan Republican",40948
+22073,Ouachita,"Virgil Goode, James Clymer Constitution",103
+22073,Ouachita,"Ross Anderson, Luis Rodriguez Justice",27
+22073,Ouachita,"Jack Fellure, Toby Davis Prohibition",9
+22073,Ouachita,"Peta Lindsay, Yari Osorio Socialism and Liberation",5
+22073,Ouachita,"Jerry White, Phyllis Scherrer Socialist Equality",8
+22073,Ouachita,"James Harris, Alyson Kennedy Socialist Workers",14
+22073,Ouachita,"Sheila Tittle, Matthew Turner We The People",34
+22075,Plaquemines,"Barack Obama, Joe Biden Democratic",3599
+22075,Plaquemines,"Jill Stein, Cheri Honkala Green",29
+22075,Plaquemines,"Gary Johnson, James P. Gray Libertarian",93
+22075,Plaquemines,"Mitt Romney, Paul Ryan Republican",6471
+22075,Plaquemines,"Virgil Goode, James Clymer Constitution",9
+22075,Plaquemines,"Ross Anderson, Luis Rodriguez Justice",8
+22075,Plaquemines,"Jack Fellure, Toby Davis Prohibition",10
+22075,Plaquemines,"Peta Lindsay, Yari Osorio Socialism and Liberation",7
+22075,Plaquemines,"Jerry White, Phyllis Scherrer Socialist Equality",2
+22075,Plaquemines,"James Harris, Alyson Kennedy Socialist Workers",2
+22075,Plaquemines,"Sheila Tittle, Matthew Turner We The People",9
+22077,Pointe Coupee,"Barack Obama, Joe Biden Democratic",5436
+22077,Pointe Coupee,"Jill Stein, Cheri Honkala Green",46
+22077,Pointe Coupee,"Gary Johnson, James P. Gray Libertarian",55
+22077,Pointe Coupee,"Mitt Romney, Paul Ryan Republican",6548
+22077,Pointe Coupee,"Virgil Goode, James Clymer Constitution",21
+22077,Pointe Coupee,"Ross Anderson, Luis Rodriguez Justice",8
+22077,Pointe Coupee,"Jack Fellure, Toby Davis Prohibition",8
+22077,Pointe Coupee,"Peta Lindsay, Yari Osorio Socialism and Liberation",9
+22077,Pointe Coupee,"Jerry White, Phyllis Scherrer Socialist Equality",4
+22077,Pointe Coupee,"James Harris, Alyson Kennedy Socialist Workers",4
+22077,Pointe Coupee,"Sheila Tittle, Matthew Turner We The People",8
+22079,Rapides,"Barack Obama, Joe Biden Democratic",20045
+22079,Rapides,"Jill Stein, Cheri Honkala Green",188
+22079,Rapides,"Gary Johnson, James P. Gray Libertarian",368
+22079,Rapides,"Mitt Romney, Paul Ryan Republican",37193
+22079,Rapides,"Virgil Goode, James Clymer Constitution",73
+22079,Rapides,"Ross Anderson, Luis Rodriguez Justice",48
+22079,Rapides,"Jack Fellure, Toby Davis Prohibition",15
+22079,Rapides,"Peta Lindsay, Yari Osorio Socialism and Liberation",17
+22079,Rapides,"Jerry White, Phyllis Scherrer Socialist Equality",10
+22079,Rapides,"James Harris, Alyson Kennedy Socialist Workers",11
+22079,Rapides,"Sheila Tittle, Matthew Turner We The People",51
+22081,Red River,"Barack Obama, Joe Biden Democratic",2253
+22081,Red River,"Jill Stein, Cheri Honkala Green",12
+22081,Red River,"Gary Johnson, James P. Gray Libertarian",38
+22081,Red River,"Mitt Romney, Paul Ryan Republican",2483
+22081,Red River,"Virgil Goode, James Clymer Constitution",5
+22081,Red River,"Ross Anderson, Luis Rodriguez Justice",5
+22081,Red River,"Jack Fellure, Toby Davis Prohibition",4
+22081,Red River,"Peta Lindsay, Yari Osorio Socialism and Liberation",2
+22081,Red River,"Jerry White, Phyllis Scherrer Socialist Equality",1
+22081,Red River,"James Harris, Alyson Kennedy Socialist Workers",2
+22081,Red River,"Sheila Tittle, Matthew Turner We The People",2
+22083,Richland,"Barack Obama, Joe Biden Democratic",3387
+22083,Richland,"Jill Stein, Cheri Honkala Green",23
+22083,Richland,"Gary Johnson, James P. Gray Libertarian",41
+22083,Richland,"Mitt Romney, Paul Ryan Republican",5846
+22083,Richland,"Virgil Goode, James Clymer Constitution",15
+22083,Richland,"Ross Anderson, Luis Rodriguez Justice",6
+22083,Richland,"Jack Fellure, Toby Davis Prohibition",3
+22083,Richland,"Peta Lindsay, Yari Osorio Socialism and Liberation",3
+22083,Richland,"Jerry White, Phyllis Scherrer Socialist Equality",2
+22083,Richland,"James Harris, Alyson Kennedy Socialist Workers",1
+22083,Richland,"Sheila Tittle, Matthew Turner We The People",2
+22085,Sabine,"Barack Obama, Joe Biden Democratic",2194
+22085,Sabine,"Jill Stein, Cheri Honkala Green",45
+22085,Sabine,"Gary Johnson, James P. Gray Libertarian",46
+22085,Sabine,"Mitt Romney, Paul Ryan Republican",7738
+22085,Sabine,"Virgil Goode, James Clymer Constitution",4
+22085,Sabine,"Ross Anderson, Luis Rodriguez Justice",6
+22085,Sabine,"Jack Fellure, Toby Davis Prohibition",4
+22085,Sabine,"Peta Lindsay, Yari Osorio Socialism and Liberation",3
+22085,Sabine,"Jerry White, Phyllis Scherrer Socialist Equality",4
+22085,Sabine,"James Harris, Alyson Kennedy Socialist Workers",0
+22085,Sabine,"Sheila Tittle, Matthew Turner We The People",9
+22087,St. Bernard,"Barack Obama, Joe Biden Democratic",5059
+22087,St. Bernard,"Jill Stein, Cheri Honkala Green",90
+22087,St. Bernard,"Gary Johnson, James P. Gray Libertarian",194
+22087,St. Bernard,"Mitt Romney, Paul Ryan Republican",8501
+22087,St. Bernard,"Virgil Goode, James Clymer Constitution",30
+22087,St. Bernard,"Ross Anderson, Luis Rodriguez Justice",25
+22087,St. Bernard,"Jack Fellure, Toby Davis Prohibition",5
+22087,St. Bernard,"Peta Lindsay, Yari Osorio Socialism and Liberation",10
+22087,St. Bernard,"Jerry White, Phyllis Scherrer Socialist Equality",2
+22087,St. Bernard,"James Harris, Alyson Kennedy Socialist Workers",7
+22087,St. Bernard,"Sheila Tittle, Matthew Turner We The People",32
+22089,St. Charles,"Barack Obama, Joe Biden Democratic",8896
+22089,St. Charles,"Jill Stein, Cheri Honkala Green",88
+22089,St. Charles,"Gary Johnson, James P. Gray Libertarian",303
+22089,St. Charles,"Mitt Romney, Paul Ryan Republican",15937
+22089,St. Charles,"Virgil Goode, James Clymer Constitution",42
+22089,St. Charles,"Ross Anderson, Luis Rodriguez Justice",18
+22089,St. Charles,"Jack Fellure, Toby Davis Prohibition",5
+22089,St. Charles,"Peta Lindsay, Yari Osorio Socialism and Liberation",7
+22089,St. Charles,"Jerry White, Phyllis Scherrer Socialist Equality",4
+22089,St. Charles,"James Harris, Alyson Kennedy Socialist Workers",1
+22089,St. Charles,"Sheila Tittle, Matthew Turner We The People",32
+22091,St. Helena,"Barack Obama, Joe Biden Democratic",3780
+22091,St. Helena,"Jill Stein, Cheri Honkala Green",28
+22091,St. Helena,"Gary Johnson, James P. Gray Libertarian",27
+22091,St. Helena,"Mitt Romney, Paul Ryan Republican",2529
+22091,St. Helena,"Virgil Goode, James Clymer Constitution",13
+22091,St. Helena,"Ross Anderson, Luis Rodriguez Justice",4
+22091,St. Helena,"Jack Fellure, Toby Davis Prohibition",2
+22091,St. Helena,"Peta Lindsay, Yari Osorio Socialism and Liberation",1
+22091,St. Helena,"Jerry White, Phyllis Scherrer Socialist Equality",1
+22091,St. Helena,"James Harris, Alyson Kennedy Socialist Workers",0
+22091,St. Helena,"Sheila Tittle, Matthew Turner We The People",9
+22093,St. James,"Barack Obama, Joe Biden Democratic",7059
+22093,St. James,"Jill Stein, Cheri Honkala Green",29
+22093,St. James,"Gary Johnson, James P. Gray Libertarian",54
+22093,St. James,"Mitt Romney, Paul Ryan Republican",5209
+22093,St. James,"Virgil Goode, James Clymer Constitution",12
+22093,St. James,"Ross Anderson, Luis Rodriguez Justice",9
+22093,St. James,"Jack Fellure, Toby Davis Prohibition",2
+22093,St. James,"Peta Lindsay, Yari Osorio Socialism and Liberation",6
+22093,St. James,"Jerry White, Phyllis Scherrer Socialist Equality",3
+22093,St. James,"James Harris, Alyson Kennedy Socialist Workers",2
+22093,St. James,"Sheila Tittle, Matthew Turner We The People",10
+22095,St. John The Baptist,"Barack Obama, Joe Biden Democratic",13179
+22095,St. John The Baptist,"Jill Stein, Cheri Honkala Green",71
+22095,St. John The Baptist,"Gary Johnson, James P. Gray Libertarian",164
+22095,St. John The Baptist,"Mitt Romney, Paul Ryan Republican",7620
+22095,St. John The Baptist,"Virgil Goode, James Clymer Constitution",32
+22095,St. John The Baptist,"Ross Anderson, Luis Rodriguez Justice",21
+22095,St. John The Baptist,"Jack Fellure, Toby Davis Prohibition",7
+22095,St. John The Baptist,"Peta Lindsay, Yari Osorio Socialism and Liberation",6
+22095,St. John The Baptist,"Jerry White, Phyllis Scherrer Socialist Equality",4
+22095,St. John The Baptist,"James Harris, Alyson Kennedy Socialist Workers",3
+22095,St. John The Baptist,"Sheila Tittle, Matthew Turner We The People",16
+22097,St. Landry,"Barack Obama, Joe Biden Democratic",19668
+22097,St. Landry,"Jill Stein, Cheri Honkala Green",136
+22097,St. Landry,"Gary Johnson, James P. Gray Libertarian",200
+22097,St. Landry,"Mitt Romney, Paul Ryan Republican",21475
+22097,St. Landry,"Virgil Goode, James Clymer Constitution",69
+22097,St. Landry,"Ross Anderson, Luis Rodriguez Justice",30
+22097,St. Landry,"Jack Fellure, Toby Davis Prohibition",8
+22097,St. Landry,"Peta Lindsay, Yari Osorio Socialism and Liberation",12
+22097,St. Landry,"Jerry White, Phyllis Scherrer Socialist Equality",15
+22097,St. Landry,"James Harris, Alyson Kennedy Socialist Workers",6
+22097,St. Landry,"Sheila Tittle, Matthew Turner We The People",28
+22099,St. Martin,"Barack Obama, Joe Biden Democratic",9422
+22099,St. Martin,"Jill Stein, Cheri Honkala Green",91
+22099,St. Martin,"Gary Johnson, James P. Gray Libertarian",162
+22099,St. Martin,"Mitt Romney, Paul Ryan Republican",15653
+22099,St. Martin,"Virgil Goode, James Clymer Constitution",25
+22099,St. Martin,"Ross Anderson, Luis Rodriguez Justice",17
+22099,St. Martin,"Jack Fellure, Toby Davis Prohibition",6
+22099,St. Martin,"Peta Lindsay, Yari Osorio Socialism and Liberation",18
+22099,St. Martin,"Jerry White, Phyllis Scherrer Socialist Equality",9
+22099,St. Martin,"James Harris, Alyson Kennedy Socialist Workers",8
+22099,St. Martin,"Sheila Tittle, Matthew Turner We The People",22
+22101,St. Mary,"Barack Obama, Joe Biden Democratic",9450
+22101,St. Mary,"Jill Stein, Cheri Honkala Green",75
+22101,St. Mary,"Gary Johnson, James P. Gray Libertarian",144
+22101,St. Mary,"Mitt Romney, Paul Ryan Republican",13885
+22101,St. Mary,"Virgil Goode, James Clymer Constitution",27
+22101,St. Mary,"Ross Anderson, Luis Rodriguez Justice",14
+22101,St. Mary,"Jack Fellure, Toby Davis Prohibition",7
+22101,St. Mary,"Peta Lindsay, Yari Osorio Socialism and Liberation",7
+22101,St. Mary,"Jerry White, Phyllis Scherrer Socialist Equality",5
+22101,St. Mary,"James Harris, Alyson Kennedy Socialist Workers",5
+22101,St. Mary,"Sheila Tittle, Matthew Turner We The People",21
+22103,St. Tammany,"Barack Obama, Joe Biden Democratic",25728
+22103,St. Tammany,"Jill Stein, Cheri Honkala Green",399
+22103,St. Tammany,"Gary Johnson, James P. Gray Libertarian",1637
+22103,St. Tammany,"Mitt Romney, Paul Ryan Republican",84723
+22103,St. Tammany,"Virgil Goode, James Clymer Constitution",176
+22103,St. Tammany,"Ross Anderson, Luis Rodriguez Justice",70
+22103,St. Tammany,"Jack Fellure, Toby Davis Prohibition",19
+22103,St. Tammany,"Peta Lindsay, Yari Osorio Socialism and Liberation",39
+22103,St. Tammany,"Jerry White, Phyllis Scherrer Socialist Equality",13
+22103,St. Tammany,"James Harris, Alyson Kennedy Socialist Workers",14
+22103,St. Tammany,"Sheila Tittle, Matthew Turner We The People",84
+22105,Tangipahoa,"Barack Obama, Joe Biden Democratic",17722
+22105,Tangipahoa,"Jill Stein, Cheri Honkala Green",166
+22105,Tangipahoa,"Gary Johnson, James P. Gray Libertarian",408
+22105,Tangipahoa,"Mitt Romney, Paul Ryan Republican",31590
+22105,Tangipahoa,"Virgil Goode, James Clymer Constitution",63
+22105,Tangipahoa,"Ross Anderson, Luis Rodriguez Justice",37
+22105,Tangipahoa,"Jack Fellure, Toby Davis Prohibition",17
+22105,Tangipahoa,"Peta Lindsay, Yari Osorio Socialism and Liberation",24
+22105,Tangipahoa,"Jerry White, Phyllis Scherrer Socialist Equality",10
+22105,Tangipahoa,"James Harris, Alyson Kennedy Socialist Workers",13
+22105,Tangipahoa,"Sheila Tittle, Matthew Turner We The People",49
+22107,Tensas,"Barack Obama, Joe Biden Democratic",1564
+22107,Tensas,"Jill Stein, Cheri Honkala Green",4
+22107,Tensas,"Gary Johnson, James P. Gray Libertarian",3
+22107,Tensas,"Mitt Romney, Paul Ryan Republican",1230
+22107,Tensas,"Virgil Goode, James Clymer Constitution",2
+22107,Tensas,"Ross Anderson, Luis Rodriguez Justice",5
+22107,Tensas,"Jack Fellure, Toby Davis Prohibition",0
+22107,Tensas,"Peta Lindsay, Yari Osorio Socialism and Liberation",2
+22107,Tensas,"Jerry White, Phyllis Scherrer Socialist Equality",0
+22107,Tensas,"James Harris, Alyson Kennedy Socialist Workers",0
+22107,Tensas,"Sheila Tittle, Matthew Turner We The People",2
+22109,Terrebonne,"Barack Obama, Joe Biden Democratic",12074
+22109,Terrebonne,"Jill Stein, Cheri Honkala Green",175
+22109,Terrebonne,"Gary Johnson, James P. Gray Libertarian",413
+22109,Terrebonne,"Mitt Romney, Paul Ryan Republican",29503
+22109,Terrebonne,"Virgil Goode, James Clymer Constitution",71
+22109,Terrebonne,"Ross Anderson, Luis Rodriguez Justice",27
+22109,Terrebonne,"Jack Fellure, Toby Davis Prohibition",9
+22109,Terrebonne,"Peta Lindsay, Yari Osorio Socialism and Liberation",9
+22109,Terrebonne,"Jerry White, Phyllis Scherrer Socialist Equality",3
+22109,Terrebonne,"James Harris, Alyson Kennedy Socialist Workers",14
+22109,Terrebonne,"Sheila Tittle, Matthew Turner We The People",43
+22111,Union,"Barack Obama, Joe Biden Democratic",3075
+22111,Union,"Jill Stein, Cheri Honkala Green",34
+22111,Union,"Gary Johnson, James P. Gray Libertarian",60
+22111,Union,"Mitt Romney, Paul Ryan Republican",7561
+22111,Union,"Virgil Goode, James Clymer Constitution",13
+22111,Union,"Ross Anderson, Luis Rodriguez Justice",5
+22111,Union,"Jack Fellure, Toby Davis Prohibition",4
+22111,Union,"Peta Lindsay, Yari Osorio Socialism and Liberation",4
+22111,Union,"Jerry White, Phyllis Scherrer Socialist Equality",2
+22111,Union,"James Harris, Alyson Kennedy Socialist Workers",0
+22111,Union,"Sheila Tittle, Matthew Turner We The People",8
+22113,Vermilion,"Barack Obama, Joe Biden Democratic",5720
+22113,Vermilion,"Jill Stein, Cheri Honkala Green",85
+22113,Vermilion,"Gary Johnson, James P. Gray Libertarian",184
+22113,Vermilion,"Mitt Romney, Paul Ryan Republican",18910
+22113,Vermilion,"Virgil Goode, James Clymer Constitution",20
+22113,Vermilion,"Ross Anderson, Luis Rodriguez Justice",20
+22113,Vermilion,"Jack Fellure, Toby Davis Prohibition",5
+22113,Vermilion,"Peta Lindsay, Yari Osorio Socialism and Liberation",8
+22113,Vermilion,"Jerry White, Phyllis Scherrer Socialist Equality",4
+22113,Vermilion,"James Harris, Alyson Kennedy Socialist Workers",6
+22113,Vermilion,"Sheila Tittle, Matthew Turner We The People",25
+22115,Vernon,"Barack Obama, Joe Biden Democratic",3173
+22115,Vernon,"Jill Stein, Cheri Honkala Green",75
+22115,Vernon,"Gary Johnson, James P. Gray Libertarian",121
+22115,Vernon,"Mitt Romney, Paul Ryan Republican",12150
+22115,Vernon,"Virgil Goode, James Clymer Constitution",33
+22115,Vernon,"Ross Anderson, Luis Rodriguez Justice",11
+22115,Vernon,"Jack Fellure, Toby Davis Prohibition",1
+22115,Vernon,"Peta Lindsay, Yari Osorio Socialism and Liberation",3
+22115,Vernon,"Jerry White, Phyllis Scherrer Socialist Equality",5
+22115,Vernon,"James Harris, Alyson Kennedy Socialist Workers",5
+22115,Vernon,"Sheila Tittle, Matthew Turner We The People",33
+22117,Washington,"Barack Obama, Joe Biden Democratic",6466
+22117,Washington,"Jill Stein, Cheri Honkala Green",84
+22117,Washington,"Gary Johnson, James P. Gray Libertarian",90
+22117,Washington,"Mitt Romney, Paul Ryan Republican",11798
+22117,Washington,"Virgil Goode, James Clymer Constitution",38
+22117,Washington,"Ross Anderson, Luis Rodriguez Justice",17
+22117,Washington,"Jack Fellure, Toby Davis Prohibition",12
+22117,Washington,"Peta Lindsay, Yari Osorio Socialism and Liberation",47
+22117,Washington,"Jerry White, Phyllis Scherrer Socialist Equality",4
+22117,Washington,"James Harris, Alyson Kennedy Socialist Workers",6
+22117,Washington,"Sheila Tittle, Matthew Turner We The People",19
+22119,Webster,"Barack Obama, Joe Biden Democratic",6802
+22119,Webster,"Jill Stein, Cheri Honkala Green",54
+22119,Webster,"Gary Johnson, James P. Gray Libertarian",71
+22119,Webster,"Mitt Romney, Paul Ryan Republican",11400
+22119,Webster,"Virgil Goode, James Clymer Constitution",31
+22119,Webster,"Ross Anderson, Luis Rodriguez Justice",15
+22119,Webster,"Jack Fellure, Toby Davis Prohibition",5
+22119,Webster,"Peta Lindsay, Yari Osorio Socialism and Liberation",8
+22119,Webster,"Jerry White, Phyllis Scherrer Socialist Equality",6
+22119,Webster,"James Harris, Alyson Kennedy Socialist Workers",4
+22119,Webster,"Sheila Tittle, Matthew Turner We The People",20
+22121,West Baton Rouge,"Barack Obama, Joe Biden Democratic",5692
+22121,West Baton Rouge,"Jill Stein, Cheri Honkala Green",38
+22121,West Baton Rouge,"Gary Johnson, James P. Gray Libertarian",83
+22121,West Baton Rouge,"Mitt Romney, Paul Ryan Republican",6922
+22121,West Baton Rouge,"Virgil Goode, James Clymer Constitution",11
+22121,West Baton Rouge,"Ross Anderson, Luis Rodriguez Justice",10
+22121,West Baton Rouge,"Jack Fellure, Toby Davis Prohibition",2
+22121,West Baton Rouge,"Peta Lindsay, Yari Osorio Socialism and Liberation",2
+22121,West Baton Rouge,"Jerry White, Phyllis Scherrer Socialist Equality",2
+22121,West Baton Rouge,"James Harris, Alyson Kennedy Socialist Workers",0
+22121,West Baton Rouge,"Sheila Tittle, Matthew Turner We The People",12
+22123,West Carroll,"Barack Obama, Joe Biden Democratic",853
+22123,West Carroll,"Jill Stein, Cheri Honkala Green",11
+22123,West Carroll,"Gary Johnson, James P. Gray Libertarian",23
+22123,West Carroll,"Mitt Romney, Paul Ryan Republican",3628
+22123,West Carroll,"Virgil Goode, James Clymer Constitution",6
+22123,West Carroll,"Ross Anderson, Luis Rodriguez Justice",7
+22123,West Carroll,"Jack Fellure, Toby Davis Prohibition",6
+22123,West Carroll,"Peta Lindsay, Yari Osorio Socialism and Liberation",7
+22123,West Carroll,"Jerry White, Phyllis Scherrer Socialist Equality",1
+22123,West Carroll,"James Harris, Alyson Kennedy Socialist Workers",1
+22123,West Carroll,"Sheila Tittle, Matthew Turner We The People",5
+22125,West Feliciana,"Barack Obama, Joe Biden Democratic",2441
+22125,West Feliciana,"Jill Stein, Cheri Honkala Green",14
+22125,West Feliciana,"Gary Johnson, James P. Gray Libertarian",47
+22125,West Feliciana,"Mitt Romney, Paul Ryan Republican",3257
+22125,West Feliciana,"Virgil Goode, James Clymer Constitution",4
+22125,West Feliciana,"Ross Anderson, Luis Rodriguez Justice",7
+22125,West Feliciana,"Jack Fellure, Toby Davis Prohibition",0
+22125,West Feliciana,"Peta Lindsay, Yari Osorio Socialism and Liberation",1
+22125,West Feliciana,"Jerry White, Phyllis Scherrer Socialist Equality",0
+22125,West Feliciana,"James Harris, Alyson Kennedy Socialist Workers",1
+22125,West Feliciana,"Sheila Tittle, Matthew Turner We The People",5
+22127,Winn,"Barack Obama, Joe Biden Democratic",1919
+22127,Winn,"Jill Stein, Cheri Honkala Green",18
+22127,Winn,"Gary Johnson, James P. Gray Libertarian",31
+22127,Winn,"Mitt Romney, Paul Ryan Republican",4541
+22127,Winn,"Virgil Goode, James Clymer Constitution",8
+22127,Winn,"Ross Anderson, Luis Rodriguez Justice",3
+22127,Winn,"Jack Fellure, Toby Davis Prohibition",0
+22127,Winn,"Peta Lindsay, Yari Osorio Socialism and Liberation",2
+22127,Winn,"Jerry White, Phyllis Scherrer Socialist Equality",0
+22127,Winn,"James Harris, Alyson Kennedy Socialist Workers",0
+22127,Winn,"Sheila Tittle, Matthew Turner We The People",12
