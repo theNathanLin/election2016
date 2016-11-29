@@ -7,6 +7,7 @@ library(tigris)
 library(ggplot2)
 library(leaflet)
 library(maps)
+library(scales)
 
 setwd("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data")
 gen16 <- read.csv("pres16results.csv", header = TRUE, stringsAsFactors = FALSE)
@@ -40,9 +41,35 @@ gen16.2$total_votes <- NULL
 gen16.2$lead <- NULL
 
 long16 <- dcast(gen16.2, fips + st ~ cand, value.var = "pct")
+colnames(long16) <- c("fips", "st", "DonaldTrump", "HillaryClinton")
+long16$diff <- long16$DonaldTrump - long16$HillaryClinton
 
 #Map Generation
-mapCounties = map("county", fill = TRUE, plot = FALSE)
-leaflet(data = mapCounties) %>% addTiles() %>%
-  addPolygons(fillColor = topo.colors(10, alpha = NULL), stroke = FALSE)
 
+counties <- counties("VA")
+
+df_merged <- geo_join(counties, long16, "GEOID", "fips")
+
+pal <- colorNumeric(
+  palette = c("blue", "red"),
+  domain = df_merged$percent
+)
+
+popup <- paste0("FIPS Code: ", df_merged$GEOID, "<br>", "Trump Differential: ", percent(round(df_merged$diff,2)),
+                "<br>", "Trump Vote: ", percent(round(df_merged$DonaldTrump,2)), 
+                "<br>", "Clinton Vote: ", percent(round(df_merged$HillaryClinton,2)))
+
+leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(data = df_merged, 
+              fillColor = ~pal(diff), 
+              color = "#b2aeae", # you need to use hex colors
+              fillOpacity = 0.8, 
+              weight = 1, 
+              smoothFactor = 0.2,
+              popup = popup) %>%
+  addLegend(pal = pal, 
+            values = df_merged$diff, 
+            position = "bottomright", 
+            title = "Donald Trump's Advantage",
+            labFormat = labelFormat(suffix = "%", transform = function(x) 100 * x))
