@@ -11,7 +11,9 @@ library(scales)
 
 setwd("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data")
 gen16 <- read.csv("pres16results.csv", header = TRUE, stringsAsFactors = FALSE)
+fips.labels <- read.csv("fips_database.csv", header = FALSE, stringsAsFactors = FALSE, colClasses = "character")
 
+#Cleaning general election data
 gen16 <- gen16[which(gen16$cand == "Donald Trump" | gen16$cand == "Hillary Clinton"),]
 gen16 <- gen16[-c(1,2),]
 
@@ -44,8 +46,18 @@ long16 <- dcast(gen16.2, fips + st ~ cand, value.var = "pct")
 colnames(long16) <- c("fips", "st", "DonaldTrump", "HillaryClinton")
 long16$diff <- long16$DonaldTrump - long16$HillaryClinton
 
-#Map Generation
+for (i in seq(nrow(long16))) {
+  if (nchar(long16$fips[i])==4) long16$fips[i] <- paste("0",long16$fips[i], sep="")
+}
 
+#Cleaning FIPS database
+fips.labels$fips <- paste(fips.labels$V2,fips.labels$V3, sep = "")
+fips.labels$V2 <- NULL
+fips.labels$V3 <- NULL
+fips.labels$V5 <- NULL
+colnames(fips.labels) <- c("State", "County", "FIPS")
+
+#Map Generation
 counties <- counties("VA")
 
 df_merged <- geo_join(counties, long16, "GEOID", "fips")
@@ -62,6 +74,30 @@ popup <- paste0("FIPS Code: ", df_merged$GEOID, "<br>", "Trump Differential: ", 
 leaflet() %>%
   addProviderTiles("CartoDB.Positron") %>%
   addPolygons(data = df_merged, 
+              fillColor = ~pal(diff), 
+              color = "#b2aeae", # you need to use hex colors
+              fillOpacity = 0.8, 
+              weight = 1, 
+              smoothFactor = 0.2,
+              popup = popup) %>%
+  addLegend(pal = pal, 
+            values = df_merged$diff, 
+            position = "bottomright", 
+            title = "Donald Trump's Advantage",
+            labFormat = labelFormat(suffix = "%", transform = function(x) 100 * x))
+
+#Pennsylvania
+counties2 <- counties("PA")
+df_merged2 <- geo_join(counties2, long16, "GEOID", "fips")
+
+pal <- colorNumeric(
+  palette = c("blue", "red"),
+  domain = df_merged$percent
+)
+
+leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(data = df_merged2, 
               fillColor = ~pal(diff), 
               color = "#b2aeae", # you need to use hex colors
               fillOpacity = 0.8, 
