@@ -44,12 +44,11 @@ gen16$pct_report <- NULL
 gen16.2 <- gen16
 
 gen16.2$votes <- NULL
-gen16.2$total_votes <- NULL
 gen16.2$lead <- NULL
 
 #Used the reshape2 package to convert the dataframe from long to wide format
-long16 <- dcast(gen16.2, fips + st ~ cand, value.var = "pct")
-colnames(long16) <- c("fips", "st", "DonaldTrump", "HillaryClinton")
+long16 <- dcast(gen16.2, fips + st + total_votes ~ cand, value.var = "pct")
+colnames(long16) <- c("fips", "st", "total_votes", "DonaldTrump", "HillaryClinton")
 long16$diff <- long16$DonaldTrump - long16$HillaryClinton
 
 #Added an extra leading 0 for FIPS codes that were 4 digits long (enables the merge later)
@@ -84,17 +83,17 @@ pal <- colorNumeric(
 
 #Determine the content of the pop-up on mouse click
 popup <- paste0("<b>", paste(df_merged$County, df_merged$st, sep = ", "), "</b> <br>",
-                "<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
+                #"<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
                 "<b>Trump Differential: </b>", percent(round(df_merged$diff,2)),
-                "<br>", "<b>Trump Vote: </b>", percent(round(df_merged$DonaldTrump,2)), 
-                "<br>", "<b>Clinton Vote: </b>", percent(round(df_merged$HillaryClinton,2)))
+                "<br>", "<b>Trump Vote: </b>", percent(round(df_merged$DonaldTrump,2)), " (",trimws(format(round(df_merged$DonaldTrump*df_merged$total_votes, 0), big.mark = ",")), ")",
+                "<br>", "<b>Clinton Vote: </b>", percent(round(df_merged$HillaryClinton,2)), " (",trimws(format(round(df_merged$HillaryClinton*df_merged$total_votes, 0), big.mark = ",")), ")")
 
 #Generate the interactive map with legend
 leaflet() %>%
   addProviderTiles("CartoDB.Positron") %>%
   addPolygons(data = df_merged, 
               fillColor = ~pal(diff), 
-              color = "#b2aeae", # you need to use hex colors
+              color = "#b2aeae",
               fillOpacity = 0.8, 
               weight = 1, 
               smoothFactor = 0.2,
