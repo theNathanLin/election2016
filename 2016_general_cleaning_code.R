@@ -8,6 +8,7 @@ library(ggplot2)
 library(leaflet)
 library(maps)
 library(scales)
+library(ggthemes)
 
 setwd("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data")
 
@@ -85,8 +86,8 @@ pal <- colorNumeric(
 popup <- paste0("<b>", paste(df_merged$County, df_merged$st, sep = ", "), "</b> <br>",
                 #"<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
                 "<b>Trump Differential: </b>", percent(round(df_merged$diff,2)),
-                "<br>", "<b>Trump Vote: </b>", percent(round(df_merged$DonaldTrump,2)), " (",trimws(format(round(df_merged$DonaldTrump*df_merged$total_votes, 0), big.mark = ",")), ")",
-                "<br>", "<b>Clinton Vote: </b>", percent(round(df_merged$HillaryClinton,2)), " (",trimws(format(round(df_merged$HillaryClinton*df_merged$total_votes, 0), big.mark = ",")), ")")
+                "<br>", "<b>Trump: </b>", percent(round(df_merged$DonaldTrump,2)), " (",trimws(format(round(df_merged$DonaldTrump*df_merged$total_votes, 0), big.mark = ",")), ")",
+                "<br>", "<b>Clinton: </b>", percent(round(df_merged$HillaryClinton,2)), " (",trimws(format(round(df_merged$HillaryClinton*df_merged$total_votes, 0), big.mark = ",")), ")")
 
 #Generate the interactive map with legend
 leaflet() %>%
@@ -104,14 +105,29 @@ leaflet() %>%
             title = "Donald Trump's Advantage",
             labFormat = labelFormat(suffix = "%", transform = function(x) 100 * x))
 
+va.fortify <- fortify(counties, region = "GEOID")
+va.fortify <- merge(va.fortify, long16, by.x = "id", by.y = "fips", all.x = TRUE)
+
+ggplot() +
+  geom_polygon(data = va.fortify, 
+               aes(x = long, y = lat, group = group, fill = diff), 
+               color = "black", size = 0.25) + 
+  coord_map() + scale_fill_gradient(low = "blue", high = "red") + theme_map()
+
 #Pennsylvania
 counties2 <- counties("PA")
 df_merged2 <- geo_join(counties2, long16, "GEOID", "fips")
 
 pal <- colorNumeric(
   palette = c("blue", "red"),
-  domain = df_merged$percent
+  domain = df_merged2$percent
 )
+
+popup.pa <- paste0("<b>", paste(df_merged2$County, df_merged2$st, sep = ", "), "</b> <br>",
+                #"<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
+                "<b>Trump Differential: </b>", percent(round(df_merged2$diff,2)),
+                "<br>", "<b>Trump: </b>", percent(round(df_merged2$DonaldTrump,2)), " (",trimws(format(round(df_merged2$DonaldTrump*df_merged2$total_votes, 0), big.mark = ",")), ")",
+                "<br>", "<b>Clinton: </b>", percent(round(df_merged2$HillaryClinton,2)), " (",trimws(format(round(df_merged2$HillaryClinton*df_merged2$total_votes, 0), big.mark = ",")), ")")
 
 leaflet() %>%
   addProviderTiles("CartoDB.Positron") %>%
@@ -121,9 +137,52 @@ leaflet() %>%
               fillOpacity = 0.8, 
               weight = 1, 
               smoothFactor = 0.2,
-              popup = popup) %>%
+              popup = popup.pa) %>%
   addLegend(pal = pal, 
-            values = df_merged$diff, 
+            values = df_merged2$diff, 
+            position = "bottomright", 
+            title = "Donald Trump's Advantage",
+            labFormat = labelFormat(suffix = "%", transform = function(x) 100 * x))
+
+#United States
+#ggplot2
+us.counties <- counties(c("AL", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME",
+                          "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", 
+                          "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"))
+
+us.counties2 <- fortify(us.counties, region = "GEOID")
+df_merged.us <- merge(us.counties2, long16, by.x = "id", by.y = "fips", all.x = TRUE)
+
+us.ggmap <- ggplot() +
+  geom_polygon(data = df_merged.us, aes(x = long, y = lat, group = group, fill = diff), color = "dark grey", size = 0.25) + 
+  scale_fill_gradient(low = "blue", high = "red") + labs(fill = "Trump Margin of Victory")+
+  ggtitle("2016 Electoral Map by County") + coord_map() + theme_void() 
+
+#leaflet
+df_merged.us2 <- geo_join(us.counties, long16, "GEOID", "fips")
+
+pal <- colorNumeric(
+  palette = c("blue", "red"),
+  domain = df_merged.us2$percent
+)
+
+popup.us <- paste0("<b>", paste(df_merged.us2$County, df_merged.us2$st, sep = ", "), "</b> <br>",
+                   #"<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
+                   "<b>Trump Differential: </b>", percent(round(df_merged.us2$diff,2)),
+                   "<br>", "<b>Trump: </b>", percent(round(df_merged.us2$DonaldTrump,2)), " (",trimws(format(round(df_merged.us2$DonaldTrump*df_merged.us2$total_votes, 0), big.mark = ",")), ")",
+                   "<br>", "<b>Clinton: </b>", percent(round(df_merged.us2$HillaryClinton,2)), " (",trimws(format(round(df_merged.us2$HillaryClinton*df_merged.us2$total_votes, 0), big.mark = ",")), ")")
+
+leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(data = df_merged.us2, 
+              fillColor = ~pal(diff), 
+              color = "#b2aeae",
+              fillOpacity = 0.8, 
+              weight = 1, 
+              smoothFactor = 0.2,
+              popup = popup.us) %>%
+  addLegend(pal = pal, 
+            values = df_merged.us2$diff, 
             position = "bottomright", 
             title = "Donald Trump's Advantage",
             labFormat = labelFormat(suffix = "%", transform = function(x) 100 * x))
