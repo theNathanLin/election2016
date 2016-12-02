@@ -1,5 +1,6 @@
-#2016 General Election Cleaning Code
-#Nathan Lin
+#DS 4559 Final Project
+#Exploring the 2016 Election
+#Nathan Lin, Andrew Ton, Mansoor Syed
 
 #Libraries needed
 library(reshape2)
@@ -9,7 +10,9 @@ library(leaflet)
 library(maps)
 library(scales)
 library(ggthemes)
+library(sqldf)
 
+####2016 General Election Data####
 setwd("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data")
 
 #Read the 2016 general election data + FIPS code database
@@ -57,16 +60,56 @@ for (i in seq(nrow(long16))) {
   if (nchar(long16$fips[i])==4) long16$fips[i] <- paste("0",long16$fips[i], sep="")
 }
 
-#Cleaning FIPS database
+####Cleaning FIPS database####
 fips.labels$fips <- paste(fips.labels$V2,fips.labels$V3, sep = "")
-fips.labels$V1 <- NULL
 fips.labels$V2 <- NULL
 fips.labels$V3 <- NULL
 fips.labels$V5 <- NULL
-colnames(fips.labels) <- c("County", "FIPS")
+colnames(fips.labels) <- c("State", "County", "FIPS")
 
-#Merge FIPS database with election results
-long16 <- merge(long16, fips.labels, by.x = "fips", by.y = "FIPS", all.x = TRUE)
+####Merge FIPS database with 2016 election results####
+long16 <- merge(long16, fips.labels[-1], by.x = "fips", by.y = "FIPS", all.x = TRUE)
+
+####2012 General Election Data####
+#Data import
+all_counties_2012 <- read.csv("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data/2012data/all_counties_2012.csv",
+                              stringsAsFactors = FALSE)
+
+str(all_counties_2012)
+
+all_counties_2012 <- subset(all_counties_2012, fips!="fips")
+#case insensitive search for rows containing obama or romney
+all_counties_2012_romney <- all_counties_2012[grepl('romney',all_counties_2012$candidate,ignore.case=TRUE), ] 
+all_counties_2012_obama <- all_counties_2012[grepl('obama',all_counties_2012$candidate,ignore.case=TRUE), ] 
+all_counties_2012 <- rbind(all_counties_2012_romney,all_counties_2012_obama)
+summary(all_counties_2012)
+summary(all_counties_2012)
+
+#include only first letter
+all_counties_2012[,3] <- substring(all_counties_2012[,3], 1, 1) 
+
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="o", "obama")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="O", "obama")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="B", "obama")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="b", "obama")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="m", "romney")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="M", "romney")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="r", "romney")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="R", "romney")
+summary(all_counties_2012$candidate)
+
+all_counties_2012 <- data.frame(lapply(all_counties_2012, as.character), stringsAsFactors=FALSE)
+all_counties_2012$votes <- as.numeric(all_counties_2012$votes)
+
+#Remove counties--will add back later with the fips.labels dataframe
+all_counties_2012$county <- NULL
+
+#Remove items with a blank FIPS code
+all_counties_2012 <- all_counties_2012[-which(all_counties_2012$fips == ""),]
+all_counties_2012.2 <- sqldf("select distinct fips, candidate from all_counties_2012")
+
+#Convert data from wide to long
+long12 <- dcast(all_counties_2012, fips ~ candidate, value.var = "votes")
 
 ####Map Generation####
 #Virginia
@@ -124,10 +167,10 @@ pal <- colorNumeric(
 )
 
 popup.pa <- paste0("<b>", paste(df_merged2$County, df_merged2$st, sep = ", "), "</b> <br>",
-                #"<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
-                "<b>Trump Differential: </b>", percent(round(df_merged2$diff,2)),
-                "<br>", "<b>Trump: </b>", percent(round(df_merged2$DonaldTrump,2)), " (",trimws(format(round(df_merged2$DonaldTrump*df_merged2$total_votes, 0), big.mark = ",")), ")",
-                "<br>", "<b>Clinton: </b>", percent(round(df_merged2$HillaryClinton,2)), " (",trimws(format(round(df_merged2$HillaryClinton*df_merged2$total_votes, 0), big.mark = ",")), ")")
+                   #"<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
+                   "<b>Trump Differential: </b>", percent(round(df_merged2$diff,2)),
+                   "<br>", "<b>Trump: </b>", percent(round(df_merged2$DonaldTrump,2)), " (",trimws(format(round(df_merged2$DonaldTrump*df_merged2$total_votes, 0), big.mark = ",")), ")",
+                   "<br>", "<b>Clinton: </b>", percent(round(df_merged2$HillaryClinton,2)), " (",trimws(format(round(df_merged2$HillaryClinton*df_merged2$total_votes, 0), big.mark = ",")), ")")
 
 leaflet() %>%
   addProviderTiles("CartoDB.Positron") %>%
