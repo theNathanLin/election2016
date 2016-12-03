@@ -9,7 +9,6 @@ library(ggplot2)
 library(leaflet)
 library(maps)
 library(scales)
-library(ggthemes)
 library(sqldf)
 
 ####2016 General Election Data####
@@ -60,6 +59,9 @@ for (i in seq(nrow(long16))) {
   if (nchar(long16$fips[i])==4) long16$fips[i] <- paste("0",long16$fips[i], sep="")
 }
 
+long16$TrumpWin <- ifelse(long16$diff >0, long16$TrumpWin <- 1, long16$TrumpWin <- 0)
+long16$TrumpWin <- as.factor(long16$TrumpWin)
+
 ####Cleaning FIPS database####
 fips.labels$fips <- paste(fips.labels$V2,fips.labels$V3, sep = "")
 fips.labels$V2 <- NULL
@@ -75,15 +77,18 @@ long16 <- merge(long16, fips.labels[-1], by.x = "fips", by.y = "FIPS", all.x = T
 all_counties_2012 <- read.csv("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data/2012data/all_counties_2012.csv",
                               stringsAsFactors = FALSE)
 
-str(all_counties_2012)
-
 all_counties_2012 <- subset(all_counties_2012, fips!="fips")
 #case insensitive search for rows containing obama or romney
 all_counties_2012_romney <- all_counties_2012[grepl('romney',all_counties_2012$candidate,ignore.case=TRUE), ] 
 all_counties_2012_obama <- all_counties_2012[grepl('obama',all_counties_2012$candidate,ignore.case=TRUE), ] 
+#aggregate the double-counted fips codes
+all_counties_2012_obama <- aggregate (. ~ fips, data=all_counties_2012_obama, FUN=sum)
+all_counties_2012_romney <- aggregate (. ~ fips, data=all_counties_2012_romney, FUN=sum)
+
 all_counties_2012 <- rbind(all_counties_2012_romney,all_counties_2012_obama)
+all_counties_2012 <- subset(all_counties_2012, fips !="")
 summary(all_counties_2012)
-summary(all_counties_2012)
+summary(all_counties_2012$fips)
 
 #include only first letter
 all_counties_2012[,3] <- substring(all_counties_2012[,3], 1, 1) 
@@ -98,8 +103,8 @@ all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties
 all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="R", "romney")
 summary(all_counties_2012$candidate)
 
-all_counties_2012 <- data.frame(lapply(all_counties_2012, as.character), stringsAsFactors=FALSE)
-all_counties_2012$votes <- as.numeric(all_counties_2012$votes)
+all_counties_2012 <- data.frame(lapply(all_counties_2012, as.character), stringsAsFactors=TRUE)
+summary(all_counties_2012)
 
 #Remove counties--will add back later with the fips.labels dataframe
 all_counties_2012$county <- NULL
@@ -189,6 +194,7 @@ leaflet() %>%
 
 #United States
 #ggplot2
+#Gradient
 us.counties <- counties(c("AL", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME",
                           "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", 
                           "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"))
@@ -199,7 +205,17 @@ df_merged.us <- merge(us.counties2, long16, by.x = "id", by.y = "fips", all.x = 
 us.ggmap <- ggplot() +
   geom_polygon(data = df_merged.us, aes(x = long, y = lat, group = group, fill = diff), color = "dark grey", size = 0.25) + 
   scale_fill_gradient(low = "blue", high = "red") + labs(fill = "Trump Margin of Victory")+
-  ggtitle("2016 Electoral Map by County") + coord_map() + theme_void() 
+  ggtitle("2016 Electoral Map by County") + coord_map("polyconic") + theme_void() 
+ggsave(us.ggmap, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP.png",
+       width = 22.92, height = 11.46, dpi = 400)
+
+#Straight Win-Loss
+us.ggmap2 <- ggplot() +
+  geom_polygon(data = df_merged.us, aes(x = long, y = lat, group = group, fill = TrumpWin), color = "dark grey", size = 0.25) +
+  scale_fill_manual(values = c("blue","red"), labels=c("Clinton", "Trump"),name="County Winner") + 
+  ggtitle("2016 Electoral Map by County") + coord_map("polyconic") + theme_void() 
+ggsave(us.ggmap2, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP2.png",
+       width = 22.92, height = 11.46, dpi = 400)
 
 #leaflet
 df_merged.us2 <- geo_join(us.counties, long16, "GEOID", "fips")
