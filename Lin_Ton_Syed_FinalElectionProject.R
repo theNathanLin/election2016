@@ -264,9 +264,11 @@ leaflet() %>%
 df_merged.us12 <- merge(us.counties2, long12, by.x = "id", by.y = "fips", all.x = TRUE)
 
 us.ggmap12 <- ggplot() +
-  geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = diff), color = "dark grey", size = 0.25) + 
-  scale_fill_gradient(low = "blue", high = "red") + labs(fill = "Obama Margin of Victory")+
+  geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = diffper), color = "dark grey", size = 0.25) + 
+  scale_fill_gradient(low = "red", high = "blue") + labs(fill = "Obama Margin of Victory")+
   ggtitle("2012 Electoral Map by County") + coord_map("polyconic") + theme_void() 
+ggsave(us.ggmap12, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP6.png",
+       width = 22.92, height = 11.46, dpi = 400)
 
 us.ggmap2.12 <- ggplot() +
   geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = ObamaWin), color = "dark grey", size = 0.25) +
