@@ -313,3 +313,32 @@ us.ggmap.1216.2 <- ggplot() +
   ggtitle("2012 Electoral Map by County, Flips") + coord_map("polyconic") + theme_void() 
 ggsave(us.ggmap.1216.2, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP5.png",
        width = 22.92, height = 11.46, dpi = 400)
+
+#Interactive Maps
+#Maine and New York, flipped
+co.diff <- diff.1216
+co.diff$co.diff <- co.diff$obama - co.diff$clinton
+counties.ME.NY <- counties(c("ME", "NY"))
+df_merged.ME.NY <- geo_join(counties.ME.NY, co.diff, "GEOID", "fips")
+
+pal.diff <- colorBin("Blues", df_merged.ME.NY$co.diff, 8, pretty = FALSE)
+
+popup.diff <- paste0("<b>", paste(df_merged.ME.NY$County, df_merged.ME.NY$st, sep = ", "), "</b> <br>",
+                   #"<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
+                   "<b>Obama Differential: </b>", format(round(df_merged.ME.NY$co.diff,0), big.mark = ","),
+                   "<br>", "<b>Obama: </b>",trimws(format(round(df_merged.ME.NY$obama, 0), big.mark = ",")),
+                   "<br>", "<b>Clinton: </b>", trimws(format(round(df_merged.ME.NY$clinton, 0), big.mark = ",")))
+
+leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(data = df_merged.ME.NY, 
+              fillColor = ~pal.diff(co.diff), 
+              color = "#b2aeae",
+              fillOpacity = 0.8, 
+              weight = 1, 
+              smoothFactor = 0.2,
+              popup = popup.diff) %>%
+  addLegend(pal = pal.diff, 
+            values = df_merged.ME.NY$co.diff, 
+            position = "bottomright", 
+            title = "Obama-Clinton Vote Differential (+ favors Obama)")
