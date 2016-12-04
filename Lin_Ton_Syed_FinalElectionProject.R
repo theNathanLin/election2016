@@ -9,10 +9,14 @@ library(ggplot2)
 library(leaflet)
 library(maps)
 library(scales)
+library(rgdal)
+library(rgeos)
 
 ####General Notes####
 # Use the section-picker at the bottom of the script window to jump between code sections
-# Our analysis only considered the lower 48 states and the District of Columbia (excluded Alaska and Hawaii)
+# Our analysis only considered the lower 48 states and the District of Columbia (excluded Alaska, Hawaii and overseas territories)
+# The tigris data requires the below global option if you are running Windows 10
+options(tigris_use_cache = FALSE)
 
 ####2016 General Election Data####
 setwd("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data")
@@ -131,14 +135,18 @@ long12 <- merge(long12, fips.labels, by.x = "fips", by.y = "FIPS", all.x = TRUE)
 ####Lower 48 State US Geographic Data####
 us.counties <- counties(c("AL", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME",
                           "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", 
-                          "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"))
+                          "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"), cb = TRUE)
 
 us.counties2 <- fortify(us.counties, region = "GEOID")
+
+us.states <- states(cb = TRUE)
+us.states2 <- fortify(us.states, region = "GEOID")
+us.states3 <- us.states2[which(us.states2$lat >= 24.396308 & us.states2$lat <= 49.384358 & us.states2$long >= -124.848974 & us.states2$long <= -66.885444),]
 
 ####2016 Map Generation####
 #Virginia
 #Pull county information
-counties <- counties("VA")
+counties <- counties("VA", cb = TRUE)
 
 #Merge map file with election results based on FIPS code
 df_merged <- geo_join(counties, long16, "GEOID", "fips")
@@ -182,7 +190,7 @@ ggplot() +
   coord_map() + scale_fill_gradient(low = "blue", high = "red") + theme_map()
 
 #Pennsylvania
-counties2 <- counties("PA")
+counties2 <- counties("PA", cb = TRUE)
 df_merged2 <- geo_join(counties2, long16, "GEOID", "fips")
 
 pal <- colorNumeric(
@@ -218,6 +226,7 @@ df_merged.us <- merge(us.counties2, long16, by.x = "id", by.y = "fips", all.x = 
 
 us.ggmap <- ggplot() +
   geom_polygon(data = df_merged.us, aes(x = long, y = lat, group = group, fill = diff), color = "dark grey", size = 0.25) + 
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
   scale_fill_gradient(low = "blue", high = "red") + labs(fill = "Trump Margin of Victory")+
   ggtitle("2016 Electoral Map by County") + coord_map("polyconic") + theme_void() 
 ggsave(us.ggmap, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP.png",
@@ -226,6 +235,7 @@ ggsave(us.ggmap, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/D
 #Straight Win-Loss
 us.ggmap2 <- ggplot() +
   geom_polygon(data = df_merged.us, aes(x = long, y = lat, group = group, fill = TrumpWin), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
   scale_fill_manual(values = c("blue","red"), labels=c("Clinton", "Trump"),name="County Winner") + 
   ggtitle("2016 Electoral Map by County") + coord_map("polyconic") + theme_void() 
 ggsave(us.ggmap2, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP2.png",
@@ -264,7 +274,8 @@ leaflet() %>%
 df_merged.us12 <- merge(us.counties2, long12, by.x = "id", by.y = "fips", all.x = TRUE)
 
 us.ggmap12 <- ggplot() +
-  geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = diffper), color = "dark grey", size = 0.25) + 
+  geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = diffper), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
   scale_fill_gradient(low = "red", high = "blue") + labs(fill = "Obama Margin of Victory")+
   ggtitle("2012 Electoral Map by County") + coord_map("polyconic") + theme_void() 
 ggsave(us.ggmap12, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP6.png",
@@ -272,6 +283,7 @@ ggsave(us.ggmap12, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year
 
 us.ggmap2.12 <- ggplot() +
   geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = ObamaWin), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
   scale_fill_manual(values = c("red","blue"), labels=c("Romney", "Obama"),name="County Winner") + 
   ggtitle("2012 Electoral Map by County") + coord_map("polyconic") + theme_void() 
 ggsave(us.ggmap2.12, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP3.png",
@@ -299,6 +311,7 @@ df_merged.us2.12 <- merge(us.counties2, diff.1216[c(1,2,3,10)], by.x = "id", by.
 
 us.ggmap.1216 <- ggplot() +
   geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = flip), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
   scale_fill_manual(values = c("blue","red", "yellow", "green"), 
                     labels=c("Clinton","Trump", "Trump Flip", "Clinton Flip"),name="County Winner") + 
   ggtitle("2012 Electoral Map by County, Flips") + coord_map("polyconic") + theme_void() 
@@ -308,6 +321,7 @@ ggsave(us.ggmap.1216, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Y
 #Gray
 us.ggmap.1216.2 <- ggplot() +
   geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = flip), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
   scale_fill_manual(values = c("gray","gray", "red", "blue"), 
                     labels=c("Clinton","Trump", "Trump Flip", "Clinton Flip"),name="County Winner") + 
   ggtitle("2012 Electoral Map by County, Flips") + coord_map("polyconic") + theme_void() 
@@ -318,7 +332,9 @@ ggsave(us.ggmap.1216.2, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second
 #Maine and New York, flipped
 co.diff <- diff.1216
 co.diff$co.diff <- co.diff$obama - co.diff$clinton
-counties.ME.NY <- counties(c("ME", "NY"))
+
+counties.ME.NY <- counties(state = c("ME","NY"), cb = TRUE)
+
 df_merged.ME.NY <- geo_join(counties.ME.NY, co.diff, "GEOID", "fips")
 
 pal.diff <- colorBin("Blues", df_merged.ME.NY$co.diff, 8, pretty = FALSE)
