@@ -9,7 +9,10 @@ library(ggplot2)
 library(leaflet)
 library(maps)
 library(scales)
-library(sqldf)
+
+####General Notes####
+# Use the section-picker at the bottom of the script window to jump between code sections
+# Our analysis only considered the lower 48 states and the District of Columbia (excluded Alaska and Hawaii)
 
 ####2016 General Election Data####
 setwd("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data")
@@ -115,10 +118,22 @@ for (i in seq(nrow(long12))){
 
 long12$diff <- long12$obama - long12$romney
 
-long12$ObamaWin <- ifelse(long12$diff >0, long12$ObamaWin <- 1, long16$ObamaWin <- 0)
+long12$ObamaWin <- ifelse(long12$diff >0, long12$ObamaWin <- 1, long12$ObamaWin <- 0)
 long12$ObamaWin <- as.factor(long12$ObamaWin)
 
-long12 <- merge(long12, fips.labels[-1], by.x = "fips", by.y = "FIPS", all.x = TRUE)
+#Note that the percentages calculated do not take into account third-party votes (marginal)
+long12$ObamaPer <- long12$obama/(long12$obama + long12$romney)
+long12$RomneyPer <- long12$romney/(long12$obama + long12$romney)
+long12$diffper <- long12$ObamaPer - long12$RomneyPer
+
+long12 <- merge(long12, fips.labels, by.x = "fips", by.y = "FIPS", all.x = TRUE)
+
+####Lower 48 State US Geographic Data####
+us.counties <- counties(c("AL", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME",
+                          "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", 
+                          "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"))
+
+us.counties2 <- fortify(us.counties, region = "GEOID")
 
 ####2016 Map Generation####
 #Virginia
@@ -199,11 +214,6 @@ leaflet() %>%
 #United States
 #ggplot2
 #Gradient
-us.counties <- counties(c("AL", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME",
-                          "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", 
-                          "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"))
-
-us.counties2 <- fortify(us.counties, region = "GEOID")
 df_merged.us <- merge(us.counties2, long16, by.x = "id", by.y = "fips", all.x = TRUE)
 
 us.ggmap <- ggplot() +
@@ -263,4 +273,41 @@ us.ggmap2.12 <- ggplot() +
   scale_fill_manual(values = c("red","blue"), labels=c("Romney", "Obama"),name="County Winner") + 
   ggtitle("2012 Electoral Map by County") + coord_map("polyconic") + theme_void() 
 ggsave(us.ggmap2.12, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP3.png",
+       width = 22.92, height = 11.46, dpi = 400)
+
+####2012-2016 Differences####
+#Counties Obama Won and Clinton Lost
+diff.1216 <- merge(long12[1:5], long16[c(1,2,3,4,5,7,8)], by = "fips")
+diff.1216$trump <- diff.1216$total_votes*diff.1216$DonaldTrump
+diff.1216$clinton <- diff.1216$total_votes*diff.1216$HillaryClinton
+diff.1216[c(4,7:9)] <- NULL
+diff.1216 <- diff.1216[c(1,5, 7,2,3,4,6,8,9)]
+
+diff.1216$flip <- ifelse(diff.1216$ObamaWin == 1 & diff.1216$TrumpWin==1, 2, 
+                         ifelse(diff.1216$ObamaWin == 0 & diff.1216$TrumpWin==0, 3, 
+                                ifelse(diff.1216$TrumpWin==1, 1, 0)))
+diff.1216$flip <- as.factor(diff.1216$flip)
+
+#How many counties did each candidate flip?
+length(which(diff.1216$flip == 2)) #Donald Trump flipped 223 counties that Barack Obama won in 2012
+length(which(diff.1216$flip == 3)) #Hillary Clinton flipped 17 counties that Mitt Romney won in 2012
+
+####Graphing 2012-2016 Differences####
+df_merged.us2.12 <- merge(us.counties2, diff.1216[c(1,2,3,10)], by.x = "id", by.y = "fips", all.x = TRUE)
+
+us.ggmap.1216 <- ggplot() +
+  geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = flip), color = "dark grey", size = 0.25) +
+  scale_fill_manual(values = c("blue","red", "yellow", "green"), 
+                    labels=c("Clinton","Trump", "Trump Flip", "Clinton Flip"),name="County Winner") + 
+  ggtitle("2012 Electoral Map by County, Flips") + coord_map("polyconic") + theme_void() 
+ggsave(us.ggmap.1216, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP4.png",
+       width = 22.92, height = 11.46, dpi = 400)
+
+#Gray
+us.ggmap.1216.2 <- ggplot() +
+  geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = flip), color = "dark grey", size = 0.25) +
+  scale_fill_manual(values = c("gray","gray", "red", "blue"), 
+                    labels=c("Clinton","Trump", "Trump Flip", "Clinton Flip"),name="County Winner") + 
+  ggtitle("2012 Electoral Map by County, Flips") + coord_map("polyconic") + theme_void() 
+ggsave(us.ggmap.1216.2, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP5.png",
        width = 22.92, height = 11.46, dpi = 400)
