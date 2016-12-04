@@ -76,14 +76,13 @@ long16 <- merge(long16, fips.labels[-1], by.x = "fips", by.y = "FIPS", all.x = T
 #Data import
 all_counties_2012 <- read.csv("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data/2012data/all_counties_2012.csv",
                               stringsAsFactors = FALSE)
-
 all_counties_2012 <- subset(all_counties_2012, fips!="fips")
+all_counties_2012$votes <- as.numeric(all_counties_2012$votes)
 #case insensitive search for rows containing obama or romney
 all_counties_2012_romney <- all_counties_2012[grepl('romney',all_counties_2012$candidate,ignore.case=TRUE), ] 
 all_counties_2012_obama <- all_counties_2012[grepl('obama',all_counties_2012$candidate,ignore.case=TRUE), ] 
-#aggregate the double-counted fips codes
-all_counties_2012_obama <- aggregate (. ~ fips, data=all_counties_2012_obama, FUN=sum)
-all_counties_2012_romney <- aggregate (. ~ fips, data=all_counties_2012_romney, FUN=sum)
+
+#all_counties_2012_romney <- aggregate (. ~ fips, data=all_counties_2012_romney, FUN=sum)
 
 all_counties_2012 <- rbind(all_counties_2012_romney,all_counties_2012_obama)
 all_counties_2012 <- subset(all_counties_2012, fips !="")
@@ -101,22 +100,27 @@ all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties
 all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="M", "romney")
 all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="r", "romney")
 all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="R", "romney")
-summary(all_counties_2012$candidate)
+all_counties_2012 <- aggregate (votes ~ fips+candidate+county, data=all_counties_2012, FUN=sum)
 
-all_counties_2012 <- data.frame(lapply(all_counties_2012, as.character), stringsAsFactors=TRUE)
-summary(all_counties_2012)
+summary(all_counties_2012$candidate) 
 
-#Remove counties--will add back later with the fips.labels dataframe
-all_counties_2012$county <- NULL
+all_counties_2012 <- data.frame(lapply(all_counties_2012, as.character), stringsAsFactors=FALSE)
+all_counties_2012$votes <- as.numeric(all_counties_2012$votes)
 
-#Remove items with a blank FIPS code
-all_counties_2012 <- all_counties_2012[-which(all_counties_2012$fips == ""),]
-all_counties_2012.2 <- sqldf("select distinct fips, candidate from all_counties_2012")
-
-#Convert data from wide to long
 long12 <- dcast(all_counties_2012, fips ~ candidate, value.var = "votes")
 
-####Map Generation####
+for (i in seq(nrow(long12))){
+  if (long12$fips[i] == "46113") long12$fips[i] <- "46102"
+}
+
+long12$diff <- long12$obama - long12$romney
+
+long12$ObamaWin <- ifelse(long12$diff >0, long12$ObamaWin <- 1, long16$ObamaWin <- 0)
+long12$ObamaWin <- as.factor(long12$ObamaWin)
+
+long12 <- merge(long12, fips.labels[-1], by.x = "fips", by.y = "FIPS", all.x = TRUE)
+
+####2016 Map Generation####
 #Virginia
 #Pull county information
 counties <- counties("VA")
@@ -245,3 +249,18 @@ leaflet() %>%
             position = "bottomright", 
             title = "Donald Trump's Advantage",
             labFormat = labelFormat(suffix = "%", transform = function(x) 100 * x))
+
+####2012 Map Generation####
+df_merged.us12 <- merge(us.counties2, long12, by.x = "id", by.y = "fips", all.x = TRUE)
+
+us.ggmap12 <- ggplot() +
+  geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = diff), color = "dark grey", size = 0.25) + 
+  scale_fill_gradient(low = "blue", high = "red") + labs(fill = "Obama Margin of Victory")+
+  ggtitle("2012 Electoral Map by County") + coord_map("polyconic") + theme_void() 
+
+us.ggmap2.12 <- ggplot() +
+  geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = ObamaWin), color = "dark grey", size = 0.25) +
+  scale_fill_manual(values = c("red","blue"), labels=c("Romney", "Obama"),name="County Winner") + 
+  ggtitle("2012 Electoral Map by County") + coord_map("polyconic") + theme_void() 
+ggsave(us.ggmap2.12, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP3.png",
+       width = 22.92, height = 11.46, dpi = 400)

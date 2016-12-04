@@ -1,6 +1,7 @@
-all_counties_2012 <- read.csv("~/Documents/OneDrive/UVA_2ndyr/DS4559/election2016/Data/2012data/all_counties_2012.csv")
+all_counties_2012 <- read.csv("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data/2012data/all_counties_2012.csv",
+                              stringsAsFactors = FALSE)
 all_counties_2012 <- subset(all_counties_2012, fips!="fips")
-all_counties_2012[,4] <- as.numeric(all_counties_2012[,4])
+all_counties_2012$votes <- as.numeric(all_counties_2012$votes)
 #case insensitive search for rows containing obama or romney
 all_counties_2012_romney <- all_counties_2012[grepl('romney',all_counties_2012$candidate,ignore.case=TRUE), ] 
 all_counties_2012_obama <- all_counties_2012[grepl('obama',all_counties_2012$candidate,ignore.case=TRUE), ] 
@@ -27,7 +28,12 @@ all_counties_2012 <- aggregate (votes ~ fips+candidate+county, data=all_counties
 
 summary(all_counties_2012$candidate) 
 
-all_counties_2012 <- data.frame(lapply(all_counties_2012, as.character), stringsAsFactors=TRUE)
+all_counties_2012 <- data.frame(lapply(all_counties_2012, as.character), stringsAsFactors=FALSE)
+all_counties_2012$votes <- as.numeric(all_counties_2012$votes)
+
+long12 <- dcast(all_counties_2012, fips ~ candidate, value.var = "votes")
+
+
 summary(all_counties_2012)
 summary(all_counties_2012$fips)
 
