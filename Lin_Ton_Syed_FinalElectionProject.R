@@ -11,6 +11,7 @@ library(maps)
 library(scales)
 library(rgdal)
 library(rgeos)
+library(sqldf)
 
 ####General Notes####
 # Use the section-picker at the bottom of the script window to jump between code sections
@@ -302,12 +303,15 @@ diff.1216$flip <- ifelse(diff.1216$ObamaWin == 1 & diff.1216$TrumpWin==1, 2,
                                 ifelse(diff.1216$TrumpWin==1, 1, 0)))
 diff.1216$flip <- as.factor(diff.1216$flip)
 
+diff.1216$obama_trump <- ifelse(diff.1216$obama > diff.1216$trump, 1, 0)
+diff.1216$obama_trump <- as.factor(diff.1216$obama_trump)
+
 #How many counties did each candidate flip?
 length(which(diff.1216$flip == 2)) #Donald Trump flipped 223 counties that Barack Obama won in 2012
 length(which(diff.1216$flip == 3)) #Hillary Clinton flipped 17 counties that Mitt Romney won in 2012
 
 ####Graphing 2012-2016 Differences####
-df_merged.us2.12 <- merge(us.counties2, diff.1216[c(1,2,3,10)], by.x = "id", by.y = "fips", all.x = TRUE)
+df_merged.us2.12 <- merge(us.counties2, diff.1216[c(1,2,3,10,11)], by.x = "id", by.y = "fips", all.x = TRUE)
 
 us.ggmap.1216 <- ggplot() +
   geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = flip), color = "dark grey", size = 0.25) +
@@ -332,29 +336,116 @@ ggsave(us.ggmap.1216.2, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second
 #Maine and New York, flipped
 co.diff <- diff.1216
 co.diff$co.diff <- co.diff$obama - co.diff$clinton
+co.diff$co.diff2 <- co.diff$obama - co.diff$trump
 
 counties.ME.NY <- counties(state = c("ME","NY"), cb = TRUE)
 
 df_merged.ME.NY <- geo_join(counties.ME.NY, co.diff, "GEOID", "fips")
 
-pal.diff <- colorBin("Blues", df_merged.ME.NY$co.diff, 8, pretty = FALSE)
+pal.ME.NY <- colorBin("Blues", df_merged.ME.NY$co.diff, 8, pretty = FALSE)
 
-popup.diff <- paste0("<b>", paste(df_merged.ME.NY$County, df_merged.ME.NY$st, sep = ", "), "</b> <br>",
+popup.ME.NY <- paste0("<b>", paste(df_merged.ME.NY$County, df_merged.ME.NY$st, sep = ", "), "</b> <br>",
                    #"<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
                    "<b>Obama Differential: </b>", format(round(df_merged.ME.NY$co.diff,0), big.mark = ","),
                    "<br>", "<b>Obama: </b>",trimws(format(round(df_merged.ME.NY$obama, 0), big.mark = ",")),
-                   "<br>", "<b>Clinton: </b>", trimws(format(round(df_merged.ME.NY$clinton, 0), big.mark = ",")))
+                   "<br>", "<b>Clinton: </b>", trimws(format(round(df_merged.ME.NY$clinton, 0), big.mark = ",")),
+                   "<br>", "<b>Trump: </b>", trimws(format(round(df_merged.ME.NY$trump, 0), big.mark = ",")))
 
 leaflet() %>%
   addProviderTiles("CartoDB.Positron") %>%
   addPolygons(data = df_merged.ME.NY, 
-              fillColor = ~pal.diff(co.diff), 
+              fillColor = ~pal.ME.NY(co.diff), 
               color = "#b2aeae",
               fillOpacity = 0.8, 
               weight = 1, 
               smoothFactor = 0.2,
-              popup = popup.diff) %>%
-  addLegend(pal = pal.diff, 
+              popup = popup.ME.NY) %>%
+  addLegend(pal = pal.ME.NY, 
             values = df_merged.ME.NY$co.diff, 
             position = "bottomright", 
             title = "Obama-Clinton Vote Differential (+ favors Obama)")
+
+#In NY and ME, how would Obama fare against Trump?
+pal.ME.NY2 <- colorBin("Reds", df_merged.ME.NY$co.diff2, 8, pretty = FALSE)
+
+popup.ME.NY2 <- paste0("<b>", paste(df_merged.ME.NY$County, df_merged.ME.NY$st, sep = ", "), "</b> <br>",
+                      #"<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
+                      "<b>Obama Differential: </b>", format(round(df_merged.ME.NY$co.diff2,0), big.mark = ","),
+                      "<br>", "<b>Obama: </b>",trimws(format(round(df_merged.ME.NY$obama, 0), big.mark = ",")),
+                      "<br>", "<b>Trump: </b>", trimws(format(round(df_merged.ME.NY$trump, 0), big.mark = ",")),
+                      "<br>", "<b>Clinton: </b>", trimws(format(round(df_merged.ME.NY$clinton, 0), big.mark = ",")))
+
+leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(data = df_merged.ME.NY, 
+              fillColor = ~pal.ME.NY2(co.diff2), 
+              color = "#b2aeae",
+              fillOpacity = 0.8, 
+              weight = 1, 
+              smoothFactor = 0.2,
+              popup = popup.ME.NY2) %>%
+  addLegend(pal = pal.ME.NY2, 
+            values = df_merged.ME.NY$co.diff2, 
+            position = "bottomright", 
+            title = "Obama-Trump Vote Differential (+ favors Obama)")
+
+#Midwest
+counties.midwest <- counties(state = c("MN","MI", "WI", "IA", "IL"), cb = TRUE)
+df_merged.midwest <- geo_join(counties.midwest, co.diff, "GEOID", "fips")
+
+pal.midwest <- colorBin("Blues", df_merged.midwest$co.diff, 8, pretty = FALSE)
+
+popup.midwest <- paste0("<b>", paste(df_merged.midwest$County, df_merged.midwest$st, sep = ", "), "</b> <br>",
+                     #"<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
+                     "<b>Obama Differential: </b>", format(round(df_merged.midwest$co.diff,0), big.mark = ","),
+                     "<br>", "<b>Obama: </b>",trimws(format(round(df_merged.midwest$obama, 0), big.mark = ",")),
+                     "<br>", "<b>Clinton: </b>", trimws(format(round(df_merged.midwest$clinton, 0), big.mark = ",")),
+                     "<br>", "<b>Trump: </b>", trimws(format(round(df_merged.midwest$trump, 0), big.mark = ",")))
+
+leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(data = df_merged.midwest, 
+              fillColor = ~pal.midwest(co.diff), 
+              color = "#b2aeae",
+              fillOpacity = 0.8, 
+              weight = 1, 
+              smoothFactor = 0.2,
+              popup = popup.midwest) %>%
+  addLegend(pal = pal.midwest, 
+            values = df_merged.midwest$co.diff, 
+            position = "bottomright", 
+            title = "Obama-Clinton Vote Differential (+ favors Obama)")
+
+#How would Obama have done against Trump in the midwest?
+pal.midwest2 <- colorBin("Reds", df_merged.midwest$co.diff2, 8, pretty = FALSE)
+
+popup.midwest2 <- paste0("<b>", paste(df_merged.midwest$County, df_merged.midwest$st, sep = ", "), "</b> <br>",
+                       #"<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
+                       "<b>Obama Differential: </b>", format(round(df_merged.midwest$co.diff2,0), big.mark = ","),
+                       "<br>", "<b>Obama: </b>",trimws(format(round(df_merged.midwest$obama, 0), big.mark = ",")),
+                       "<br>", "<b>Trump: </b>", trimws(format(round(df_merged.midwest$trump, 0), big.mark = ",")),
+                       "<br>", "<b>Clinton: </b>", trimws(format(round(df_merged.midwest$clinton, 0), big.mark = ",")))
+
+leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(data = df_merged.midwest, 
+              fillColor = ~pal.midwest2(co.diff2), 
+              color = "#b2aeae",
+              fillOpacity = 0.8, 
+              weight = 1, 
+              smoothFactor = 0.2,
+              popup = popup.midwest2) %>%
+  addLegend(pal = pal.ME.NY2, 
+            values = df_merged.midwest$co.diff2, 
+            position = "bottomright", 
+            title = "Obama-Trump Vote Differential (+ favors Obama)")
+
+####Obama-Trump Matchup####
+us.ggmap.obamatrump <- ggplot() +
+  geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = obama_trump), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
+  scale_fill_manual(values = c("red","blue"), 
+                    labels=c("Trump","Obama"),name="County Winner") + 
+  ggtitle("Obama-Trump Hypothetical Matchup") + coord_map("polyconic") + theme_void() 
+ggsave(us.ggmap.obamatrump, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP7.png",
+       width = 22.92, height = 11.46, dpi = 400)
