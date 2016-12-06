@@ -310,6 +310,11 @@ diff.1216$obama_trump <- as.factor(diff.1216$obama_trump)
 length(which(diff.1216$flip == 2)) #Donald Trump flipped 223 counties that Barack Obama won in 2012
 length(which(diff.1216$flip == 3)) #Hillary Clinton flipped 17 counties that Mitt Romney won in 2012
 
+#Flips by county
+flipped.counties.trump <- sqldf("select st, count(st) from 'diff.1216' where flip == 2 group by st")
+colnames(flipped.counties.trump) <- c("State", "Counties Flipped")
+flipped.counties.trump <- rbind(flipped.counties.trump, c("Total", sum(flipped.counties.trump$'Counties Flipped')))
+
 ####Graphing 2012-2016 Differences####
 df_merged.us2.12 <- merge(us.counties2, diff.1216[c(1,2,3,10,11)], by.x = "id", by.y = "fips", all.x = TRUE)
 
