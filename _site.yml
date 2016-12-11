@@ -1,7 +1,0 @@
-name: "Election 2016"
-navbar:
-  title: "My Website"
-  left:
-    - text: "Home"
-      href: markdown2016.html
-output_dir: "."
