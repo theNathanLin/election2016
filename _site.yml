@@ -1,7 +1,2 @@
 name: "Election 2016"
-navbar:
-  title: "My Website"
-  left:
-    - text: "Home"
-      href: index.html
 output_dir: "."
