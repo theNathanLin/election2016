@@ -313,7 +313,13 @@ length(which(diff.1216$flip == 3)) #Hillary Clinton flipped 17 counties that Mit
 #Flips by county
 flipped.counties.trump <- sqldf("select st, count(st) from 'diff.1216' where flip == 2 group by st")
 colnames(flipped.counties.trump) <- c("State", "Counties Flipped")
+flipped.counties.trump <- flipped.counties.trump[order(flipped.counties.trump$`Counties Flipped`, decreasing = TRUE),]
 flipped.counties.trump <- rbind(flipped.counties.trump, c("Total", sum(flipped.counties.trump$'Counties Flipped')))
+
+flipped.counties.clinton <- sqldf("select st, count(st) from 'diff.1216' where flip == 3 group by st")
+colnames(flipped.counties.clinton) <- c("State", "Counties Flipped")
+flipped.counties.clinton <- flipped.counties.clinton[order(flipped.counties.clinton$`Counties Flipped`, decreasing = TRUE),]
+flipped.counties.clinton <- rbind(flipped.counties.clinton, c("Total", sum(flipped.counties.clinton$'Counties Flipped')))
 
 ####Graphing 2012-2016 Differences####
 df_merged.us2.12 <- merge(us.counties2, diff.1216[c(1,2,3,10,11)], by.x = "id", by.y = "fips", all.x = TRUE)
