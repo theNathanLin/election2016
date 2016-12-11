@@ -1,0 +1,265 @@
+fips,county,candidate,votes
+16001,Ada,"Ross C. ""Rocky"" Anderson",636
+16001,Ada,Virgil H. Goode,477
+16001,Ada,Gary Johnson,3422
+16001,Ada,Barack Obama,77137
+16001,Ada,Mitt Romney,97554
+16001,Ada,Jill Stein,1320
+16003,Adams,"Ross C. ""Rocky"" Anderson",11
+16003,Adams,Virgil H. Goode,8
+16003,Adams,Gary Johnson,28
+16003,Adams,Barack Obama,577
+16003,Adams,Mitt Romney,1413
+16003,Adams,Jill Stein,23
+16005,Bannock,"Ross C. ""Rocky"" Anderson",218
+16005,Bannock,Virgil H. Goode,102
+16005,Bannock,Gary Johnson,442
+16005,Bannock,Barack Obama,13214
+16005,Bannock,Mitt Romney,21010
+16005,Bannock,Jill Stein,274
+16007,Bear Lake,"Ross C. ""Rocky"" Anderson",6
+16007,Bear Lake,Virgil H. Goode,11
+16007,Bear Lake,Gary Johnson,9
+16007,Bear Lake,Barack Obama,302
+16007,Bear Lake,Mitt Romney,2489
+16007,Bear Lake,Jill Stein,5
+16009,Benewah,"Ross C. ""Rocky"" Anderson",16
+16009,Benewah,Virgil H. Goode,28
+16009,Benewah,Gary Johnson,46
+16009,Benewah,Barack Obama,1164
+16009,Benewah,Mitt Romney,2596
+16009,Benewah,Jill Stein,34
+16011,Bingham,"Ross C. ""Rocky"" Anderson",50
+16011,Bingham,Virgil H. Goode,50
+16011,Bingham,Gary Johnson,155
+16011,Bingham,Barack Obama,3822
+16011,Bingham,Mitt Romney,13440
+16011,Bingham,Jill Stein,86
+16013,Blaine,"Ross C. ""Rocky"" Anderson",40
+16013,Blaine,Virgil H. Goode,8
+16013,Blaine,Gary Johnson,167
+16013,Blaine,Barack Obama,5992
+16013,Blaine,Mitt Romney,3939
+16013,Blaine,Jill Stein,48
+16015,Boise,"Ross C. ""Rocky"" Anderson",11
+16015,Boise,Virgil H. Goode,11
+16015,Boise,Gary Johnson,63
+16015,Boise,Barack Obama,1053
+16015,Boise,Mitt Romney,2284
+16015,Boise,Jill Stein,23
+16017,Bonner,"Ross C. ""Rocky"" Anderson",70
+16017,Bonner,Virgil H. Goode,100
+16017,Bonner,Gary Johnson,322
+16017,Bonner,Barack Obama,6500
+16017,Bonner,Mitt Romney,11367
+16017,Bonner,Jill Stein,177
+16019,Bonneville,"Ross C. ""Rocky"" Anderson",157
+16019,Bonneville,Virgil H. Goode,106
+16019,Bonneville,Gary Johnson,536
+16019,Bonneville,Barack Obama,9903
+16019,Bonneville,Mitt Romney,32276
+16019,Bonneville,Jill Stein,235
+16021,Boundary,"Ross C. ""Rocky"" Anderson",22
+16021,Boundary,Virgil H. Goode,34
+16021,Boundary,Gary Johnson,77
+16021,Boundary,Barack Obama,1225
+16021,Boundary,Mitt Romney,3138
+16021,Boundary,Jill Stein,48
+16023,Butte,"Ross C. ""Rocky"" Anderson",7
+16023,Butte,Virgil H. Goode,4
+16023,Butte,Gary Johnson,8
+16023,Butte,Barack Obama,258
+16023,Butte,Mitt Romney,1001
+16023,Butte,Jill Stein,8
+16025,Camas,"Ross C. ""Rocky"" Anderson",4
+16025,Camas,Virgil H. Goode,1
+16025,Camas,Gary Johnson,7
+16025,Camas,Barack Obama,159
+16025,Camas,Mitt Romney,402
+16025,Camas,Jill Stein,5
+16027,Canyon,"Ross C. ""Rocky"" Anderson",242
+16027,Canyon,Virgil H. Goode,228
+16027,Canyon,Gary Johnson,945
+16027,Canyon,Barack Obama,19866
+16027,Canyon,Mitt Romney,44369
+16027,Canyon,Jill Stein,440
+16029,Caribou,"Ross C. ""Rocky"" Anderson",18
+16029,Caribou,Virgil H. Goode,11
+16029,Caribou,Gary Johnson,21
+16029,Caribou,Barack Obama,386
+16029,Caribou,Mitt Romney,2608
+16029,Caribou,Jill Stein,8
+16031,Cassia,"Ross C. ""Rocky"" Anderson",25
+16031,Cassia,Virgil H. Goode,22
+16031,Cassia,Gary Johnson,70
+16031,Cassia,Barack Obama,1098
+16031,Cassia,Mitt Romney,7154
+16031,Cassia,Jill Stein,27
+16033,Clark,"Ross C. ""Rocky"" Anderson",3
+16033,Clark,Virgil H. Goode,3
+16033,Clark,Gary Johnson,16
+16033,Clark,Barack Obama,66
+16033,Clark,Mitt Romney,235
+16033,Clark,Jill Stein,5
+16035,Clearwater,"Ross C. ""Rocky"" Anderson",28
+16035,Clearwater,Virgil H. Goode,18
+16035,Clearwater,Gary Johnson,44
+16035,Clearwater,Barack Obama,1032
+16035,Clearwater,Mitt Romney,2541
+16035,Clearwater,Jill Stein,33
+16037,Custer,"Ross C. ""Rocky"" Anderson",16
+16037,Custer,Virgil H. Goode,9
+16037,Custer,Gary Johnson,25
+16037,Custer,Barack Obama,530
+16037,Custer,Mitt Romney,1744
+16037,Custer,Jill Stein,28
+16039,Elmore,"Ross C. ""Rocky"" Anderson",40
+16039,Elmore,Virgil H. Goode,33
+16039,Elmore,Gary Johnson,124
+16039,Elmore,Barack Obama,2513
+16039,Elmore,Mitt Romney,5227
+16039,Elmore,Jill Stein,64
+16041,Franklin,"Ross C. ""Rocky"" Anderson",15
+16041,Franklin,Virgil H. Goode,17
+16041,Franklin,Gary Johnson,41
+16041,Franklin,Barack Obama,325
+16041,Franklin,Mitt Romney,5195
+16041,Franklin,Jill Stein,7
+16043,Fremont,"Ross C. ""Rocky"" Anderson",19
+16043,Fremont,Virgil H. Goode,12
+16043,Fremont,Gary Johnson,34
+16043,Fremont,Barack Obama,810
+16043,Fremont,Mitt Romney,4907
+16043,Fremont,Jill Stein,20
+16045,Gem,"Ross C. ""Rocky"" Anderson",44
+16045,Gem,Virgil H. Goode,38
+16045,Gem,Gary Johnson,93
+16045,Gem,Barack Obama,1957
+16045,Gem,Mitt Romney,5311
+16045,Gem,Jill Stein,47
+16047,Gooding,"Ross C. ""Rocky"" Anderson",25
+16047,Gooding,Virgil H. Goode,21
+16047,Gooding,Gary Johnson,51
+16047,Gooding,Barack Obama,1287
+16047,Gooding,Mitt Romney,3696
+16047,Gooding,Jill Stein,38
+16049,Idaho,"Ross C. ""Rocky"" Anderson",24
+16049,Idaho,Virgil H. Goode,59
+16049,Idaho,Gary Johnson,76
+16049,Idaho,Barack Obama,1708
+16049,Idaho,Mitt Romney,5921
+16049,Idaho,Jill Stein,49
+16051,Jefferson,"Ross C. ""Rocky"" Anderson",23
+16051,Jefferson,Virgil H. Goode,23
+16051,Jefferson,Gary Johnson,97
+16051,Jefferson,Barack Obama,1303
+16051,Jefferson,Mitt Romney,9895
+16051,Jefferson,Jill Stein,40
+16053,Jerome,"Ross C. ""Rocky"" Anderson",27
+16053,Jerome,Virgil H. Goode,25
+16053,Jerome,Gary Johnson,77
+16053,Jerome,Barack Obama,1699
+16053,Jerome,Mitt Romney,4804
+16053,Jerome,Jill Stein,49
+16055,Kootenai,"Ross C. ""Rocky"" Anderson",162
+16055,Kootenai,Virgil H. Goode,288
+16055,Kootenai,Gary Johnson,839
+16055,Kootenai,Barack Obama,18851
+16055,Kootenai,Mitt Romney,39381
+16055,Kootenai,Jill Stein,307
+16057,Latah,"Ross C. ""Rocky"" Anderson",82
+16057,Latah,Virgil H. Goode,140
+16057,Latah,Gary Johnson,453
+16057,Latah,Barack Obama,8306
+16057,Latah,Mitt Romney,7589
+16057,Latah,Jill Stein,189
+16059,Lemhi,"Ross C. ""Rocky"" Anderson",22
+16059,Lemhi,Virgil H. Goode,18
+16059,Lemhi,Gary Johnson,41
+16059,Lemhi,Barack Obama,960
+16059,Lemhi,Mitt Romney,3029
+16059,Lemhi,Jill Stein,40
+16061,Lewis,"Ross C. ""Rocky"" Anderson",6
+16061,Lewis,Virgil H. Goode,13
+16061,Lewis,Gary Johnson,15
+16061,Lewis,Barack Obama,396
+16061,Lewis,Mitt Romney,1173
+16061,Lewis,Jill Stein,11
+16063,Lincoln,"Ross C. ""Rocky"" Anderson",7
+16063,Lincoln,Virgil H. Goode,9
+16063,Lincoln,Gary Johnson,17
+16063,Lincoln,Barack Obama,469
+16063,Lincoln,Mitt Romney,1141
+16063,Lincoln,Jill Stein,19
+16065,Madison,"Ross C. ""Rocky"" Anderson",12
+16065,Madison,Virgil H. Goode,13
+16065,Madison,Gary Johnson,84
+16065,Madison,Barack Obama,832
+16065,Madison,Mitt Romney,13445
+16065,Madison,Jill Stein,26
+16067,Minidoka,"Ross C. ""Rocky"" Anderson",34
+16067,Minidoka,Virgil H. Goode,16
+16067,Minidoka,Gary Johnson,55
+16067,Minidoka,Barack Obama,1390
+16067,Minidoka,Mitt Romney,5442
+16067,Minidoka,Jill Stein,36
+16069,Nez Perce,"Ross C. ""Rocky"" Anderson",82
+16069,Nez Perce,Virgil H. Goode,47
+16069,Nez Perce,Gary Johnson,194
+16069,Nez Perce,Barack Obama,6451
+16069,Nez Perce,Mitt Romney,9967
+16069,Nez Perce,Jill Stein,107
+16071,Oneida,"Ross C. ""Rocky"" Anderson",7
+16071,Oneida,Virgil H. Goode,2
+16071,Oneida,Gary Johnson,19
+16071,Oneida,Barack Obama,217
+16071,Oneida,Mitt Romney,1838
+16071,Oneida,Jill Stein,6
+16073,Owyhee,"Ross C. ""Rocky"" Anderson",16
+16073,Owyhee,Virgil H. Goode,26
+16073,Owyhee,Gary Johnson,31
+16073,Owyhee,Barack Obama,833
+16073,Owyhee,Mitt Romney,2794
+16073,Owyhee,Jill Stein,24
+16075,Payette,"Ross C. ""Rocky"" Anderson",26
+16075,Payette,Virgil H. Goode,22
+16075,Payette,Gary Johnson,88
+16075,Payette,Barack Obama,2271
+16075,Payette,Mitt Romney,6004
+16075,Payette,Jill Stein,84
+16077,Power,"Ross C. ""Rocky"" Anderson",13
+16077,Power,Virgil H. Goode,4
+16077,Power,Gary Johnson,21
+16077,Power,Barack Obama,982
+16077,Power,Mitt Romney,1870
+16077,Power,Jill Stein,13
+16079,Shoshone,"Ross C. ""Rocky"" Anderson",27
+16079,Shoshone,Virgil H. Goode,21
+16079,Shoshone,Gary Johnson,71
+16079,Shoshone,Barack Obama,2277
+16079,Shoshone,Mitt Romney,2699
+16079,Shoshone,Jill Stein,53
+16081,Teton,"Ross C. ""Rocky"" Anderson",21
+16081,Teton,Virgil H. Goode,8
+16081,Teton,Gary Johnson,67
+16081,Teton,Barack Obama,1926
+16081,Teton,Mitt Romney,2458
+16081,Teton,Jill Stein,43
+16083,Twin Falls,"Ross C. ""Rocky"" Anderson",145
+16083,Twin Falls,Virgil H. Goode,103
+16083,Twin Falls,Gary Johnson,348
+16083,Twin Falls,Barack Obama,7541
+16083,Twin Falls,Mitt Romney,19773
+16083,Twin Falls,Jill Stein,232
+16085,Valley,"Ross C. ""Rocky"" Anderson",22
+16085,Valley,Virgil H. Goode,17
+16085,Valley,Gary Johnson,78
+16085,Valley,Barack Obama,2095
+16085,Valley,Mitt Romney,2664
+16085,Valley,Jill Stein,43
+16087,Washington,"Ross C. ""Rocky"" Anderson",18
+16087,Washington,Virgil H. Goode,16
+16087,Washington,Gary Johnson,36
+16087,Washington,Barack Obama,1104
+16087,Washington,Mitt Romney,3128
+16087,Washington,Jill Stein,28

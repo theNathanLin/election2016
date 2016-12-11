@@ -1,0 +1,607 @@
+fips,county,candidate,votes
+36001,Albany,Obama/Biden (DEM),83979
+36001,Albany,Romney/Ryan (REP),40210
+36001,Albany,Romney/Ryan (CON),4854
+36001,Albany,Obama/Biden (WOR),3577
+36001,Albany,Stein/Honkala (GRN),1238
+36001,Albany,Lindsay/Osorio (PSL),52
+36001,Albany,Johnson/Gray (LBT),1361
+36001,Albany,Good/Clymer (CST),164
+36003,Allegany,Obama/Biden (DEM),5866
+36003,Allegany,Romney/Ryan (REP),9377
+36003,Allegany,Romney/Ryan (CON),1013
+36003,Allegany,Obama/Biden (WOR),273
+36003,Allegany,Stein/Honkala (GRN),162
+36003,Allegany,Lindsay/Osorio (PSL),8
+36003,Allegany,Johnson/Gray (LBT),168
+36003,Allegany,Good/Clymer (CST),28
+36007,Broome,Obama/Biden (DEM),39971
+36007,Broome,Romney/Ryan (REP),34708
+36007,Broome,Romney/Ryan (CON),2933
+36007,Broome,Obama/Biden (WOR),1999
+36007,Broome,Stein/Honkala (GRN),723
+36007,Broome,Lindsay/Osorio (PSL),21
+36007,Broome,Johnson/Gray (LBT),915
+36007,Broome,Good/Clymer (CST),106
+36009,Cattaraugus,Obama/Biden (DEM),12040
+36009,Cattaraugus,Romney/Ryan (REP),14655
+36009,Cattaraugus,Romney/Ryan (CON),1914
+36009,Cattaraugus,Obama/Biden (WOR),609
+36009,Cattaraugus,Stein/Honkala (GRN),201
+36009,Cattaraugus,Lindsay/Osorio (PSL),13
+36009,Cattaraugus,Johnson/Gray (LBT),274
+36009,Cattaraugus,Good/Clymer (CST),59
+36011,Cayuga,Obama/Biden (DEM),16105
+36011,Cayuga,Romney/Ryan (REP),11646
+36011,Cayuga,Romney/Ryan (CON),1808
+36011,Cayuga,Obama/Biden (WOR),902
+36011,Cayuga,Stein/Honkala (GRN),243
+36011,Cayuga,Lindsay/Osorio (PSL),11
+36011,Cayuga,Johnson/Gray (LBT),285
+36011,Cayuga,Good/Clymer (CST),81
+36013,Chautauqua,Obama/Biden (DEM),22463
+36013,Chautauqua,Romney/Ryan (REP),24266
+36013,Chautauqua,Romney/Ryan (CON),3705
+36013,Chautauqua,Obama/Biden (WOR),1349
+36013,Chautauqua,Stein/Honkala (GRN),324
+36013,Chautauqua,Lindsay/Osorio (PSL),17
+36013,Chautauqua,Johnson/Gray (LBT),504
+36013,Chautauqua,Good/Clymer (CST),58
+36015,Chemung,Obama/Biden (DEM),16205
+36015,Chemung,Romney/Ryan (REP),16138
+36015,Chemung,Romney/Ryan (CON),1474
+36015,Chemung,Obama/Biden (WOR),592
+36015,Chemung,Stein/Honkala (GRN),151
+36015,Chemung,Lindsay/Osorio (PSL),4
+36015,Chemung,Johnson/Gray (LBT),310
+36015,Chemung,Good/Clymer (CST),73
+36017,Chenango,Obama/Biden (DEM),8642
+36017,Chenango,Romney/Ryan (REP),8922
+36017,Chenango,Romney/Ryan (CON),791
+36017,Chenango,Obama/Biden (WOR),474
+36017,Chenango,Stein/Honkala (GRN),157
+36017,Chenango,Lindsay/Osorio (PSL),6
+36017,Chenango,Johnson/Gray (LBT),218
+36017,Chenango,Good/Clymer (CST),46
+36019,Clinton,Obama/Biden (DEM),18072
+36019,Clinton,Romney/Ryan (REP),9892
+36019,Clinton,Romney/Ryan (CON),1223
+36019,Clinton,Obama/Biden (WOR),889
+36019,Clinton,Stein/Honkala (GRN),193
+36019,Clinton,Lindsay/Osorio (PSL),9
+36019,Clinton,Johnson/Gray (LBT),260
+36019,Clinton,Good/Clymer (CST),39
+36021,Columbia,Obama/Biden (DEM),15241
+36021,Columbia,Romney/Ryan (REP),10600
+36021,Columbia,Romney/Ryan (CON),1625
+36021,Columbia,Obama/Biden (WOR),980
+36021,Columbia,Stein/Honkala (GRN),259
+36021,Columbia,Lindsay/Osorio (PSL),14
+36021,Columbia,Johnson/Gray (LBT),299
+36021,Columbia,Good/Clymer (CST),41
+36023,Cortland,Obama/Biden (DEM),9965
+36023,Cortland,Romney/Ryan (REP),7859
+36023,Cortland,Romney/Ryan (CON),836
+36023,Cortland,Obama/Biden (WOR),517
+36023,Cortland,Stein/Honkala (GRN),161
+36023,Cortland,Lindsay/Osorio (PSL),7
+36023,Cortland,Johnson/Gray (LBT),187
+36023,Cortland,Good/Clymer (CST),29
+36025,Delaware,Obama/Biden (DEM),7881
+36025,Delaware,Romney/Ryan (REP),9086
+36025,Delaware,Romney/Ryan (CON),852
+36025,Delaware,Obama/Biden (WOR),423
+36025,Delaware,Stein/Honkala (GRN),199
+36025,Delaware,Lindsay/Osorio (PSL),3
+36025,Delaware,Johnson/Gray (LBT),170
+36025,Delaware,Good/Clymer (CST),24
+36027,Dutchess,Obama/Biden (DEM),62063
+36027,Dutchess,Romney/Ryan (REP),48264
+36027,Dutchess,Romney/Ryan (CON),7761
+36027,Dutchess,Obama/Biden (WOR),3249
+36027,Dutchess,Stein/Honkala (GRN),785
+36027,Dutchess,Lindsay/Osorio (PSL),51
+36027,Dutchess,Johnson/Gray (LBT),1105
+36027,Dutchess,Good/Clymer (CST),146
+36029,Erie,Obama/Biden (DEM),227325
+36029,Erie,Romney/Ryan (REP),149683
+36029,Erie,Romney/Ryan (CON),19992
+36029,Erie,Obama/Biden (WOR),10031
+36029,Erie,Stein/Honkala (GRN),2898
+36029,Erie,Lindsay/Osorio (PSL),142
+36029,Erie,Johnson/Gray (LBT),3562
+36029,Erie,Good/Clymer (CST),541
+36031,Essex,Obama/Biden (DEM),9368
+36031,Essex,Romney/Ryan (REP),6076
+36031,Essex,Romney/Ryan (CON),571
+36031,Essex,Obama/Biden (WOR),416
+36031,Essex,Stein/Honkala (GRN),107
+36031,Essex,Lindsay/Osorio (PSL),4
+36031,Essex,Johnson/Gray (LBT),134
+36031,Essex,Good/Clymer (CST),27
+36033,Franklin,Obama/Biden (DEM),9532
+36033,Franklin,Romney/Ryan (REP),5231
+36033,Franklin,Romney/Ryan (CON),509
+36033,Franklin,Obama/Biden (WOR),362
+36033,Franklin,Stein/Honkala (GRN),106
+36033,Franklin,Lindsay/Osorio (PSL),7
+36033,Franklin,Johnson/Gray (LBT),116
+36033,Franklin,Good/Clymer (CST),20
+36035,Fulton,Obama/Biden (DEM),8331
+36035,Fulton,Romney/Ryan (REP),9830
+36035,Fulton,Romney/Ryan (CON),984
+36035,Fulton,Obama/Biden (WOR),276
+36035,Fulton,Stein/Honkala (GRN),111
+36035,Fulton,Lindsay/Osorio (PSL),13
+36035,Fulton,Johnson/Gray (LBT),159
+36035,Fulton,Good/Clymer (CST),42
+36037,Genesee,Obama/Biden (DEM),9092
+36037,Genesee,Romney/Ryan (REP),12814
+36037,Genesee,Romney/Ryan (CON),1793
+36037,Genesee,Obama/Biden (WOR),509
+36037,Genesee,Stein/Honkala (GRN),115
+36037,Genesee,Lindsay/Osorio (PSL),7
+36037,Genesee,Johnson/Gray (LBT),363
+36037,Genesee,Good/Clymer (CST),42
+36039,Greene,Obama/Biden (DEM),8485
+36039,Greene,Romney/Ryan (REP),9811
+36039,Greene,Romney/Ryan (CON),1363
+36039,Greene,Obama/Biden (WOR),545
+36039,Greene,Stein/Honkala (GRN),141
+36039,Greene,Lindsay/Osorio (PSL),10
+36039,Greene,Johnson/Gray (LBT),233
+36039,Greene,Good/Clymer (CST),61
+36041,Hamilton,Obama/Biden (DEM),1092
+36041,Hamilton,Romney/Ryan (REP),1771
+36041,Hamilton,Romney/Ryan (CON),161
+36041,Hamilton,Obama/Biden (WOR),36
+36041,Hamilton,Stein/Honkala (GRN),14
+36041,Hamilton,Johnson/Gray (LBT),28
+36041,Hamilton,Good/Clymer (CST),11
+36043,Herkimer,Obama/Biden (DEM),10826
+36043,Herkimer,Romney/Ryan (REP),12166
+36043,Herkimer,Romney/Ryan (CON),1116
+36043,Herkimer,Obama/Biden (WOR),447
+36043,Herkimer,Stein/Honkala (GRN),172
+36043,Herkimer,Lindsay/Osorio (PSL),7
+36043,Herkimer,Johnson/Gray (LBT),259
+36043,Herkimer,Good/Clymer (CST),42
+36045,Jefferson,Obama/Biden (DEM),16231
+36045,Jefferson,Romney/Ryan (REP),16435
+36045,Jefferson,Romney/Ryan (CON),1687
+36045,Jefferson,Obama/Biden (WOR),868
+36045,Jefferson,Stein/Honkala (GRN),151
+36045,Jefferson,Lindsay/Osorio (PSL),4
+36045,Jefferson,Johnson/Gray (LBT),271
+36045,Jefferson,Good/Clymer (CST),61
+36049,Lewis,Obama/Biden (DEM),4530
+36049,Lewis,Romney/Ryan (REP),5129
+36049,Lewis,Romney/Ryan (CON),522
+36049,Lewis,Obama/Biden (WOR),194
+36049,Lewis,Stein/Honkala (GRN),51
+36049,Lewis,Lindsay/Osorio (PSL),2
+36049,Lewis,Johnson/Gray (LBT),81
+36049,Lewis,Good/Clymer (CST),13
+36051,Livingston,Obama/Biden (DEM),11100
+36051,Livingston,Romney/Ryan (REP),12641
+36051,Livingston,Romney/Ryan (CON),1807
+36051,Livingston,Obama/Biden (WOR),605
+36051,Livingston,Stein/Honkala (GRN),175
+36051,Livingston,Lindsay/Osorio (PSL),6
+36051,Livingston,Johnson/Gray (LBT),318
+36051,Livingston,Good/Clymer (CST),49
+36053,Madison,Obama/Biden (DEM),13231
+36053,Madison,Romney/Ryan (REP),12011
+36053,Madison,Romney/Ryan (CON),1611
+36053,Madison,Obama/Biden (WOR),640
+36053,Madison,Stein/Honkala (GRN),238
+36053,Madison,Lindsay/Osorio (PSL),10
+36053,Madison,Johnson/Gray (LBT),297
+36053,Madison,Good/Clymer (CST),56
+36055,Monroe,Obama/Biden (DEM),185916
+36055,Monroe,Romney/Ryan (REP),114434
+36055,Monroe,Romney/Ryan (CON),18928
+36055,Monroe,Obama/Biden (WOR),7585
+36055,Monroe,Stein/Honkala (GRN),2101
+36055,Monroe,Lindsay/Osorio (PSL),91
+36055,Monroe,Johnson/Gray (LBT),3572
+36055,Monroe,Good/Clymer (CST),334
+36057,Montgomery,Obama/Biden (DEM),8106
+36057,Montgomery,Romney/Ryan (REP),8046
+36057,Montgomery,Romney/Ryan (CON),1288
+36057,Montgomery,Obama/Biden (WOR),387
+36057,Montgomery,Stein/Honkala (GRN),93
+36057,Montgomery,Lindsay/Osorio (PSL),5
+36057,Montgomery,Johnson/Gray (LBT),161
+36057,Montgomery,Good/Clymer (CST),41
+36059,Nassau,Obama/Biden (DEM),294661
+36059,Nassau,Romney/Ryan (REP),237862
+36059,Nassau,Romney/Ryan (CON),21446
+36059,Nassau,Obama/Biden (WOR),8034
+36059,Nassau,Stein/Honkala (GRN),2068
+36059,Nassau,Lindsay/Osorio (PSL),111
+36059,Nassau,Johnson/Gray (LBT),2998
+36059,Nassau,Good/Clymer (CST),294
+36063,Niagara,Obama/Biden (DEM),41837
+36063,Niagara,Romney/Ryan (REP),38158
+36063,Niagara,Romney/Ryan (CON),5082
+36063,Niagara,Obama/Biden (WOR),2149
+36063,Niagara,Stein/Honkala (GRN),560
+36063,Niagara,Lindsay/Osorio (PSL),31
+36063,Niagara,Johnson/Gray (LBT),864
+36063,Niagara,Good/Clymer (CST),98
+36065,Oneida,Obama/Biden (DEM),39031
+36065,Oneida,Romney/Ryan (REP),40532
+36065,Oneida,Romney/Ryan (CON),3998
+36065,Oneida,Obama/Biden (WOR),1437
+36065,Oneida,Stein/Honkala (GRN),502
+36065,Oneida,Lindsay/Osorio (PSL),17
+36065,Oneida,Johnson/Gray (LBT),819
+36065,Oneida,Good/Clymer (CST),168
+36067,Onondaga,Obama/Biden (DEM),117470
+36067,Onondaga,Romney/Ryan (REP),69357
+36067,Onondaga,Romney/Ryan (CON),9474
+36067,Onondaga,Obama/Biden (WOR),4784
+36067,Onondaga,Stein/Honkala (GRN),1584
+36067,Onondaga,Lindsay/Osorio (PSL),55
+36067,Onondaga,Johnson/Gray (LBT),1697
+36067,Onondaga,Good/Clymer (CST),295
+36069,Ontario,Obama/Biden (DEM),22065
+36069,Ontario,Romney/Ryan (REP),20919
+36069,Ontario,Romney/Ryan (CON),2901
+36069,Ontario,Obama/Biden (WOR),1022
+36069,Ontario,Stein/Honkala (GRN),294
+36069,Ontario,Lindsay/Osorio (PSL),11
+36069,Ontario,Johnson/Gray (LBT),571
+36069,Ontario,Good/Clymer (CST),66
+36071,Orange,Obama/Biden (DEM),70742
+36071,Orange,Romney/Ryan (REP),58003
+36071,Orange,Romney/Ryan (CON),7364
+36071,Orange,Obama/Biden (WOR),2573
+36071,Orange,Stein/Honkala (GRN),700
+36071,Orange,Lindsay/Osorio (PSL),32
+36071,Orange,Johnson/Gray (LBT),1049
+36071,Orange,Good/Clymer (CST),162
+36073,Orleans,Obama/Biden (DEM),5505
+36073,Orleans,Romney/Ryan (REP),7585
+36073,Orleans,Romney/Ryan (CON),1009
+36073,Orleans,Obama/Biden (WOR),282
+36073,Orleans,Stein/Honkala (GRN),81
+36073,Orleans,Lindsay/Osorio (PSL),3
+36073,Orleans,Johnson/Gray (LBT),165
+36073,Orleans,Good/Clymer (CST),36
+36075,Oswego,Obama/Biden (DEM),22178
+36075,Oswego,Romney/Ryan (REP),17610
+36075,Oswego,Romney/Ryan (CON),2370
+36075,Oswego,Obama/Biden (WOR),1337
+36075,Oswego,Stein/Honkala (GRN),379
+36075,Oswego,Lindsay/Osorio (PSL),15
+36075,Oswego,Johnson/Gray (LBT),447
+36075,Oswego,Good/Clymer (CST),114
+36077,Otsego,Obama/Biden (DEM),11530
+36077,Otsego,Romney/Ryan (REP),10451
+36077,Otsego,Romney/Ryan (CON),1010
+36077,Otsego,Obama/Biden (WOR),587
+36077,Otsego,Stein/Honkala (GRN),238
+36077,Otsego,Lindsay/Osorio (PSL),7
+36077,Otsego,Johnson/Gray (LBT),212
+36077,Otsego,Good/Clymer (CST),28
+36079,Putnam,Obama/Biden (DEM),18539
+36079,Putnam,Romney/Ryan (REP),20925
+36079,Putnam,Romney/Ryan (CON),3158
+36079,Putnam,Obama/Biden (WOR),973
+36079,Putnam,Stein/Honkala (GRN),209
+36079,Putnam,Lindsay/Osorio (PSL),10
+36079,Putnam,Johnson/Gray (LBT),397
+36079,Putnam,Good/Clymer (CST),37
+36083,Rensselaer,Obama/Biden (DEM),35373
+36083,Rensselaer,Romney/Ryan (REP),24903
+36083,Rensselaer,Romney/Ryan (CON),4210
+36083,Rensselaer,Obama/Biden (WOR),2035
+36083,Rensselaer,Stein/Honkala (GRN),612
+36083,Rensselaer,Lindsay/Osorio (PSL),19
+36083,Rensselaer,Johnson/Gray (LBT),754
+36083,Rensselaer,Good/Clymer (CST),80
+36087,Rockland,Obama/Biden (DEM),63908
+36087,Rockland,Romney/Ryan (REP),51976
+36087,Rockland,Romney/Ryan (CON),5387
+36087,Rockland,Obama/Biden (WOR),1749
+36087,Rockland,Stein/Honkala (GRN),474
+36087,Rockland,Lindsay/Osorio (PSL),17
+36087,Rockland,Johnson/Gray (LBT),631
+36087,Rockland,Good/Clymer (CST),124
+36091,Saratoga,Obama/Biden (DEM),50998
+36091,Saratoga,Romney/Ryan (REP),44915
+36091,Saratoga,Romney/Ryan (CON),5467
+36091,Saratoga,Obama/Biden (WOR),1959
+36091,Saratoga,Stein/Honkala (GRN),651
+36091,Saratoga,Lindsay/Osorio (PSL),20
+36091,Saratoga,Johnson/Gray (LBT),1147
+36091,Saratoga,Good/Clymer (CST),115
+36093,Schenectady,Obama/Biden (DEM),35330
+36093,Schenectady,Romney/Ryan (REP),22952
+36093,Schenectady,Romney/Ryan (CON),3616
+36093,Schenectady,Obama/Biden (WOR),1514
+36093,Schenectady,Stein/Honkala (GRN),514
+36093,Schenectady,Lindsay/Osorio (PSL),19
+36093,Schenectady,Johnson/Gray (LBT),692
+36093,Schenectady,Good/Clymer (CST),131
+36095,Schoharie,Obama/Biden (DEM),5119
+36095,Schoharie,Romney/Ryan (REP),6497
+36095,Schoharie,Romney/Ryan (CON),970
+36095,Schoharie,Obama/Biden (WOR),308
+36095,Schoharie,Stein/Honkala (GRN),108
+36095,Schoharie,Lindsay/Osorio (PSL),7
+36095,Schoharie,Johnson/Gray (LBT),129
+36095,Schoharie,Good/Clymer (CST),20
+36097,Schuyler,Obama/Biden (DEM),3444
+36097,Schuyler,Romney/Ryan (REP),3798
+36097,Schuyler,Romney/Ryan (CON),483
+36097,Schuyler,Obama/Biden (WOR),230
+36097,Schuyler,Stein/Honkala (GRN),75
+36097,Schuyler,Lindsay/Osorio (PSL),1
+36097,Schuyler,Johnson/Gray (LBT),80
+36097,Schuyler,Good/Clymer (CST),19
+36099,Seneca,Obama/Biden (DEM),6715
+36099,Seneca,Romney/Ryan (REP),5244
+36099,Seneca,Romney/Ryan (CON),645
+36099,Seneca,Obama/Biden (WOR),379
+36099,Seneca,Stein/Honkala (GRN),101
+36099,Seneca,Lindsay/Osorio (PSL),5
+36099,Seneca,Johnson/Gray (LBT),110
+36099,Seneca,Good/Clymer (CST),16
+36089,St. Lawrence,Obama/Biden (DEM),20488
+36089,St. Lawrence,Romney/Ryan (REP),13543
+36089,St. Lawrence,Romney/Ryan (CON),1595
+36089,St. Lawrence,Obama/Biden (WOR),865
+36089,St. Lawrence,Stein/Honkala (GRN),227
+36089,St. Lawrence,Lindsay/Osorio (PSL),10
+36089,St. Lawrence,Johnson/Gray (LBT),276
+36089,St. Lawrence,Good/Clymer (CST),63
+36101,Steuben,Obama/Biden (DEM),15015
+36101,Steuben,Romney/Ryan (REP),20163
+36101,Steuben,Romney/Ryan (CON),1791
+36101,Steuben,Obama/Biden (WOR),772
+36101,Steuben,Stein/Honkala (GRN),232
+36101,Steuben,Lindsay/Osorio (PSL),7
+36101,Steuben,Johnson/Gray (LBT),373
+36101,Steuben,Good/Clymer (CST),81
+36103,Suffolk,Obama/Biden (DEM),292238
+36103,Suffolk,Romney/Ryan (REP),246044
+36103,Suffolk,Romney/Ryan (CON),36087
+36103,Suffolk,Obama/Biden (WOR),11841
+36103,Suffolk,Stein/Honkala (GRN),2528
+36103,Suffolk,Lindsay/Osorio (PSL),148
+36103,Suffolk,Johnson/Gray (LBT),3947
+36103,Suffolk,Good/Clymer (CST),521
+36105,Sullivan,Obama/Biden (DEM),14612
+36105,Sullivan,Romney/Ryan (REP),11347
+36105,Sullivan,Romney/Ryan (CON),1358
+36105,Sullivan,Obama/Biden (WOR),656
+36105,Sullivan,Stein/Honkala (GRN),188
+36105,Sullivan,Lindsay/Osorio (PSL),7
+36105,Sullivan,Johnson/Gray (LBT),195
+36105,Sullivan,Good/Clymer (CST),50
+36107,Tioga,Obama/Biden (DEM),8544
+36107,Tioga,Romney/Ryan (REP),11160
+36107,Tioga,Romney/Ryan (CON),957
+36107,Tioga,Obama/Biden (WOR),386
+36107,Tioga,Stein/Honkala (GRN),172
+36107,Tioga,Lindsay/Osorio (PSL),3
+36107,Tioga,Johnson/Gray (LBT),240
+36107,Tioga,Good/Clymer (CST),58
+36109,Tompkins,Obama/Biden (DEM),24872
+36109,Tompkins,Romney/Ryan (REP),10191
+36109,Tompkins,Romney/Ryan (CON),916
+36109,Tompkins,Obama/Biden (WOR),2372
+36109,Tompkins,Stein/Honkala (GRN),834
+36109,Tompkins,Lindsay/Osorio (PSL),30
+36109,Tompkins,Johnson/Gray (LBT),395
+36109,Tompkins,Good/Clymer (CST),33
+36111,Ulster,Obama/Biden (DEM),44480
+36111,Ulster,Romney/Ryan (REP),26123
+36111,Ulster,Romney/Ryan (CON),3636
+36111,Ulster,Obama/Biden (WOR),3272
+36111,Ulster,Stein/Honkala (GRN),944
+36111,Ulster,Lindsay/Osorio (PSL),44
+36111,Ulster,Johnson/Gray (LBT),768
+36111,Ulster,Good/Clymer (CST),78
+36113,Warren,Obama/Biden (DEM),14276
+36113,Warren,Romney/Ryan (REP),12925
+36113,Warren,Romney/Ryan (CON),1194
+36113,Warren,Obama/Biden (WOR),530
+36113,Warren,Stein/Honkala (GRN),220
+36113,Warren,Lindsay/Osorio (PSL),8
+36113,Warren,Johnson/Gray (LBT),312
+36113,Warren,Good/Clymer (CST),49
+36115,Washington,Obama/Biden (DEM),10993
+36115,Washington,Romney/Ryan (REP),9793
+36115,Washington,Romney/Ryan (CON),1292
+36115,Washington,Obama/Biden (WOR),530
+36115,Washington,Stein/Honkala (GRN),177
+36115,Washington,Lindsay/Osorio (PSL),6
+36115,Washington,Johnson/Gray (LBT),222
+36115,Washington,Good/Clymer (CST),43
+36117,Wayne,Obama/Biden (DEM),15732
+36117,Wayne,Romney/Ryan (REP),17248
+36117,Wayne,Romney/Ryan (CON),2812
+36117,Wayne,Obama/Biden (WOR),903
+36117,Wayne,Stein/Honkala (GRN),222
+36117,Wayne,Lindsay/Osorio (PSL),15
+36117,Wayne,Johnson/Gray (LBT),424
+36117,Wayne,Good/Clymer (CST),83
+36119,Westchester,Obama/Biden (DEM),234778
+36119,Westchester,Romney/Ryan (REP),131139
+36119,Westchester,Romney/Ryan (CON),11983
+36119,Westchester,Obama/Biden (WOR),6007
+36119,Westchester,Stein/Honkala (GRN),1627
+36119,Westchester,Lindsay/Osorio (PSL),76
+36119,Westchester,Johnson/Gray (LBT),2042
+36119,Westchester,Good/Clymer (CST),228
+36121,Wyoming,Obama/Biden (DEM),5357
+36121,Wyoming,Romney/Ryan (REP),9248
+36121,Wyoming,Romney/Ryan (CON),1100
+36121,Wyoming,Obama/Biden (WOR),304
+36121,Wyoming,Stein/Honkala (GRN),96
+36121,Wyoming,Lindsay/Osorio (PSL),6
+36121,Wyoming,Johnson/Gray (LBT),135
+36121,Wyoming,Good/Clymer (CST),55
+36123,Yates,Obama/Biden (DEM),4259
+36123,Yates,Romney/Ryan (REP),4269
+36123,Yates,Romney/Ryan (CON),529
+36123,Yates,Obama/Biden (WOR),229
+36123,Yates,Stein/Honkala (GRN),67
+36123,Yates,Lindsay/Osorio (PSL),3
+36123,Yates,Johnson/Gray (LBT),69
+36123,Yates,Good/Clymer (CST),17
+36005,Bronx,Obama/Biden (DEM),334642
+36005,Bronx,Romney/Ryan (REP),26682
+36005,Bronx,Romney/Ryan (CON),3285
+36005,Bronx,Obama/Biden (WOR),4569
+36005,Bronx,Stein/Honkala (GRN),774
+36005,Bronx,Lindsay/Osorio (PSL),105
+36005,Bronx,Johnson/Gray (LBT),608
+36005,Bronx,Good/Clymer (CST),122
+36047,Kings,Obama/Biden (DEM),585491
+36047,Kings,Romney/Ryan (REP),113752
+36047,Kings,Romney/Ryan (CON),10799
+36047,Kings,Obama/Biden (WOR),18952
+36047,Kings,Stein/Honkala (GRN),4411
+36047,Kings,Lindsay/Osorio (PSL),219
+36047,Kings,Johnson/Gray (LBT),2500
+36047,Kings,Good/Clymer (CST),276
+36061,New York,Obama/Biden (DEM),488632
+36061,New York,Romney/Ryan (REP),85245
+36061,New York,Romney/Ryan (CON),4314
+36061,New York,Obama/Biden (WOR),14042
+36061,New York,Stein/Honkala (GRN),3860
+36061,New York,Lindsay/Osorio (PSL),230
+36061,New York,Johnson/Gray (LBT),3104
+36061,New York,Good/Clymer (CST),146
+36081,Queens,Obama/Biden (DEM),461545
+36081,Queens,Romney/Ryan (REP),108881
+36081,Queens,Romney/Ryan (CON),9708
+36081,Queens,Obama/Biden (WOR),9187
+36081,Queens,Stein/Honkala (GRN),2465
+36081,Queens,Lindsay/Osorio (PSL),183
+36081,Queens,Johnson/Gray (LBT),2375
+36081,Queens,Good/Clymer (CST),254
+36085,Richmond,Obama/Biden (DEM),75565
+36085,Richmond,Romney/Ryan (REP),66919
+36085,Richmond,Romney/Ryan (CON),7304
+36085,Richmond,Obama/Biden (WOR),2616
+36085,Richmond,Stein/Honkala (GRN),519
+36085,Richmond,Lindsay/Osorio (PSL),46
+36085,Richmond,Johnson/Gray (LBT),899
+36085,Richmond,Good/Clymer (CST),80
+36001,Albany,Scattering,332
+36003,Allegany,Scattering,58
+36007,Broome,Scattering,189
+36009,Cattaraugus,Ross C. Anderson,1
+36009,Cattaraugus,Kevin Thorne,1
+36009,Cattaraugus,Jerry White,346
+36009,Cattaraugus,Scattering,346
+36011,Cayuga,Scattering,88
+36013,Chautauqua,Scattering,166
+36015,Chemung,Scattering,63
+36017,Chenango,Scattering,58
+36019,Clinton,Scattering,79
+36021,Columbia,Scattering,70
+36023,Cortland,Scattering,63
+36027,Dutchess,Ross C. Anderson,7
+36027,Dutchess,Scattering,274
+36029,Erie,Ross C. Anderson,16
+36029,Erie,Tom Hoeffling,3
+36029,Erie,Merlin Miller,2
+36031,Essex,James Harris,1
+36031,Essex,Scattering,13
+36033,Franklin,Scattering,51
+36035,Fulton,Scattering,53
+36037,Genesee,Tom Hoeffling,3
+36037,Genesee,Scattering,8
+36039,Greene,Scattering,19
+36043,Herkimer,Scattering,5
+36051,Livingston,Ross C. Anderson,3
+36051,Livingston,Scattering,66
+36055,Monroe,Ross C. Anderson,1
+36055,Monroe,Tom Hoeffling,19
+36055,Monroe,Jill Reed,3
+36055,Monroe,Jerry White,2
+36055,Monroe,Scattering,827
+36057,Montgomery,Ross C. Anderson,1
+36057,Montgomery,Scattering,58
+36059,Nassau,Scattering,677
+36063,Niagara,Jill Reed,1
+36063,Niagara,Scattering,233
+36065,Oneida,Scattering,196
+36067,Onondaga,Scattering,1
+36069,Ontario,Ross C. Anderson,2
+36069,Ontario,Scattering,2
+36071,Orange,Ross C. Anderson,1
+36071,Orange,Tom Hoeffling,1
+36071,Orange,Scattering,1
+36073,Orleans,Merlin Miller,1
+36073,Orleans,Scattering,39
+36075,Oswego,Scattering,141
+36077,Otsego,Jerry White,1
+36077,Otsego,Scattering,75
+36079,Putnam,Scattering,97
+36083,Rensselaer,Ross C. Anderson,4
+36087,Rockland,Ross C. Anderson,7
+36087,Rockland,James Harris,2
+36087,Rockland,Scattering,167
+36091,Saratoga,Ross C. Anderson,2
+36091,Saratoga,Jill Reed,2
+36091,Saratoga,Scattering,234
+36093,Schenectady,Scattering,165
+36095,Schoharie,Scattering,49
+36097,Schuyler,Scattering,16
+36099,Seneca,Scattering,51
+36089,St. Lawrence,Scattering,124
+36101,Steuben,Tom Hoeffling,2
+36101,Steuben,Scattering,95
+36103,Suffolk,Scattering,912
+36105,Sullivan,Scattering,2
+36107,Tioga,Tom Hoeffling,3
+36107,Tioga,Scattering,66
+36109,Tompkins,Ross C. Anderson,21
+36109,Tompkins,Stephen Durham,1
+36109,Tompkins,James Harris,1
+36109,Tompkins,Jill Reed,1
+36109,Tompkins,Jerry White,3
+36111,Ulster,Scattering,281
+36113,Warren,Scattering,64
+36115,Washington,Scattering,39
+36117,Wayne,Scattering,108
+36119,Westchester,Stephen Durham,2
+36119,Westchester,Tom Hoeffling,2
+36119,Westchester,Jill Reed,2
+36119,Westchester,Scattering,561
+36121,Wyoming,Scattering,34
+36005,Bronx,Ross C. Anderson,6
+36005,Bronx,Stephen Durham,1
+36005,Bronx,James Harris,6
+36005,Bronx,Jill Reed,2
+36005,Bronx,Jerry White,1
+36005,Bronx,Scattering,135
+36047,Kings,Ross C. Anderson,53
+36047,Kings,Stephen Durham,9
+36047,Kings,James Harris,3
+36047,Kings,Jerry White,7
+36047,Kings,Scattering,510
+36061,New York,Ross C. Anderson,73
+36061,New York,Stephen Durham,17
+36061,New York,James Harris,13
+36061,New York,Merlin Miller,3
+36061,New York,Jerry White,3
+36061,New York,Scattering,609
+36081,Queens,Ross C. Anderson,12
+36081,Queens,Stephen Durham,3
+36081,Queens,James Harris,1
+36081,Queens,Tom Hoeffling,1
+36081,Queens,Scattering,630
+36085,Richmond,Ross C. Anderson,7
+36085,Richmond,Stephen Durham,1
+36085,Richmond,Jill Reed,1
+36085,Richmond,Jerry White,1
+36085,Richmond,Scattering,222

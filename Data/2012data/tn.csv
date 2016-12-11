@@ -1,0 +1,666 @@
+fips,county,candidate,votes
+47001,ANDERSON,Mitt Romney,18968
+47001,ANDERSON,Barack Obama,10122
+47001,ANDERSON,Virgil Goode,101
+47001,ANDERSON,Jill Stein,88
+47001,ANDERSON,"Ross C. ""Rocky"" Anderson",54
+47001,ANDERSON,Gary Johnson,301
+47001,ANDERSON,Merlin Miller,25
+47003,BEDFORD,Mitt Romney,10034
+47003,BEDFORD,Barack Obama,4211
+47003,BEDFORD,Virgil Goode,49
+47003,BEDFORD,Jill Stein,39
+47003,BEDFORD,"Ross C. ""Rocky"" Anderson",17
+47003,BEDFORD,Gary Johnson,90
+47003,BEDFORD,Merlin Miller,5
+47005,BENTON,Mitt Romney,3850
+47005,BENTON,Barack Obama,2258
+47005,BENTON,Virgil Goode,20
+47005,BENTON,Jill Stein,20
+47005,BENTON,"Ross C. ""Rocky"" Anderson",14
+47005,BENTON,Gary Johnson,58
+47005,BENTON,Merlin Miller,6
+47007,BLEDSOE,Mitt Romney,3022
+47007,BLEDSOE,Barack Obama,1267
+47007,BLEDSOE,Virgil Goode,22
+47007,BLEDSOE,Jill Stein,3
+47007,BLEDSOE,"Ross C. ""Rocky"" Anderson",6
+47007,BLEDSOE,Gary Johnson,32
+47007,BLEDSOE,Merlin Miller,7
+47009,BLOUNT,Mitt Romney,35441
+47009,BLOUNT,Barack Obama,12934
+47009,BLOUNT,Virgil Goode,119
+47009,BLOUNT,Jill Stein,126
+47009,BLOUNT,"Ross C. ""Rocky"" Anderson",56
+47009,BLOUNT,Gary Johnson,536
+47009,BLOUNT,Merlin Miller,22
+47011,BRADLEY,Mitt Romney,27422
+47011,BRADLEY,Barack Obama,8037
+47011,BRADLEY,Virgil Goode,103
+47011,BRADLEY,Jill Stein,69
+47011,BRADLEY,"Ross C. ""Rocky"" Anderson",30
+47011,BRADLEY,Gary Johnson,274
+47011,BRADLEY,Merlin Miller,28
+47013,CAMPBELL,Mitt Romney,8604
+47013,CAMPBELL,Barack Obama,3328
+47013,CAMPBELL,Virgil Goode,53
+47013,CAMPBELL,Jill Stein,24
+47013,CAMPBELL,"Ross C. ""Rocky"" Anderson",21
+47013,CAMPBELL,Gary Johnson,58
+47013,CAMPBELL,Merlin Miller,13
+47015,CANNON,Mitt Romney,3309
+47015,CANNON,Barack Obama,1564
+47015,CANNON,Virgil Goode,19
+47015,CANNON,Jill Stein,27
+47015,CANNON,"Ross C. ""Rocky"" Anderson",11
+47015,CANNON,Gary Johnson,41
+47015,CANNON,Merlin Miller,2
+47017,CARROLL,Mitt Romney,7225
+47017,CARROLL,Barack Obama,3475
+47017,CARROLL,Virgil Goode,33
+47017,CARROLL,Jill Stein,28
+47017,CARROLL,"Ross C. ""Rocky"" Anderson",12
+47017,CARROLL,Gary Johnson,63
+47017,CARROLL,Merlin Miller,15
+47019,CARTER,Mitt Romney,15503
+47019,CARTER,Barack Obama,4789
+47019,CARTER,Virgil Goode,61
+47019,CARTER,Jill Stein,62
+47019,CARTER,"Ross C. ""Rocky"" Anderson",25
+47019,CARTER,Gary Johnson,165
+47019,CARTER,Merlin Miller,12
+47021,CHEATHAM,Mitt Romney,10268
+47021,CHEATHAM,Barack Obama,4659
+47021,CHEATHAM,Virgil Goode,38
+47021,CHEATHAM,Jill Stein,42
+47021,CHEATHAM,"Ross C. ""Rocky"" Anderson",26
+47021,CHEATHAM,Gary Johnson,131
+47021,CHEATHAM,Merlin Miller,18
+47023,CHESTER,Mitt Romney,4684
+47023,CHESTER,Barack Obama,1624
+47023,CHESTER,Virgil Goode,15
+47023,CHESTER,Jill Stein,20
+47023,CHESTER,"Ross C. ""Rocky"" Anderson",11
+47023,CHESTER,Gary Johnson,52
+47023,CHESTER,Merlin Miller,4
+47025,CLAIBORNE,Mitt Romney,7617
+47025,CLAIBORNE,Barack Obama,2433
+47025,CLAIBORNE,Virgil Goode,24
+47025,CLAIBORNE,Jill Stein,17
+47025,CLAIBORNE,"Ross C. ""Rocky"" Anderson",19
+47025,CLAIBORNE,Gary Johnson,58
+47025,CLAIBORNE,Merlin Miller,10
+47027,CLAY,Mitt Romney,1747
+47027,CLAY,Barack Obama,1037
+47027,CLAY,Virgil Goode,5
+47027,CLAY,Jill Stein,2
+47027,CLAY,"Ross C. ""Rocky"" Anderson",4
+47027,CLAY,Gary Johnson,22
+47027,CLAY,Merlin Miller,3
+47029,COCKE,Mitt Romney,8459
+47029,COCKE,Barack Obama,2804
+47029,COCKE,Virgil Goode,44
+47029,COCKE,Jill Stein,31
+47029,COCKE,"Ross C. ""Rocky"" Anderson",19
+47029,COCKE,Gary Johnson,83
+47029,COCKE,Merlin Miller,14
+47031,COFFEE,Mitt Romney,13023
+47031,COFFEE,Barack Obama,5870
+47031,COFFEE,Virgil Goode,65
+47031,COFFEE,Jill Stein,47
+47031,COFFEE,"Ross C. ""Rocky"" Anderson",28
+47031,COFFEE,Gary Johnson,188
+47031,COFFEE,Merlin Miller,38
+47033,CROCKETT,Mitt Romney,3783
+47033,CROCKETT,Barack Obama,1669
+47033,CROCKETT,Virgil Goode,10
+47033,CROCKETT,Jill Stein,5
+47033,CROCKETT,"Ross C. ""Rocky"" Anderson",5
+47033,CROCKETT,Gary Johnson,23
+47033,CROCKETT,Merlin Miller,3
+47035,CUMBERLAND,Mitt Romney,18653
+47035,CUMBERLAND,Barack Obama,6261
+47035,CUMBERLAND,Virgil Goode,65
+47035,CUMBERLAND,Jill Stein,86
+47035,CUMBERLAND,"Ross C. ""Rocky"" Anderson",26
+47035,CUMBERLAND,Gary Johnson,141
+47035,CUMBERLAND,Merlin Miller,15
+47037,DAVIDSON,Mitt Romney,97622
+47037,DAVIDSON,Barack Obama,143120
+47037,DAVIDSON,Virgil Goode,394
+47037,DAVIDSON,Jill Stein,1032
+47037,DAVIDSON,"Ross C. ""Rocky"" Anderson",243
+47037,DAVIDSON,Gary Johnson,2252
+47037,DAVIDSON,Merlin Miller,210
+47039,DECATUR,Mitt Romney,2874
+47039,DECATUR,Barack Obama,1303
+47039,DECATUR,Virgil Goode,16
+47039,DECATUR,Jill Stein,6
+47039,DECATUR,"Ross C. ""Rocky"" Anderson",8
+47039,DECATUR,Gary Johnson,39
+47039,DECATUR,Merlin Miller,5
+47041,DEKALB,Mitt Romney,4143
+47041,DEKALB,Barack Obama,2174
+47041,DEKALB,Virgil Goode,21
+47041,DEKALB,Jill Stein,21
+47041,DEKALB,"Ross C. ""Rocky"" Anderson",6
+47041,DEKALB,Gary Johnson,56
+47041,DEKALB,Merlin Miller,1
+47043,DICKSON,Mitt Romney,11296
+47043,DICKSON,Barack Obama,6233
+47043,DICKSON,Virgil Goode,63
+47043,DICKSON,Jill Stein,56
+47043,DICKSON,"Ross C. ""Rocky"" Anderson",24
+47043,DICKSON,Gary Johnson,144
+47043,DICKSON,Merlin Miller,19
+47045,DYER,Mitt Romney,9921
+47045,DYER,Barack Obama,3757
+47045,DYER,Virgil Goode,30
+47045,DYER,Jill Stein,23
+47045,DYER,"Ross C. ""Rocky"" Anderson",14
+47045,DYER,Gary Johnson,45
+47045,DYER,Merlin Miller,10
+47047,FAYETTE,Mitt Romney,12689
+47047,FAYETTE,Barack Obama,6688
+47047,FAYETTE,Virgil Goode,38
+47047,FAYETTE,Jill Stein,21
+47047,FAYETTE,"Ross C. ""Rocky"" Anderson",21
+47047,FAYETTE,Gary Johnson,110
+47047,FAYETTE,Merlin Miller,7
+47049,FENTRESS,Mitt Romney,5243
+47049,FENTRESS,Barack Obama,1561
+47049,FENTRESS,Virgil Goode,21
+47049,FENTRESS,Jill Stein,19
+47049,FENTRESS,"Ross C. ""Rocky"" Anderson",15
+47049,FENTRESS,Gary Johnson,30
+47049,FENTRESS,Merlin Miller,6
+47051,FRANKLIN,Mitt Romney,10262
+47051,FRANKLIN,Barack Obama,5603
+47051,FRANKLIN,Virgil Goode,74
+47051,FRANKLIN,Jill Stein,44
+47051,FRANKLIN,"Ross C. ""Rocky"" Anderson",17
+47051,FRANKLIN,Gary Johnson,107
+47051,FRANKLIN,Merlin Miller,12
+47053,GIBSON,Mitt Romney,12883
+47053,GIBSON,Barack Obama,6564
+47053,GIBSON,Virgil Goode,45
+47053,GIBSON,Jill Stein,31
+47053,GIBSON,"Ross C. ""Rocky"" Anderson",18
+47053,GIBSON,Gary Johnson,118
+47053,GIBSON,Merlin Miller,8
+47055,GILES,Mitt Romney,6915
+47055,GILES,Barack Obama,3760
+47055,GILES,Virgil Goode,36
+47055,GILES,Jill Stein,18
+47055,GILES,"Ross C. ""Rocky"" Anderson",14
+47055,GILES,Gary Johnson,52
+47055,GILES,Merlin Miller,4
+47057,GRAINGER,Mitt Romney,5470
+47057,GRAINGER,Barack Obama,1668
+47057,GRAINGER,Virgil Goode,18
+47057,GRAINGER,Jill Stein,19
+47057,GRAINGER,"Ross C. ""Rocky"" Anderson",10
+47057,GRAINGER,Gary Johnson,62
+47057,GRAINGER,Merlin Miller,5
+47059,GREENE,Mitt Romney,17245
+47059,GREENE,Barack Obama,6225
+47059,GREENE,Virgil Goode,104
+47059,GREENE,Jill Stein,69
+47059,GREENE,"Ross C. ""Rocky"" Anderson",30
+47059,GREENE,Gary Johnson,175
+47059,GREENE,Merlin Miller,39
+47061,GRUNDY,Mitt Romney,2516
+47061,GRUNDY,Barack Obama,1643
+47061,GRUNDY,Virgil Goode,27
+47061,GRUNDY,Jill Stein,7
+47061,GRUNDY,"Ross C. ""Rocky"" Anderson",9
+47061,GRUNDY,Gary Johnson,30
+47061,GRUNDY,Merlin Miller,5
+47063,HAMBLEN,Mitt Romney,14522
+47063,HAMBLEN,Barack Obama,5234
+47063,HAMBLEN,Virgil Goode,58
+47063,HAMBLEN,Jill Stein,45
+47063,HAMBLEN,"Ross C. ""Rocky"" Anderson",25
+47063,HAMBLEN,Gary Johnson,140
+47063,HAMBLEN,Merlin Miller,8
+47065,HAMILTON,Mitt Romney,79933
+47065,HAMILTON,Barack Obama,58836
+47065,HAMILTON,Virgil Goode,283
+47065,HAMILTON,Jill Stein,408
+47065,HAMILTON,"Ross C. ""Rocky"" Anderson",120
+47065,HAMILTON,Gary Johnson,1528
+47065,HAMILTON,Merlin Miller,73
+47067,HANCOCK,Mitt Romney,1527
+47067,HANCOCK,Barack Obama,475
+47067,HANCOCK,Virgil Goode,1
+47067,HANCOCK,Jill Stein,6
+47067,HANCOCK,"Ross C. ""Rocky"" Anderson",1
+47067,HANCOCK,Gary Johnson,34
+47067,HANCOCK,Merlin Miller,2
+47069,HARDEMAN,Mitt Romney,4865
+47069,HARDEMAN,Barack Obama,5482
+47069,HARDEMAN,Virgil Goode,22
+47069,HARDEMAN,Jill Stein,12
+47069,HARDEMAN,"Ross C. ""Rocky"" Anderson",10
+47069,HARDEMAN,Gary Johnson,40
+47069,HARDEMAN,Merlin Miller,8
+47071,HARDIN,Mitt Romney,7886
+47071,HARDIN,Barack Obama,2467
+47071,HARDIN,Virgil Goode,20
+47071,HARDIN,Jill Stein,15
+47071,HARDIN,"Ross C. ""Rocky"" Anderson",31
+47071,HARDIN,Gary Johnson,66
+47071,HARDIN,Merlin Miller,10
+47073,HAWKINS,Mitt Romney,14382
+47073,HAWKINS,Barack Obama,5088
+47073,HAWKINS,Virgil Goode,85
+47073,HAWKINS,Jill Stein,45
+47073,HAWKINS,"Ross C. ""Rocky"" Anderson",25
+47073,HAWKINS,Gary Johnson,148
+47073,HAWKINS,Merlin Miller,24
+47075,HAYWOOD,Mitt Romney,2960
+47075,HAYWOOD,Barack Obama,4569
+47075,HAYWOOD,Virgil Goode,12
+47075,HAYWOOD,Jill Stein,7
+47075,HAYWOOD,"Ross C. ""Rocky"" Anderson",6
+47075,HAYWOOD,Gary Johnson,14
+47075,HAYWOOD,Merlin Miller,1
+47077,HENDERSON,Mitt Romney,7421
+47077,HENDERSON,Barack Obama,2517
+47077,HENDERSON,Virgil Goode,28
+47077,HENDERSON,Jill Stein,19
+47077,HENDERSON,"Ross C. ""Rocky"" Anderson",11
+47077,HENDERSON,Gary Johnson,48
+47077,HENDERSON,Merlin Miller,11
+47079,HENRY,Mitt Romney,8193
+47079,HENRY,Barack Obama,4339
+47079,HENRY,Virgil Goode,70
+47079,HENRY,Jill Stein,37
+47079,HENRY,"Ross C. ""Rocky"" Anderson",19
+47079,HENRY,Gary Johnson,74
+47079,HENRY,Merlin Miller,7
+47081,HICKMAN,Mitt Romney,4758
+47081,HICKMAN,Barack Obama,2698
+47081,HICKMAN,Virgil Goode,51
+47081,HICKMAN,Jill Stein,25
+47081,HICKMAN,"Ross C. ""Rocky"" Anderson",9
+47081,HICKMAN,Gary Johnson,54
+47081,HICKMAN,Merlin Miller,7
+47083,HOUSTON,Mitt Romney,1579
+47083,HOUSTON,Barack Obama,1400
+47083,HOUSTON,Virgil Goode,12
+47083,HOUSTON,Jill Stein,7
+47083,HOUSTON,"Ross C. ""Rocky"" Anderson",8
+47083,HOUSTON,Gary Johnson,17
+47083,HOUSTON,Merlin Miller,4
+47085,HUMPHREYS,Mitt Romney,3833
+47085,HUMPHREYS,Barack Obama,2905
+47085,HUMPHREYS,Virgil Goode,19
+47085,HUMPHREYS,Jill Stein,27
+47085,HUMPHREYS,"Ross C. ""Rocky"" Anderson",11
+47085,HUMPHREYS,Gary Johnson,56
+47085,HUMPHREYS,Merlin Miller,12
+47087,JACKSON,Mitt Romney,2383
+47087,JACKSON,Barack Obama,1739
+47087,JACKSON,Virgil Goode,17
+47087,JACKSON,Jill Stein,15
+47087,JACKSON,"Ross C. ""Rocky"" Anderson",1
+47087,JACKSON,Gary Johnson,27
+47087,JACKSON,Merlin Miller,2
+47089,JEFFERSON,Mitt Romney,13038
+47089,JEFFERSON,Barack Obama,4232
+47089,JEFFERSON,Virgil Goode,61
+47089,JEFFERSON,Jill Stein,45
+47089,JEFFERSON,"Ross C. ""Rocky"" Anderson",23
+47089,JEFFERSON,Gary Johnson,149
+47089,JEFFERSON,Merlin Miller,11
+47091,JOHNSON,Mitt Romney,4611
+47091,JOHNSON,Barack Obama,1483
+47091,JOHNSON,Virgil Goode,31
+47091,JOHNSON,Jill Stein,20
+47091,JOHNSON,"Ross C. ""Rocky"" Anderson",3
+47091,JOHNSON,Gary Johnson,39
+47091,JOHNSON,Merlin Miller,7
+47093,KNOX,Mitt Romney,109707
+47093,KNOX,Barack Obama,59399
+47093,KNOX,Virgil Goode,464
+47093,KNOX,Jill Stein,656
+47093,KNOX,"Ross C. ""Rocky"" Anderson",175
+47093,KNOX,Gary Johnson,1989
+47093,KNOX,Merlin Miller,117
+47095,LAKE,Mitt Romney,1163
+47095,LAKE,Barack Obama,884
+47095,LAKE,Virgil Goode,12
+47095,LAKE,Jill Stein,3
+47095,LAKE,"Ross C. ""Rocky"" Anderson",9
+47095,LAKE,Gary Johnson,11
+47095,LAKE,Merlin Miller,5
+47097,LAUDERDALE,Mitt Romney,4616
+47097,LAUDERDALE,Barack Obama,4011
+47097,LAUDERDALE,Virgil Goode,16
+47097,LAUDERDALE,Jill Stein,12
+47097,LAUDERDALE,"Ross C. ""Rocky"" Anderson",8
+47097,LAUDERDALE,Gary Johnson,19
+47097,LAUDERDALE,Merlin Miller,7
+47099,LAWRENCE,Mitt Romney,10770
+47099,LAWRENCE,Barack Obama,4237
+47099,LAWRENCE,Virgil Goode,83
+47099,LAWRENCE,Jill Stein,29
+47099,LAWRENCE,"Ross C. ""Rocky"" Anderson",21
+47099,LAWRENCE,Gary Johnson,64
+47099,LAWRENCE,Merlin Miller,15
+47101,LEWIS,Mitt Romney,3117
+47101,LEWIS,Barack Obama,1447
+47101,LEWIS,Virgil Goode,11
+47101,LEWIS,Jill Stein,41
+47101,LEWIS,"Ross C. ""Rocky"" Anderson",13
+47101,LEWIS,Gary Johnson,57
+47101,LEWIS,Merlin Miller,8
+47103,LINCOLN,Mitt Romney,9803
+47103,LINCOLN,Barack Obama,3290
+47103,LINCOLN,Virgil Goode,36
+47103,LINCOLN,Jill Stein,24
+47103,LINCOLN,"Ross C. ""Rocky"" Anderson",22
+47103,LINCOLN,Gary Johnson,73
+47103,LINCOLN,Merlin Miller,20
+47105,LOUDON,Mitt Romney,16707
+47105,LOUDON,Barack Obama,5058
+47105,LOUDON,Virgil Goode,46
+47105,LOUDON,Jill Stein,33
+47105,LOUDON,"Ross C. ""Rocky"" Anderson",28
+47105,LOUDON,Gary Johnson,181
+47105,LOUDON,Merlin Miller,20
+47111,MACON,Mitt Romney,5260
+47111,MACON,Barack Obama,1552
+47111,MACON,Virgil Goode,34
+47111,MACON,Jill Stein,18
+47111,MACON,"Ross C. ""Rocky"" Anderson",2
+47111,MACON,Gary Johnson,32
+47111,MACON,Merlin Miller,7
+47113,MADISON,Mitt Romney,21993
+47113,MADISON,Barack Obama,18367
+47113,MADISON,Virgil Goode,55
+47113,MADISON,Jill Stein,47
+47113,MADISON,"Ross C. ""Rocky"" Anderson",32
+47113,MADISON,Gary Johnson,191
+47113,MADISON,Merlin Miller,17
+47115,MARION,Mitt Romney,6272
+47115,MARION,Barack Obama,3953
+47115,MARION,Virgil Goode,39
+47115,MARION,Jill Stein,33
+47115,MARION,"Ross C. ""Rocky"" Anderson",23
+47115,MARION,Gary Johnson,77
+47115,MARION,Merlin Miller,12
+47117,MARSHALL,Mitt Romney,6832
+47117,MARSHALL,Barack Obama,3725
+47117,MARSHALL,Virgil Goode,55
+47117,MARSHALL,Jill Stein,36
+47117,MARSHALL,"Ross C. ""Rocky"" Anderson",23
+47117,MARSHALL,Gary Johnson,64
+47117,MARSHALL,Merlin Miller,6
+47119,MAURY,Mitt Romney,20708
+47119,MAURY,Barack Obama,11825
+47119,MAURY,Virgil Goode,92
+47119,MAURY,Jill Stein,76
+47119,MAURY,"Ross C. ""Rocky"" Anderson",50
+47119,MAURY,Gary Johnson,212
+47119,MAURY,Merlin Miller,43
+47107,MCMINN,Mitt Romney,12967
+47107,MCMINN,Barack Obama,4609
+47107,MCMINN,Virgil Goode,60
+47107,MCMINN,Jill Stein,27
+47107,MCMINN,"Ross C. ""Rocky"" Anderson",23
+47107,MCMINN,Gary Johnson,135
+47107,MCMINN,Merlin Miller,13
+47109,MCNAIRY,Mitt Romney,7015
+47109,MCNAIRY,Barack Obama,2645
+47109,MCNAIRY,Virgil Goode,29
+47109,MCNAIRY,Jill Stein,24
+47109,MCNAIRY,"Ross C. ""Rocky"" Anderson",15
+47109,MCNAIRY,Gary Johnson,58
+47109,MCNAIRY,Merlin Miller,16
+47121,MEIGS,Mitt Romney,2734
+47121,MEIGS,Barack Obama,1163
+47121,MEIGS,Virgil Goode,17
+47121,MEIGS,Jill Stein,16
+47121,MEIGS,"Ross C. ""Rocky"" Anderson",3
+47121,MEIGS,Gary Johnson,26
+47121,MEIGS,Merlin Miller,5
+47123,MONROE,Mitt Romney,11731
+47123,MONROE,Barack Obama,4372
+47123,MONROE,Virgil Goode,54
+47123,MONROE,Jill Stein,41
+47123,MONROE,"Ross C. ""Rocky"" Anderson",24
+47123,MONROE,Gary Johnson,101
+47123,MONROE,Merlin Miller,15
+47125,MONTGOMERY,Mitt Romney,30245
+47125,MONTGOMERY,Barack Obama,24499
+47125,MONTGOMERY,Virgil Goode,135
+47125,MONTGOMERY,Jill Stein,149
+47125,MONTGOMERY,"Ross C. ""Rocky"" Anderson",56
+47125,MONTGOMERY,Gary Johnson,466
+47125,MONTGOMERY,Merlin Miller,34
+47127,MOORE,Mitt Romney,2053
+47127,MOORE,Barack Obama,705
+47127,MOORE,Virgil Goode,11
+47127,MOORE,Jill Stein,5
+47127,MOORE,"Ross C. ""Rocky"" Anderson",1
+47127,MOORE,Gary Johnson,19
+47127,MOORE,Merlin Miller,5
+47129,MORGAN,Mitt Romney,4669
+47129,MORGAN,Barack Obama,1725
+47129,MORGAN,Virgil Goode,28
+47129,MORGAN,Jill Stein,16
+47129,MORGAN,"Ross C. ""Rocky"" Anderson",10
+47129,MORGAN,Gary Johnson,45
+47129,MORGAN,Merlin Miller,11
+47131,OBION,Mitt Romney,8814
+47131,OBION,Barack Obama,3321
+47131,OBION,Virgil Goode,33
+47131,OBION,Jill Stein,26
+47131,OBION,"Ross C. ""Rocky"" Anderson",19
+47131,OBION,Gary Johnson,68
+47131,OBION,Merlin Miller,16
+47133,OVERTON,Mitt Romney,4775
+47133,OVERTON,Barack Obama,2805
+47133,OVERTON,Virgil Goode,21
+47133,OVERTON,Jill Stein,19
+47133,OVERTON,"Ross C. ""Rocky"" Anderson",8
+47133,OVERTON,Gary Johnson,30
+47133,OVERTON,Merlin Miller,6
+47135,PERRY,Mitt Romney,1578
+47135,PERRY,Barack Obama,992
+47135,PERRY,Virgil Goode,11
+47135,PERRY,Jill Stein,5
+47135,PERRY,"Ross C. ""Rocky"" Anderson",10
+47135,PERRY,Gary Johnson,22
+47135,PERRY,Merlin Miller,3
+47137,PICKETT,Mitt Romney,1712
+47137,PICKETT,Barack Obama,712
+47137,PICKETT,Virgil Goode,2
+47137,PICKETT,Jill Stein,7
+47137,PICKETT,"Ross C. ""Rocky"" Anderson",5
+47137,PICKETT,Gary Johnson,13
+47137,PICKETT,Merlin Miller,2
+47139,POLK,Mitt Romney,4108
+47139,POLK,Barack Obama,1856
+47139,POLK,Virgil Goode,19
+47139,POLK,Jill Stein,12
+47139,POLK,"Ross C. ""Rocky"" Anderson",13
+47139,POLK,Gary Johnson,44
+47139,POLK,Merlin Miller,7
+47141,PUTNAM,Mitt Romney,17254
+47141,PUTNAM,Barack Obama,7802
+47141,PUTNAM,Virgil Goode,79
+47141,PUTNAM,Jill Stein,95
+47141,PUTNAM,"Ross C. ""Rocky"" Anderson",43
+47141,PUTNAM,Gary Johnson,211
+47141,PUTNAM,Merlin Miller,16
+47143,RHEA,Mitt Romney,7802
+47143,RHEA,Barack Obama,2628
+47143,RHEA,Virgil Goode,50
+47143,RHEA,Jill Stein,17
+47143,RHEA,"Ross C. ""Rocky"" Anderson",13
+47143,RHEA,Gary Johnson,74
+47143,RHEA,Merlin Miller,6
+47145,ROANE,Mitt Romney,14724
+47145,ROANE,Barack Obama,6018
+47145,ROANE,Virgil Goode,72
+47145,ROANE,Jill Stein,50
+47145,ROANE,"Ross C. ""Rocky"" Anderson",30
+47145,ROANE,Gary Johnson,172
+47145,ROANE,Merlin Miller,24
+47147,ROBERTSON,Mitt Romney,17643
+47147,ROBERTSON,Barack Obama,8290
+47147,ROBERTSON,Virgil Goode,66
+47147,ROBERTSON,Jill Stein,57
+47147,ROBERTSON,"Ross C. ""Rocky"" Anderson",30
+47147,ROBERTSON,Gary Johnson,184
+47147,ROBERTSON,Merlin Miller,19
+47149,RUTHERFORD,Mitt Romney,60846
+47149,RUTHERFORD,Barack Obama,36414
+47149,RUTHERFORD,Virgil Goode,210
+47149,RUTHERFORD,Jill Stein,298
+47149,RUTHERFORD,"Ross C. ""Rocky"" Anderson",83
+47149,RUTHERFORD,Gary Johnson,946
+47149,RUTHERFORD,Merlin Miller,51
+47151,SCOTT,Mitt Romney,5117
+47151,SCOTT,Barack Obama,1452
+47151,SCOTT,Virgil Goode,31
+47151,SCOTT,Jill Stein,19
+47151,SCOTT,"Ross C. ""Rocky"" Anderson",9
+47151,SCOTT,Gary Johnson,38
+47151,SCOTT,Merlin Miller,2
+47153,SEQUATCHIE,Mitt Romney,3541
+47153,SEQUATCHIE,Barack Obama,1489
+47153,SEQUATCHIE,Virgil Goode,23
+47153,SEQUATCHIE,Jill Stein,9
+47153,SEQUATCHIE,"Ross C. ""Rocky"" Anderson",7
+47153,SEQUATCHIE,Gary Johnson,68
+47153,SEQUATCHIE,Merlin Miller,5
+47155,SEVIER,Mitt Romney,25984
+47155,SEVIER,Barack Obama,7418
+47155,SEVIER,Virgil Goode,73
+47155,SEVIER,Jill Stein,89
+47155,SEVIER,"Ross C. ""Rocky"" Anderson",39
+47155,SEVIER,Gary Johnson,213
+47155,SEVIER,Merlin Miller,48
+47157,SHELBY,Mitt Romney,135649
+47157,SHELBY,Barack Obama,232443
+47157,SHELBY,Virgil Goode,411
+47157,SHELBY,Jill Stein,679
+47157,SHELBY,"Ross C. ""Rocky"" Anderson",252
+47157,SHELBY,Gary Johnson,1537
+47157,SHELBY,Merlin Miller,138
+47159,SMITH,Mitt Romney,4495
+47159,SMITH,Barack Obama,2470
+47159,SMITH,Virgil Goode,40
+47159,SMITH,Jill Stein,20
+47159,SMITH,"Ross C. ""Rocky"" Anderson",14
+47159,SMITH,Gary Johnson,37
+47159,SMITH,Merlin Miller,11
+47161,STEWART,Mitt Romney,2963
+47161,STEWART,Barack Obama,2069
+47161,STEWART,Virgil Goode,23
+47161,STEWART,Jill Stein,23
+47161,STEWART,"Ross C. ""Rocky"" Anderson",6
+47161,STEWART,Gary Johnson,29
+47161,STEWART,Merlin Miller,2
+47163,SULLIVAN,Mitt Romney,43562
+47163,SULLIVAN,Barack Obama,15321
+47163,SULLIVAN,Virgil Goode,192
+47163,SULLIVAN,Jill Stein,115
+47163,SULLIVAN,"Ross C. ""Rocky"" Anderson",70
+47163,SULLIVAN,Gary Johnson,590
+47163,SULLIVAN,Merlin Miller,37
+47165,SUMNER,Mitt Romney,46003
+47165,SUMNER,Barack Obama,18579
+47165,SUMNER,Virgil Goode,125
+47165,SUMNER,Jill Stein,153
+47165,SUMNER,"Ross C. ""Rocky"" Anderson",48
+47165,SUMNER,Gary Johnson,419
+47165,SUMNER,Merlin Miller,39
+47167,TIPTON,Mitt Romney,16672
+47167,TIPTON,Barack Obama,7133
+47167,TIPTON,Virgil Goode,59
+47167,TIPTON,Jill Stein,34
+47167,TIPTON,"Ross C. ""Rocky"" Anderson",25
+47167,TIPTON,Gary Johnson,148
+47167,TIPTON,Merlin Miller,10
+47169,TROUSDALE,Mitt Romney,1612
+47169,TROUSDALE,Barack Obama,1240
+47169,TROUSDALE,Virgil Goode,16
+47169,TROUSDALE,Jill Stein,7
+47169,TROUSDALE,"Ross C. ""Rocky"" Anderson",2
+47169,TROUSDALE,Gary Johnson,22
+47169,TROUSDALE,Merlin Miller,6
+47171,UNICOI,Mitt Romney,5032
+47171,UNICOI,Barack Obama,1913
+47171,UNICOI,Virgil Goode,40
+47171,UNICOI,Jill Stein,27
+47171,UNICOI,"Ross C. ""Rocky"" Anderson",10
+47171,UNICOI,Gary Johnson,59
+47171,UNICOI,Merlin Miller,5
+47173,UNION,Mitt Romney,4282
+47173,UNION,Barack Obama,1478
+47173,UNION,Virgil Goode,17
+47173,UNION,Jill Stein,13
+47173,UNION,"Ross C. ""Rocky"" Anderson",12
+47173,UNION,Gary Johnson,26
+47173,UNION,Merlin Miller,0
+47175,VAN BUREN,Mitt Romney,1386
+47175,VAN BUREN,Barack Obama,875
+47175,VAN BUREN,Virgil Goode,6
+47175,VAN BUREN,Jill Stein,5
+47175,VAN BUREN,"Ross C. ""Rocky"" Anderson",3
+47175,VAN BUREN,Gary Johnson,22
+47175,VAN BUREN,Merlin Miller,3
+47177,WARREN,Mitt Romney,8010
+47177,WARREN,Barack Obama,4752
+47177,WARREN,Virgil Goode,68
+47177,WARREN,Jill Stein,37
+47177,WARREN,"Ross C. ""Rocky"" Anderson",23
+47177,WARREN,Gary Johnson,108
+47177,WARREN,Merlin Miller,17
+47179,WASHINGTON,Mitt Romney,32808
+47179,WASHINGTON,Barack Obama,14325
+47179,WASHINGTON,Virgil Goode,184
+47179,WASHINGTON,Jill Stein,188
+47179,WASHINGTON,"Ross C. ""Rocky"" Anderson",58
+47179,WASHINGTON,Gary Johnson,451
+47179,WASHINGTON,Merlin Miller,18
+47181,WAYNE,Mitt Romney,4253
+47181,WAYNE,Barack Obama,1163
+47181,WAYNE,Virgil Goode,19
+47181,WAYNE,Jill Stein,10
+47181,WAYNE,"Ross C. ""Rocky"" Anderson",7
+47181,WAYNE,Gary Johnson,28
+47181,WAYNE,Merlin Miller,6
+47183,WEAKLEY,Mitt Romney,8605
+47183,WEAKLEY,Barack Obama,3548
+47183,WEAKLEY,Virgil Goode,38
+47183,WEAKLEY,Jill Stein,28
+47183,WEAKLEY,"Ross C. ""Rocky"" Anderson",26
+47183,WEAKLEY,Gary Johnson,77
+47183,WEAKLEY,Merlin Miller,15
+47185,WHITE,Mitt Romney,6197
+47185,WHITE,Barack Obama,2795
+47185,WHITE,Virgil Goode,37
+47185,WHITE,Jill Stein,22
+47185,WHITE,"Ross C. ""Rocky"" Anderson",11
+47185,WHITE,Gary Johnson,68
+47185,WHITE,Merlin Miller,10
+47187,WILLIAMSON,Mitt Romney,69850
+47187,WILLIAMSON,Barack Obama,25142
+47187,WILLIAMSON,Virgil Goode,160
+47187,WILLIAMSON,Jill Stein,217
+47187,WILLIAMSON,"Ross C. ""Rocky"" Anderson",66
+47187,WILLIAMSON,Gary Johnson,748
+47187,WILLIAMSON,Merlin Miller,42
+47189,WILSON,Mitt Romney,36109
+47189,WILSON,Barack Obama,14695
+47189,WILSON,Virgil Goode,117
+47189,WILSON,Jill Stein,113
+47189,WILSON,"Ross C. ""Rocky"" Anderson",43
+47189,WILSON,Gary Johnson,381
+47189,WILSON,Merlin Miller,41

@@ -1,0 +1,892 @@
+fips,county,candidate,votes
+19001,Adair,Mitt Romney/Paul Ryan,2114
+19001,Adair,Barack Obama/Joe Biden,1790
+19001,Adair,Virgil Goode/James Clymer,8
+19001,Adair,Jill Stein/Cheri Honkala,9
+19001,Adair,Gary Johnson/James P. Gray,30
+19001,Adair,Gloria LaRiva/Stefanie Beacham,3
+19001,Adair,James Harris/Alyson Kennedy,5
+19001,Adair,Jerry Litzel/Jim Litzel,6
+19001,Adair,Write-In,31
+19003,Adams,Mitt Romney/Paul Ryan,1108
+19003,Adams,Barack Obama/Joe Biden,1028
+19003,Adams,Virgil Goode/James Clymer,6
+19003,Adams,Jill Stein/Cheri Honkala,3
+19003,Adams,Gary Johnson/James P. Gray,16
+19003,Adams,Gloria LaRiva/Stefanie Beacham,0
+19003,Adams,James Harris/Alyson Kennedy,4
+19003,Adams,Jerry Litzel/Jim Litzel,8
+19003,Adams,Write-In,12
+19005,Allamakee,Mitt Romney/Paul Ryan,3264
+19005,Allamakee,Barack Obama/Joe Biden,3553
+19005,Allamakee,Virgil Goode/James Clymer,9
+19005,Allamakee,Jill Stein/Cheri Honkala,27
+19005,Allamakee,Gary Johnson/James P. Gray,27
+19005,Allamakee,Gloria LaRiva/Stefanie Beacham,1
+19005,Allamakee,James Harris/Alyson Kennedy,17
+19005,Allamakee,Jerry Litzel/Jim Litzel,2
+19005,Allamakee,Write-In,34
+19007,Appanoose,Mitt Romney/Paul Ryan,3161
+19007,Appanoose,Barack Obama/Joe Biden,2951
+19007,Appanoose,Virgil Goode/James Clymer,15
+19007,Appanoose,Jill Stein/Cheri Honkala,18
+19007,Appanoose,Gary Johnson/James P. Gray,44
+19007,Appanoose,Gloria LaRiva/Stefanie Beacham,2
+19007,Appanoose,James Harris/Alyson Kennedy,2
+19007,Appanoose,Jerry Litzel/Jim Litzel,8
+19007,Appanoose,Write-In,44
+19009,Audubon,Mitt Romney/Paul Ryan,1802
+19009,Audubon,Barack Obama/Joe Biden,1611
+19009,Audubon,Virgil Goode/James Clymer,8
+19009,Audubon,Jill Stein/Cheri Honkala,8
+19009,Audubon,Gary Johnson/James P. Gray,12
+19009,Audubon,Gloria LaRiva/Stefanie Beacham,1
+19009,Audubon,James Harris/Alyson Kennedy,1
+19009,Audubon,Jerry Litzel/Jim Litzel,2
+19009,Audubon,Write-In,12
+19011,Benton,Mitt Romney/Paul Ryan,6940
+19011,Benton,Barack Obama/Joe Biden,6862
+19011,Benton,Virgil Goode/James Clymer,31
+19011,Benton,Jill Stein/Cheri Honkala,25
+19011,Benton,Gary Johnson/James P. Gray,100
+19011,Benton,Gloria LaRiva/Stefanie Beacham,6
+19011,Benton,James Harris/Alyson Kennedy,2
+19011,Benton,Jerry Litzel/Jim Litzel,10
+19011,Benton,Write-In,47
+19013,Black Hawk,Mitt Romney/Paul Ryan,26235
+19013,Black Hawk,Barack Obama/Joe Biden,39821
+19013,Black Hawk,Virgil Goode/James Clymer,96
+19013,Black Hawk,Jill Stein/Cheri Honkala,118
+19013,Black Hawk,Gary Johnson/James P. Gray,540
+19013,Black Hawk,Gloria LaRiva/Stefanie Beacham,13
+19013,Black Hawk,James Harris/Alyson Kennedy,15
+19013,Black Hawk,Jerry Litzel/Jim Litzel,14
+19013,Black Hawk,Write-In,289
+19015,Boone,Mitt Romney/Paul Ryan,6556
+19015,Boone,Barack Obama/Joe Biden,7512
+19015,Boone,Virgil Goode/James Clymer,55
+19015,Boone,Jill Stein/Cheri Honkala,43
+19015,Boone,Gary Johnson/James P. Gray,122
+19015,Boone,Gloria LaRiva/Stefanie Beacham,1
+19015,Boone,James Harris/Alyson Kennedy,2
+19015,Boone,Jerry Litzel/Jim Litzel,21
+19015,Boone,Write-In,76
+19017,Bremer,Mitt Romney/Paul Ryan,6405
+19017,Bremer,Barack Obama/Joe Biden,6763
+19017,Bremer,Virgil Goode/James Clymer,13
+19017,Bremer,Jill Stein/Cheri Honkala,16
+19017,Bremer,Gary Johnson/James P. Gray,82
+19017,Bremer,Gloria LaRiva/Stefanie Beacham,3
+19017,Bremer,James Harris/Alyson Kennedy,4
+19017,Bremer,Jerry Litzel/Jim Litzel,7
+19017,Bremer,Write-In,53
+19019,Buchanan,Mitt Romney/Paul Ryan,4450
+19019,Buchanan,Barack Obama/Joe Biden,5911
+19019,Buchanan,Virgil Goode/James Clymer,19
+19019,Buchanan,Jill Stein/Cheri Honkala,34
+19019,Buchanan,Gary Johnson/James P. Gray,65
+19019,Buchanan,Gloria LaRiva/Stefanie Beacham,4
+19019,Buchanan,James Harris/Alyson Kennedy,5
+19019,Buchanan,Jerry Litzel/Jim Litzel,5
+19019,Buchanan,Write-In,42
+19021,Buena Vista,Mitt Romney/Paul Ryan,4554
+19021,Buena Vista,Barack Obama/Joe Biden,3700
+19021,Buena Vista,Virgil Goode/James Clymer,16
+19021,Buena Vista,Jill Stein/Cheri Honkala,12
+19021,Buena Vista,Gary Johnson/James P. Gray,57
+19021,Buena Vista,Gloria LaRiva/Stefanie Beacham,2
+19021,Buena Vista,James Harris/Alyson Kennedy,2
+19021,Buena Vista,Jerry Litzel/Jim Litzel,4
+19021,Buena Vista,Write-In,36
+19023,Butler,Mitt Romney/Paul Ryan,4106
+19023,Butler,Barack Obama/Joe Biden,3329
+19023,Butler,Virgil Goode/James Clymer,25
+19023,Butler,Jill Stein/Cheri Honkala,18
+19023,Butler,Gary Johnson/James P. Gray,33
+19023,Butler,Gloria LaRiva/Stefanie Beacham,1
+19023,Butler,James Harris/Alyson Kennedy,1
+19023,Butler,Jerry Litzel/Jim Litzel,8
+19023,Butler,Write-In,24
+19025,Calhoun,Mitt Romney/Paul Ryan,2891
+19025,Calhoun,Barack Obama/Joe Biden,2238
+19025,Calhoun,Virgil Goode/James Clymer,16
+19025,Calhoun,Jill Stein/Cheri Honkala,12
+19025,Calhoun,Gary Johnson/James P. Gray,39
+19025,Calhoun,Gloria LaRiva/Stefanie Beacham,0
+19025,Calhoun,James Harris/Alyson Kennedy,1
+19025,Calhoun,Jerry Litzel/Jim Litzel,1
+19025,Calhoun,Write-In,32
+19027,Carroll,Mitt Romney/Paul Ryan,5601
+19027,Carroll,Barack Obama/Joe Biden,4947
+19027,Carroll,Virgil Goode/James Clymer,23
+19027,Carroll,Jill Stein/Cheri Honkala,13
+19027,Carroll,Gary Johnson/James P. Gray,42
+19027,Carroll,Gloria LaRiva/Stefanie Beacham,5
+19027,Carroll,James Harris/Alyson Kennedy,1
+19027,Carroll,Jerry Litzel/Jim Litzel,8
+19027,Carroll,Write-In,34
+19029,Cass,Mitt Romney/Paul Ryan,4217
+19029,Cass,Barack Obama/Joe Biden,2858
+19029,Cass,Virgil Goode/James Clymer,21
+19029,Cass,Jill Stein/Cheri Honkala,15
+19029,Cass,Gary Johnson/James P. Gray,46
+19029,Cass,Gloria LaRiva/Stefanie Beacham,4
+19029,Cass,James Harris/Alyson Kennedy,9
+19029,Cass,Jerry Litzel/Jim Litzel,5
+19029,Cass,Write-In,30
+19031,Cedar,Mitt Romney/Paul Ryan,4529
+19031,Cedar,Barack Obama/Joe Biden,4972
+19031,Cedar,Virgil Goode/James Clymer,14
+19031,Cedar,Jill Stein/Cheri Honkala,15
+19031,Cedar,Gary Johnson/James P. Gray,72
+19031,Cedar,Gloria LaRiva/Stefanie Beacham,0
+19031,Cedar,James Harris/Alyson Kennedy,1
+19031,Cedar,Jerry Litzel/Jim Litzel,5
+19031,Cedar,Write-In,41
+19033,Cerro Gordo,Mitt Romney/Paul Ryan,10128
+19033,Cerro Gordo,Barack Obama/Joe Biden,13316
+19033,Cerro Gordo,Virgil Goode/James Clymer,44
+19033,Cerro Gordo,Jill Stein/Cheri Honkala,48
+19033,Cerro Gordo,Gary Johnson/James P. Gray,147
+19033,Cerro Gordo,Gloria LaRiva/Stefanie Beacham,6
+19033,Cerro Gordo,James Harris/Alyson Kennedy,7
+19033,Cerro Gordo,Jerry Litzel/Jim Litzel,12
+19033,Cerro Gordo,Write-In,116
+19035,Cherokee,Mitt Romney/Paul Ryan,3662
+19035,Cherokee,Barack Obama/Joe Biden,2634
+19035,Cherokee,Virgil Goode/James Clymer,12
+19035,Cherokee,Jill Stein/Cheri Honkala,19
+19035,Cherokee,Gary Johnson/James P. Gray,45
+19035,Cherokee,Gloria LaRiva/Stefanie Beacham,3
+19035,Cherokee,James Harris/Alyson Kennedy,5
+19035,Cherokee,Jerry Litzel/Jim Litzel,4
+19035,Cherokee,Write-In,31
+19037,Chickasaw,Mitt Romney/Paul Ryan,2836
+19037,Chickasaw,Barack Obama/Joe Biden,3554
+19037,Chickasaw,Virgil Goode/James Clymer,15
+19037,Chickasaw,Jill Stein/Cheri Honkala,15
+19037,Chickasaw,Gary Johnson/James P. Gray,35
+19037,Chickasaw,Gloria LaRiva/Stefanie Beacham,3
+19037,Chickasaw,James Harris/Alyson Kennedy,2
+19037,Chickasaw,Jerry Litzel/Jim Litzel,4
+19037,Chickasaw,Write-In,20
+19039,Clarke,Mitt Romney/Paul Ryan,2124
+19039,Clarke,Barack Obama/Joe Biden,2189
+19039,Clarke,Virgil Goode/James Clymer,18
+19039,Clarke,Jill Stein/Cheri Honkala,17
+19039,Clarke,Gary Johnson/James P. Gray,38
+19039,Clarke,Gloria LaRiva/Stefanie Beacham,2
+19039,Clarke,James Harris/Alyson Kennedy,2
+19039,Clarke,Jerry Litzel/Jim Litzel,10
+19039,Clarke,Write-In,30
+19041,Clay,Mitt Romney/Paul Ryan,4951
+19041,Clay,Barack Obama/Joe Biden,3385
+19041,Clay,Virgil Goode/James Clymer,13
+19041,Clay,Jill Stein/Cheri Honkala,24
+19041,Clay,Gary Johnson/James P. Gray,58
+19041,Clay,Gloria LaRiva/Stefanie Beacham,0
+19041,Clay,James Harris/Alyson Kennedy,5
+19041,Clay,Jerry Litzel/Jim Litzel,5
+19041,Clay,Write-In,61
+19043,Clayton,Mitt Romney/Paul Ryan,4164
+19043,Clayton,Barack Obama/Joe Biden,4806
+19043,Clayton,Virgil Goode/James Clymer,19
+19043,Clayton,Jill Stein/Cheri Honkala,33
+19043,Clayton,Gary Johnson/James P. Gray,57
+19043,Clayton,Gloria LaRiva/Stefanie Beacham,3
+19043,Clayton,James Harris/Alyson Kennedy,5
+19043,Clayton,Jerry Litzel/Jim Litzel,4
+19043,Clayton,Write-In,47
+19045,Clinton,Mitt Romney/Paul Ryan,9432
+19045,Clinton,Barack Obama/Joe Biden,15141
+19045,Clinton,Virgil Goode/James Clymer,61
+19045,Clinton,Jill Stein/Cheri Honkala,55
+19045,Clinton,Gary Johnson/James P. Gray,187
+19045,Clinton,Gloria LaRiva/Stefanie Beacham,2
+19045,Clinton,James Harris/Alyson Kennedy,6
+19045,Clinton,Jerry Litzel/Jim Litzel,16
+19045,Clinton,Write-In,100
+19047,Crawford,Mitt Romney/Paul Ryan,3595
+19047,Crawford,Barack Obama/Joe Biden,3066
+19047,Crawford,Virgil Goode/James Clymer,9
+19047,Crawford,Jill Stein/Cheri Honkala,16
+19047,Crawford,Gary Johnson/James P. Gray,32
+19047,Crawford,Gloria LaRiva/Stefanie Beacham,4
+19047,Crawford,James Harris/Alyson Kennedy,3
+19047,Crawford,Jerry Litzel/Jim Litzel,3
+19047,Crawford,Write-In,24
+19049,Dallas,Mitt Romney/Paul Ryan,20988
+19049,Dallas,Barack Obama/Joe Biden,16576
+19049,Dallas,Virgil Goode/James Clymer,57
+19049,Dallas,Jill Stein/Cheri Honkala,49
+19049,Dallas,Gary Johnson/James P. Gray,273
+19049,Dallas,Gloria LaRiva/Stefanie Beacham,6
+19049,Dallas,James Harris/Alyson Kennedy,4
+19049,Dallas,Jerry Litzel/Jim Litzel,24
+19049,Dallas,Write-In,139
+19051,Davis,Mitt Romney/Paul Ryan,2138
+19051,Davis,Barack Obama/Joe Biden,1520
+19051,Davis,Virgil Goode/James Clymer,32
+19051,Davis,Jill Stein/Cheri Honkala,10
+19051,Davis,Gary Johnson/James P. Gray,38
+19051,Davis,Gloria LaRiva/Stefanie Beacham,2
+19051,Davis,James Harris/Alyson Kennedy,1
+19051,Davis,Jerry Litzel/Jim Litzel,4
+19051,Davis,Write-In,28
+19053,Decatur,Mitt Romney/Paul Ryan,1947
+19053,Decatur,Barack Obama/Joe Biden,1791
+19053,Decatur,Virgil Goode/James Clymer,12
+19053,Decatur,Jill Stein/Cheri Honkala,15
+19053,Decatur,Gary Johnson/James P. Gray,33
+19053,Decatur,Gloria LaRiva/Stefanie Beacham,3
+19053,Decatur,James Harris/Alyson Kennedy,5
+19053,Decatur,Jerry Litzel/Jim Litzel,9
+19053,Decatur,Write-In,18
+19055,Delaware,Mitt Romney/Paul Ryan,4636
+19055,Delaware,Barack Obama/Joe Biden,4616
+19055,Delaware,Virgil Goode/James Clymer,10
+19055,Delaware,Jill Stein/Cheri Honkala,24
+19055,Delaware,Gary Johnson/James P. Gray,46
+19055,Delaware,Gloria LaRiva/Stefanie Beacham,3
+19055,Delaware,James Harris/Alyson Kennedy,2
+19055,Delaware,Jerry Litzel/Jim Litzel,5
+19055,Delaware,Write-In,36
+19057,Des Moines,Mitt Romney/Paul Ryan,8136
+19057,Des Moines,Barack Obama/Joe Biden,11888
+19057,Des Moines,Virgil Goode/James Clymer,33
+19057,Des Moines,Jill Stein/Cheri Honkala,68
+19057,Des Moines,Gary Johnson/James P. Gray,137
+19057,Des Moines,Gloria LaRiva/Stefanie Beacham,6
+19057,Des Moines,James Harris/Alyson Kennedy,7
+19057,Des Moines,Jerry Litzel/Jim Litzel,10
+19057,Des Moines,Write-In,100
+19059,Dickinson,Mitt Romney/Paul Ryan,5912
+19059,Dickinson,Barack Obama/Joe Biden,4095
+19059,Dickinson,Virgil Goode/James Clymer,18
+19059,Dickinson,Jill Stein/Cheri Honkala,23
+19059,Dickinson,Gary Johnson/James P. Gray,68
+19059,Dickinson,Gloria LaRiva/Stefanie Beacham,2
+19059,Dickinson,James Harris/Alyson Kennedy,2
+19059,Dickinson,Jerry Litzel/Jim Litzel,6
+19059,Dickinson,Write-In,33
+19061,Dubuque,Mitt Romney/Paul Ryan,21280
+19061,Dubuque,Barack Obama/Joe Biden,28768
+19061,Dubuque,Virgil Goode/James Clymer,65
+19061,Dubuque,Jill Stein/Cheri Honkala,111
+19061,Dubuque,Gary Johnson/James P. Gray,438
+19061,Dubuque,Gloria LaRiva/Stefanie Beacham,9
+19061,Dubuque,James Harris/Alyson Kennedy,13
+19061,Dubuque,Jerry Litzel/Jim Litzel,13
+19061,Dubuque,Write-In,197
+19063,Emmet,Mitt Romney/Paul Ryan,2507
+19063,Emmet,Barack Obama/Joe Biden,2099
+19063,Emmet,Virgil Goode/James Clymer,10
+19063,Emmet,Jill Stein/Cheri Honkala,16
+19063,Emmet,Gary Johnson/James P. Gray,27
+19063,Emmet,Gloria LaRiva/Stefanie Beacham,2
+19063,Emmet,James Harris/Alyson Kennedy,3
+19063,Emmet,Jerry Litzel/Jim Litzel,2
+19063,Emmet,Write-In,21
+19065,Fayette,Mitt Romney/Paul Ryan,4492
+19065,Fayette,Barack Obama/Joe Biden,5732
+19065,Fayette,Virgil Goode/James Clymer,21
+19065,Fayette,Jill Stein/Cheri Honkala,28
+19065,Fayette,Gary Johnson/James P. Gray,56
+19065,Fayette,Gloria LaRiva/Stefanie Beacham,0
+19065,Fayette,James Harris/Alyson Kennedy,2
+19065,Fayette,Jerry Litzel/Jim Litzel,11
+19065,Fayette,Write-In,24
+19067,Floyd,Mitt Romney/Paul Ryan,3472
+19067,Floyd,Barack Obama/Joe Biden,4680
+19067,Floyd,Virgil Goode/James Clymer,11
+19067,Floyd,Jill Stein/Cheri Honkala,22
+19067,Floyd,Gary Johnson/James P. Gray,43
+19067,Floyd,Gloria LaRiva/Stefanie Beacham,2
+19067,Floyd,James Harris/Alyson Kennedy,2
+19067,Floyd,Jerry Litzel/Jim Litzel,8
+19067,Floyd,Write-In,17
+19069,Franklin,Mitt Romney/Paul Ryan,2823
+19069,Franklin,Barack Obama/Joe Biden,2266
+19069,Franklin,Virgil Goode/James Clymer,12
+19069,Franklin,Jill Stein/Cheri Honkala,7
+19069,Franklin,Gary Johnson/James P. Gray,33
+19069,Franklin,Gloria LaRiva/Stefanie Beacham,2
+19069,Franklin,James Harris/Alyson Kennedy,0
+19069,Franklin,Jerry Litzel/Jim Litzel,5
+19069,Franklin,Write-In,38
+19071,Fremont,Mitt Romney/Paul Ryan,1972
+19071,Fremont,Barack Obama/Joe Biden,1637
+19071,Fremont,Virgil Goode/James Clymer,5
+19071,Fremont,Jill Stein/Cheri Honkala,9
+19071,Fremont,Gary Johnson/James P. Gray,24
+19071,Fremont,Gloria LaRiva/Stefanie Beacham,5
+19071,Fremont,James Harris/Alyson Kennedy,3
+19071,Fremont,Jerry Litzel/Jim Litzel,2
+19071,Fremont,Write-In,11
+19073,Greene,Mitt Romney/Paul Ryan,2380
+19073,Greene,Barack Obama/Joe Biden,2375
+19073,Greene,Virgil Goode/James Clymer,11
+19073,Greene,Jill Stein/Cheri Honkala,8
+19073,Greene,Gary Johnson/James P. Gray,30
+19073,Greene,Gloria LaRiva/Stefanie Beacham,3
+19073,Greene,James Harris/Alyson Kennedy,5
+19073,Greene,Jerry Litzel/Jim Litzel,6
+19073,Greene,Write-In,28
+19075,Grundy,Mitt Romney/Paul Ryan,4215
+19075,Grundy,Barack Obama/Joe Biden,2635
+19075,Grundy,Virgil Goode/James Clymer,18
+19075,Grundy,Jill Stein/Cheri Honkala,10
+19075,Grundy,Gary Johnson/James P. Gray,33
+19075,Grundy,Gloria LaRiva/Stefanie Beacham,1
+19075,Grundy,James Harris/Alyson Kennedy,6
+19075,Grundy,Jerry Litzel/Jim Litzel,3
+19075,Grundy,Write-In,41
+19077,Guthrie,Mitt Romney/Paul Ryan,3171
+19077,Guthrie,Barack Obama/Joe Biden,2569
+19077,Guthrie,Virgil Goode/James Clymer,12
+19077,Guthrie,Jill Stein/Cheri Honkala,15
+19077,Guthrie,Gary Johnson/James P. Gray,74
+19077,Guthrie,Gloria LaRiva/Stefanie Beacham,0
+19077,Guthrie,James Harris/Alyson Kennedy,5
+19077,Guthrie,Jerry Litzel/Jim Litzel,9
+19077,Guthrie,Write-In,33
+19079,Hamilton,Mitt Romney/Paul Ryan,3991
+19079,Hamilton,Barack Obama/Joe Biden,3782
+19079,Hamilton,Virgil Goode/James Clymer,29
+19079,Hamilton,Jill Stein/Cheri Honkala,19
+19079,Hamilton,Gary Johnson/James P. Gray,54
+19079,Hamilton,Gloria LaRiva/Stefanie Beacham,0
+19079,Hamilton,James Harris/Alyson Kennedy,0
+19079,Hamilton,Jerry Litzel/Jim Litzel,9
+19079,Hamilton,Write-In,43
+19081,Hancock,Mitt Romney/Paul Ryan,3317
+19081,Hancock,Barack Obama/Joe Biden,2521
+19081,Hancock,Virgil Goode/James Clymer,10
+19081,Hancock,Jill Stein/Cheri Honkala,16
+19081,Hancock,Gary Johnson/James P. Gray,39
+19081,Hancock,Gloria LaRiva/Stefanie Beacham,2
+19081,Hancock,James Harris/Alyson Kennedy,1
+19081,Hancock,Jerry Litzel/Jim Litzel,2
+19081,Hancock,Write-In,17
+19083,Hardin,Mitt Romney/Paul Ryan,4670
+19083,Hardin,Barack Obama/Joe Biden,4075
+19083,Hardin,Virgil Goode/James Clymer,24
+19083,Hardin,Jill Stein/Cheri Honkala,17
+19083,Hardin,Gary Johnson/James P. Gray,53
+19083,Hardin,Gloria LaRiva/Stefanie Beacham,0
+19083,Hardin,James Harris/Alyson Kennedy,5
+19083,Hardin,Jerry Litzel/Jim Litzel,8
+19083,Hardin,Write-In,46
+19085,Harrison,Mitt Romney/Paul Ryan,4065
+19085,Harrison,Barack Obama/Joe Biden,3136
+19085,Harrison,Virgil Goode/James Clymer,15
+19085,Harrison,Jill Stein/Cheri Honkala,15
+19085,Harrison,Gary Johnson/James P. Gray,52
+19085,Harrison,Gloria LaRiva/Stefanie Beacham,2
+19085,Harrison,James Harris/Alyson Kennedy,3
+19085,Harrison,Jerry Litzel/Jim Litzel,5
+19085,Harrison,Write-In,29
+19087,Henry,Mitt Romney/Paul Ryan,5035
+19087,Henry,Barack Obama/Joe Biden,4460
+19087,Henry,Virgil Goode/James Clymer,25
+19087,Henry,Jill Stein/Cheri Honkala,27
+19087,Henry,Gary Johnson/James P. Gray,66
+19087,Henry,Gloria LaRiva/Stefanie Beacham,3
+19087,Henry,James Harris/Alyson Kennedy,4
+19087,Henry,Jerry Litzel/Jim Litzel,12
+19087,Henry,Write-In,65
+19089,Howard,Mitt Romney/Paul Ryan,1795
+19089,Howard,Barack Obama/Joe Biden,2768
+19089,Howard,Virgil Goode/James Clymer,8
+19089,Howard,Jill Stein/Cheri Honkala,10
+19089,Howard,Gary Johnson/James P. Gray,41
+19089,Howard,Gloria LaRiva/Stefanie Beacham,3
+19089,Howard,James Harris/Alyson Kennedy,0
+19089,Howard,Jerry Litzel/Jim Litzel,3
+19089,Howard,Write-In,17
+19091,Humboldt,Mitt Romney/Paul Ryan,3099
+19091,Humboldt,Barack Obama/Joe Biden,1972
+19091,Humboldt,Virgil Goode/James Clymer,11
+19091,Humboldt,Jill Stein/Cheri Honkala,13
+19091,Humboldt,Gary Johnson/James P. Gray,23
+19091,Humboldt,Gloria LaRiva/Stefanie Beacham,2
+19091,Humboldt,James Harris/Alyson Kennedy,2
+19091,Humboldt,Jerry Litzel/Jim Litzel,7
+19091,Humboldt,Write-In,29
+19093,Ida,Mitt Romney/Paul Ryan,2286
+19093,Ida,Barack Obama/Joe Biden,1321
+19093,Ida,Virgil Goode/James Clymer,7
+19093,Ida,Jill Stein/Cheri Honkala,9
+19093,Ida,Gary Johnson/James P. Gray,14
+19093,Ida,Gloria LaRiva/Stefanie Beacham,0
+19093,Ida,James Harris/Alyson Kennedy,3
+19093,Ida,Jerry Litzel/Jim Litzel,2
+19093,Ida,Write-In,21
+19095,Iowa,Mitt Romney/Paul Ryan,4569
+19095,Iowa,Barack Obama/Joe Biden,4144
+19095,Iowa,Virgil Goode/James Clymer,28
+19095,Iowa,Jill Stein/Cheri Honkala,27
+19095,Iowa,Gary Johnson/James P. Gray,52
+19095,Iowa,Gloria LaRiva/Stefanie Beacham,3
+19095,Iowa,James Harris/Alyson Kennedy,3
+19095,Iowa,Jerry Litzel/Jim Litzel,6
+19095,Iowa,Write-In,34
+19097,Jackson,Mitt Romney/Paul Ryan,4177
+19097,Jackson,Barack Obama/Joe Biden,5907
+19097,Jackson,Virgil Goode/James Clymer,22
+19097,Jackson,Jill Stein/Cheri Honkala,15
+19097,Jackson,Gary Johnson/James P. Gray,67
+19097,Jackson,Gloria LaRiva/Stefanie Beacham,1
+19097,Jackson,James Harris/Alyson Kennedy,1
+19097,Jackson,Jerry Litzel/Jim Litzel,3
+19097,Jackson,Write-In,49
+19099,Jasper,Mitt Romney/Paul Ryan,8877
+19099,Jasper,Barack Obama/Joe Biden,10257
+19099,Jasper,Virgil Goode/James Clymer,59
+19099,Jasper,Jill Stein/Cheri Honkala,42
+19099,Jasper,Gary Johnson/James P. Gray,149
+19099,Jasper,Gloria LaRiva/Stefanie Beacham,3
+19099,Jasper,James Harris/Alyson Kennedy,2
+19099,Jasper,Jerry Litzel/Jim Litzel,23
+19099,Jasper,Write-In,103
+19101,Jefferson,Mitt Romney/Paul Ryan,3436
+19101,Jefferson,Barack Obama/Joe Biden,4798
+19101,Jefferson,Virgil Goode/James Clymer,12
+19101,Jefferson,Jill Stein/Cheri Honkala,59
+19101,Jefferson,Gary Johnson/James P. Gray,126
+19101,Jefferson,Gloria LaRiva/Stefanie Beacham,3
+19101,Jefferson,James Harris/Alyson Kennedy,2
+19101,Jefferson,Jerry Litzel/Jim Litzel,3
+19101,Jefferson,Write-In,91
+19103,Johnson,Mitt Romney/Paul Ryan,23698
+19103,Johnson,Barack Obama/Joe Biden,50666
+19103,Johnson,Virgil Goode/James Clymer,67
+19103,Johnson,Jill Stein/Cheri Honkala,333
+19103,Johnson,Gary Johnson/James P. Gray,846
+19103,Johnson,Gloria LaRiva/Stefanie Beacham,10
+19103,Johnson,James Harris/Alyson Kennedy,11
+19103,Johnson,Jerry Litzel/Jim Litzel,26
+19103,Johnson,Write-In,320
+19105,Jones,Mitt Romney/Paul Ryan,4721
+19105,Jones,Barack Obama/Joe Biden,5534
+19105,Jones,Virgil Goode/James Clymer,32
+19105,Jones,Jill Stein/Cheri Honkala,23
+19105,Jones,Gary Johnson/James P. Gray,83
+19105,Jones,Gloria LaRiva/Stefanie Beacham,0
+19105,Jones,James Harris/Alyson Kennedy,2
+19105,Jones,Jerry Litzel/Jim Litzel,5
+19105,Jones,Write-In,49
+19107,Keokuk,Mitt Romney/Paul Ryan,2843
+19107,Keokuk,Barack Obama/Joe Biden,2303
+19107,Keokuk,Virgil Goode/James Clymer,17
+19107,Keokuk,Jill Stein/Cheri Honkala,21
+19107,Keokuk,Gary Johnson/James P. Gray,36
+19107,Keokuk,Gloria LaRiva/Stefanie Beacham,3
+19107,Keokuk,James Harris/Alyson Kennedy,1
+19107,Keokuk,Jerry Litzel/Jim Litzel,7
+19107,Keokuk,Write-In,35
+19109,Kossuth,Mitt Romney/Paul Ryan,4937
+19109,Kossuth,Barack Obama/Joe Biden,3850
+19109,Kossuth,Virgil Goode/James Clymer,17
+19109,Kossuth,Jill Stein/Cheri Honkala,22
+19109,Kossuth,Gary Johnson/James P. Gray,43
+19109,Kossuth,Gloria LaRiva/Stefanie Beacham,3
+19109,Kossuth,James Harris/Alyson Kennedy,3
+19109,Kossuth,Jerry Litzel/Jim Litzel,9
+19109,Kossuth,Write-In,39
+19111,Lee,Mitt Romney/Paul Ryan,7785
+19111,Lee,Barack Obama/Joe Biden,10714
+19111,Lee,Virgil Goode/James Clymer,55
+19111,Lee,Jill Stein/Cheri Honkala,50
+19111,Lee,Gary Johnson/James P. Gray,161
+19111,Lee,Gloria LaRiva/Stefanie Beacham,6
+19111,Lee,James Harris/Alyson Kennedy,6
+19111,Lee,Jerry Litzel/Jim Litzel,18
+19111,Lee,Write-In,116
+19113,Linn,Mitt Romney/Paul Ryan,47622
+19113,Linn,Barack Obama/Joe Biden,68581
+19113,Linn,Virgil Goode/James Clymer,148
+19113,Linn,Jill Stein/Cheri Honkala,221
+19113,Linn,Gary Johnson/James P. Gray,1230
+19113,Linn,Gloria LaRiva/Stefanie Beacham,17
+19113,Linn,James Harris/Alyson Kennedy,12
+19113,Linn,Jerry Litzel/Jim Litzel,46
+19113,Linn,Write-In,576
+19115,Louisa,Mitt Romney/Paul Ryan,2420
+19115,Louisa,Barack Obama/Joe Biden,2452
+19115,Louisa,Virgil Goode/James Clymer,21
+19115,Louisa,Jill Stein/Cheri Honkala,11
+19115,Louisa,Gary Johnson/James P. Gray,20
+19115,Louisa,Gloria LaRiva/Stefanie Beacham,0
+19115,Louisa,James Harris/Alyson Kennedy,1
+19115,Louisa,Jerry Litzel/Jim Litzel,4
+19115,Louisa,Write-In,39
+19117,Lucas,Mitt Romney/Paul Ryan,2254
+19117,Lucas,Barack Obama/Joe Biden,1987
+19117,Lucas,Virgil Goode/James Clymer,18
+19117,Lucas,Jill Stein/Cheri Honkala,4
+19117,Lucas,Gary Johnson/James P. Gray,20
+19117,Lucas,Gloria LaRiva/Stefanie Beacham,1
+19117,Lucas,James Harris/Alyson Kennedy,1
+19117,Lucas,Jerry Litzel/Jim Litzel,4
+19117,Lucas,Write-In,34
+19119,Lyon,Mitt Romney/Paul Ryan,4978
+19119,Lyon,Barack Obama/Joe Biden,1423
+19119,Lyon,Virgil Goode/James Clymer,23
+19119,Lyon,Jill Stein/Cheri Honkala,14
+19119,Lyon,Gary Johnson/James P. Gray,39
+19119,Lyon,Gloria LaRiva/Stefanie Beacham,1
+19119,Lyon,James Harris/Alyson Kennedy,2
+19119,Lyon,Jerry Litzel/Jim Litzel,6
+19119,Lyon,Write-In,23
+19121,Madison,Mitt Romney/Paul Ryan,4638
+19121,Madison,Barack Obama/Joe Biden,3630
+19121,Madison,Virgil Goode/James Clymer,29
+19121,Madison,Jill Stein/Cheri Honkala,14
+19121,Madison,Gary Johnson/James P. Gray,90
+19121,Madison,Gloria LaRiva/Stefanie Beacham,0
+19121,Madison,James Harris/Alyson Kennedy,3
+19121,Madison,Jerry Litzel/Jim Litzel,11
+19121,Madison,Write-In,43
+19123,Mahaska,Mitt Romney/Paul Ryan,6448
+19123,Mahaska,Barack Obama/Joe Biden,4213
+19123,Mahaska,Virgil Goode/James Clymer,30
+19123,Mahaska,Jill Stein/Cheri Honkala,28
+19123,Mahaska,Gary Johnson/James P. Gray,82
+19123,Mahaska,Gloria LaRiva/Stefanie Beacham,5
+19123,Mahaska,James Harris/Alyson Kennedy,1
+19123,Mahaska,Jerry Litzel/Jim Litzel,5
+19123,Mahaska,Write-In,71
+19125,Marion,Mitt Romney/Paul Ryan,9828
+19125,Marion,Barack Obama/Joe Biden,7507
+19125,Marion,Virgil Goode/James Clymer,43
+19125,Marion,Jill Stein/Cheri Honkala,30
+19125,Marion,Gary Johnson/James P. Gray,149
+19125,Marion,Gloria LaRiva/Stefanie Beacham,10
+19125,Marion,James Harris/Alyson Kennedy,7
+19125,Marion,Jerry Litzel/Jim Litzel,9
+19125,Marion,Write-In,104
+19127,Marshall,Mitt Romney/Paul Ryan,8472
+19127,Marshall,Barack Obama/Joe Biden,10257
+19127,Marshall,Virgil Goode/James Clymer,56
+19127,Marshall,Jill Stein/Cheri Honkala,31
+19127,Marshall,Gary Johnson/James P. Gray,116
+19127,Marshall,Gloria LaRiva/Stefanie Beacham,6
+19127,Marshall,James Harris/Alyson Kennedy,4
+19127,Marshall,Jerry Litzel/Jim Litzel,22
+19127,Marshall,Write-In,100
+19129,Mills,Mitt Romney/Paul Ryan,4216
+19129,Mills,Barack Obama/Joe Biden,2848
+19129,Mills,Virgil Goode/James Clymer,14
+19129,Mills,Jill Stein/Cheri Honkala,19
+19129,Mills,Gary Johnson/James P. Gray,68
+19129,Mills,Gloria LaRiva/Stefanie Beacham,7
+19129,Mills,James Harris/Alyson Kennedy,2
+19129,Mills,Jerry Litzel/Jim Litzel,6
+19129,Mills,Write-In,32
+19131,Mitchell,Mitt Romney/Paul Ryan,2643
+19131,Mitchell,Barack Obama/Joe Biden,2831
+19131,Mitchell,Virgil Goode/James Clymer,5
+19131,Mitchell,Jill Stein/Cheri Honkala,17
+19131,Mitchell,Gary Johnson/James P. Gray,40
+19131,Mitchell,Gloria LaRiva/Stefanie Beacham,2
+19131,Mitchell,James Harris/Alyson Kennedy,2
+19131,Mitchell,Jerry Litzel/Jim Litzel,6
+19131,Mitchell,Write-In,40
+19133,Monona,Mitt Romney/Paul Ryan,2557
+19133,Monona,Barack Obama/Joe Biden,2101
+19133,Monona,Virgil Goode/James Clymer,9
+19133,Monona,Jill Stein/Cheri Honkala,10
+19133,Monona,Gary Johnson/James P. Gray,29
+19133,Monona,Gloria LaRiva/Stefanie Beacham,3
+19133,Monona,James Harris/Alyson Kennedy,1
+19133,Monona,Jerry Litzel/Jim Litzel,3
+19133,Monona,Write-In,29
+19135,Monroe,Mitt Romney/Paul Ryan,2026
+19135,Monroe,Barack Obama/Joe Biden,1731
+19135,Monroe,Virgil Goode/James Clymer,17
+19135,Monroe,Jill Stein/Cheri Honkala,5
+19135,Monroe,Gary Johnson/James P. Gray,22
+19135,Monroe,Gloria LaRiva/Stefanie Beacham,2
+19135,Monroe,James Harris/Alyson Kennedy,2
+19135,Monroe,Jerry Litzel/Jim Litzel,4
+19135,Monroe,Write-In,21
+19137,Montgomery,Mitt Romney/Paul Ryan,3001
+19137,Montgomery,Barack Obama/Joe Biden,1922
+19137,Montgomery,Virgil Goode/James Clymer,11
+19137,Montgomery,Jill Stein/Cheri Honkala,18
+19137,Montgomery,Gary Johnson/James P. Gray,42
+19137,Montgomery,Gloria LaRiva/Stefanie Beacham,1
+19137,Montgomery,James Harris/Alyson Kennedy,2
+19137,Montgomery,Jerry Litzel/Jim Litzel,8
+19137,Montgomery,Write-In,20
+19139,Muscatine,Mitt Romney/Paul Ryan,8168
+19139,Muscatine,Barack Obama/Joe Biden,11323
+19139,Muscatine,Virgil Goode/James Clymer,42
+19139,Muscatine,Jill Stein/Cheri Honkala,48
+19139,Muscatine,Gary Johnson/James P. Gray,177
+19139,Muscatine,Gloria LaRiva/Stefanie Beacham,3
+19139,Muscatine,James Harris/Alyson Kennedy,6
+19139,Muscatine,Jerry Litzel/Jim Litzel,11
+19139,Muscatine,Write-In,87
+19141,O'Brien,Mitt Romney/Paul Ryan,5266
+19141,O'Brien,Barack Obama/Joe Biden,1969
+19141,O'Brien,Virgil Goode/James Clymer,18
+19141,O'Brien,Jill Stein/Cheri Honkala,10
+19141,O'Brien,Gary Johnson/James P. Gray,33
+19141,O'Brien,Gloria LaRiva/Stefanie Beacham,3
+19141,O'Brien,James Harris/Alyson Kennedy,6
+19141,O'Brien,Jerry Litzel/Jim Litzel,2
+19141,O'Brien,Write-In,34
+19143,Osceola,Mitt Romney/Paul Ryan,2230
+19143,Osceola,Barack Obama/Joe Biden,912
+19143,Osceola,Virgil Goode/James Clymer,12
+19143,Osceola,Jill Stein/Cheri Honkala,9
+19143,Osceola,Gary Johnson/James P. Gray,16
+19143,Osceola,Gloria LaRiva/Stefanie Beacham,1
+19143,Osceola,James Harris/Alyson Kennedy,4
+19143,Osceola,Jerry Litzel/Jim Litzel,3
+19143,Osceola,Write-In,7
+19145,Page,Mitt Romney/Paul Ryan,4348
+19145,Page,Barack Obama/Joe Biden,2613
+19145,Page,Virgil Goode/James Clymer,15
+19145,Page,Jill Stein/Cheri Honkala,12
+19145,Page,Gary Johnson/James P. Gray,43
+19145,Page,Gloria LaRiva/Stefanie Beacham,1
+19145,Page,James Harris/Alyson Kennedy,12
+19145,Page,Jerry Litzel/Jim Litzel,5
+19145,Page,Write-In,30
+19147,Palo Alto,Mitt Romney/Paul Ryan,2660
+19147,Palo Alto,Barack Obama/Joe Biden,2139
+19147,Palo Alto,Virgil Goode/James Clymer,12
+19147,Palo Alto,Jill Stein/Cheri Honkala,17
+19147,Palo Alto,Gary Johnson/James P. Gray,28
+19147,Palo Alto,Gloria LaRiva/Stefanie Beacham,5
+19147,Palo Alto,James Harris/Alyson Kennedy,5
+19147,Palo Alto,Jerry Litzel/Jim Litzel,3
+19147,Palo Alto,Write-In,18
+19149,Plymouth,Mitt Romney/Paul Ryan,8597
+19149,Plymouth,Barack Obama/Joe Biden,4164
+19149,Plymouth,Virgil Goode/James Clymer,14
+19149,Plymouth,Jill Stein/Cheri Honkala,29
+19149,Plymouth,Gary Johnson/James P. Gray,89
+19149,Plymouth,Gloria LaRiva/Stefanie Beacham,1
+19149,Plymouth,James Harris/Alyson Kennedy,7
+19149,Plymouth,Jerry Litzel/Jim Litzel,4
+19149,Plymouth,Write-In,45
+19151,Pocahontas,Mitt Romney/Paul Ryan,2396
+19151,Pocahontas,Barack Obama/Joe Biden,1523
+19151,Pocahontas,Virgil Goode/James Clymer,11
+19151,Pocahontas,Jill Stein/Cheri Honkala,16
+19151,Pocahontas,Gary Johnson/James P. Gray,47
+19151,Pocahontas,Gloria LaRiva/Stefanie Beacham,2
+19151,Pocahontas,James Harris/Alyson Kennedy,2
+19151,Pocahontas,Jerry Litzel/Jim Litzel,9
+19151,Pocahontas,Write-In,26
+19153,Polk,Mitt Romney/Paul Ryan,96096
+19153,Polk,Barack Obama/Joe Biden,128465
+19153,Polk,Virgil Goode/James Clymer,386
+19153,Polk,Jill Stein/Cheri Honkala,479
+19153,Polk,Gary Johnson/James P. Gray,2183
+19153,Polk,Gloria LaRiva/Stefanie Beacham,38
+19153,Polk,James Harris/Alyson Kennedy,57
+19153,Polk,Jerry Litzel/Jim Litzel,132
+19153,Polk,Write-In,1046
+19155,Pottawattamie,Mitt Romney/Paul Ryan,21860
+19155,Pottawattamie,Barack Obama/Joe Biden,19644
+19155,Pottawattamie,Virgil Goode/James Clymer,89
+19155,Pottawattamie,Jill Stein/Cheri Honkala,122
+19155,Pottawattamie,Gary Johnson/James P. Gray,328
+19155,Pottawattamie,Gloria LaRiva/Stefanie Beacham,13
+19155,Pottawattamie,James Harris/Alyson Kennedy,6
+19155,Pottawattamie,Jerry Litzel/Jim Litzel,27
+19155,Pottawattamie,Write-In,212
+19157,Poweshiek,Mitt Romney/Paul Ryan,4424
+19157,Poweshiek,Barack Obama/Joe Biden,5357
+19157,Poweshiek,Virgil Goode/James Clymer,24
+19157,Poweshiek,Jill Stein/Cheri Honkala,31
+19157,Poweshiek,Gary Johnson/James P. Gray,79
+19157,Poweshiek,Gloria LaRiva/Stefanie Beacham,2
+19157,Poweshiek,James Harris/Alyson Kennedy,2
+19157,Poweshiek,Jerry Litzel/Jim Litzel,7
+19157,Poweshiek,Write-In,49
+19159,Ringgold,Mitt Romney/Paul Ryan,1368
+19159,Ringgold,Barack Obama/Joe Biden,1186
+19159,Ringgold,Virgil Goode/James Clymer,8
+19159,Ringgold,Jill Stein/Cheri Honkala,6
+19159,Ringgold,Gary Johnson/James P. Gray,12
+19159,Ringgold,Gloria LaRiva/Stefanie Beacham,2
+19159,Ringgold,James Harris/Alyson Kennedy,2
+19159,Ringgold,Jerry Litzel/Jim Litzel,2
+19159,Ringgold,Write-In,13
+19161,Sac,Mitt Romney/Paul Ryan,3094
+19161,Sac,Barack Obama/Joe Biden,2122
+19161,Sac,Virgil Goode/James Clymer,13
+19161,Sac,Jill Stein/Cheri Honkala,12
+19161,Sac,Gary Johnson/James P. Gray,26
+19161,Sac,Gloria LaRiva/Stefanie Beacham,1
+19161,Sac,James Harris/Alyson Kennedy,1
+19161,Sac,Jerry Litzel/Jim Litzel,0
+19161,Sac,Write-In,22
+19163,Scott,Mitt Romney/Paul Ryan,38251
+19163,Scott,Barack Obama/Joe Biden,50652
+19163,Scott,Virgil Goode/James Clymer,98
+19163,Scott,Jill Stein/Cheri Honkala,165
+19163,Scott,Gary Johnson/James P. Gray,702
+19163,Scott,Gloria LaRiva/Stefanie Beacham,28
+19163,Scott,James Harris/Alyson Kennedy,4
+19163,Scott,Jerry Litzel/Jim Litzel,27
+19163,Scott,Write-In,336
+19165,Shelby,Mitt Romney/Paul Ryan,3911
+19165,Shelby,Barack Obama/Joe Biden,2469
+19165,Shelby,Virgil Goode/James Clymer,11
+19165,Shelby,Jill Stein/Cheri Honkala,12
+19165,Shelby,Gary Johnson/James P. Gray,56
+19165,Shelby,Gloria LaRiva/Stefanie Beacham,3
+19165,Shelby,James Harris/Alyson Kennedy,2
+19165,Shelby,Jerry Litzel/Jim Litzel,1
+19165,Shelby,Write-In,18
+19167,Sioux,Mitt Romney/Paul Ryan,14407
+19167,Sioux,Barack Obama/Joe Biden,2700
+19167,Sioux,Virgil Goode/James Clymer,45
+19167,Sioux,Jill Stein/Cheri Honkala,14
+19167,Sioux,Gary Johnson/James P. Gray,76
+19167,Sioux,Gloria LaRiva/Stefanie Beacham,1
+19167,Sioux,James Harris/Alyson Kennedy,1
+19167,Sioux,Jerry Litzel/Jim Litzel,1
+19167,Sioux,Write-In,63
+19169,Story,Mitt Romney/Paul Ryan,19668
+19169,Story,Barack Obama/Joe Biden,26192
+19169,Story,Virgil Goode/James Clymer,65
+19169,Story,Jill Stein/Cheri Honkala,139
+19169,Story,Gary Johnson/James P. Gray,727
+19169,Story,Gloria LaRiva/Stefanie Beacham,12
+19169,Story,James Harris/Alyson Kennedy,12
+19169,Story,Jerry Litzel/Jim Litzel,85
+19169,Story,Write-In,250
+19171,Tama,Mitt Romney/Paul Ryan,4098
+19171,Tama,Barack Obama/Joe Biden,4768
+19171,Tama,Virgil Goode/James Clymer,23
+19171,Tama,Jill Stein/Cheri Honkala,19
+19171,Tama,Gary Johnson/James P. Gray,45
+19171,Tama,Gloria LaRiva/Stefanie Beacham,2
+19171,Tama,James Harris/Alyson Kennedy,2
+19171,Tama,Jerry Litzel/Jim Litzel,9
+19171,Tama,Write-In,51
+19173,Taylor,Mitt Romney/Paul Ryan,1683
+19173,Taylor,Barack Obama/Joe Biden,1262
+19173,Taylor,Virgil Goode/James Clymer,10
+19173,Taylor,Jill Stein/Cheri Honkala,4
+19173,Taylor,Gary Johnson/James P. Gray,19
+19173,Taylor,Gloria LaRiva/Stefanie Beacham,0
+19173,Taylor,James Harris/Alyson Kennedy,2
+19173,Taylor,Jerry Litzel/Jim Litzel,2
+19173,Taylor,Write-In,13
+19175,Union,Mitt Romney/Paul Ryan,2813
+19175,Union,Barack Obama/Joe Biden,3043
+19175,Union,Virgil Goode/James Clymer,13
+19175,Union,Jill Stein/Cheri Honkala,10
+19175,Union,Gary Johnson/James P. Gray,37
+19175,Union,Gloria LaRiva/Stefanie Beacham,1
+19175,Union,James Harris/Alyson Kennedy,5
+19175,Union,Jerry Litzel/Jim Litzel,5
+19175,Union,Write-In,30
+19177,Van Buren,Mitt Romney/Paul Ryan,2064
+19177,Van Buren,Barack Obama/Joe Biden,1402
+19177,Van Buren,Virgil Goode/James Clymer,22
+19177,Van Buren,Jill Stein/Cheri Honkala,19
+19177,Van Buren,Gary Johnson/James P. Gray,35
+19177,Van Buren,Gloria LaRiva/Stefanie Beacham,0
+19177,Van Buren,James Harris/Alyson Kennedy,0
+19177,Van Buren,Jerry Litzel/Jim Litzel,8
+19177,Van Buren,Write-In,19
+19179,Wapello,Mitt Romney/Paul Ryan,6789
+19179,Wapello,Barack Obama/Joe Biden,8663
+19179,Wapello,Virgil Goode/James Clymer,69
+19179,Wapello,Jill Stein/Cheri Honkala,38
+19179,Wapello,Gary Johnson/James P. Gray,110
+19179,Wapello,Gloria LaRiva/Stefanie Beacham,5
+19179,Wapello,James Harris/Alyson Kennedy,5
+19179,Wapello,Jerry Litzel/Jim Litzel,10
+19179,Wapello,Write-In,81
+19181,Warren,Mitt Romney/Paul Ryan,13052
+19181,Warren,Barack Obama/Joe Biden,12551
+19181,Warren,Virgil Goode/James Clymer,51
+19181,Warren,Jill Stein/Cheri Honkala,49
+19181,Warren,Gary Johnson/James P. Gray,188
+19181,Warren,Gloria LaRiva/Stefanie Beacham,6
+19181,Warren,James Harris/Alyson Kennedy,8
+19181,Warren,Jerry Litzel/Jim Litzel,22
+19181,Warren,Write-In,145
+19183,Washington,Mitt Romney/Paul Ryan,5562
+19183,Washington,Barack Obama/Joe Biden,5115
+19183,Washington,Virgil Goode/James Clymer,25
+19183,Washington,Jill Stein/Cheri Honkala,115
+19183,Washington,Gary Johnson/James P. Gray,103
+19183,Washington,Gloria LaRiva/Stefanie Beacham,1
+19183,Washington,James Harris/Alyson Kennedy,5
+19183,Washington,Jerry Litzel/Jim Litzel,12
+19183,Washington,Write-In,66
+19185,Wayne,Mitt Romney/Paul Ryan,1583
+19185,Wayne,Barack Obama/Joe Biden,1251
+19185,Wayne,Virgil Goode/James Clymer,13
+19185,Wayne,Jill Stein/Cheri Honkala,8
+19185,Wayne,Gary Johnson/James P. Gray,21
+19185,Wayne,Gloria LaRiva/Stefanie Beacham,2
+19185,Wayne,James Harris/Alyson Kennedy,2
+19185,Wayne,Jerry Litzel/Jim Litzel,6
+19185,Wayne,Write-In,14
+19187,Webster,Mitt Romney/Paul Ryan,8469
+19187,Webster,Barack Obama/Joe Biden,9537
+19187,Webster,Virgil Goode/James Clymer,44
+19187,Webster,Jill Stein/Cheri Honkala,43
+19187,Webster,Gary Johnson/James P. Gray,92
+19187,Webster,Gloria LaRiva/Stefanie Beacham,5
+19187,Webster,James Harris/Alyson Kennedy,4
+19187,Webster,Jerry Litzel/Jim Litzel,20
+19187,Webster,Write-In,78
+19189,Winnebago,Mitt Romney/Paul Ryan,2906
+19189,Winnebago,Barack Obama/Joe Biden,2903
+19189,Winnebago,Virgil Goode/James Clymer,16
+19189,Winnebago,Jill Stein/Cheri Honkala,23
+19189,Winnebago,Gary Johnson/James P. Gray,37
+19189,Winnebago,Gloria LaRiva/Stefanie Beacham,1
+19189,Winnebago,James Harris/Alyson Kennedy,4
+19189,Winnebago,Jerry Litzel/Jim Litzel,5
+19189,Winnebago,Write-In,23
+19191,Winneshiek,Mitt Romney/Paul Ryan,4622
+19191,Winneshiek,Barack Obama/Joe Biden,6256
+19191,Winneshiek,Virgil Goode/James Clymer,18
+19191,Winneshiek,Jill Stein/Cheri Honkala,40
+19191,Winneshiek,Gary Johnson/James P. Gray,87
+19191,Winneshiek,Gloria LaRiva/Stefanie Beacham,1
+19191,Winneshiek,James Harris/Alyson Kennedy,4
+19191,Winneshiek,Jerry Litzel/Jim Litzel,4
+19191,Winneshiek,Write-In,52
+19193,Woodbury,Mitt Romney/Paul Ryan,21841
+19193,Woodbury,Barack Obama/Joe Biden,22302
+19193,Woodbury,Virgil Goode/James Clymer,94
+19193,Woodbury,Jill Stein/Cheri Honkala,91
+19193,Woodbury,Gary Johnson/James P. Gray,334
+19193,Woodbury,Gloria LaRiva/Stefanie Beacham,16
+19193,Woodbury,James Harris/Alyson Kennedy,14
+19193,Woodbury,Jerry Litzel/Jim Litzel,21
+19193,Woodbury,Write-In,306
+19195,Worth,Mitt Romney/Paul Ryan,1744
+19195,Worth,Barack Obama/Joe Biden,2350
+19195,Worth,Virgil Goode/James Clymer,12
+19195,Worth,Jill Stein/Cheri Honkala,7
+19195,Worth,Gary Johnson/James P. Gray,28
+19195,Worth,Gloria LaRiva/Stefanie Beacham,1
+19195,Worth,James Harris/Alyson Kennedy,5
+19195,Worth,Jerry Litzel/Jim Litzel,4
+19195,Worth,Write-In,21
+19197,Wright,Mitt Romney/Paul Ryan,3349
+19197,Wright,Barack Obama/Joe Biden,2836
+19197,Wright,Virgil Goode/James Clymer,10
+19197,Wright,Jill Stein/Cheri Honkala,14
+19197,Wright,Gary Johnson/James P. Gray,37
+19197,Wright,Gloria LaRiva/Stefanie Beacham,1
+19197,Wright,James Harris/Alyson Kennedy,0
+19197,Wright,Jerry Litzel/Jim Litzel,9
+19197,Wright,Write-In,22

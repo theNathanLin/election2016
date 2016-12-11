@@ -1,0 +1,813 @@
+fips,county,candidate,votes
+06001,Alameda,Barack Obama,469684
+06001,Alameda,Mitt Romney,108182
+06001,Alameda,Thomas Hoefling,1212
+06001,Alameda,Jill Stein,7502
+06001,Alameda,Gary Johnson,5471
+06001,Alameda,Roseanne Barr,2890
+06001,Alameda,"Ross C. ""Rocky"" Anderson",69
+06001,Alameda,"Shelia ""Samm"" Tittle",0
+06001,Alameda,Stephen Durham,1
+06001,Alameda,Ron Paul,602
+06001,Alameda,James Harris,5
+06001,Alameda,Virgil Goode,15
+06001,Alameda,Jerry White,7
+06001,Alameda,Stewart Alexander,2
+06003,Alpine,Barack Obama,389
+06003,Alpine,Mitt Romney,236
+06003,Alpine,Thomas Hoefling,1
+06003,Alpine,Jill Stein,8
+06003,Alpine,Gary Johnson,8
+06003,Alpine,Roseanne Barr,5
+06003,Alpine,"Ross C. ""Rocky"" Anderson",2
+06003,Alpine,"Shelia ""Samm"" Tittle",0
+06003,Alpine,Stephen Durham,0
+06003,Alpine,Ron Paul,4
+06003,Alpine,James Harris,0
+06003,Alpine,Virgil Goode,0
+06003,Alpine,Jerry White,0
+06003,Alpine,Stewart Alexander,0
+06005,Amador,Barack Obama,6830
+06005,Amador,Mitt Romney,10281
+06005,Amador,Thomas Hoefling,79
+06005,Amador,Jill Stein,88
+06005,Amador,Gary Johnson,242
+06005,Amador,Roseanne Barr,75
+06005,Amador,"Ross C. ""Rocky"" Anderson",0
+06005,Amador,"Shelia ""Samm"" Tittle",0
+06005,Amador,Stephen Durham,0
+06005,Amador,Ron Paul,54
+06005,Amador,James Harris,0
+06005,Amador,Virgil Goode,0
+06005,Amador,Jerry White,0
+06005,Amador,Stewart Alexander,0
+06007,Butte,Barack Obama,42669
+06007,Butte,Mitt Romney,44479
+06007,Butte,Thomas Hoefling,454
+06007,Butte,Jill Stein,840
+06007,Butte,Gary Johnson,1334
+06007,Butte,Roseanne Barr,562
+06007,Butte,"Ross C. ""Rocky"" Anderson",21
+06007,Butte,"Shelia ""Samm"" Tittle",0
+06007,Butte,Stephen Durham,0
+06007,Butte,Ron Paul,385
+06007,Butte,James Harris,0
+06007,Butte,Virgil Goode,3
+06007,Butte,Jerry White,1
+06007,Butte,Stewart Alexander,4
+06009,Calaveras,Barack Obama,8670
+06009,Calaveras,Mitt Romney,12363
+06009,Calaveras,Thomas Hoefling,110
+06009,Calaveras,Jill Stein,122
+06009,Calaveras,Gary Johnson,327
+06009,Calaveras,Roseanne Barr,100
+06009,Calaveras,"Ross C. ""Rocky"" Anderson",6
+06009,Calaveras,"Shelia ""Samm"" Tittle",0
+06009,Calaveras,Stephen Durham,0
+06009,Calaveras,Ron Paul,86
+06009,Calaveras,James Harris,0
+06009,Calaveras,Virgil Goode,0
+06009,Calaveras,Jerry White,0
+06009,Calaveras,Stewart Alexander,0
+06011,Colusa,Barack Obama,2314
+06011,Colusa,Mitt Romney,3601
+06011,Colusa,Thomas Hoefling,17
+06011,Colusa,Jill Stein,17
+06011,Colusa,Gary Johnson,47
+06011,Colusa,Roseanne Barr,18
+06011,Colusa,"Ross C. ""Rocky"" Anderson",2
+06011,Colusa,"Shelia ""Samm"" Tittle",0
+06011,Colusa,Stephen Durham,0
+06011,Colusa,Ron Paul,18
+06011,Colusa,James Harris,0
+06011,Colusa,Virgil Goode,0
+06011,Colusa,Jerry White,0
+06011,Colusa,Stewart Alexander,0
+06013,Contra Costa,Barack Obama,290824
+06013,Contra Costa,Mitt Romney,136517
+06013,Contra Costa,Thomas Hoefling,1391
+06013,Contra Costa,Jill Stein,2879
+06013,Contra Costa,Gary Johnson,4372
+06013,Contra Costa,Roseanne Barr,1543
+06013,Contra Costa,"Ross C. ""Rocky"" Anderson",43
+06013,Contra Costa,"Shelia ""Samm"" Tittle",0
+06013,Contra Costa,Stephen Durham,3
+06013,Contra Costa,Ron Paul,627
+06013,Contra Costa,James Harris,6
+06013,Contra Costa,Virgil Goode,20
+06013,Contra Costa,Jerry White,0
+06013,Contra Costa,Stewart Alexander,1
+06015,Del Norte,Barack Obama,3791
+06015,Del Norte,Mitt Romney,4614
+06015,Del Norte,Thomas Hoefling,70
+06015,Del Norte,Jill Stein,90
+06015,Del Norte,Gary Johnson,109
+06015,Del Norte,Roseanne Barr,62
+06015,Del Norte,"Ross C. ""Rocky"" Anderson",3
+06015,Del Norte,"Shelia ""Samm"" Tittle",0
+06015,Del Norte,Stephen Durham,0
+06015,Del Norte,Ron Paul,31
+06015,Del Norte,James Harris,0
+06015,Del Norte,Virgil Goode,0
+06015,Del Norte,Jerry White,0
+06015,Del Norte,Stewart Alexander,0
+06017,El Dorado,Barack Obama,35166
+06017,El Dorado,Mitt Romney,50973
+06017,El Dorado,Thomas Hoefling,336
+06017,El Dorado,Jill Stein,410
+06017,El Dorado,Gary Johnson,1278
+06017,El Dorado,Roseanne Barr,312
+06017,El Dorado,"Ross C. ""Rocky"" Anderson",8
+06017,El Dorado,"Shelia ""Samm"" Tittle",0
+06017,El Dorado,Stephen Durham,0
+06017,El Dorado,Ron Paul,284
+06017,El Dorado,James Harris,0
+06017,El Dorado,Virgil Goode,7
+06017,El Dorado,Jerry White,0
+06017,El Dorado,Stewart Alexander,0
+06019,Fresno,Barack Obama,129129
+06019,Fresno,Mitt Romney,124490
+06019,Fresno,Thomas Hoefling,434
+06019,Fresno,Jill Stein,1101
+06019,Fresno,Gary Johnson,2262
+06019,Fresno,Roseanne Barr,898
+06019,Fresno,"Ross C. ""Rocky"" Anderson",8
+06019,Fresno,"Shelia ""Samm"" Tittle",3
+06019,Fresno,Stephen Durham,0
+06019,Fresno,Ron Paul,485
+06019,Fresno,James Harris,0
+06019,Fresno,Virgil Goode,16
+06019,Fresno,Jerry White,0
+06019,Fresno,Stewart Alexander,1
+06021,Glenn,Barack Obama,3301
+06021,Glenn,Mitt Romney,5632
+06021,Glenn,Thomas Hoefling,57
+06021,Glenn,Jill Stein,30
+06021,Glenn,Gary Johnson,106
+06021,Glenn,Roseanne Barr,65
+06021,Glenn,"Ross C. ""Rocky"" Anderson",1
+06021,Glenn,"Shelia ""Samm"" Tittle",0
+06021,Glenn,Stephen Durham,0
+06021,Glenn,Ron Paul,19
+06021,Glenn,James Harris,0
+06021,Glenn,Virgil Goode,0
+06021,Glenn,Jerry White,0
+06021,Glenn,Stewart Alexander,0
+06023,Humboldt,Barack Obama,34457
+06023,Humboldt,Mitt Romney,18825
+06023,Humboldt,Thomas Hoefling,105
+06023,Humboldt,Jill Stein,2505
+06023,Humboldt,Gary Johnson,910
+06023,Humboldt,Roseanne Barr,370
+06023,Humboldt,"Ross C. ""Rocky"" Anderson",26
+06023,Humboldt,"Shelia ""Samm"" Tittle",0
+06023,Humboldt,Stephen Durham,0
+06023,Humboldt,Ron Paul,266
+06023,Humboldt,James Harris,0
+06023,Humboldt,Virgil Goode,4
+06023,Humboldt,Jerry White,0
+06023,Humboldt,Stewart Alexander,2
+06025,Imperial,Barack Obama,25136
+06025,Imperial,Mitt Romney,12777
+06025,Imperial,Thomas Hoefling,135
+06025,Imperial,Jill Stein,112
+06025,Imperial,Gary Johnson,227
+06025,Imperial,Roseanne Barr,146
+06025,Imperial,"Ross C. ""Rocky"" Anderson",1
+06025,Imperial,"Shelia ""Samm"" Tittle",0
+06025,Imperial,Stephen Durham,0
+06025,Imperial,Ron Paul,28
+06025,Imperial,James Harris,0
+06025,Imperial,Virgil Goode,2
+06025,Imperial,Jerry White,0
+06025,Imperial,Stewart Alexander,1
+06027,Inyo,Barack Obama,3422
+06027,Inyo,Mitt Romney,4340
+06027,Inyo,Thomas Hoefling,43
+06027,Inyo,Jill Stein,70
+06027,Inyo,Gary Johnson,94
+06027,Inyo,Roseanne Barr,35
+06027,Inyo,"Ross C. ""Rocky"" Anderson",0
+06027,Inyo,"Shelia ""Samm"" Tittle",0
+06027,Inyo,Stephen Durham,0
+06027,Inyo,Ron Paul,29
+06027,Inyo,James Harris,0
+06027,Inyo,Virgil Goode,1
+06027,Inyo,Jerry White,0
+06027,Inyo,Stewart Alexander,2
+06029,Kern,Barack Obama,89495
+06029,Kern,Mitt Romney,126618
+06029,Kern,Thomas Hoefling,963
+06029,Kern,Jill Stein,672
+06029,Kern,Gary Johnson,2195
+06029,Kern,Roseanne Barr,1070
+06029,Kern,"Ross C. ""Rocky"" Anderson",10
+06029,Kern,"Shelia ""Samm"" Tittle",0
+06029,Kern,Stephen Durham,1
+06029,Kern,Ron Paul,431
+06029,Kern,James Harris,0
+06029,Kern,Virgil Goode,16
+06029,Kern,Jerry White,1
+06029,Kern,Stewart Alexander,0
+06031,Kings,Barack Obama,12979
+06031,Kings,Mitt Romney,17671
+06031,Kings,Thomas Hoefling,160
+06031,Kings,Jill Stein,120
+06031,Kings,Gary Johnson,251
+06031,Kings,Roseanne Barr,170
+06031,Kings,"Ross C. ""Rocky"" Anderson",3
+06031,Kings,"Shelia ""Samm"" Tittle",0
+06031,Kings,Stephen Durham,0
+06031,Kings,Ron Paul,62
+06031,Kings,James Harris,0
+06031,Kings,Virgil Goode,1
+06031,Kings,Jerry White,0
+06031,Kings,Stewart Alexander,1
+06033,Lake,Barack Obama,13163
+06033,Lake,Mitt Romney,9200
+06033,Lake,Thomas Hoefling,139
+06033,Lake,Jill Stein,264
+06033,Lake,Gary Johnson,323
+06033,Lake,Roseanne Barr,229
+06033,Lake,"Ross C. ""Rocky"" Anderson",7
+06033,Lake,"Shelia ""Samm"" Tittle",0
+06033,Lake,Stephen Durham,0
+06033,Lake,Ron Paul,66
+06033,Lake,James Harris,0
+06033,Lake,Virgil Goode,0
+06033,Lake,Jerry White,0
+06033,Lake,Stewart Alexander,0
+06035,Lassen,Barack Obama,3053
+06035,Lassen,Mitt Romney,7296
+06035,Lassen,Thomas Hoefling,49
+06035,Lassen,Jill Stein,42
+06035,Lassen,Gary Johnson,138
+06035,Lassen,Roseanne Barr,69
+06035,Lassen,"Ross C. ""Rocky"" Anderson",0
+06035,Lassen,"Shelia ""Samm"" Tittle",0
+06035,Lassen,Stephen Durham,0
+06035,Lassen,Ron Paul,36
+06035,Lassen,James Harris,0
+06035,Lassen,Virgil Goode,0
+06035,Lassen,Jerry White,0
+06035,Lassen,Stewart Alexander,0
+06037,Los Angeles,Barack Obama,2216903
+06037,Los Angeles,Mitt Romney,885333
+06037,Los Angeles,Thomas Hoefling,10408
+06037,Los Angeles,Jill Stein,20404
+06037,Los Angeles,Gary Johnson,31917
+06037,Los Angeles,Roseanne Barr,14649
+06037,Los Angeles,"Ross C. ""Rocky"" Anderson",93
+06037,Los Angeles,"Shelia ""Samm"" Tittle",1
+06037,Los Angeles,Stephen Durham,10
+06037,Los Angeles,Ron Paul,1258
+06037,Los Angeles,James Harris,19
+06037,Los Angeles,Virgil Goode,34
+06037,Los Angeles,Jerry White,22
+06037,Los Angeles,Stewart Alexander,16
+06039,Madera,Barack Obama,16018
+06039,Madera,Mitt Romney,22852
+06039,Madera,Thomas Hoefling,174
+06039,Madera,Jill Stein,175
+06039,Madera,Gary Johnson,342
+06039,Madera,Roseanne Barr,200
+06039,Madera,"Ross C. ""Rocky"" Anderson",7
+06039,Madera,"Shelia ""Samm"" Tittle",0
+06039,Madera,Stephen Durham,0
+06039,Madera,Ron Paul,93
+06039,Madera,James Harris,1
+06039,Madera,Virgil Goode,4
+06039,Madera,Jerry White,0
+06039,Madera,Stewart Alexander,0
+06041,Marin,Barack Obama,99896
+06041,Marin,Mitt Romney,30880
+06041,Marin,Thomas Hoefling,181
+06041,Marin,Jill Stein,1558
+06041,Marin,Gary Johnson,1333
+06041,Marin,Roseanne Barr,401
+06041,Marin,"Ross C. ""Rocky"" Anderson",38
+06041,Marin,"Shelia ""Samm"" Tittle",0
+06041,Marin,Stephen Durham,1
+06041,Marin,Ron Paul,217
+06041,Marin,James Harris,3
+06041,Marin,Virgil Goode,7
+06041,Marin,Jerry White,0
+06041,Marin,Stewart Alexander,1
+06043,Mariposa,Barack Obama,3498
+06043,Mariposa,Mitt Romney,5140
+06043,Mariposa,Thomas Hoefling,49
+06043,Mariposa,Jill Stein,87
+06043,Mariposa,Gary Johnson,124
+06043,Mariposa,Roseanne Barr,75
+06043,Mariposa,"Ross C. ""Rocky"" Anderson",0
+06043,Mariposa,"Shelia ""Samm"" Tittle",0
+06043,Mariposa,Stephen Durham,0
+06043,Mariposa,Ron Paul,25
+06043,Mariposa,James Harris,0
+06043,Mariposa,Virgil Goode,2
+06043,Mariposa,Jerry White,0
+06043,Mariposa,Stewart Alexander,0
+06045,Mendocino,Barack Obama,23193
+06045,Mendocino,Mitt Romney,9658
+06045,Mendocino,Thomas Hoefling,161
+06045,Mendocino,Jill Stein,998
+06045,Mendocino,Gary Johnson,482
+06045,Mendocino,Roseanne Barr,328
+06045,Mendocino,"Ross C. ""Rocky"" Anderson",19
+06045,Mendocino,"Shelia ""Samm"" Tittle",0
+06045,Mendocino,Stephen Durham,0
+06045,Mendocino,Ron Paul,177
+06045,Mendocino,James Harris,0
+06045,Mendocino,Virgil Goode,0
+06045,Mendocino,Jerry White,1
+06045,Mendocino,Stewart Alexander,0
+06047,Merced,Barack Obama,33005
+06047,Merced,Mitt Romney,27581
+06047,Merced,Thomas Hoefling,265
+06047,Merced,Jill Stein,243
+06047,Merced,Gary Johnson,516
+06047,Merced,Roseanne Barr,311
+06047,Merced,"Ross C. ""Rocky"" Anderson",3
+06047,Merced,"Shelia ""Samm"" Tittle",0
+06047,Merced,Stephen Durham,0
+06047,Merced,Ron Paul,130
+06047,Merced,James Harris,0
+06047,Merced,Virgil Goode,3
+06047,Merced,Jerry White,0
+06047,Merced,Stewart Alexander,0
+06049,Modoc,Barack Obama,1111
+06049,Modoc,Mitt Romney,2777
+06049,Modoc,Thomas Hoefling,11
+06049,Modoc,Jill Stein,20
+06049,Modoc,Gary Johnson,42
+06049,Modoc,Roseanne Barr,21
+06049,Modoc,"Ross C. ""Rocky"" Anderson",0
+06049,Modoc,"Shelia ""Samm"" Tittle",0
+06049,Modoc,Stephen Durham,0
+06049,Modoc,Ron Paul,4
+06049,Modoc,James Harris,0
+06049,Modoc,Virgil Goode,0
+06049,Modoc,Jerry White,0
+06049,Modoc,Stewart Alexander,0
+06051,Mono,Barack Obama,2733
+06051,Mono,Mitt Romney,2285
+06051,Mono,Thomas Hoefling,17
+06051,Mono,Jill Stein,36
+06051,Mono,Gary Johnson,85
+06051,Mono,Roseanne Barr,12
+06051,Mono,"Ross C. ""Rocky"" Anderson",1
+06051,Mono,"Shelia ""Samm"" Tittle",0
+06051,Mono,Stephen Durham,0
+06051,Mono,Ron Paul,12
+06051,Mono,James Harris,0
+06051,Mono,Virgil Goode,0
+06051,Mono,Jerry White,0
+06051,Mono,Stewart Alexander,0
+06053,Monterey,Barack Obama,82920
+06053,Monterey,Mitt Romney,37390
+06053,Monterey,Thomas Hoefling,338
+06053,Monterey,Jill Stein,757
+06053,Monterey,Gary Johnson,1341
+06053,Monterey,Roseanne Barr,524
+06053,Monterey,"Ross C. ""Rocky"" Anderson",14
+06053,Monterey,"Shelia ""Samm"" Tittle",0
+06053,Monterey,Stephen Durham,0
+06053,Monterey,Ron Paul,227
+06053,Monterey,James Harris,0
+06053,Monterey,Virgil Goode,6
+06053,Monterey,Jerry White,0
+06053,Monterey,Stewart Alexander,1
+06055,Napa,Barack Obama,35870
+06055,Napa,Mitt Romney,19526
+06055,Napa,Thomas Hoefling,160
+06055,Napa,Jill Stein,455
+06055,Napa,Gary Johnson,601
+06055,Napa,Roseanne Barr,241
+06055,Napa,"Ross C. ""Rocky"" Anderson",1
+06055,Napa,"Shelia ""Samm"" Tittle",0
+06055,Napa,Stephen Durham,0
+06055,Napa,Ron Paul,107
+06055,Napa,James Harris,0
+06055,Napa,Virgil Goode,4
+06055,Napa,Jerry White,1
+06055,Napa,Stewart Alexander,2
+06057,Nevada,Barack Obama,24663
+06057,Nevada,Mitt Romney,24986
+06057,Nevada,Thomas Hoefling,72
+06057,Nevada,Jill Stein,661
+06057,Nevada,Gary Johnson,830
+06057,Nevada,Roseanne Barr,198
+06057,Nevada,"Ross C. ""Rocky"" Anderson",8
+06057,Nevada,"Shelia ""Samm"" Tittle",0
+06057,Nevada,Stephen Durham,1
+06057,Nevada,Ron Paul,256
+06057,Nevada,James Harris,0
+06057,Nevada,Virgil Goode,1
+06057,Nevada,Jerry White,0
+06057,Nevada,Stewart Alexander,0
+06059,Orange,Barack Obama,512440
+06059,Orange,Mitt Romney,582332
+06059,Orange,Thomas Hoefling,2999
+06059,Orange,Jill Stein,4792
+06059,Orange,Gary Johnson,14132
+06059,Orange,Roseanne Barr,3348
+06059,Orange,"Ross C. ""Rocky"" Anderson",65
+06059,Orange,"Shelia ""Samm"" Tittle",1
+06059,Orange,Stephen Durham,1
+06059,Orange,Ron Paul,2485
+06059,Orange,James Harris,3
+06059,Orange,Virgil Goode,58
+06059,Orange,Jerry White,1
+06059,Orange,Stewart Alexander,7
+06061,Placer,Barack Obama,66818
+06061,Placer,Mitt Romney,99921
+06061,Placer,Thomas Hoefling,502
+06061,Placer,Jill Stein,683
+06061,Placer,Gary Johnson,2307
+06061,Placer,Roseanne Barr,580
+06061,Placer,"Ross C. ""Rocky"" Anderson",6
+06061,Placer,"Shelia ""Samm"" Tittle",0
+06061,Placer,Stephen Durham,0
+06061,Placer,Ron Paul,502
+06061,Placer,James Harris,0
+06061,Placer,Virgil Goode,2
+06061,Placer,Jerry White,0
+06061,Placer,Stewart Alexander,1
+06063,Plumas,Barack Obama,4026
+06063,Plumas,Mitt Romney,5721
+06063,Plumas,Thomas Hoefling,22
+06063,Plumas,Jill Stein,71
+06063,Plumas,Gary Johnson,128
+06063,Plumas,Roseanne Barr,40
+06063,Plumas,"Ross C. ""Rocky"" Anderson",1
+06063,Plumas,"Shelia ""Samm"" Tittle",0
+06063,Plumas,Stephen Durham,0
+06063,Plumas,Ron Paul,38
+06063,Plumas,James Harris,0
+06063,Plumas,Virgil Goode,0
+06063,Plumas,Jerry White,0
+06063,Plumas,Stewart Alexander,0
+06065,Riverside,Barack Obama,329063
+06065,Riverside,Mitt Romney,318127
+06065,Riverside,Thomas Hoefling,2350
+06065,Riverside,Jill Stein,2243
+06065,Riverside,Gary Johnson,6223
+06065,Riverside,Roseanne Barr,2609
+06065,Riverside,"Ross C. ""Rocky"" Anderson",20
+06065,Riverside,"Shelia ""Samm"" Tittle",0
+06065,Riverside,Stephen Durham,0
+06065,Riverside,Ron Paul,1212
+06065,Riverside,James Harris,0
+06065,Riverside,Virgil Goode,45
+06065,Riverside,Jerry White,5
+06065,Riverside,Stewart Alexander,10
+06067,Sacramento,Barack Obama,300503
+06067,Sacramento,Mitt Romney,202514
+06067,Sacramento,Thomas Hoefling,1532
+06067,Sacramento,Jill Stein,2753
+06067,Sacramento,Gary Johnson,6134
+06067,Sacramento,Roseanne Barr,2419
+06067,Sacramento,"Ross C. ""Rocky"" Anderson",37
+06067,Sacramento,"Shelia ""Samm"" Tittle",0
+06067,Sacramento,Stephen Durham,1
+06067,Sacramento,Ron Paul,879
+06067,Sacramento,James Harris,1
+06067,Sacramento,Virgil Goode,32
+06067,Sacramento,Jerry White,3
+06067,Sacramento,Stewart Alexander,1
+06069,San Benito,Barack Obama,11276
+06069,San Benito,Mitt Romney,7343
+06069,San Benito,Thomas Hoefling,57
+06069,San Benito,Jill Stein,78
+06069,San Benito,Gary Johnson,164
+06069,San Benito,Roseanne Barr,96
+06069,San Benito,"Ross C. ""Rocky"" Anderson",1
+06069,San Benito,"Shelia ""Samm"" Tittle",0
+06069,San Benito,Stephen Durham,0
+06069,San Benito,Ron Paul,29
+06069,San Benito,James Harris,0
+06069,San Benito,Virgil Goode,0
+06069,San Benito,Jerry White,0
+06069,San Benito,Stewart Alexander,0
+06071,San Bernardino,Barack Obama,305109
+06071,San Bernardino,Mitt Romney,262358
+06071,San Bernardino,Thomas Hoefling,2418
+06071,San Bernardino,Jill Stein,2227
+06071,San Bernardino,Gary Johnson,5883
+06071,San Bernardino,Roseanne Barr,2608
+06071,San Bernardino,"Ross C. ""Rocky"" Anderson",13
+06071,San Bernardino,"Shelia ""Samm"" Tittle",0
+06071,San Bernardino,Stephen Durham,0
+06071,San Bernardino,Ron Paul,878
+06071,San Bernardino,James Harris,0
+06071,San Bernardino,Virgil Goode,22
+06071,San Bernardino,Jerry White,0
+06071,San Bernardino,Stewart Alexander,1
+06073,San Diego,Barack Obama,626957
+06073,San Diego,Mitt Romney,536726
+06073,San Diego,Thomas Hoefling,1614
+06073,San Diego,Jill Stein,5787
+06073,San Diego,Gary Johnson,14656
+06073,San Diego,Roseanne Barr,3231
+06073,San Diego,"Ross C. ""Rocky"" Anderson",70
+06073,San Diego,"Shelia ""Samm"" Tittle",1
+06073,San Diego,Stephen Durham,0
+06073,San Diego,Ron Paul,3140
+06073,San Diego,James Harris,10
+06073,San Diego,Virgil Goode,70
+06073,San Diego,Jerry White,13
+06073,San Diego,Stewart Alexander,7
+06075,San Francisco,Barack Obama,301723
+06075,San Francisco,Mitt Romney,47076
+06075,San Francisco,Thomas Hoefling,439
+06075,San Francisco,Jill Stein,5494
+06075,San Francisco,Gary Johnson,4096
+06075,San Francisco,Roseanne Barr,1897
+06075,San Francisco,"Ross C. ""Rocky"" Anderson",86
+06075,San Francisco,"Shelia ""Samm"" Tittle",0
+06075,San Francisco,Stephen Durham,28
+06075,San Francisco,Ron Paul,347
+06075,San Francisco,James Harris,10
+06075,San Francisco,Virgil Goode,2
+06075,San Francisco,Jerry White,5
+06075,San Francisco,Stewart Alexander,6
+06077,San Joaquin,Barack Obama,114121
+06077,San Joaquin,Mitt Romney,86071
+06077,San Joaquin,Thomas Hoefling,553
+06077,San Joaquin,Jill Stein,773
+06077,San Joaquin,Gary Johnson,1839
+06077,San Joaquin,Roseanne Barr,920
+06077,San Joaquin,"Ross C. ""Rocky"" Anderson",6
+06077,San Joaquin,"Shelia ""Samm"" Tittle",0
+06077,San Joaquin,Stephen Durham,0
+06077,San Joaquin,Ron Paul,402
+06077,San Joaquin,James Harris,1
+06077,San Joaquin,Virgil Goode,10
+06077,San Joaquin,Jerry White,1
+06077,San Joaquin,Stewart Alexander,0
+06079,San Luis Obispo,Barack Obama,61258
+06079,San Luis Obispo,Mitt Romney,59967
+06079,San Luis Obispo,Thomas Hoefling,420
+06079,San Luis Obispo,Jill Stein,1085
+06079,San Luis Obispo,Gary Johnson,1776
+06079,San Luis Obispo,Roseanne Barr,460
+06079,San Luis Obispo,"Ross C. ""Rocky"" Anderson",17
+06079,San Luis Obispo,"Shelia ""Samm"" Tittle",0
+06079,San Luis Obispo,Stephen Durham,0
+06079,San Luis Obispo,Ron Paul,631
+06079,San Luis Obispo,James Harris,1
+06079,San Luis Obispo,Virgil Goode,21
+06079,San Luis Obispo,Jerry White,2
+06079,San Luis Obispo,Stewart Alexander,0
+06081,San Mateo,Barack Obama,206085
+06081,San Mateo,Mitt Romney,72756
+06081,San Mateo,Thomas Hoefling,597
+06081,San Mateo,Jill Stein,1957
+06081,San Mateo,Gary Johnson,2926
+06081,San Mateo,Roseanne Barr,819
+06081,San Mateo,"Ross C. ""Rocky"" Anderson",27
+06081,San Mateo,"Shelia ""Samm"" Tittle",0
+06081,San Mateo,Stephen Durham,1
+06081,San Mateo,Ron Paul,535
+06081,San Mateo,James Harris,6
+06081,San Mateo,Virgil Goode,5
+06081,San Mateo,Jerry White,2
+06081,San Mateo,Stewart Alexander,4
+06083,Santa Barbara,Barack Obama,94129
+06083,Santa Barbara,Mitt Romney,64606
+06083,Santa Barbara,Thomas Hoefling,438
+06083,Santa Barbara,Jill Stein,1322
+06083,Santa Barbara,Gary Johnson,2063
+06083,Santa Barbara,Roseanne Barr,509
+06083,Santa Barbara,"Ross C. ""Rocky"" Anderson",14
+06083,Santa Barbara,"Shelia ""Samm"" Tittle",0
+06083,Santa Barbara,Stephen Durham,0
+06083,Santa Barbara,Ron Paul,234
+06083,Santa Barbara,James Harris,1
+06083,Santa Barbara,Virgil Goode,3
+06083,Santa Barbara,Jerry White,1
+06083,Santa Barbara,Stewart Alexander,0
+06085,Santa Clara,Barack Obama,450818
+06085,Santa Clara,Mitt Romney,174843
+06085,Santa Clara,Thomas Hoefling,1712
+06085,Santa Clara,Jill Stein,4391
+06085,Santa Clara,Gary Johnson,7889
+06085,Santa Clara,Roseanne Barr,2298
+06085,Santa Clara,"Ross C. ""Rocky"" Anderson",75
+06085,Santa Clara,"Shelia ""Samm"" Tittle",0
+06085,Santa Clara,Stephen Durham,0
+06085,Santa Clara,Ron Paul,1040
+06085,Santa Clara,James Harris,2
+06085,Santa Clara,Virgil Goode,13
+06085,Santa Clara,Jerry White,5
+06085,Santa Clara,Stewart Alexander,5
+06087,Santa Cruz,Barack Obama,90805
+06087,Santa Cruz,Mitt Romney,24047
+06087,Santa Cruz,Thomas Hoefling,278
+06087,Santa Cruz,Jill Stein,1857
+06087,Santa Cruz,Gary Johnson,1971
+06087,Santa Cruz,Roseanne Barr,675
+06087,Santa Cruz,"Ross C. ""Rocky"" Anderson",39
+06087,Santa Cruz,"Shelia ""Samm"" Tittle",0
+06087,Santa Cruz,Stephen Durham,2
+06087,Santa Cruz,Ron Paul,415
+06087,Santa Cruz,James Harris,0
+06087,Santa Cruz,Virgil Goode,5
+06087,Santa Cruz,Jerry White,1
+06087,Santa Cruz,Stewart Alexander,0
+06089,Shasta,Barack Obama,25819
+06089,Shasta,Mitt Romney,48067
+06089,Shasta,Thomas Hoefling,434
+06089,Shasta,Jill Stein,389
+06089,Shasta,Gary Johnson,926
+06089,Shasta,Roseanne Barr,403
+06089,Shasta,"Ross C. ""Rocky"" Anderson",5
+06089,Shasta,"Shelia ""Samm"" Tittle",0
+06089,Shasta,Stephen Durham,0
+06089,Shasta,Ron Paul,285
+06089,Shasta,James Harris,0
+06089,Shasta,Virgil Goode,7
+06089,Shasta,Jerry White,0
+06089,Shasta,Stewart Alexander,0
+06091,Sierra,Barack Obama,653
+06091,Sierra,Mitt Romney,1056
+06091,Sierra,Thomas Hoefling,12
+06091,Sierra,Jill Stein,24
+06091,Sierra,Gary Johnson,19
+06091,Sierra,Roseanne Barr,16
+06091,Sierra,"Ross C. ""Rocky"" Anderson",0
+06091,Sierra,"Shelia ""Samm"" Tittle",0
+06091,Sierra,Stephen Durham,0
+06091,Sierra,Ron Paul,15
+06091,Sierra,James Harris,0
+06091,Sierra,Virgil Goode,0
+06091,Sierra,Jerry White,0
+06091,Sierra,Stewart Alexander,0
+06093,Siskiyou,Barack Obama,8046
+06093,Siskiyou,Mitt Romney,11077
+06093,Siskiyou,Thomas Hoefling,117
+06093,Siskiyou,Jill Stein,152
+06093,Siskiyou,Gary Johnson,242
+06093,Siskiyou,Roseanne Barr,133
+06093,Siskiyou,"Ross C. ""Rocky"" Anderson",2
+06093,Siskiyou,"Shelia ""Samm"" Tittle",0
+06093,Siskiyou,Stephen Durham,0
+06093,Siskiyou,Ron Paul,141
+06093,Siskiyou,James Harris,0
+06093,Siskiyou,Virgil Goode,0
+06093,Siskiyou,Jerry White,0
+06093,Siskiyou,Stewart Alexander,0
+06095,Solano,Barack Obama,96783
+06095,Solano,Mitt Romney,52092
+06095,Solano,Thomas Hoefling,563
+06095,Solano,Jill Stein,641
+06095,Solano,Gary Johnson,1445
+06095,Solano,Roseanne Barr,620
+06095,Solano,"Ross C. ""Rocky"" Anderson",13
+06095,Solano,"Shelia ""Samm"" Tittle",0
+06095,Solano,Stephen Durham,1
+06095,Solano,Ron Paul,278
+06095,Solano,James Harris,2
+06095,Solano,Virgil Goode,6
+06095,Solano,Jerry White,0
+06095,Solano,Stewart Alexander,0
+06097,Sonoma,Barack Obama,153942
+06097,Sonoma,Mitt Romney,54784
+06097,Sonoma,Thomas Hoefling,758
+06097,Sonoma,Jill Stein,2745
+06097,Sonoma,Gary Johnson,2754
+06097,Sonoma,Roseanne Barr,1128
+06097,Sonoma,"Ross C. ""Rocky"" Anderson",34
+06097,Sonoma,"Shelia ""Samm"" Tittle",0
+06097,Sonoma,Stephen Durham,0
+06097,Sonoma,Ron Paul,355
+06097,Sonoma,James Harris,0
+06097,Sonoma,Virgil Goode,2
+06097,Sonoma,Jerry White,4
+06097,Sonoma,Stewart Alexander,2
+06099,Stanislaus,Barack Obama,77724
+06099,Stanislaus,Mitt Romney,73459
+06099,Stanislaus,Thomas Hoefling,747
+06099,Stanislaus,Jill Stein,563
+06099,Stanislaus,Gary Johnson,1499
+06099,Stanislaus,Roseanne Barr,966
+06099,Stanislaus,"Ross C. ""Rocky"" Anderson",6
+06099,Stanislaus,"Shelia ""Samm"" Tittle",0
+06099,Stanislaus,Stephen Durham,0
+06099,Stanislaus,Ron Paul,390
+06099,Stanislaus,James Harris,0
+06099,Stanislaus,Virgil Goode,15
+06099,Stanislaus,Jerry White,0
+06099,Stanislaus,Stewart Alexander,0
+06101,Sutter,Barack Obama,12192
+06101,Sutter,Mitt Romney,18122
+06101,Sutter,Thomas Hoefling,157
+06101,Sutter,Jill Stein,89
+06101,Sutter,Gary Johnson,298
+06101,Sutter,Roseanne Barr,124
+06101,Sutter,"Ross C. ""Rocky"" Anderson",1
+06101,Sutter,"Shelia ""Samm"" Tittle",0
+06101,Sutter,Stephen Durham,0
+06101,Sutter,Ron Paul,43
+06101,Sutter,James Harris,0
+06101,Sutter,Virgil Goode,0
+06101,Sutter,Jerry White,0
+06101,Sutter,Stewart Alexander,0
+06103,Tehama,Barack Obama,7934
+06103,Tehama,Mitt Romney,14235
+06103,Tehama,Thomas Hoefling,190
+06103,Tehama,Jill Stein,125
+06103,Tehama,Gary Johnson,244
+06103,Tehama,Roseanne Barr,186
+06103,Tehama,"Ross C. ""Rocky"" Anderson",0
+06103,Tehama,"Shelia ""Samm"" Tittle",0
+06103,Tehama,Stephen Durham,0
+06103,Tehama,Ron Paul,63
+06103,Tehama,James Harris,0
+06103,Tehama,Virgil Goode,0
+06103,Tehama,Jerry White,0
+06103,Tehama,Stewart Alexander,0
+06105,Trinity,Barack Obama,2674
+06105,Trinity,Mitt Romney,2716
+06105,Trinity,Thomas Hoefling,30
+06105,Trinity,Jill Stein,98
+06105,Trinity,Gary Johnson,89
+06105,Trinity,Roseanne Barr,67
+06105,Trinity,"Ross C. ""Rocky"" Anderson",0
+06105,Trinity,"Shelia ""Samm"" Tittle",0
+06105,Trinity,Stephen Durham,0
+06105,Trinity,Ron Paul,0
+06105,Trinity,James Harris,0
+06105,Trinity,Virgil Goode,0
+06105,Trinity,Jerry White,0
+06105,Trinity,Stewart Alexander,0
+06107,Tulare,Barack Obama,41752
+06107,Tulare,Mitt Romney,56956
+06107,Tulare,Thomas Hoefling,428
+06107,Tulare,Jill Stein,388
+06107,Tulare,Gary Johnson,792
+06107,Tulare,Roseanne Barr,464
+06107,Tulare,"Ross C. ""Rocky"" Anderson",4
+06107,Tulare,"Shelia ""Samm"" Tittle",0
+06107,Tulare,Stephen Durham,0
+06107,Tulare,Ron Paul,297
+06107,Tulare,James Harris,0
+06107,Tulare,Virgil Goode,19
+06107,Tulare,Jerry White,0
+06107,Tulare,Stewart Alexander,0
+06109,Tuolumne,Barack Obama,9998
+06109,Tuolumne,Mitt Romney,13880
+06109,Tuolumne,Thomas Hoefling,141
+06109,Tuolumne,Jill Stein,145
+06109,Tuolumne,Gary Johnson,315
+06109,Tuolumne,Roseanne Barr,129
+06109,Tuolumne,"Ross C. ""Rocky"" Anderson",0
+06109,Tuolumne,"Shelia ""Samm"" Tittle",0
+06109,Tuolumne,Stephen Durham,0
+06109,Tuolumne,Ron Paul,79
+06109,Tuolumne,James Harris,0
+06109,Tuolumne,Virgil Goode,0
+06109,Tuolumne,Jerry White,0
+06109,Tuolumne,Stewart Alexander,0
+06111,Ventura,Barack Obama,170929
+06111,Ventura,Mitt Romney,147958
+06111,Ventura,Thomas Hoefling,1049
+06111,Ventura,Jill Stein,1661
+06111,Ventura,Gary Johnson,3735
+06111,Ventura,Roseanne Barr,1087
+06111,Ventura,"Ross C. ""Rocky"" Anderson",30
+06111,Ventura,"Shelia ""Samm"" Tittle",0
+06111,Ventura,Stephen Durham,1
+06111,Ventura,Ron Paul,503
+06111,Ventura,James Harris,1
+06111,Ventura,Virgil Goode,16
+06111,Ventura,Jerry White,2
+06111,Ventura,Stewart Alexander,2
+06113,Yolo,Barack Obama,48715
+06113,Yolo,Mitt Romney,23368
+06113,Yolo,Thomas Hoefling,113
+06113,Yolo,Jill Stein,729
+06113,Yolo,Gary Johnson,1063
+06113,Yolo,Roseanne Barr,280
+06113,Yolo,"Ross C. ""Rocky"" Anderson",24
+06113,Yolo,"Shelia ""Samm"" Tittle",0
+06113,Yolo,Stephen Durham,2
+06113,Yolo,Ron Paul,174
+06113,Yolo,James Harris,0
+06113,Yolo,Virgil Goode,4
+06113,Yolo,Jerry White,1
+06113,Yolo,Stewart Alexander,2
+06115,Yuba,Barack Obama,7711
+06115,Yuba,Mitt Romney,11275
+06115,Yuba,Thomas Hoefling,111
+06115,Yuba,Jill Stein,110
+06115,Yuba,Gary Johnson,306
+06115,Yuba,Roseanne Barr,133
+06115,Yuba,"Ross C. ""Rocky"" Anderson",2
+06115,Yuba,"Shelia ""Samm"" Tittle",0
+06115,Yuba,Stephen Durham,0
+06115,Yuba,Ron Paul,52
+06115,Yuba,James Harris,0
+06115,Yuba,Virgil Goode,0
+06115,Yuba,Jerry White,0
+06115,Yuba,Stewart Alexander,0
