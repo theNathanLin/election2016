@@ -13,6 +13,23 @@ symnum(cor(data[,4:17], use="complete.obs"))
 #originally, we had both median income & percent below poverty line. since these had a 60% correlation we chose to keep just median income
 data <- data[,1:16]
 
+#import cleaned election data
+clean_2012 <- read.csv("clean_2012.csv")
+clean_2012 <- clean_2012[,c(2,6)]
+clean_2012$fips <- as.factor(clean_2012$fips)
+
+clean_2016 <- read.csv("clean_2016.csv")
+clean_2016 <- clean_2016[,c(2,8)]
+clean_2016$fips <- as.factor(clean_2016$fips)
+
+data_2012 <- merge(data, clean_2012,by="fips")
+data_2016 <- merge(data, clean_2016,by="fips")
+
+
+merge(clean_2016,data,fips)
+
+
+
 
 
 
