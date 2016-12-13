@@ -1,5 +1,4 @@
-setwd("~/documents/onedrive/uva_2ndyr/DS4559/election2016/Data")
-census <- read.csv("2016dataprimary/county_facts.csv", header = TRUE, stringsAsFactors = TRUE)
+census <- read.csv("Data/2016dataprimary/county_facts.csv", header = TRUE, stringsAsFactors = TRUE)
 #check for unclean data
 data <- subset(census,select=c("fips", "area_name", "state_abbreviation", "POP060210","PST040210","AGE775214","SEX255214","RHI225214", "RHI325214", "RHI425214", "RHI525214", "RHI725214", "RHI825214", "EDU635213", "EDU685213", "INC110213", "PVY020213"))
 data <- subset(data, fips !=0) #remove USA
@@ -14,23 +13,81 @@ symnum(cor(data[,4:17], use="complete.obs"))
 data <- data[,1:16]
 
 #import cleaned election data
-clean_2012 <- read.csv("clean_2012.csv")
+clean_2012 <- read.csv("Data/clean_2012.csv")
 clean_2012 <- clean_2012[,c(2,6)]
 clean_2012$fips <- as.factor(clean_2012$fips)
 
-clean_2016 <- read.csv("clean_2016.csv")
+clean_2016 <- read.csv("Data/clean_2016.csv")
 clean_2016 <- clean_2016[,c(2,8)]
 clean_2016$fips <- as.factor(clean_2016$fips)
 
 data_2012 <- merge(data, clean_2012,by="fips")
 data_2016 <- merge(data, clean_2016,by="fips")
+data_2016 <- data_2016[seq(1, 6223, 2),]
+
+#write the files for later use
+write.csv(data_2016, file = "Data/2016+census+results.csv")
+write.csv(data_2012, file = "Data/2012+census+results.csv")
+
+#Randomly order the data
+set.seed(7)
+data_2012 <- data_2012[order(runif(3112)), ]
+data_2012$ObamaWin <- as.factor(data_2012$ObamaWin)
+
+data_2016 <- data_2016[order(runif(3112)), ]
+
+#Split the data ~80% training and 20% testing
+train_2012 <- data_2012[1:2489,]
+test_2012<- data_2012[2489:3112,]
+
+train_2016 <- data_2016[1:2489,]
+test_2016<- data_2016[2489:3112,]
+
+#One way to look at attribute importance
+
+library(caret)
+library(corrplot)
+library(DMwR)
+library(ggplot2)
+library(reshape2)
+library(plyr)
+library(sqldf)
+library(mlbench)
+library(randomForest)
+library(gmodels)
+library(party)
+library(C50)
+library(RWeka)
+
+model <- train(ObamaWin ~., data=train_2012[,4:17], method="lvq", preProcess="scale")#, trControl=control)
+#Estimating variable importance
+importance <- varImp(model, scale=FALSE)
+print(importance)
+plot(importance, ylab = 'Attributes', main = 'Attribute Importance')
+
+#2016
+## FIX NA PROBLEM!!!!!!!!!!!!
+model <- train(lead ~., data=train_2016[,4:17], method="lvq", preProcess="scale")#, trControl=control)
+#Estimating variable importance
+importance <- varImp(model, scale=FALSE)
+print(importance)
+plot(importance, ylab = 'Attributes', main = 'Attribute Importance')
 
 
-merge(clean_2016,data,fips)
+####################################################### REANALYZE!!!!!
+# our testing data has WAY more trump counties? fix later?
+tree_model = ctree(ObamaWin ~ ., train_2012[,4:17]) 
+plot(tree_model)
+ctree_pred <- predict(tree_model,test_2012[,4:17])
+CrossTable(test_2012$ObamaWin, ctree_pred,
+           prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
+           dnn = c('Actual Type', 'Predicted Type'))
 
 
-
-
+ctree_pred2 <- predict(tree_model,test_2016[,4:17])
+CrossTable(test_2016$lead, ctree_pred,
+           prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
+           dnn = c('Actual Type', 'Predicted Type'))
 
 
 #choose machine learning methods to explore
