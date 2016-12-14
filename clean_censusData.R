@@ -89,6 +89,8 @@ CrossTable(test_2016$lead, ctree_pred,
            prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
            dnn = c('Actual Type', 'Predicted Type'))
 
+#not working?
+rand_forest = randomForest(ObamaWin ~ ., train_2012[,4:17])
 
 #choose machine learning methods to explore
 POP060210	Population per square mile, 2010
