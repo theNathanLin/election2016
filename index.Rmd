@@ -527,6 +527,56 @@ leaflet() %>%
             title = "Obama-Clinton Vote Differential (+ favors Obama)")
 ```
 
+### Voter Turnout Comparisons
+Given the voting information for 2012 and 2016, we can also construct a representation of voter turnout from 2012 to 2016. As a side note, the very large decrease was from Los Angeles County for both parties.
+
+#### 2012-2016, Total Turnout
+```{r, echo=FALSE, warning=FALSE, fig.width=20, fig.height = 10}
+vote.diff <- diff.1216[,c(1,2,3,4,5,8,9)]
+vote.diff$sum2012 <- vote.diff$obama + vote.diff$romney
+vote.diff$sum2016 <- vote.diff$clinton + vote.diff$trump
+vote.diff$change1216 <- vote.diff$sum2016 - vote.diff$sum2012
+
+vote.diff$demchange <- vote.diff$clinton - vote.diff$obama
+vote.diff$repchange <- vote.diff$trump - vote.diff$romney
+
+df_merged.turnout <- merge(us.counties2, vote.diff, by.x = "id", by.y = "fips", all.x = TRUE)
+
+#2012-2016 Total Turnout graph
+us.ggmap.turnout1216 <- ggplot() +
+  geom_polygon(data = df_merged.turnout, aes(x = long, y = lat, group = group, fill = change1216), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
+  scale_fill_distiller(palette = "Paired", guide = "colourbar", name = "Changes in Votes from 2012 to 2016") + 
+  ggtitle("2012-2016 Turnout Differences") + coord_map("polyconic") + theme_void()
+us.ggmap.turnout1216
+```
+
+#### 2012-2016, Republican Party Turnout
+We can compare the 2012 and 2016 turnouts for just the Republican Party.
+
+```{r, echo=FALSE, warning=FALSE, fig.width=20, fig.height = 10}
+us.ggmap.turnoutrep <- ggplot() +
+  geom_polygon(data = df_merged.turnout, aes(x = long, y = lat, group = group, fill = repchange), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
+  scale_fill_distiller(palette = "Paired", guide = "colourbar", name = "Changes in Votes from 2012 to 2016",
+                       limits = c(min(df_merged.turnout$repchange, df_merged.turnout$demchange), 
+                                  max(df_merged.turnout$repchange, df_merged.turnout$demchange))) + 
+  ggtitle("2012-2016 Turnout Differences, Republican Party") + coord_map("polyconic") + theme_void() 
+us.ggmap.turnoutrep
+```
+
+#### 2012-2016, Democratic Party Turnout
+```{r, echo=FALSE, warning=FALSE, fig.width=20, fig.height = 10}
+us.ggmap.turnoutdem <- ggplot() +
+  geom_polygon(data = df_merged.turnout, aes(x = long, y = lat, group = group, fill = demchange), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
+  scale_fill_distiller(palette = "Paired", guide = "colourbar", name = "Changes in Votes from 2012 to 2016",
+                       limits = c(min(df_merged.turnout$repchange, df_merged.turnout$demchange), 
+                                  max(df_merged.turnout$repchange, df_merged.turnout$demchange))) + 
+  ggtitle("2012-2016 Turnout Differences, Democratic Party") + coord_map("polyconic") + theme_void() 
+us.ggmap.turnoutdem
+```
+
 ***
 
 ## Hypotheticals
