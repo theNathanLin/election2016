@@ -273,11 +273,17 @@ leaflet() %>%
               weight = 1, 
               smoothFactor = 0.2,
               popup = popup.us) %>%
+  addPolygons(data = us.states, 
+              color = "#ffffff",
+              fillOpacity = 0, 
+              weight = 1, 
+              smoothFactor = 0.2, options = pathOptions(clickable = FALSE)) %>%
   addLegend(pal = pal, 
             values = df_merged.us2$diff, 
             position = "bottomright", 
             title = "Donald Trump's Advantage",
-            labFormat = labelFormat(suffix = "%", transform = function(x) 100 * x))
+            labFormat = labelFormat(suffix = "%", transform = function(x) 100 * x)) %>%
+  fitBounds(-124.848974, 24.396308, -66.885444, 49.384358)
 
 ####2012 Map Generation####
 df_merged.us12 <- merge(us.counties2, long12, by.x = "id", by.y = "fips", all.x = TRUE)
