@@ -40,17 +40,20 @@ for (i in seq(nrow(gen16))){
 #Creating a separate table with just the state-wide results
 gen16.states <- gen16[is.na(gen16$county),]
 gen16.states <- gen16.states[-c(103,104),] #removing state FIPS for Alaska
-gen16.states$county <- NULL
-gen16.states$fips <- NULL
+gen16.states$county <- NULL #Removed county info from the states df
+gen16.states$fips <- NULL #Removed generic fips info from the states df
 
-gen16 <- gen16[-is.na(gen16$county)]
+gen16 <- gen16[-is.na(gen16$county)] #Removed items that did not have county info
 
 #Removing the statewide results from the county data
 for (i in seq(nrow(gen16))) {
   if (nchar(gen16$fips[i])<=2) gen16$fips[i] <- NA
 }
 
+#Removed items that did not have a FIPS code
 gen16 <- gen16[-which(is.na(gen16$fips)),]
+
+#Removed additional columns of unnecessary data
 gen16$pct_report <- NULL
 gen16.2 <- gen16
 
@@ -60,6 +63,8 @@ gen16.2$lead <- NULL
 #Used the reshape2 package to convert the dataframe from long to wide format
 long16 <- dcast(gen16.2, fips + st + total_votes ~ cand, value.var = "pct")
 colnames(long16) <- c("fips", "st", "total_votes", "DonaldTrump", "HillaryClinton")
+
+#Created a difference column with Trump votes over Clinton votes
 long16$diff <- long16$DonaldTrump - long16$HillaryClinton
 
 #Added an extra leading 0 for FIPS codes that were 4 digits long (enables the merge later)
@@ -67,11 +72,17 @@ for (i in seq(nrow(long16))) {
   if (nchar(long16$fips[i])==4) long16$fips[i] <- paste("0",long16$fips[i], sep="")
 }
 
+#Created a flag variable with 1 for a Trump win and 0 for a Clinton win
 long16$TrumpWin <- ifelse(long16$diff >0, long16$TrumpWin <- 1, long16$TrumpWin <- 0)
+
+#Set the flag variable as a factor to enable discrete scales for ggplot2
 long16$TrumpWin <- as.factor(long16$TrumpWin)
 
 ####Cleaning FIPS database####
+#Concatenating state and county fips codes to form the five digit fips code
 fips.labels$fips <- paste(fips.labels$V2,fips.labels$V3, sep = "")
+
+#Removed unnecessary columns
 fips.labels$V2 <- NULL
 fips.labels$V3 <- NULL
 fips.labels$V5 <- NULL
@@ -134,14 +145,18 @@ long12$diffper <- long12$ObamaPer - long12$RomneyPer
 long12 <- merge(long12, fips.labels, by.x = "fips", by.y = "FIPS", all.x = TRUE)
 
 ####Lower 48 State US Geographic Data####
+#Obtain the geolocation data for US counties in Spatial Polygon form (used for leaflet)
 us.counties <- counties(c("AL", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME",
                           "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", 
                           "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"), cb = TRUE)
 
+#Fortify the spacial polygon to convert to dataframe format (for ggplot2)
 us.counties2 <- fortify(us.counties, region = "GEOID")
 
+#Obtained state boundaries so we can overlay a white boundary/outline over the US map
 us.states <- states(cb = TRUE)
 us.states2 <- fortify(us.states, region = "GEOID")
+#Limited the state dataframe to exclude areas outside the 48 states (territories, AK, HI)
 us.states3 <- us.states2[which(us.states2$lat >= 24.396308 & us.states2$lat <= 49.384358 & us.states2$long >= -124.848974 & us.states2$long <= -66.885444),]
 
 ####2016 Map Generation####
@@ -181,15 +196,6 @@ leaflet() %>%
             title = "Donald Trump's Advantage",
             labFormat = labelFormat(suffix = "%", transform = function(x) 100 * x))
 
-va.fortify <- fortify(counties, region = "GEOID")
-va.fortify <- merge(va.fortify, long16, by.x = "id", by.y = "fips", all.x = TRUE)
-
-ggplot() +
-  geom_polygon(data = va.fortify, 
-               aes(x = long, y = lat, group = group, fill = diff), 
-               color = "black", size = 0.25) + 
-  coord_map() + scale_fill_gradient(low = "blue", high = "red") + theme_map()
-
 #Pennsylvania
 counties2 <- counties("PA", cb = TRUE)
 df_merged2 <- geo_join(counties2, long16, "GEOID", "fips")
@@ -223,8 +229,10 @@ leaflet() %>%
 #United States
 #ggplot2
 #Gradient
+#For the fill information for the graphs, merge the fortified spacial data with 2016 vote to enable fills/gradients
 df_merged.us <- merge(us.counties2, long16, by.x = "id", by.y = "fips", all.x = TRUE)
 
+#Gradient Map of Margin of Victory with ggplot2
 us.ggmap <- ggplot() +
   geom_polygon(data = df_merged.us, aes(x = long, y = lat, group = group, fill = diff), color = "dark grey", size = 0.25) + 
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
@@ -265,11 +273,17 @@ leaflet() %>%
               weight = 1, 
               smoothFactor = 0.2,
               popup = popup.us) %>%
+  addPolygons(data = us.states, 
+              color = "#ffffff",
+              fillOpacity = 0, 
+              weight = 1, 
+              smoothFactor = 0.2, options = pathOptions(clickable = FALSE)) %>%
   addLegend(pal = pal, 
             values = df_merged.us2$diff, 
             position = "bottomright", 
             title = "Donald Trump's Advantage",
-            labFormat = labelFormat(suffix = "%", transform = function(x) 100 * x))
+            labFormat = labelFormat(suffix = "%", transform = function(x) 100 * x)) %>%
+  fitBounds(-124.848974, 24.396308, -66.885444, 49.384358)
 
 ####2012 Map Generation####
 df_merged.us12 <- merge(us.counties2, long12, by.x = "id", by.y = "fips", all.x = TRUE)
@@ -450,6 +464,42 @@ leaflet() %>%
             values = df_merged.midwest$co.diff2, 
             position = "bottomright", 
             title = "Obama-Trump Vote Differential (+ favors Obama)")
+
+####2012-2016 Turnout Comparisons####
+vote.diff <- diff.1216[,c(1,2,3,4,5,8,9)]
+vote.diff$sum2012 <- vote.diff$obama + vote.diff$romney
+vote.diff$sum2016 <- vote.diff$clinton + vote.diff$trump
+vote.diff$change1216 <- vote.diff$sum2016 - vote.diff$sum2012
+
+vote.diff$demchange <- vote.diff$clinton - vote.diff$obama
+vote.diff$repchange <- vote.diff$trump - vote.diff$romney
+
+df_merged.turnout <- merge(us.counties2, vote.diff, by.x = "id", by.y = "fips", all.x = TRUE)
+
+#2012-2016 Total Turnout graph
+us.ggmap.turnout1216 <- ggplot() +
+  geom_polygon(data = df_merged.turnout, aes(x = long, y = lat, group = group, fill = change1216), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
+  scale_fill_distiller(palette = "Paired", guide = "colourbar", name = "Changes in Votes from 2012 to 2016") + 
+  ggtitle("2012-2016 Turnout Differences") + coord_map("polyconic") + theme_void() 
+
+#Republican Turnout Changes
+us.ggmap.turnoutrep <- ggplot() +
+  geom_polygon(data = df_merged.turnout, aes(x = long, y = lat, group = group, fill = repchange), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
+  scale_fill_distiller(palette = "Paired", guide = "colourbar", name = "Changes in Votes from 2012 to 2016",
+                       limits = c(min(df_merged.turnout$repchange, df_merged.turnout$demchange), 
+                                  max(df_merged.turnout$repchange, df_merged.turnout$demchange))) + 
+  ggtitle("2012-2016 Turnout Differences, Republican Party") + coord_map("polyconic") + theme_void() 
+
+#Democrat Turnout Changes
+us.ggmap.turnoutdem <- ggplot() +
+  geom_polygon(data = df_merged.turnout, aes(x = long, y = lat, group = group, fill = demchange), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
+  scale_fill_distiller(palette = "Paired", guide = "colourbar", name = "Changes in Votes from 2012 to 2016",
+                       limits = c(min(df_merged.turnout$repchange, df_merged.turnout$demchange), 
+                                  max(df_merged.turnout$repchange, df_merged.turnout$demchange))) + 
+  ggtitle("2012-2016 Turnout Differences, Democratic Party") + coord_map("polyconic") + theme_void() 
 
 ####Obama-Trump Matchup####
 us.ggmap.obamatrump <- ggplot() +
