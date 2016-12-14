@@ -27,11 +27,11 @@ Most pollsters and statisticians had Hillary Clinton maintaining a comfortable m
 We have incorporated US Census demographic data, as well as employing comparisons between Donald Trump's 2016 victory with Barack Obama's 2012 re-election against Mitt Romney.
 
 ### What You Will Find Below
-Below are primarily the visualizations generated from our analysis. They were created via `leaflet` and `ggplot2`. Our 2012 election data was obtained from the Huffington Post, and our 2016 election data was sourced from Kaggle.
+Below are primarily the visualizations generated from our analysis. They were created via `leaflet` and `ggplot2` in `R`. Our 2012 election data was obtained from the Huffington Post, and our 2016 election data was sourced from Kaggle.
 
-Code for the graphics is not included in chunks below. Please consult our Github for more information.
+Code for the graphics is not included in chunks below. Please consult our Github for more information, including our original graphics and code.
 
-Our analysis excludes Alaska and Hawaii.
+Our analysis excludes Alaska and Hawaii as well as third-party candidates.
 
 ***
 
@@ -183,7 +183,7 @@ us.states3 <- us.states2[which(us.states2$lat >= 24.396308 & us.states2$lat <= 4
 ```
 
 ### Gradient Map
-```{r fig.width=20, fig.height = 10, echo = FALSE}
+```{r fig.width=16, fig.height = 8, echo = FALSE}
 df_merged.us <- merge(us.counties2, long16, by.x = "id", by.y = "fips", all.x = TRUE)
 
 us.ggmap <- ggplot() +
@@ -203,7 +203,7 @@ Naturally, Clinton has a visible edge in more urban, coastal areas while Trump h
 ### Pure Win-Loss
 We can clarify the win by county by removing the gradient.
 
-```{r fig.width=20, fig.height = 10, echo = FALSE}
+```{r fig.width=16, fig.height = 8, echo = FALSE}
 us.ggmap2 <- ggplot() +
   geom_polygon(data = df_merged.us, aes(x = long, y = lat, group = group, fill = TrumpWin), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
@@ -215,7 +215,7 @@ us.ggmap2
 ***
 
 ### Interactive
-Let's check out a few interactive maps created with `leaflet`.
+Let's check out a few interactive maps created with `leaflet`. Clinton narrowly won Virginia while Trump narrowly won Pennsylvania. Clicking on the county will give you its name, Trump's margin of victory, as well as each candidate's respective number of votes (and share of the vote).
 
 #### Virginia
 ```{r echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
@@ -320,11 +320,17 @@ leaflet() %>%
               weight = 1, 
               smoothFactor = 0.2,
               popup = popup.us) %>%
+  addPolygons(data = us.states, 
+              color = "#ffffff",
+              fillOpacity = 0, 
+              weight = 1, 
+              smoothFactor = 0.2, options = pathOptions(clickable = FALSE)) %>%
   addLegend(pal = pal, 
             values = df_merged.us2$diff, 
             position = "bottomright", 
             title = "Donald Trump's Advantage",
-            labFormat = labelFormat(suffix = "%", transform = function(x) 100 * x))
+            labFormat = labelFormat(suffix = "%", transform = function(x) 100 * x)) %>%
+  fitBounds(-124.848974, 24.396308, -66.885444, 49.384358)
 ```
 
 ***
@@ -354,7 +360,7 @@ df_merged.us2.12 <- merge(us.counties2, diff.1216[c(1,2,3,10,11)], by.x = "id", 
 ```
 
 
-```{r fig.width=20, fig.height = 10, echo = FALSE}
+```{r fig.width=16, fig.height = 8, echo = FALSE}
 us.ggmap12 <- ggplot() +
   geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = diffper), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
@@ -368,7 +374,7 @@ us.ggmap12
 ###Pure Win-Loss
 Like the procedure above, we can remove the gradient and look at the winner by county.
 
-```{r fig.width=20, fig.height = 10, echo = FALSE}
+```{r fig.width=16, fig.height = 8, echo = FALSE}
 us.ggmap2.12 <- ggplot() +
   geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = ObamaWin), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
@@ -386,7 +392,7 @@ It is certainly quite evident that Obama was able to win a significantly greater
 Let's compare the win-loss maps by county from 2012 to 2016.
 
 ##### 2012
-```{r fig.width=20, fig.height = 10, echo = FALSE}
+```{r fig.width=16, fig.height = 8, echo = FALSE}
 us.ggmap2.12 <- ggplot() +
   geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = ObamaWin), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
@@ -397,7 +403,7 @@ us.ggmap2.12
 
 
 ##### 2016
-```{r fig.width=20, fig.height = 10, echo = FALSE}
+```{r fig.width=16, fig.height = 8, echo = FALSE}
 us.ggmap2 <- ggplot() +
   geom_polygon(data = df_merged.us, aes(x = long, y = lat, group = group, fill = TrumpWin), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
@@ -405,13 +411,14 @@ us.ggmap2 <- ggplot() +
   ggtitle("2016 Electoral Map by County") + coord_map("polyconic") + theme_void() 
 us.ggmap2
 ```
+As evidenced in the maps, Obama was much more successful than Clinton in the Northeast and Midwest (note that these graphs do not account for turnout, so we're only able to measure strict win-loss). We'll explore these areas further in the maps below.
 
 ***
 
 ### 2016 Flipped Counties
 How successful were each of the candidates in flipping counties from their previous victor? Below is a graph of the 2016 electoral map, with flips highlighted in yellow for Trump (Trump winning a county won by Obama in 2012) and green for Clinton (Clinton winning a county won by Romney in 2012).
 
-```{r fig.width=20, fig.height = 10, echo = FALSE}
+```{r fig.width=16, fig.height = 8, echo = FALSE}
 us.ggmap.1216 <- ggplot() +
   geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = flip), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
@@ -422,7 +429,7 @@ us.ggmap.1216
 ```
 
 We can clean up the colors by marking the unchanged counties in grey and re-marking the flipped counties for clarity.
-```{r fig.width=20, fig.height = 10, echo = FALSE}
+```{r fig.width=16, fig.height = 8, echo = FALSE}
 us.ggmap.1216.2 <- ggplot() +
   geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = flip), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
@@ -456,7 +463,7 @@ flipped.counties.clinton <- rbind(flipped.counties.clinton, c("Total", sum(flipp
 flipped.counties.clinton
 ```
 
-As evidenced from the tables above, Trump was much more successful than Clinton in flipping counties from 2012 to 2016.
+As evidenced from the tables above, Trump was much more successful than Clinton in flipping counties from 2012 to 2016, flipping 223 counties won by Obama in 2012 compared to Clinton's 17 counties won by Romney in 2012.
 
 ***
 
@@ -531,7 +538,7 @@ leaflet() %>%
 Given the voting information for 2012 and 2016, we can also construct a representation of voter turnout from 2012 to 2016. As a side note, the very large decrease was from Los Angeles County for both parties.
 
 #### 2012-2016, Total Turnout
-```{r, echo=FALSE, warning=FALSE, fig.width=20, fig.height = 10}
+```{r, echo=FALSE, warning=FALSE, fig.width=16, fig.height = 8}
 vote.diff <- diff.1216[,c(1,2,3,4,5,8,9)]
 vote.diff$sum2012 <- vote.diff$obama + vote.diff$romney
 vote.diff$sum2016 <- vote.diff$clinton + vote.diff$trump
@@ -552,9 +559,9 @@ us.ggmap.turnout1216
 ```
 
 #### 2012-2016, Republican Party Turnout
-We can compare the 2012 and 2016 turnouts for just the Republican Party.
+We can compare the 2012 and 2016 turnouts for just the Republican Party. Note the interesting pockets of lower-than-expected turnout in Arizona, Utah, and Washington.
 
-```{r, echo=FALSE, warning=FALSE, fig.width=20, fig.height = 10}
+```{r, echo=FALSE, warning=FALSE, fig.width=16, fig.height = 8}
 us.ggmap.turnoutrep <- ggplot() +
   geom_polygon(data = df_merged.turnout, aes(x = long, y = lat, group = group, fill = repchange), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
@@ -566,7 +573,9 @@ us.ggmap.turnoutrep
 ```
 
 #### 2012-2016, Democratic Party Turnout
-```{r, echo=FALSE, warning=FALSE, fig.width=20, fig.height = 10}
+We can do the same for the Democratic Party. Note that the disparity in LA County is much more pronounced for the Democrats than the Republicans.
+
+```{r, echo=FALSE, warning=FALSE, fig.width=16, fig.height = 8}
 us.ggmap.turnoutdem <- ggplot() +
   geom_polygon(data = df_merged.turnout, aes(x = long, y = lat, group = group, fill = demchange), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
@@ -638,7 +647,7 @@ leaflet() %>%
 ### Head-to-Head Hypothetical Matchup
 Here's what the US county electoral map would have looked like if we matched Obama's 2012 performance to Trump's 2016 victory.
 
-```{r fig.width=20, fig.height = 10, echo=FALSE}
+```{r fig.width=16, fig.height = 8, echo=FALSE}
 us.ggmap.obamatrump <- ggplot() +
   geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = obama_trump), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
