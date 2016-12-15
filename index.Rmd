@@ -656,3 +656,210 @@ us.ggmap.obamatrump <- ggplot() +
   ggtitle("Obama-Trump Hypothetical Matchup") + coord_map("polyconic") + theme_void() 
 us.ggmap.obamatrump
 ```
+
+***
+
+## Machine Learning and Predictive Models
+### Variable Importance, 2012
+Let's take a look at variable importance with regards to US Census data (per-county basis) for 2012. Note the high importance of the attribute measuring the proportion of the county that was considered 'Asian.'
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+census <- read.csv("C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project 2/election2016/Data/county_facts.csv", header = TRUE, stringsAsFactors = TRUE)
+#check for unclean data
+data <- subset(census,select=c("fips", "area_name", "state_abbreviation", "POP060210","PST040210","AGE775214","SEX255214","RHI225214", "RHI325214", "RHI425214", "RHI525214", "RHI725214", "RHI825214", "EDU635213", "EDU685213", "INC110213", "PVY020213"))
+data <- subset(data, fips !=0) #remove USA
+data <- subset(data, state_abbreviation !="") #remove states
+colnames(data) <- c("fips", "area_name", "state_abbreviation", "pop_sqr_mile2010","pop_total_2010","pop_65+","p_female","p_black", "p_indian", "p_asian", "p_PI", "p_hisp", "p_white", "p_HS", "p_bachelors", "median_Income", "p_below_poverty_line")
+data$fips <- as.factor(data$fips)
+#set factors correctly
+
+#symnum(cor(data[,4:17], use="complete.obs"))
+#originally, we had both median income & percent below poverty line. since these had a 60% correlation we chose to keep just median income
+data <- data[,1:16]
+
+#import cleaned election data
+clean_2012 <- read.csv("C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project 2/election2016/Data/clean_2012.csv")
+clean_2012 <- clean_2012[,c(2,6)]
+clean_2012$fips <- as.factor(clean_2012$fips)
+
+clean_2016 <- read.csv("C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project 2/election2016/Data/clean_2016.csv")
+clean_2016 <- clean_2016[,c(2,8)]
+#Fix Ogala Lakota County FIPS code
+clean_2016 [5359,]$fips <- 46113
+clean_2016 [5360,]$fips <- 46113
+clean_2016$fips <- as.factor(clean_2016$fips)
+
+data_2012 <- merge(data, clean_2012,by="fips")
+
+data_2016 <- merge(data, clean_2016,by="fips")
+data_2016 <- data_2016[seq(1, 6223, 2),]
+
+#Randomly order the data
+set.seed(5)
+data_2012 <- data_2012[order(runif(3112)), ]
+data_2012$ObamaWin <- as.factor(data_2012$ObamaWin)
+
+data_2016 <- data_2016[order(runif(3112)), ]
+
+#Split the data ~80% training and 20% testing
+train_2012 <- data_2012[1:2489,]
+test_2012<- data_2012[2489:3112,]
+
+train_2016 <- data_2016[1:2489,]
+test_2016<- data_2016[2489:3112,]
+
+#One way to look at attribute importance
+
+library(caret)
+library(corrplot)
+library(DMwR)
+library(ggplot2)
+library(reshape2)
+library(plyr)
+library(sqldf)
+library(mlbench)
+library(randomForest)
+library(gmodels)
+library(party)
+library(C50)
+library(RWeka)
+
+model <- train(ObamaWin ~., data=train_2012[,4:17], method="lvq", preProcess="scale")#, trControl=control)
+#Estimating variable importance
+importance <- varImp(model, scale=FALSE)
+#print(importance)
+plot(importance, ylab = 'Attributes', main = 'Attribute Importance')
+```
+
+***
+
+### Variable Importance, 2016
+We can perform the same importance analysis for 2016.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+model <- train(lead ~., data=train_2016[,4:17], method="lvq", preProcess="scale")#, trControl=control)
+#Estimating variable importance
+importance <- varImp(model, scale=FALSE)
+#print(importance)
+plot(importance, ylab = 'Attributes', main = 'Attribute Importance')
+```
+
+***
+
+### Conditional Inference Tree
+We can build a conditional inference machine learning model to predict county-level outcomes on the 2012 data. In this case, our accuracy was **86.4%** on our test data set (separated from training data). As a note, accuracy is measured by summing the top-left cell and the bottom-right cell (along the lower-right diagonal).
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+tree_model = ctree(ObamaWin ~ ., train_2012[,4:17]) 
+#plot(tree_model)
+ctree_pred <- predict(tree_model,test_2012[,4:17])
+CrossTable(test_2012$ObamaWin, ctree_pred,
+           prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
+           dnn = c('Actual Type', 'Predicted Type'))
+```
+
+We can use this model on 2016 data as well. Here, our accuracy decreased on testing data to **71.65%**.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+ctree_pred2 <- predict(tree_model,test_2016[,4:17])
+CrossTable(test_2016$lead, ctree_pred,
+           prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
+           dnn = c('Actual Type', 'Predicted Type'))
+```
+
+***
+
+### Sequential Covering and Rule-based Learning
+We used a rule-based method (`jRip`) to model the 2012 data. Here, our accuracy in predicting county-level outcomes was **85.3%**. We've also listed the rules below.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+jrip_model <- JRip(ObamaWin ~ ., train_2012[,4:17])
+jrip_model
+
+jrip_pred <- predict(jrip_model,test_2012[,4:17])
+jrip_pred2 <- predict(jrip_model,test_2016[,4:17])
+
+#2012 accuracy: 85.3
+CrossTable(test_2012$ObamaWin, jrip_pred,
+           prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
+           dnn = c('Actual Type', 'Predicted Type'))
+```
+
+Interestingly, when we apply this model trained on 2012 data to the 2016 data, our accuracy on test data skyrockets to **93.5%** (we're able to correctly predict county-level outcomes 93.5% of the time)
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+CrossTable(test_2016$lead, jrip_pred2,
+           prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
+           dnn = c('Actual Type', 'Predicted Type'))
+
+jrip_model2 <- JRip(lead ~ ., train_2016[,4:17])
+jrip_model2
+```
+
+If we train a model and test it with purely 2016 data, our accuracy decreases to 92%.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+jrip_pred3 <- predict(jrip_model2,test_2016[,4:17])
+CrossTable(test_2016$lead, jrip_pred3,
+           prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
+           dnn = c('Actual Type', 'Predicted Type'))
+```
+
+***
+
+### kNN
+We also used a k-nearest-neighbor algorithm for 2012 and 2016 data. With 2012 data, we were able to achieve an accuracy of **86.8%**.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+data12_knn <- data_2012[,4:17]
+data16_knn <- data_2016[,4:17]
+
+
+## We must ALWAYS normalize data before using the kNN algorithm.  Why?
+## Here, we write a function to normalize any vector of variables, x.
+normalize <- function(x) {
+  return((x-min(x))/(max(x)-min(x)))
+}
+
+## Now, we divide the data into testin and training data (just the attributes)
+prc_train <- as.data.frame(lapply(data12_knn[1:2489,1:13], normalize))
+prc_test <- as.data.frame(lapply(data12_knn[2490:3112,1:13], normalize))
+
+## We make separate vectors for the classes for training and testing that correspond to the 
+## matrices above:
+
+
+prc_train_labels <- data12_knn[1:2489,14]
+prc_test_labels <- data12_knn[2490:3112,14]
+
+## "class" is the package that allows us to perform kNN analysis
+library(class)
+
+## Here we perform kNN analysis.  k= 15
+prc_test_pred <- knn(train=prc_train,test=prc_test,cl=prc_train_labels,k=15)
+
+## Evaluate
+
+library(gmodels)
+CrossTable(x=prc_test_labels, y=prc_test_pred,prop.chisq = FALSE)
+```
+
+Using 2016 training and testing data, our accuracy on a county-level basis increased to **93.57%**.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+prc_train <- as.data.frame(lapply(data16_knn[1:2489,1:13], normalize))
+prc_test <- as.data.frame(lapply(data16_knn[2490:3112,1:13], normalize))
+prc_train_labels <- data16_knn[1:2489,14]
+prc_test_labels <- data16_knn[2490:3112,14]
+
+## "class" is the package that allows us to perform kNN analysis
+library(class)
+
+## Here we perform kNN analysis.  k= 15
+prc_test_pred <- knn(train=prc_train,test=prc_test,cl=prc_train_labels,k=15)
+
+## Evaluate
+
+library(gmodels)
+CrossTable(x=prc_test_labels, y=prc_test_pred,prop.chisq = FALSE)
+```
