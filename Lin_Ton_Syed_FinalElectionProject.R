@@ -504,6 +504,8 @@ us.ggmap.turnout1216 <- ggplot() +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
   scale_fill_distiller(palette = "Paired", guide = "colourbar", name = "Changes in Votes from 2012 to 2016") + 
   ggtitle("2012-2016 Turnout Differences") + coord_map("polyconic") + theme_void() 
+ggsave(us.ggmap.turnout1216, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP8.png",
+       width = 22.92, height = 11.46, dpi = 400)
 
 #Republican Turnout Changes
 us.ggmap.turnoutrep <- ggplot() +
