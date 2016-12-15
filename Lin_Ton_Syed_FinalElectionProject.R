@@ -238,6 +238,7 @@ us.ggmap <- ggplot() +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
   scale_fill_gradient(low = "blue", high = "red") + labs(fill = "Trump Margin of Victory")+
   ggtitle("2016 Electoral Map by County") + coord_map("polyconic") + theme_void() 
+#Using ggsave to save the generated map to the disk
 ggsave(us.ggmap, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP.png",
        width = 22.92, height = 11.46, dpi = 400)
 
@@ -286,8 +287,10 @@ leaflet() %>%
   fitBounds(-124.848974, 24.396308, -66.885444, 49.384358)
 
 ####2012 Map Generation####
+#Created the 2012 dataframe by merging US map data with the 2012 results based on FIPS code
 df_merged.us12 <- merge(us.counties2, long12, by.x = "id", by.y = "fips", all.x = TRUE)
 
+#Gradient of map indicating margin of victory
 us.ggmap12 <- ggplot() +
   geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = diffper), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
@@ -296,6 +299,7 @@ us.ggmap12 <- ggplot() +
 ggsave(us.ggmap12, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP6.png",
        width = 22.92, height = 11.46, dpi = 400)
 
+#Strict win-loss map
 us.ggmap2.12 <- ggplot() +
   geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = ObamaWin), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
@@ -306,17 +310,27 @@ ggsave(us.ggmap2.12, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Ye
 
 ####2012-2016 Differences####
 #Counties Obama Won and Clinton Lost
+#Create a new dataframe merging 2012 and 2016 data to facilitate comparisons
 diff.1216 <- merge(long12[1:5], long16[c(1,2,3,4,5,7,8)], by = "fips")
+
+#Calculated Clinton and Trump votes by multiplying their percentages by the total votes cast
 diff.1216$trump <- diff.1216$total_votes*diff.1216$DonaldTrump
 diff.1216$clinton <- diff.1216$total_votes*diff.1216$HillaryClinton
+
+#Removed unnecessary columns (Obama-Romney difference, 2016 total votes and percentages)
 diff.1216[c(4,7:9)] <- NULL
+
+#Rearranged columns
 diff.1216 <- diff.1216[c(1,5, 7,2,3,4,6,8,9)]
 
+#Created a flag variable indicating if flips happened either way
 diff.1216$flip <- ifelse(diff.1216$ObamaWin == 1 & diff.1216$TrumpWin==1, 2, 
                          ifelse(diff.1216$ObamaWin == 0 & diff.1216$TrumpWin==0, 3, 
                                 ifelse(diff.1216$TrumpWin==1, 1, 0)))
+#Factored this flip variable to enable graphing in ggplot
 diff.1216$flip <- as.factor(diff.1216$flip)
 
+#Created another flag variable to facilitate comparisons between Trump and Obama
 diff.1216$obama_trump <- ifelse(diff.1216$obama > diff.1216$trump, 1, 0)
 diff.1216$obama_trump <- as.factor(diff.1216$obama_trump)
 
@@ -325,6 +339,7 @@ length(which(diff.1216$flip == 2)) #Donald Trump flipped 223 counties that Barac
 length(which(diff.1216$flip == 3)) #Hillary Clinton flipped 17 counties that Mitt Romney won in 2012
 
 #Flips by county
+#Using a SQL query to aggregate the number of county flips by candidate for each state
 flipped.counties.trump <- sqldf("select st, count(st) from 'diff.1216' where flip == 2 group by st")
 colnames(flipped.counties.trump) <- c("State", "Counties Flipped")
 flipped.counties.trump <- flipped.counties.trump[order(flipped.counties.trump$`Counties Flipped`, decreasing = TRUE),]
@@ -336,8 +351,10 @@ flipped.counties.clinton <- flipped.counties.clinton[order(flipped.counties.clin
 flipped.counties.clinton <- rbind(flipped.counties.clinton, c("Total", sum(flipped.counties.clinton$'Counties Flipped')))
 
 ####Graphing 2012-2016 Differences####
+#Merging US map data with 2012-2016 combined data to facilitate comparisons
 df_merged.us2.12 <- merge(us.counties2, diff.1216[c(1,2,3,10,11)], by.x = "id", by.y = "fips", all.x = TRUE)
 
+#Colored map with flips in yellow and green
 us.ggmap.1216 <- ggplot() +
   geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = flip), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
@@ -347,7 +364,7 @@ us.ggmap.1216 <- ggplot() +
 ggsave(us.ggmap.1216, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP4.png",
        width = 22.92, height = 11.46, dpi = 400)
 
-#Gray
+#Gray for states that didn't flip and red/blue to clearly highlight the flips
 us.ggmap.1216.2 <- ggplot() +
   geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = flip), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
@@ -357,7 +374,7 @@ us.ggmap.1216.2 <- ggplot() +
 ggsave(us.ggmap.1216.2, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP5.png",
        width = 22.92, height = 11.46, dpi = 400)
 
-#Interactive Maps
+#Interactive Maps -- made for the Northeast and Midwest (same procedure as above for leaflet maps)
 #Maine and New York, flipped
 co.diff <- diff.1216
 co.diff$co.diff <- co.diff$obama - co.diff$clinton
@@ -466,14 +483,19 @@ leaflet() %>%
             title = "Obama-Trump Vote Differential (+ favors Obama)")
 
 ####2012-2016 Turnout Comparisons####
+#Create a vote.diff dataframe with just vote numbers for Clinton, Trump, Obama, and Romney
 vote.diff <- diff.1216[,c(1,2,3,4,5,8,9)]
+
+#Calculate turnout differences in 2016
 vote.diff$sum2012 <- vote.diff$obama + vote.diff$romney
 vote.diff$sum2016 <- vote.diff$clinton + vote.diff$trump
 vote.diff$change1216 <- vote.diff$sum2016 - vote.diff$sum2012
 
+#Turnout differences in just the party
 vote.diff$demchange <- vote.diff$clinton - vote.diff$obama
 vote.diff$repchange <- vote.diff$trump - vote.diff$romney
 
+#Merge the turnout differences with US map data
 df_merged.turnout <- merge(us.counties2, vote.diff, by.x = "id", by.y = "fips", all.x = TRUE)
 
 #2012-2016 Total Turnout graph
@@ -502,6 +524,7 @@ us.ggmap.turnoutdem <- ggplot() +
   ggtitle("2012-2016 Turnout Differences, Democratic Party") + coord_map("polyconic") + theme_void() 
 
 ####Obama-Trump Matchup####
+#What would happen if Obama ran against Trump given their prior performance?
 us.ggmap.obamatrump <- ggplot() +
   geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = obama_trump), color = "dark grey", size = 0.25) +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
