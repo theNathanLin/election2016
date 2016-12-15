@@ -19,9 +19,13 @@ clean_2012$fips <- as.factor(clean_2012$fips)
 
 clean_2016 <- read.csv("Data/clean_2016.csv")
 clean_2016 <- clean_2016[,c(2,8)]
+#Fix Ogala Lakota County FIPS code
+clean_2016 [5359,]$fips <- 46113
+clean_2016 [5360,]$fips <- 46113
 clean_2016$fips <- as.factor(clean_2016$fips)
 
 data_2012 <- merge(data, clean_2012,by="fips")
+
 data_2016 <- merge(data, clean_2016,by="fips")
 data_2016 <- data_2016[seq(1, 6223, 2),]
 
@@ -30,7 +34,7 @@ write.csv(data_2016, file = "Data/2016+census+results.csv")
 write.csv(data_2012, file = "Data/2012+census+results.csv")
 
 #Randomly order the data
-set.seed(7)
+set.seed(5)
 data_2012 <- data_2012[order(runif(3112)), ]
 data_2012$ObamaWin <- as.factor(data_2012$ObamaWin)
 
