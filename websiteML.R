@@ -133,8 +133,8 @@ prc_test <- as.data.frame(lapply(data12_knn[2490:3112,1:13], normalize))
 ## matrices above:
 
 
-prc_train_labels <- data12_knn[1:2334,14]
-prc_test_labels <- data12_knn[2335:3112,14]
+prc_train_labels <- data12_knn[1:2489,14]
+prc_test_labels <- data12_knn[2490:3112,14]
 
 ## "class" is the package that allows us to perform kNN analysis
 library(class)
@@ -146,16 +146,16 @@ prc_test_pred <- knn(train=prc_train,test=prc_test,cl=prc_train_labels,k=15)
 
 library(gmodels)
 CrossTable(x=prc_test_labels, y=prc_test_pred,prop.chisq = FALSE)
-#2012 KNN Accuracy 0.8997429306
+#2012 KNN Accuracy 86.8%
 
 
 
 ####2016 Election
 
-prc_train <- as.data.frame(lapply(data16_knn[1:2334,1:13], normalize))
-prc_test <- as.data.frame(lapply(data16_knn[2335:3112,1:13], normalize))
-prc_train_labels <- data16_knn[1:2334,14]
-prc_test_labels <- data16_knn[2335:3112,14]
+prc_train <- as.data.frame(lapply(data16_knn[1:2489,1:13], normalize))
+prc_test <- as.data.frame(lapply(data16_knn[2490:3112,1:13], normalize))
+prc_train_labels <- data16_knn[1:2489,14]
+prc_test_labels <- data16_knn[2490:3112,14]
 
 ## "class" is the package that allows us to perform kNN analysis
 library(class)
@@ -167,4 +167,4 @@ prc_test_pred <- knn(train=prc_train,test=prc_test,cl=prc_train_labels,k=15)
 
 library(gmodels)
 CrossTable(x=prc_test_labels, y=prc_test_pred,prop.chisq = FALSE)
-#2016 accuracy 93.7%700
+#2016 accuracy 93.57
