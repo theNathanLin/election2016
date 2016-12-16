@@ -63,13 +63,13 @@ library(party)
 library(C50)
 library(RWeka)
 
-model <- train(ObamaWin ~., data=train_2012[,4:17], method="lvq", preProcess="scale")#, trControl=control)
+model <- train(lead ~., data=train_2016[,4:17], method="lvq", preProcess="scale")#, trControl=control)
 #Estimating variable importance
 importance <- varImp(model, scale=FALSE)
 print(importance)
 plot(importance, ylab = 'Attributes', main = 'Attribute Importance')
 
-#2016
+  #2016
 ## FIX NA PROBLEM!!!!!!!!!!!!
 model <- train(lead ~., data=train_2016[,4:17], method="lvq", preProcess="scale")#, trControl=control)
 #Estimating variable importance
