@@ -1,3 +1,7 @@
+#DS 4559 Final Project
+#Exploring the 2016 Election, Machine Learning Code
+#Nathan Lin, Andrew Ton, Mansoor Syed
+
 census <- read.csv("Data/2016dataprimary/county_facts.csv", header = TRUE, stringsAsFactors = TRUE)
 #check for unclean data
 data <- subset(census,select=c("fips", "area_name", "state_abbreviation", "POP060210","PST040210","AGE775214","SEX255214","RHI225214", "RHI325214", "RHI425214", "RHI525214", "RHI725214", "RHI825214", "EDU635213", "EDU685213", "INC110213", "PVY020213"))
