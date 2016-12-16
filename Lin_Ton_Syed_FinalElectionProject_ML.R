@@ -67,14 +67,13 @@ library(party)
 library(C50)
 library(RWeka)
 
+#Estimating variable importance 2012
 model <- train(ObamaWin ~., data=train_2012[,4:17], method="lvq", preProcess="scale")#, trControl=control)
-#Estimating variable importance
 importance <- varImp(model, scale=FALSE)
 print(importance)
 plot(importance, ylab = 'Attributes', main = 'Attribute Importance')
 
 #2016
-## FIX NA PROBLEM!!!!!!!!!!!!
 model <- train(lead ~., data=train_2016[,4:17], method="lvq", preProcess="scale")#, trControl=control)
 #Estimating variable importance
 importance <- varImp(model, scale=FALSE)
@@ -82,8 +81,7 @@ print(importance)
 plot(importance, ylab = 'Attributes', main = 'Attribute Importance')
 
 
-####################################################### REANALYZE!!!!!
-# our testing data has WAY more trump counties? fix later?
+#Ctree 
 tree_model = ctree(ObamaWin ~ ., train_2012[,4:17]) 
 plot(tree_model)
 ctree_pred <- predict(tree_model,test_2012[,4:17])
@@ -91,28 +89,28 @@ CrossTable(test_2012$ObamaWin, ctree_pred,
            prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
            dnn = c('Actual Type', 'Predicted Type'))
 
-
+#2016 data ctree
 ctree_pred2 <- predict(tree_model,test_2016[,4:17])
 CrossTable(test_2016$lead, ctree_pred,
            prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
            dnn = c('Actual Type', 'Predicted Type'))
 
-#Using jRip
+#Using jRip 
 jrip_model <- JRip(ObamaWin ~ ., train_2012[,4:17])
 jrip_model
-
+#2012
 jrip_pred <- predict(jrip_model,test_2012[,4:17])
-jrip_pred2 <- predict(jrip_model,test_2016[,4:17])
-
 CrossTable(test_2012$ObamaWin, jrip_pred,
            prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
            dnn = c('Actual Type', 'Predicted Type'))
 
 #Using 2012 model for 2016 election
+jrip_pred2 <- predict(jrip_model,test_2016[,4:17])
 CrossTable(test_2016$lead, jrip_pred2,
            prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
            dnn = c('Actual Type', 'Predicted Type'))
 
+#2016 training
 jrip_model2 <- JRip(lead ~ ., train_2016[,4:17])
 jrip_model2
 
