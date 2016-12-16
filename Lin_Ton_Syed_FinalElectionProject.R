@@ -27,6 +27,7 @@ gen16 <- read.csv("pres16results.csv", header = TRUE, stringsAsFactors = FALSE)
 fips.labels <- read.csv("fips_database.csv", header = FALSE, stringsAsFactors = FALSE, colClasses = "character")
 
 #Cleaning general election data
+#Removed third parties
 gen16 <- gen16[which(gen16$cand == "Donald Trump" | gen16$cand == "Hillary Clinton"),]
 gen16 <- gen16[-c(1,2),]
 
