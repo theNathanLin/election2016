@@ -10,7 +10,7 @@ output:
     df_print: paged
     
 abstract: |
-  What went wrong in 2016? This data project seeks to document the rise of Donald Trump through the demographics and geography of the United States. We employ techniques in data visualization and machine learning in attempt to characterize, understand, and explain Donald Trump's ascendance to the presidency.
+  This data project seeks to document the rise of Donald Trump through the demographics and geography of the United States. We employ techniques in data visualization and machine learning in attempt to characterize, understand, and explain Donald Trump's ascendance to the presidency. Our analysis found that Donald Trump's success in flipping counties previously won by Obama, particularly in pivotal areas such as the Northeast and Midwest, greatly contributed to his victory. Additionially, results from our predictive models indicate that identity politics was more prevalent than ever in the 2016 cycle, with models achieving around 94% accuracy in predicting county-level results based upon US Census data alone.
   
 ---
 
@@ -57,7 +57,7 @@ library(sqldf)
 options(tigris_use_cache = FALSE)
 
 ####2016 General Election Data####
-setwd("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data")
+setwd("~/Second Year/DS 4559 - Data Science/Final Project 2/election2016/Data")
 
 #Read the 2016 general election data + FIPS code database
 gen16 <- read.csv("pres16results.csv", header = TRUE, stringsAsFactors = FALSE)
@@ -119,7 +119,7 @@ long16 <- merge(long16, fips.labels[-1], by.x = "fips", by.y = "FIPS", all.x = T
 
 ####2012 General Election Data####
 #Data import
-all_counties_2012 <- read.csv("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data/2012data/all_counties_2012.csv",
+all_counties_2012 <- read.csv("~/Second Year/DS 4559 - Data Science/Final Project 2/election2016/Data/2012data/all_counties_2012.csv",
                               stringsAsFactors = FALSE)
 all_counties_2012 <- subset(all_counties_2012, fips!="fips")
 all_counties_2012$votes <- as.numeric(all_counties_2012$votes)
@@ -770,7 +770,7 @@ CrossTable(test_2016$lead, ctree_pred,
 ***
 
 ### Sequential Covering and Rule-based Learning
-We used a rule-based method (`jRip`) to model the 2012 data. Here, our accuracy in predicting county-level outcomes was **85.3%**. We've also listed the rules below.
+We used a rule-based method (`jRip`) to model the 2012 data. Here, our accuracy in predicting county-level outcomes was **85.3%**. We've also listed the rules below. The general syntax is `rule-set => prediction (# of instances correctly classified by rule, # of instances misclassified by rule)`. Our successes with rule-based sequential covering methods (compared to conditional inference trees) suggests a lower level of complexity with regards to individual voting decisions.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 jrip_model <- JRip(ObamaWin ~ ., train_2012[,4:17])
@@ -796,7 +796,7 @@ jrip_model2 <- JRip(lead ~ ., train_2016[,4:17])
 jrip_model2
 ```
 
-If we train a model and test it with purely 2016 data, our accuracy decreases to 92%.
+If we train a model and test it with purely 2016 data, interestingly, our accuracy decreases to **92%**.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 jrip_pred3 <- predict(jrip_model2,test_2016[,4:17])
@@ -862,4 +862,57 @@ prc_test_pred <- knn(train=prc_train,test=prc_test,cl=prc_train_labels,k=15)
 
 library(gmodels)
 CrossTable(x=prc_test_labels, y=prc_test_pred,prop.chisq = FALSE)
+```
+
+***
+
+### Prediction Mapping
+We can map the result of our jRip model and compare it to the actual 2016 result.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=16, fig.height = 8}
+#Predicting all of 2016 results using 2012
+jrip_model_whole <- JRip(ObamaWin ~ ., data_2012[,4:17])
+jrip_model_whole
+
+jrip_pred_whole <- predict(jrip_model_whole,data_2016[,4:17])
+CrossTable(data_2016$lead, jrip_pred_whole,
+           prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
+           dnn = c('Actual Type', 'Predicted Type'))
+
+####Evaluate on the entire dataset to compare county predictions with actual results graphically####
+map2016 <- data_2016[c(1:3)]
+map2016 <- cbind(map2016, jrip_pred_whole)
+map2016$fips <- as.character(map2016$fips)
+map2016$area_name <- as.character(map2016$area_name)
+
+#Add leading 0 to 4 digit FIPS codes
+for (i in seq(nrow(map2016))) {
+  if (nchar(map2016$fips[i])==4) map2016$fips[i] <- paste("0",map2016$fips[i], sep="")
+}
+
+#Fix Oglala Lakota County
+for (i in seq(nrow(map2016))) {
+  if (map2016$fips[i] == "46113") map2016$fips[i] <- "46102"
+}
+
+#JRIP Prediction Graphs
+df_merged.jrip <- merge(us.counties2, map2016, by.x = "id", by.y = "fips", all.x = TRUE)
+
+
+us.jrip <- ggplot() +
+  geom_polygon(data = df_merged.jrip, aes(x = long, y = lat, group = group, fill = jrip_pred_whole), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
+  scale_fill_manual(values = c("red","blue"), labels=c("Trump", "Clinton"),name="Prediction County Winner") + 
+  ggtitle("2016 Electoral Map by County, JRIP Model Prediction") + coord_map("polyconic") + theme_void()
+us.jrip
+```
+
+##### 2016 Prediction Map
+```{r fig.width=16, fig.height = 8, echo = FALSE}
+us.ggmap2 <- ggplot() +
+  geom_polygon(data = df_merged.us, aes(x = long, y = lat, group = group, fill = TrumpWin), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
+  scale_fill_manual(values = c("blue","red"), labels=c("Clinton", "Trump"),name="County Winner") + 
+  ggtitle("2016 Electoral Map by County") + coord_map("polyconic") + theme_void() 
+us.ggmap2
 ```
