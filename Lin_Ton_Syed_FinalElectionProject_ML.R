@@ -66,6 +66,8 @@ library(gmodels)
 library(party)
 library(C50)
 library(RWeka)
+library(rgeos)
+library(tigris)
 
 #Estimating variable importance 2012
 model <- train(ObamaWin ~., data=train_2012[,4:17], method="lvq", preProcess="scale")#, trControl=control)
@@ -189,3 +191,43 @@ CrossTable(data_2016$lead, jrip_pred_whole,
            prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE,
            dnn = c('Actual Type', 'Predicted Type'))
 
+####Evaluate on the entire dataset to compare county predictions with actual results graphically####
+#Necessary Map Imports
+options(tigris_use_cache = FALSE)
+us.counties <- counties(c("AL", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME",
+                          "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", 
+                          "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"), cb = TRUE)
+
+#Fortify the spacial polygon to convert to dataframe format (for ggplot2)
+us.counties2 <- fortify(us.counties, region = "GEOID")
+
+#Obtained state boundaries so we can overlay a white boundary/outline over the US map
+us.states <- states(cb = TRUE)
+us.states2 <- fortify(us.states, region = "GEOID")
+#Limited the state dataframe to exclude areas outside the 48 states (territories, AK, HI)
+us.states3 <- us.states2[which(us.states2$lat >= 24.396308 & us.states2$lat <= 49.384358 & us.states2$long >= -124.848974 & us.states2$long <= -66.885444),]
+
+map2016 <- data_2016[c(1:3)]
+map2016 <- cbind(map2016, jrip_pred_whole)
+map2016$fips <- as.character(map2016$fips)
+map2016$area_name <- as.character(map2016$area_name)
+
+#Add leading 0 to 4 digit FIPS codes
+for (i in seq(nrow(map2016))) {
+  if (nchar(map2016$fips[i])==4) map2016$fips[i] <- paste("0",map2016$fips[i], sep="")
+}
+
+#Fix Oglala Lakota County
+for (i in seq(nrow(map2016))) {
+  if (map2016$fips[i] == "46113") map2016$fips[i] <- "46102"
+}
+
+#JRIP Prediction Graphs
+df_merged.jrip <- merge(us.counties2, map2016, by.x = "id", by.y = "fips", all.x = TRUE)
+
+
+us.jrip <- ggplot() +
+  geom_polygon(data = df_merged.jrip, aes(x = long, y = lat, group = group, fill = jrip_pred_whole), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
+  scale_fill_manual(values = c("red","blue"), labels=c("Trump", "Clinton"),name="Prediction County Winner") + 
+  ggtitle("2016 Electoral Map by County, JRIP Model Prediction") + coord_map("polyconic") + theme_void() 
