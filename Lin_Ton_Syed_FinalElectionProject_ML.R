@@ -222,6 +222,14 @@ for (i in seq(nrow(map2016))) {
   if (map2016$fips[i] == "46113") map2016$fips[i] <- "46102"
 }
 
+#Add in actual results for a comparision
+map2016$actual <- ifelse(data_2016$lead == "Donald Trump", 1, 2)
+map2016$jrip_pred_whole <- as.factor(map2016$jrip_pred_whole)
+
+map2016$acc <- ifelse(map2016$jrip_pred_whole == 1 & map2016$actual == 2, 3, 
+                           ifelse(map2016$jrip_pred_whole == 2 & map2016$actual == 1, 4, 0))
+map2016$acc <- as.factor(map2016$acc)
+
 #JRIP Prediction Graphs
 df_merged.jrip <- merge(us.counties2, map2016, by.x = "id", by.y = "fips", all.x = TRUE)
 
@@ -231,3 +239,12 @@ us.jrip <- ggplot() +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
   scale_fill_manual(values = c("red","blue"), labels=c("Trump", "Clinton"),name="Prediction County Winner") + 
   ggtitle("2016 Electoral Map by County, JRIP Model Prediction") + coord_map("polyconic") + theme_void() 
+ggsave(us.jrip, file="Graphics/USMAP9.png", width = 22.92, height = 11.46, dpi = 400)
+
+#How well did we do?
+us.jrip2 <- ggplot() +
+  geom_polygon(data = df_merged.jrip, aes(x = long, y = lat, group = group, fill = acc), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
+  scale_fill_manual(values = c("grey", "blue", "red"), labels=c("Correct", "Actual Clinton", "Actual Trump"),name="JRIP Error") + 
+  ggtitle("2016 Electoral Map by County, JRIP Model Prediction Accuracy") + coord_map("polyconic") + theme_void() 
+ggsave(us.jrip2, file="Graphics/USMAP10.png", width = 22.92, height = 11.46, dpi = 400)
