@@ -23,8 +23,8 @@ options(tigris_use_cache = FALSE)
 setwd("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data")
 
 #Read the 2016 general election data + FIPS code database
-gen16 <- read.csv("pres16results.csv", header = TRUE, stringsAsFactors = FALSE)
-fips.labels <- read.csv("fips_database.csv", header = FALSE, stringsAsFactors = FALSE, colClasses = "character")
+gen16 <- read.csv("Data/pres16results.csv", header = TRUE, stringsAsFactors = FALSE)
+fips.labels <- read.csv("Data/fips_database.csv", header = FALSE, stringsAsFactors = FALSE, colClasses = "character")
 
 #Cleaning general election data
 #Removed third parties
@@ -92,9 +92,13 @@ colnames(fips.labels) <- c("State", "County", "FIPS")
 ####Merge FIPS database with 2016 election results####
 long16 <- merge(long16, fips.labels[-1], by.x = "fips", by.y = "FIPS", all.x = TRUE)
 
+#Store Clinton and Trump results seperately
+gen16_clinton <- gen16[grepl('clinton', gen16$cand, ignore.case=TRUE),]
+gen16_trump <- gen16[grepl('trump', gen16$cand, ignore.case=TRUE),]
+
 ####2012 General Election Data####
 #Data import
-all_counties_2012 <- read.csv("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data/2012data/all_counties_2012.csv",
+all_counties_2012 <- read.csv("Data/2012data/all_counties_2012.csv",
                               stringsAsFactors = FALSE)
 all_counties_2012 <- subset(all_counties_2012, fips!="fips")
 all_counties_2012$votes <- as.numeric(all_counties_2012$votes)
