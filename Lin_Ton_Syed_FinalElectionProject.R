@@ -19,9 +19,9 @@ library(sqldf)
 # The tigris data requires the below global option if you are running Windows 10
 options(tigris_use_cache = FALSE)
 
-####2016 General Election Data####
-setwd("~/Second Year/DS 4559 - Data Science/Final Project/election2016/Data")
+#Set your working directory to the top level of the project folder. All paths in the code below are relative
 
+####2016 General Election Data####
 #Read the 2016 general election data + FIPS code database
 gen16 <- read.csv("Data/pres16results.csv", header = TRUE, stringsAsFactors = FALSE)
 fips.labels <- read.csv("Data/fips_database.csv", header = FALSE, stringsAsFactors = FALSE, colClasses = "character")
@@ -244,7 +244,7 @@ us.ggmap <- ggplot() +
   scale_fill_gradient(low = "blue", high = "red") + labs(fill = "Trump Margin of Victory")+
   ggtitle("2016 Electoral Map by County") + coord_map("polyconic") + theme_void() 
 #Using ggsave to save the generated map to the disk
-ggsave(us.ggmap, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP.png",
+ggsave(us.ggmap, file="Graphics/USMAP.png",
        width = 22.92, height = 11.46, dpi = 400)
 
 #Straight Win-Loss
@@ -253,7 +253,7 @@ us.ggmap2 <- ggplot() +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
   scale_fill_manual(values = c("blue","red"), labels=c("Clinton", "Trump"),name="County Winner") + 
   ggtitle("2016 Electoral Map by County") + coord_map("polyconic") + theme_void() 
-ggsave(us.ggmap2, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP2.png",
+ggsave(us.ggmap2, file="Graphics/USMAP2.png",
        width = 22.92, height = 11.46, dpi = 400)
 
 #leaflet
@@ -301,7 +301,7 @@ us.ggmap12 <- ggplot() +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
   scale_fill_gradient(low = "red", high = "blue") + labs(fill = "Obama Margin of Victory")+
   ggtitle("2012 Electoral Map by County") + coord_map("polyconic") + theme_void() 
-ggsave(us.ggmap12, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP6.png",
+ggsave(us.ggmap12, file="Graphics/USMAP6.png",
        width = 22.92, height = 11.46, dpi = 400)
 
 #Strict win-loss map
@@ -310,7 +310,7 @@ us.ggmap2.12 <- ggplot() +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
   scale_fill_manual(values = c("red","blue"), labels=c("Romney", "Obama"),name="County Winner") + 
   ggtitle("2012 Electoral Map by County") + coord_map("polyconic") + theme_void() 
-ggsave(us.ggmap2.12, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP3.png",
+ggsave(us.ggmap2.12, file="Graphics/USMAP3.png",
        width = 22.92, height = 11.46, dpi = 400)
 
 ####2012-2016 Differences####
@@ -366,7 +366,7 @@ us.ggmap.1216 <- ggplot() +
   scale_fill_manual(values = c("blue","red", "yellow", "green"), 
                     labels=c("Clinton","Trump", "Trump Flip", "Clinton Flip"),name="County Winner") + 
   ggtitle("2012 Electoral Map by County, Flips") + coord_map("polyconic") + theme_void() 
-ggsave(us.ggmap.1216, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP4.png",
+ggsave(us.ggmap.1216, file="Graphics/USMAP4.png",
        width = 22.92, height = 11.46, dpi = 400)
 
 #Gray for states that didn't flip and red/blue to clearly highlight the flips
@@ -376,7 +376,7 @@ us.ggmap.1216.2 <- ggplot() +
   scale_fill_manual(values = c("gray","gray", "red", "blue"), 
                     labels=c("Clinton","Trump", "Trump Flip", "Clinton Flip"),name="County Winner") + 
   ggtitle("2012 Electoral Map by County, Flips") + coord_map("polyconic") + theme_void() 
-ggsave(us.ggmap.1216.2, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP5.png",
+ggsave(us.ggmap.1216.2, file="Graphics/USMAP5.png",
        width = 22.92, height = 11.46, dpi = 400)
 
 #Interactive Maps -- made for the Northeast and Midwest (same procedure as above for leaflet maps)
@@ -509,7 +509,7 @@ us.ggmap.turnout1216 <- ggplot() +
   geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white") +
   scale_fill_distiller(palette = "Paired", guide = "colourbar", name = "Changes in Votes from 2012 to 2016") + 
   ggtitle("2012-2016 Turnout Differences") + coord_map("polyconic") + theme_void() 
-ggsave(us.ggmap.turnout1216, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP8.png",
+ggsave(us.ggmap.turnout1216, file="Graphics/USMAP8.png",
        width = 22.92, height = 11.46, dpi = 400)
 
 #Republican Turnout Changes
@@ -538,5 +538,5 @@ us.ggmap.obamatrump <- ggplot() +
   scale_fill_manual(values = c("red","blue"), 
                     labels=c("Trump","Obama"),name="County Winner") + 
   ggtitle("Obama-Trump Hypothetical Matchup") + coord_map("polyconic") + theme_void() 
-ggsave(us.ggmap.obamatrump, file="C:/Users/Nathan/OneDrive/OneDrive Documents/Second Year/DS 4559 - Data Science/Final Project/election2016/USMAP7.png",
+ggsave(us.ggmap.obamatrump, file="Graphics/USMAP7.png",
        width = 22.92, height = 11.46, dpi = 400)
