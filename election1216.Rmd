@@ -1,0 +1,377 @@
+---
+title: "2012, 2016 Comparison"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 4
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
+library(reshape2)
+library(tigris)
+library(ggplot2)
+library(leaflet)
+library(maps)
+library(scales)
+library(rgdal)
+library(rgeos)
+library(sqldf)
+
+####General Notes####
+# Use the section-picker at the bottom of the script window to jump between code sections
+# Our analysis only considered the lower 48 states and the District of Columbia (excluded Alaska, Hawaii and overseas territories)
+# The tigris data requires the below global option if you are running Windows 10
+options(tigris_use_cache = FALSE)
+
+####2016 General Election Data####
+setwd("~/Second Year/DS 4559 - Data Science/Final Project 2/election2016/Data")
+
+#Read the 2016 general election data + FIPS code database
+gen16 <- read.csv("pres16results.csv", header = TRUE, stringsAsFactors = FALSE)
+fips.labels <- read.csv("fips_database.csv", header = FALSE, stringsAsFactors = FALSE, colClasses = "character")
+
+#Cleaning general election data
+gen16 <- gen16[which(gen16$cand == "Donald Trump" | gen16$cand == "Hillary Clinton"),]
+gen16 <- gen16[-c(1,2),]
+
+sapply(gen16,class)
+
+#This county wasn't labeled in the data, so we manually assigned it the county name
+for (i in seq(nrow(gen16))){
+  if (gen16$fips[i] == "46102") gen16$county[i] <- "Oglala Lakota County"
+}
+
+#Creating a separate table with just the state-wide results
+gen16.states <- gen16[is.na(gen16$county),]
+gen16.states <- gen16.states[-c(103,104),] #removing state FIPS for Alaska
+gen16.states$county <- NULL
+gen16.states$fips <- NULL
+
+gen16 <- gen16[-is.na(gen16$county)]
+
+#Removing the statewide results from the county data
+for (i in seq(nrow(gen16))) {
+  if (nchar(gen16$fips[i])<=2) gen16$fips[i] <- NA
+}
+
+gen16 <- gen16[-which(is.na(gen16$fips)),]
+gen16$pct_report <- NULL
+gen16.2 <- gen16
+
+gen16.2$votes <- NULL
+gen16.2$lead <- NULL
+
+#Used the reshape2 package to convert the dataframe from long to wide format
+long16 <- dcast(gen16.2, fips + st + total_votes ~ cand, value.var = "pct")
+colnames(long16) <- c("fips", "st", "total_votes", "DonaldTrump", "HillaryClinton")
+long16$diff <- long16$DonaldTrump - long16$HillaryClinton
+
+#Added an extra leading 0 for FIPS codes that were 4 digits long (enables the merge later)
+for (i in seq(nrow(long16))) {
+  if (nchar(long16$fips[i])==4) long16$fips[i] <- paste("0",long16$fips[i], sep="")
+}
+
+long16$TrumpWin <- ifelse(long16$diff >0, long16$TrumpWin <- 1, long16$TrumpWin <- 0)
+long16$TrumpWin <- as.factor(long16$TrumpWin)
+
+####Cleaning FIPS database####
+fips.labels$fips <- paste(fips.labels$V2,fips.labels$V3, sep = "")
+fips.labels$V2 <- NULL
+fips.labels$V3 <- NULL
+fips.labels$V5 <- NULL
+colnames(fips.labels) <- c("State", "County", "FIPS")
+
+####Merge FIPS database with 2016 election results####
+long16 <- merge(long16, fips.labels[-1], by.x = "fips", by.y = "FIPS", all.x = TRUE)
+
+####2012 General Election Data####
+#Data import
+all_counties_2012 <- read.csv("~/Second Year/DS 4559 - Data Science/Final Project 2/election2016/Data/2012data/all_counties_2012.csv",
+                              stringsAsFactors = FALSE)
+all_counties_2012 <- subset(all_counties_2012, fips!="fips")
+all_counties_2012$votes <- as.numeric(all_counties_2012$votes)
+#case insensitive search for rows containing obama or romney
+all_counties_2012_romney <- all_counties_2012[grepl('romney',all_counties_2012$candidate,ignore.case=TRUE), ] 
+all_counties_2012_obama <- all_counties_2012[grepl('obama',all_counties_2012$candidate,ignore.case=TRUE), ] 
+
+#all_counties_2012_romney <- aggregate (. ~ fips, data=all_counties_2012_romney, FUN=sum)
+
+all_counties_2012 <- rbind(all_counties_2012_romney,all_counties_2012_obama)
+all_counties_2012 <- subset(all_counties_2012, fips !="")
+summary(all_counties_2012)
+summary(all_counties_2012$fips)
+
+#include only first letter
+all_counties_2012[,3] <- substring(all_counties_2012[,3], 1, 1) 
+
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="o", "obama")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="O", "obama")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="B", "obama")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="b", "obama")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="m", "romney")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="M", "romney")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="r", "romney")
+all_counties_2012$candidate <- replace(all_counties_2012$candidate, all_counties_2012$candidate=="R", "romney")
+all_counties_2012 <- aggregate (votes ~ fips+candidate+county, data=all_counties_2012, FUN=sum)
+
+summary(all_counties_2012$candidate) 
+
+all_counties_2012 <- data.frame(lapply(all_counties_2012, as.character), stringsAsFactors=FALSE)
+all_counties_2012$votes <- as.numeric(all_counties_2012$votes)
+
+long12 <- dcast(all_counties_2012, fips ~ candidate, value.var = "votes")
+
+for (i in seq(nrow(long12))){
+  if (long12$fips[i] == "46113") long12$fips[i] <- "46102"
+}
+
+long12$diff <- long12$obama - long12$romney
+
+long12$ObamaWin <- ifelse(long12$diff >0, long12$ObamaWin <- 1, long12$ObamaWin <- 0)
+long12$ObamaWin <- as.factor(long12$ObamaWin)
+
+#Note that the percentages calculated do not take into account third-party votes (marginal)
+long12$ObamaPer <- long12$obama/(long12$obama + long12$romney)
+long12$RomneyPer <- long12$romney/(long12$obama + long12$romney)
+long12$diffper <- long12$ObamaPer - long12$RomneyPer
+
+long12 <- merge(long12, fips.labels, by.x = "fips", by.y = "FIPS", all.x = TRUE)
+
+####Lower 48 State US Geographic Data####
+us.counties <- counties(c("AL", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME",
+                          "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", 
+                          "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"), cb = TRUE)
+
+us.counties2 <- fortify(us.counties, region = "GEOID")
+
+us.states <- states(cb = TRUE)
+us.states2 <- fortify(us.states, region = "GEOID")
+us.states3 <- us.states2[which(us.states2$lat >= 24.396308 & us.states2$lat <= 49.384358 & us.states2$long >= -124.848974 & us.states2$long <= -66.885444),]
+df_merged.us <- merge(us.counties2, long16, by.x = "id", by.y = "fips", all.x = TRUE)
+```
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
+df_merged.us12 <- merge(us.counties2, long12, by.x = "id", by.y = "fips", all.x = TRUE)
+
+####2012-2016 Differences####
+#Counties Obama Won and Clinton Lost
+diff.1216 <- merge(long12[1:5], long16[c(1,2,3,4,5,7,8)], by = "fips")
+diff.1216$trump <- diff.1216$total_votes*diff.1216$DonaldTrump
+diff.1216$clinton <- diff.1216$total_votes*diff.1216$HillaryClinton
+diff.1216[c(4,7:9)] <- NULL
+diff.1216 <- diff.1216[c(1,5, 7,2,3,4,6,8,9)]
+
+diff.1216$flip <- ifelse(diff.1216$ObamaWin == 1 & diff.1216$TrumpWin==1, 2, 
+                         ifelse(diff.1216$ObamaWin == 0 & diff.1216$TrumpWin==0, 3, 
+                                ifelse(diff.1216$TrumpWin==1, 1, 0)))
+diff.1216$flip <- as.factor(diff.1216$flip)
+
+diff.1216$obama_trump <- ifelse(diff.1216$obama > diff.1216$trump, 1, 0)
+diff.1216$obama_trump <- as.factor(diff.1216$obama_trump)
+
+df_merged.us2.12 <- merge(us.counties2, diff.1216[c(1,2,3,10,11)], by.x = "id", by.y = "fips", all.x = TRUE)
+```
+
+### Map Comparisons
+Let's compare the win-loss maps by county from 2012 to 2016.
+
+##### 2012
+```{r fig.width=16, fig.height = 8, echo = FALSE}
+us.ggmap2.12 <- ggplot() +
+  geom_polygon(data = df_merged.us12, aes(x = long, y = lat, group = group, fill = ObamaWin), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
+  scale_fill_manual(values = c("red","blue"), labels=c("Romney", "Obama"),name="County Winner") + 
+  ggtitle("2012 Electoral Map by County") + coord_map("polyconic") + theme_void()
+us.ggmap2.12
+```
+
+
+##### 2016
+```{r fig.width=16, fig.height = 8, echo = FALSE}
+us.ggmap2 <- ggplot() +
+  geom_polygon(data = df_merged.us, aes(x = long, y = lat, group = group, fill = TrumpWin), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
+  scale_fill_manual(values = c("blue","red"), labels=c("Clinton", "Trump"),name="County Winner") + 
+  ggtitle("2016 Electoral Map by County") + coord_map("polyconic") + theme_void() 
+us.ggmap2
+```
+As evidenced in the maps, Obama was much more successful than Clinton in the Northeast and Midwest (note that these graphs do not account for turnout, so we're only able to measure strict win-loss). We'll explore these areas further in the maps below.
+
+***
+
+### 2016 Flipped Counties
+How successful were each of the candidates in flipping counties from their previous victor? Below is a graph of the 2016 electoral map, with flips highlighted in yellow for Trump (Trump winning a county won by Obama in 2012) and green for Clinton (Clinton winning a county won by Romney in 2012).
+
+```{r fig.width=16, fig.height = 8, echo = FALSE}
+us.ggmap.1216 <- ggplot() +
+  geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = flip), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
+  scale_fill_manual(values = c("blue","red", "yellow", "green"), 
+                    labels=c("Clinton","Trump", "Trump Flip", "Clinton Flip"),name="County Winner") + 
+  ggtitle("2012 Electoral Map by County, Flips") + coord_map("polyconic") + theme_void()
+us.ggmap.1216
+```
+
+We can clean up the colors by marking the unchanged counties in grey and re-marking the flipped counties for clarity.
+```{r fig.width=16, fig.height = 8, echo = FALSE}
+us.ggmap.1216.2 <- ggplot() +
+  geom_polygon(data = df_merged.us2.12, aes(x = long, y = lat, group = group, fill = flip), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
+  scale_fill_manual(values = c("gray","gray", "red", "blue"), 
+                    labels=c("Clinton","Trump", "Trump Flip", "Clinton Flip"),name="County Winner") + 
+  ggtitle("2012 Electoral Map by County, Flips") + coord_map("polyconic") + theme_void()
+us.ggmap.1216.2
+```
+
+#### Table of Flipped Counties by State
+We can further drill down and take a look at the geographic breakdown of flipped counties by state.
+
+##### Trump
+```{r, echo = FALSE, rows.print = 38, warning = FALSE, message=FALSE}
+flipped.counties.trump <- sqldf("select st, count(st) from 'diff.1216' where flip == 2 group by st")
+colnames(flipped.counties.trump) <- c("State", "Counties Flipped")
+flipped.counties.trump <- flipped.counties.trump[order(flipped.counties.trump$`Counties Flipped`, decreasing = TRUE),]
+flipped.counties.trump <- rbind(flipped.counties.trump, c("Total", sum(flipped.counties.trump$'Counties Flipped')))
+
+flipped.counties.trump
+```
+
+
+##### Clinton
+```{r, echo = FALSE, rows.print = 12, warning = FALSE, message=FALSE}
+flipped.counties.clinton <- sqldf("select st, count(st) from 'diff.1216' where flip == 3 group by st")
+colnames(flipped.counties.clinton) <- c("State", "Counties Flipped")
+flipped.counties.clinton <- flipped.counties.clinton[order(flipped.counties.clinton$`Counties Flipped`, decreasing = TRUE),]
+flipped.counties.clinton <- rbind(flipped.counties.clinton, c("Total", sum(flipped.counties.clinton$'Counties Flipped')))
+
+flipped.counties.clinton
+```
+
+As evidenced from the tables above, Trump was much more successful than Clinton in flipping counties from 2012 to 2016, flipping 223 counties won by Obama in 2012 compared to Clinton's 17 counties won by Romney in 2012.
+
+***
+
+### Interactive
+Given the information from above, it looks as if Clinton lost significant numbers of counties in the Northeast and Midwest that were once held by Obama. Let's explore in greater detail
+
+#### Northeast
+```{r echo=FALSE}
+co.diff <- diff.1216
+co.diff$co.diff <- co.diff$obama - co.diff$clinton
+co.diff$co.diff2 <- co.diff$obama - co.diff$trump
+
+counties.ME.NY <- counties(state = c("ME","NY"), cb = TRUE)
+
+df_merged.ME.NY <- geo_join(counties.ME.NY, co.diff, "GEOID", "fips")
+
+pal.ME.NY <- colorBin("Blues", df_merged.ME.NY$co.diff, 8, pretty = FALSE)
+
+popup.ME.NY <- paste0("<b>", paste(df_merged.ME.NY$County, df_merged.ME.NY$st, sep = ", "), "</b> <br>",
+                   #"<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
+                   "<b>Obama Differential: </b>", format(round(df_merged.ME.NY$co.diff,0), big.mark = ","),
+                   "<br>", "<b>Obama: </b>",trimws(format(round(df_merged.ME.NY$obama, 0), big.mark = ",")),
+                   "<br>", "<b>Clinton: </b>", trimws(format(round(df_merged.ME.NY$clinton, 0), big.mark = ",")),
+                   "<br>", "<b>Trump: </b>", trimws(format(round(df_merged.ME.NY$trump, 0), big.mark = ",")))
+
+leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(data = df_merged.ME.NY, 
+              fillColor = ~pal.ME.NY(co.diff), 
+              color = "#b2aeae",
+              fillOpacity = 0.8, 
+              weight = 1, 
+              smoothFactor = 0.2,
+              popup = popup.ME.NY) %>%
+  addLegend(pal = pal.ME.NY, 
+            values = df_merged.ME.NY$co.diff, 
+            position = "bottomright", 
+            title = "Obama-Clinton Vote Differential (+ favors Obama)")
+```
+
+
+#### Midwest
+```{r echo=FALSE}
+counties.midwest <- counties(state = c("MN","MI", "WI", "IA", "IL"), cb = TRUE)
+df_merged.midwest <- geo_join(counties.midwest, co.diff, "GEOID", "fips")
+
+pal.midwest <- colorBin("Blues", df_merged.midwest$co.diff, 8, pretty = FALSE)
+
+popup.midwest <- paste0("<b>", paste(df_merged.midwest$County, df_merged.midwest$st, sep = ", "), "</b> <br>",
+                     #"<b>FIPS Code: </b>", df_merged$GEOID, "<br>", 
+                     "<b>Obama Differential: </b>", format(round(df_merged.midwest$co.diff,0), big.mark = ","),
+                     "<br>", "<b>Obama: </b>",trimws(format(round(df_merged.midwest$obama, 0), big.mark = ",")),
+                     "<br>", "<b>Clinton: </b>", trimws(format(round(df_merged.midwest$clinton, 0), big.mark = ",")),
+                     "<br>", "<b>Trump: </b>", trimws(format(round(df_merged.midwest$trump, 0), big.mark = ",")))
+
+leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(data = df_merged.midwest, 
+              fillColor = ~pal.midwest(co.diff), 
+              color = "#b2aeae",
+              fillOpacity = 0.8, 
+              weight = 1, 
+              smoothFactor = 0.2,
+              popup = popup.midwest) %>%
+  addLegend(pal = pal.midwest, 
+            values = df_merged.midwest$co.diff, 
+            position = "bottomright", 
+            title = "Obama-Clinton Vote Differential (+ favors Obama)")
+```
+
+### Voter Turnout Comparisons
+Given the voting information for 2012 and 2016, we can also construct a representation of voter turnout from 2012 to 2016. As a side note, the very large decrease was from Los Angeles County for both parties.
+
+#### 2012-2016, Total Turnout
+```{r, echo=FALSE, warning=FALSE, fig.width=16, fig.height = 8}
+vote.diff <- diff.1216[,c(1,2,3,4,5,8,9)]
+vote.diff$sum2012 <- vote.diff$obama + vote.diff$romney
+vote.diff$sum2016 <- vote.diff$clinton + vote.diff$trump
+vote.diff$change1216 <- vote.diff$sum2016 - vote.diff$sum2012
+
+vote.diff$demchange <- vote.diff$clinton - vote.diff$obama
+vote.diff$repchange <- vote.diff$trump - vote.diff$romney
+
+df_merged.turnout <- merge(us.counties2, vote.diff, by.x = "id", by.y = "fips", all.x = TRUE)
+
+#2012-2016 Total Turnout graph
+us.ggmap.turnout1216 <- ggplot() +
+  geom_polygon(data = df_merged.turnout, aes(x = long, y = lat, group = group, fill = change1216), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
+  scale_fill_distiller(palette = "Paired", guide = "colourbar", name = "Changes in Votes from 2012 to 2016") + 
+  ggtitle("2012-2016 Turnout Differences") + coord_map("polyconic") + theme_void()
+us.ggmap.turnout1216
+```
+
+#### 2012-2016, Republican Party Turnout
+We can compare the 2012 and 2016 turnouts for just the Republican Party. Note the interesting pockets of lower-than-expected turnout in Arizona, Utah, and Washington.
+
+```{r, echo=FALSE, warning=FALSE, fig.width=16, fig.height = 8}
+us.ggmap.turnoutrep <- ggplot() +
+  geom_polygon(data = df_merged.turnout, aes(x = long, y = lat, group = group, fill = repchange), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
+  scale_fill_distiller(palette = "Paired", guide = "colourbar", name = "Changes in Votes from 2012 to 2016",
+                       limits = c(min(df_merged.turnout$repchange, df_merged.turnout$demchange), 
+                                  max(df_merged.turnout$repchange, df_merged.turnout$demchange))) + 
+  ggtitle("2012-2016 Turnout Differences, Republican Party") + coord_map("polyconic") + theme_void() 
+us.ggmap.turnoutrep
+```
+
+#### 2012-2016, Democratic Party Turnout
+We can do the same for the Democratic Party. Note that the disparity in LA County is much more pronounced for the Democrats than the Republicans.
+
+```{r, echo=FALSE, warning=FALSE, fig.width=16, fig.height = 8}
+us.ggmap.turnoutdem <- ggplot() +
+  geom_polygon(data = df_merged.turnout, aes(x = long, y = lat, group = group, fill = demchange), color = "dark grey", size = 0.25) +
+  geom_path(data = us.states3, aes(x=long, y=lat, group =group), color = "white", size = 1) +
+  scale_fill_distiller(palette = "Paired", guide = "colourbar", name = "Changes in Votes from 2012 to 2016",
+                       limits = c(min(df_merged.turnout$repchange, df_merged.turnout$demchange), 
+                                  max(df_merged.turnout$repchange, df_merged.turnout$demchange))) + 
+  ggtitle("2012-2016 Turnout Differences, Democratic Party") + coord_map("polyconic") + theme_void() 
+us.ggmap.turnoutdem
+```

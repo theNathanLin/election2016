@@ -1,2 +1,19 @@
-name: "Election 2016"
+name: "Election 2016 Through Data"
+navbar:
+  title: "Election 2016 Through Data"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "2016 Election"
+      href: election16.html
+    - text: "2012 Election"
+      href: election12.html
+    - text: "2012, 2016 Comparison"
+      href: election1216.html
+    - text: "Hypotheticals"
+      href: hypotheticals.html
+    - text: "Machine Learning, Models"
+      href: models.html
+    - text: "Contact"
+      href: contact.html        
 output_dir: "."

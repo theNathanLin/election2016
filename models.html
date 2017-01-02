@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Machine Learning and Predictive Models</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Election 2016 Through Data</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="election16.html">2016 Election</a>
+</li>
+<li>
+  <a href="election12.html">2012 Election</a>
+</li>
+<li>
+  <a href="election1216.html">2012, 2016 Comparison</a>
+</li>
+<li>
+  <a href="hypotheticals.html">Hypotheticals</a>
+</li>
+<li>
+  <a href="models.html">Machine Learning, Models</a>
+</li>
+<li>
+  <a href="contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Machine Learning and Predictive Models</h1>
+
+</div>
+
+
+<div id="variable-importance-2012" class="section level3">
+<h3>Variable Importance, 2012</h3>
+<p>Let’s take a look at variable importance with regards to US Census data (per-county basis) for 2012. Note the high importance of the attribute measuring the proportion of the county that was considered ‘Asian.’</p>
+<p><img src="models_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<hr />
+</div>
+<div id="variable-importance-2016" class="section level3">
+<h3>Variable Importance, 2016</h3>
+<p>We can perform the same importance analysis for 2016.</p>
+<p><img src="models_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<hr />
+</div>
+<div id="conditional-inference-tree" class="section level3">
+<h3>Conditional Inference Tree</h3>
+<p>We can build a conditional inference machine learning model to predict county-level outcomes on the 2012 data. In this case, our accuracy was <strong>86.4%</strong> on our test data set (separated from training data). As a note, accuracy is measured by summing the top-left cell and the bottom-right cell (along the lower-right diagonal).</p>
+<pre><code>## 
+##  
+##    Cell Contents
+## |-------------------------|
+## |                       N |
+## |         N / Table Total |
+## |-------------------------|
+## 
+##  
+## Total Observations in Table:  624 
+## 
+##  
+##              | Predicted Type 
+##  Actual Type |         0 |         1 | Row Total | 
+## -------------|-----------|-----------|-----------|
+##            0 |       460 |        16 |       476 | 
+##              |     0.737 |     0.026 |           | 
+## -------------|-----------|-----------|-----------|
+##            1 |        69 |        79 |       148 | 
+##              |     0.111 |     0.127 |           | 
+## -------------|-----------|-----------|-----------|
+## Column Total |       529 |        95 |       624 | 
+## -------------|-----------|-----------|-----------|
+## 
+## </code></pre>
+<p>We can use this model on 2016 data as well. Here, our accuracy decreased on testing data to <strong>71.65%</strong>.</p>
+<pre><code>## 
+##  
+##    Cell Contents
+## |-------------------------|
+## |                       N |
+## |         N / Table Total |
+## |-------------------------|
+## 
+##  
+## Total Observations in Table:  624 
+## 
+##  
+##                 | Predicted Type 
+##     Actual Type |         0 |         1 | Row Total | 
+## ----------------|-----------|-----------|-----------|
+##    Donald Trump |       437 |        85 |       522 | 
+##                 |     0.700 |     0.136 |           | 
+## ----------------|-----------|-----------|-----------|
+## Hillary Clinton |        92 |        10 |       102 | 
+##                 |     0.147 |     0.016 |           | 
+## ----------------|-----------|-----------|-----------|
+##    Column Total |       529 |        95 |       624 | 
+## ----------------|-----------|-----------|-----------|
+## 
+## </code></pre>
+<hr />
+</div>
+<div id="sequential-covering-and-rule-based-learning" class="section level3">
+<h3>Sequential Covering and Rule-based Learning</h3>
+<p>We used a rule-based method (<code>jRip</code>) to model the 2012 data. Here, our accuracy in predicting county-level outcomes was <strong>85.3%</strong>. We’ve also listed the rules below. The general syntax is <code>rule-set =&gt; prediction (# of instances correctly classified by rule, # of instances misclassified by rule)</code>. Our successes with rule-based sequential covering methods (compared to conditional inference trees) suggests a lower level of complexity with regards to individual voting decisions.</p>
+<pre><code>## JRIP rules:
+## ===========
+## 
+## (p_white &lt;= 53.5) and (p_hisp &lt;= 29.3) and (p_black &gt;= 46.6) =&gt; ObamaWin=1 (88.0/1.0)
+## (p_asian &gt;= 1.3) and (pop_sqr_mile2010 &gt;= 446.7) and (p_white &lt;= 68.6) =&gt; ObamaWin=1 (106.0/18.0)
+## (p_asian &gt;= 1.1) and (pop_sqr_mile2010 &gt;= 282.7) and (p_female &gt;= 51.4) =&gt; ObamaWin=1 (56.0/18.0)
+## (p_bachelors &gt;= 25.4) and (p_asian &gt;= 3.4) and (pop_65+ &gt;= 13.9) =&gt; ObamaWin=1 (36.0/8.0)
+## (p_bachelors &gt;= 28) and (p_hisp &lt;= 2.2) =&gt; ObamaWin=1 (33.0/12.0)
+## (p_asian &gt;= 0.9) and (p_white &lt;= 54.9) and (p_bachelors &gt;= 15.9) =&gt; ObamaWin=1 (47.0/13.0)
+## (p_bachelors &gt;= 28) and (p_bachelors &gt;= 39.4) and (pop_total_2010 &lt;= 23509) =&gt; ObamaWin=1 (16.0/2.0)
+## (p_white &lt;= 31.5) =&gt; ObamaWin=1 (33.0/7.0)
+##  =&gt; ObamaWin=0 (2074.0/209.0)
+## 
+## Number of Rules : 9</code></pre>
+<pre><code>## 
+##  
+##    Cell Contents
+## |-------------------------|
+## |                       N |
+## |         N / Table Total |
+## |-------------------------|
+## 
+##  
+## Total Observations in Table:  624 
+## 
+##  
+##              | Predicted Type 
+##  Actual Type |         0 |         1 | Row Total | 
+## -------------|-----------|-----------|-----------|
+##            0 |       448 |        28 |       476 | 
+##              |     0.718 |     0.045 |           | 
+## -------------|-----------|-----------|-----------|
+##            1 |        64 |        84 |       148 | 
+##              |     0.103 |     0.135 |           | 
+## -------------|-----------|-----------|-----------|
+## Column Total |       512 |       112 |       624 | 
+## -------------|-----------|-----------|-----------|
+## 
+## </code></pre>
+<p>Interestingly, when we apply this model trained on 2012 data to the 2016 data, our accuracy on test data skyrockets to <strong>93.5%</strong> (we’re able to correctly predict county-level outcomes 93.5% of the time)</p>
+<pre><code>## 
+##  
+##    Cell Contents
+## |-------------------------|
+## |                       N |
+## |         N / Table Total |
+## |-------------------------|
+## 
+##  
+## Total Observations in Table:  624 
+## 
+##  
+##                 | Predicted Type 
+##     Actual Type |         0 |         1 | Row Total | 
+## ----------------|-----------|-----------|-----------|
+##    Donald Trump |       504 |        18 |       522 | 
+##                 |     0.808 |     0.029 |           | 
+## ----------------|-----------|-----------|-----------|
+## Hillary Clinton |        23 |        79 |       102 | 
+##                 |     0.037 |     0.127 |           | 
+## ----------------|-----------|-----------|-----------|
+##    Column Total |       527 |        97 |       624 | 
+## ----------------|-----------|-----------|-----------|
+## 
+## </code></pre>
+<pre><code>## JRIP rules:
+## ===========
+## 
+## (p_white &lt;= 47.1) and (p_indian &lt;= 1) =&gt; lead=Hillary Clinton (132.0/15.0)
+## (p_bachelors &gt;= 27.3) and (p_asian &gt;= 3.5) =&gt; lead=Hillary Clinton (135.0/36.0)
+## (p_white &lt;= 54.9) and (pop_sqr_mile2010 &gt;= 48.9) and (pop_sqr_mile2010 &gt;= 303.8) =&gt; lead=Hillary Clinton (18.0/0.0)
+## (p_white &lt;= 54.1) and (p_white &lt;= 33.3) and (p_white &lt;= 23.3) =&gt; lead=Hillary Clinton (15.0/1.0)
+## (p_bachelors &gt;= 25.6) and (pop_sqr_mile2010 &gt;= 619.7) and (pop_sqr_mile2010 &gt;= 1115.3) =&gt; lead=Hillary Clinton (19.0/4.0)
+## (p_bachelors &gt;= 28) and (p_bachelors &gt;= 39.4) =&gt; lead=Hillary Clinton (32.0/11.0)
+## (p_bachelors &gt;= 27.3) and (p_hisp &lt;= 2.2) and (p_black &lt;= 0.7) =&gt; lead=Hillary Clinton (14.0/4.0)
+## (p_white &lt;= 54.9) and (pop_sqr_mile2010 &gt;= 48.9) and (median_Income &lt;= 34285) =&gt; lead=Hillary Clinton (9.0/0.0)
+## (p_bachelors &gt;= 21.3) and (p_hisp &gt;= 23.5) and (p_indian &gt;= 2.1) and (pop_sqr_mile2010 &gt;= 4.7) =&gt; lead=Hillary Clinton (10.0/0.0)
+## (p_white &lt;= 52.3) and (p_hisp &lt;= 10.1) and (median_Income &gt;= 36022) and (pop_total_2010 &gt;= 7065) =&gt; lead=Hillary Clinton (12.0/3.0)
+## (p_bachelors &gt;= 18.2) and (p_white &lt;= 36) =&gt; lead=Hillary Clinton (6.0/0.0)
+##  =&gt; lead=Donald Trump (2087.0/57.0)
+## 
+## Number of Rules : 12</code></pre>
+<p>If we train a model and test it with purely 2016 data, interestingly, our accuracy decreases to <strong>92%</strong>.</p>
+<pre><code>## 
+##  
+##    Cell Contents
+## |-------------------------|
+## |                       N |
+## |         N / Table Total |
+## |-------------------------|
+## 
+##  
+## Total Observations in Table:  624 
+## 
+##  
+##                 | Predicted Type 
+##     Actual Type |    Donald Trump | Hillary Clinton |       Row Total | 
+## ----------------|-----------------|-----------------|-----------------|
+##    Donald Trump |             498 |              24 |             522 | 
+##                 |           0.798 |           0.038 |                 | 
+## ----------------|-----------------|-----------------|-----------------|
+## Hillary Clinton |              26 |              76 |             102 | 
+##                 |           0.042 |           0.122 |                 | 
+## ----------------|-----------------|-----------------|-----------------|
+##    Column Total |             524 |             100 |             624 | 
+## ----------------|-----------------|-----------------|-----------------|
+## 
+## </code></pre>
+<hr />
+</div>
+<div id="knn" class="section level3">
+<h3>kNN</h3>
+<p>We also used a k-nearest-neighbor algorithm for 2012 and 2016 data. With 2012 data, we were able to achieve an accuracy of <strong>86.8%</strong>.</p>
+<pre><code>## 
+##  
+##    Cell Contents
+## |-------------------------|
+## |                       N |
+## |           N / Row Total |
+## |           N / Col Total |
+## |         N / Table Total |
+## |-------------------------|
+## 
+##  
+## Total Observations in Table:  623 
+## 
+##  
+##                 | prc_test_pred 
+## prc_test_labels |         0 |         1 | Row Total | 
+## ----------------|-----------|-----------|-----------|
+##               0 |       465 |        11 |       476 | 
+##                 |     0.977 |     0.023 |     0.764 | 
+##                 |     0.868 |     0.126 |           | 
+##                 |     0.746 |     0.018 |           | 
+## ----------------|-----------|-----------|-----------|
+##               1 |        71 |        76 |       147 | 
+##                 |     0.483 |     0.517 |     0.236 | 
+##                 |     0.132 |     0.874 |           | 
+##                 |     0.114 |     0.122 |           | 
+## ----------------|-----------|-----------|-----------|
+##    Column Total |       536 |        87 |       623 | 
+##                 |     0.860 |     0.140 |           | 
+## ----------------|-----------|-----------|-----------|
+## 
+## </code></pre>
+<p>Using 2016 training and testing data, our accuracy on a county-level basis increased to <strong>93.57%</strong>.</p>
+<pre><code>## 
+##  
+##    Cell Contents
+## |-------------------------|
+## |                       N |
+## |           N / Row Total |
+## |           N / Col Total |
+## |         N / Table Total |
+## |-------------------------|
+## 
+##  
+## Total Observations in Table:  623 
+## 
+##  
+##                 | prc_test_pred 
+## prc_test_labels |    Donald Trump | Hillary Clinton |       Row Total | 
+## ----------------|-----------------|-----------------|-----------------|
+##    Donald Trump |             506 |              15 |             521 | 
+##                 |           0.971 |           0.029 |           0.836 | 
+##                 |           0.953 |           0.163 |                 | 
+##                 |           0.812 |           0.024 |                 | 
+## ----------------|-----------------|-----------------|-----------------|
+## Hillary Clinton |              25 |              77 |             102 | 
+##                 |           0.245 |           0.755 |           0.164 | 
+##                 |           0.047 |           0.837 |                 | 
+##                 |           0.040 |           0.124 |                 | 
+## ----------------|-----------------|-----------------|-----------------|
+##    Column Total |             531 |              92 |             623 | 
+##                 |           0.852 |           0.148 |                 | 
+## ----------------|-----------------|-----------------|-----------------|
+## 
+## </code></pre>
+<hr />
+</div>
+<div id="prediction-mapping" class="section level3">
+<h3>Prediction Mapping</h3>
+<p>We can use our <code>jRip</code> model on all of the 2016 data, not just the test data, with an accuracy of <strong>93%</strong> (note that there will be some bias due to the fact that the training data is being recycled for the prediction).</p>
+<pre><code>## JRIP rules:
+## ===========
+## 
+## (p_white &lt;= 52.3) and (p_hisp &lt;= 28) =&gt; ObamaWin=1 (230.0/31.0)
+## (p_asian &gt;= 1.3) and (pop_total_2010 &gt;= 266929) and (pop_total_2010 &gt;= 735332) =&gt; ObamaWin=1 (54.0/6.0)
+## (p_asian &gt;= 1.3) and (p_bachelors &gt;= 27.7) and (pop_65+ &gt;= 13.5) and (p_asian &gt;= 2.7) =&gt; ObamaWin=1 (69.0/18.0)
+## (p_bachelors &gt;= 25.1) and (p_bachelors &gt;= 38.7) and (median_Income &lt;= 72745) =&gt; ObamaWin=1 (64.0/18.0)
+## (p_asian &gt;= 1.1) and (pop_sqr_mile2010 &gt;= 492.6) and (p_HS &lt;= 88.8) and (pop_sqr_mile2010 &gt;= 1115.3) =&gt; ObamaWin=1 (16.0/2.0)
+## (p_asian &gt;= 1.1) and (pop_total_2010 &gt;= 153920) and (p_white &lt;= 59.5) =&gt; ObamaWin=1 (33.0/12.0)
+## (p_white &lt;= 55.7) and (p_white &lt;= 32) =&gt; ObamaWin=1 (33.0/7.0)
+## (p_HS &gt;= 86.5) and (pop_sqr_mile2010 &gt;= 16.6) and (p_HS &gt;= 89.6) and (p_hisp &lt;= 2.2) and (p_asian &gt;= 0.6) and (median_Income &lt;= 57565) and (p_bachelors &gt;= 25.9) and (pop_sqr_mile2010 &lt;= 199) =&gt; ObamaWin=1 (22.0/1.0)
+##  =&gt; ObamaWin=0 (2591.0/266.0)
+## 
+## Number of Rules : 9</code></pre>
+<pre><code>## 
+##  
+##    Cell Contents
+## |-------------------------|
+## |                       N |
+## |         N / Table Total |
+## |-------------------------|
+## 
+##  
+## Total Observations in Table:  3112 
+## 
+##  
+##                 | Predicted Type 
+##     Actual Type |         0 |         1 | Row Total | 
+## ----------------|-----------|-----------|-----------|
+##    Donald Trump |      2500 |       125 |      2625 | 
+##                 |     0.803 |     0.040 |           | 
+## ----------------|-----------|-----------|-----------|
+## Hillary Clinton |        91 |       396 |       487 | 
+##                 |     0.029 |     0.127 |           | 
+## ----------------|-----------|-----------|-----------|
+##    Column Total |      2591 |       521 |      3112 | 
+## ----------------|-----------|-----------|-----------|
+## 
+## </code></pre>
+<div id="prediction-map" class="section level5">
+<h5>2016 Prediction Map</h5>
+<p>We can map the result of our <code>jRip</code> model and compare it to the actual 2016 result.</p>
+<p><img src="models_files/figure-html/unnamed-chunk-12-1.png" width="1536" /></p>
+</div>
+<div id="actual-map" class="section level5">
+<h5>2016 Actual Map</h5>
+<p><img src="models_files/figure-html/unnamed-chunk-13-1.png" width="1536" /></p>
+</div>
+<div id="prediction-error-visualized" class="section level5">
+<h5>Prediction Error Visualized</h5>
+<p><img src="models_files/figure-html/unnamed-chunk-14-1.png" width="1536" /></p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
