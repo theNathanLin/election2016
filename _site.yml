@@ -24,10 +24,5 @@ output:
   html_document:
     theme: cosmo
     highlight: textmate
-    css: styles.css
-    self_contained: true
-    toc: true
-    toc_level: 2
-    toc_float: true
     includes:
       after_body: footer.html
