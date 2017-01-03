@@ -15,5 +15,8 @@ navbar:
     - text: "Machine Learning, Models"
       href: models.html
     - text: "Contact"
-      href: contact.html        
+      href: contact.html
+  right:
+    - icon: fa-github fa-lg
+      href: https://github.com/theNathanLin/election2016
 output_dir: "."
