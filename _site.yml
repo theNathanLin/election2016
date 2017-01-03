@@ -1,24 +1,35 @@
 name: "Election 2016 Through Data"
 navbar:
   title: "Election 2016 Through Data"
+  type: inverse
   left:
     - text: "Home"
       href: index.html
-    - text: "2016 Election"
-      href: election16.html
-    - text: "2012 Election"
-      href: election12.html
-    - text: "2012, 2016 Comparison"
-      href: election1216.html
-    - text: "Hypotheticals"
-      href: hypotheticals.html
-    - text: "Machine Learning, Models"
+    - text: "Elections"
+      menu:
+        - text: "General Election Information"
+        - text: "2016 Election"
+          href: election16.html
+        - text: "2012 Election"
+          href: election12.html
+    - text: "Comparisons"
+      menu:
+        - text: "Comparing 2012 and 2016"
+        - text: "2012 & 2012 Election Comparisons"
+          href: election1216.html
+        - text: "Hypotheticals"
+          href: hypotheticals.html
+    - text: "Machine Learning + Models"
+        
       href: models.html
     - text: "Contact"
       href: contact.html
   right:
     - icon: fa-github fa-lg
       href: https://github.com/theNathanLin/election2016
+favicon:
+    label: favicon
+    type: image
 output_dir: "."
 output:
   html_document:
