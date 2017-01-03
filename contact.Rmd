@@ -1,0 +1,24 @@
+---
+title: "Contact and About"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+At the time of this project, we were three undergraduate students at the University of Virginia taking a course (DS 4559, The Practice of Data Science) within the University's Data Science Institute. Below, you can view some of our other work as well as our contact information. Please do not hesitate to reach out with any feedback, questions, or comments.
+
+### Anthony Nathan Lin
+Student at the University of Virginia studying Mathematics and Commerce (prospective)
+
+* [GitHub](https://www.linkedin.com/in/anlin1 "GitHub")
+* [LinkedIn](https://www.linkedin.com/in/anlin1 "LinkedIn")
+* [anl5ef@virginia.edu](mailto:anl5ef@virginia.edu "Email")
+
+### Andrew Ton
+
+
+### Mansoor Syed
