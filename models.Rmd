@@ -270,7 +270,10 @@ CrossTable(test_2016$lead, ctree_pred,
 ***
 
 ### Sequential Covering and Rule-based Learning
-We used a rule-based method (`jRip`) to model the 2012 data. Here, our accuracy in predicting county-level outcomes was **85.3%**. We've also listed the rules below. The general syntax is `rule-set => prediction (# of instances correctly classified by rule, # of instances misclassified by rule)`. Our successes with rule-based sequential covering methods (compared to conditional inference trees) suggests a lower level of complexity with regards to individual voting decisions.
+We used a rule-based method (`jRip`) to model the 2012 data. Here, our accuracy in predicting county-level outcomes was **85.3%**. We've also listed the rules below. Our successes with rule-based sequential covering methods (compared to conditional inference trees) suggests a lower level of complexity with regards to individual voting decisions.
+
+For reference, the general syntax for the classification rules is:
+`rule-set => prediction (# of instances correctly classified by rule, # of instances misclassified by rule)`.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 set.seed(5)
@@ -286,7 +289,7 @@ CrossTable(test_2012$ObamaWin, jrip_pred,
            dnn = c('Actual Type', 'Predicted Type'))
 ```
 
-Interestingly, when we apply this model trained on 2012 data to the 2016 data, our accuracy on test data skyrockets to **93.5%** (we're able to correctly predict county-level outcomes 93.5% of the time)
+Interestingly, when we apply this model trained on 2012 data to the 2016 data, our accuracy on test data increases to **93.5%** (or in other words, we are able to correctly predict county-level outcomes 93.5% of the time)
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 set.seed(5)
@@ -372,7 +375,7 @@ CrossTable(x=prc_test_labels, y=prc_test_pred,prop.chisq = FALSE)
 ***
 
 ### Prediction Mapping
-We can use our `jRip` model on all of the 2016 data, not just the test data, with an accuracy of **93%** (note that there will be some bias due to the fact that the training data is being recycled for the prediction).
+We can use our `jRip` model on all of the 2016 data, not just the test data, with an accuracy of **93%** (note the potential for bias due to the fact that the training data is being recycled for the prediction).
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=16, fig.height = 8}
 set.seed(5)
@@ -449,6 +452,10 @@ us.ggmap2
 ```
 
 ##### Prediction Error Visualized
+We can actually visualize our model's prediction error. The counties in grey represent correct predictions, while blue highlights represent Trump predictions that actually voted for Clinton and red highlights represent Clinton predictions that actually voted for Trump.
+
+Additionally, while these models are able to predict county-level results on a win/loss basis, they are unable to predict Clinton/Trump votes in the area.
+
 ```{r fig.width=16, fig.height = 8, echo = FALSE}
 us.jrip2 <- ggplot() +
   geom_polygon(data = df_merged.jrip, aes(x = long, y = lat, group = group, fill = acc), color = "dark grey", size = 0.25) +

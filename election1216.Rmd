@@ -363,7 +363,7 @@ us.ggmap.turnoutrep
 ```
 
 #### 2012-2016, Democratic Party Turnout
-We can do the same for the Democratic Party. Note that the disparity in LA County is much more pronounced for the Democrats than the Republicans.
+We can do the same for the Democratic Party (the gradient is fixed for the Democratic and Repuiblican turnout graphs to facilitate comparison). Note that the disparity in LA County is much more pronounced for the Democrats than the Republicans.
 
 ```{r, echo=FALSE, warning=FALSE, fig.width=16, fig.height = 8}
 us.ggmap.turnoutdem <- ggplot() +

@@ -177,7 +177,7 @@ The 2016 General Election for President of the United States was our very first 
 
 Most pollsters and statisticians had Hillary Clinton maintaining a comfortable margin before the election. Yet, Donald Trump emerged victorious as the 45th President of the United States. Our goal is to try to explain why.
 
-We have incorporated US Census demographic data, as well as employing comparisons between Donald Trump's 2016 victory over Hillary Clinton with Barack Obama's 2012 re-election victory against Mitt Romney.
+We have incorporated US Census demographic data, as well as employing comparisons between Donald Trump's 2016 victory over Hillary Clinton with Barack Obama's 2012 re-election victory over Mitt Romney.
 
 
 ## Content

@@ -19,7 +19,7 @@ navbar:
           href: election1216.html
         - text: "Hypotheticals"
           href: hypotheticals.html
-    - text: "Machine Learning + Models"
+    - text: "Machine Learning & Models"
         
       href: models.html
     - text: "Contact"

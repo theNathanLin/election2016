@@ -15,7 +15,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -23,10 +23,11 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -263,7 +264,7 @@ div.tocify {
 
 
 
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -278,27 +279,52 @@ div.tocify {
         <li>
   <a href="index.html">Home</a>
 </li>
-<li>
-  <a href="election16.html">2016 Election</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Elections
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">General Election Information</li>
+    <li>
+      <a href="election16.html">2016 Election</a>
+    </li>
+    <li>
+      <a href="election12.html">2012 Election</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Comparisons
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Comparing 2012 and 2016</li>
+    <li>
+      <a href="election1216.html">2012 &amp; 2012 Election Comparisons</a>
+    </li>
+    <li>
+      <a href="hypotheticals.html">Hypotheticals</a>
+    </li>
+  </ul>
 </li>
 <li>
-  <a href="election12.html">2012 Election</a>
-</li>
-<li>
-  <a href="election1216.html">2012, 2016 Comparison</a>
-</li>
-<li>
-  <a href="hypotheticals.html">Hypotheticals</a>
-</li>
-<li>
-  <a href="models.html">Machine Learning, Models</a>
+  <a href="models.html">Machine Learning &amp; Models</a>
 </li>
 <li>
   <a href="contact.html">Contact</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/theNathanLin/election2016">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -383,7 +409,8 @@ div.tocify {
 </div>
 <div id="sequential-covering-and-rule-based-learning" class="section level3">
 <h3>Sequential Covering and Rule-based Learning</h3>
-<p>We used a rule-based method (<code>jRip</code>) to model the 2012 data. Here, our accuracy in predicting county-level outcomes was <strong>85.3%</strong>. We’ve also listed the rules below. The general syntax is <code>rule-set =&gt; prediction (# of instances correctly classified by rule, # of instances misclassified by rule)</code>. Our successes with rule-based sequential covering methods (compared to conditional inference trees) suggests a lower level of complexity with regards to individual voting decisions.</p>
+<p>We used a rule-based method (<code>jRip</code>) to model the 2012 data. Here, our accuracy in predicting county-level outcomes was <strong>85.3%</strong>. We’ve also listed the rules below. Our successes with rule-based sequential covering methods (compared to conditional inference trees) suggests a lower level of complexity with regards to individual voting decisions.</p>
+<p>For reference, the general syntax for the classification rules is: <code>rule-set =&gt; prediction (# of instances correctly classified by rule, # of instances misclassified by rule)</code>.</p>
 <pre><code>## JRIP rules:
 ## ===========
 ## 
@@ -423,7 +450,7 @@ div.tocify {
 ## -------------|-----------|-----------|-----------|
 ## 
 ## </code></pre>
-<p>Interestingly, when we apply this model trained on 2012 data to the 2016 data, our accuracy on test data skyrockets to <strong>93.5%</strong> (we’re able to correctly predict county-level outcomes 93.5% of the time)</p>
+<p>Interestingly, when we apply this model trained on 2012 data to the 2016 data, our accuracy on test data increases to <strong>93.5%</strong> (or in other words, we are able to correctly predict county-level outcomes 93.5% of the time)</p>
 <pre><code>## 
 ##  
 ##    Cell Contents
@@ -566,7 +593,7 @@ div.tocify {
 </div>
 <div id="prediction-mapping" class="section level3">
 <h3>Prediction Mapping</h3>
-<p>We can use our <code>jRip</code> model on all of the 2016 data, not just the test data, with an accuracy of <strong>93%</strong> (note that there will be some bias due to the fact that the training data is being recycled for the prediction).</p>
+<p>We can use our <code>jRip</code> model on all of the 2016 data, not just the test data, with an accuracy of <strong>93%</strong> (note the potential for bias due to the fact that the training data is being recycled for the prediction).</p>
 <pre><code>## JRIP rules:
 ## ===========
 ## 
@@ -617,10 +644,23 @@ div.tocify {
 </div>
 <div id="prediction-error-visualized" class="section level5">
 <h5>Prediction Error Visualized</h5>
+<p>We can actually visualize our model’s prediction error. The counties in grey represent correct predictions, while blue highlights represent Trump predictions that actually voted for Clinton and red highlights represent Clinton predictions that actually voted for Trump.</p>
+<p>Additionally, while these models are able to predict county-level results on a win/loss basis, they are unable to predict Clinton/Trump votes in the area.</p>
 <p><img src="models_files/figure-html/unnamed-chunk-14-1.png" width="1536" /></p>
 </div>
 </div>
 
+
+
+
+<footer>
+  <div>&nbsp;</div>
+  <div>&nbsp;</div>
+  <div class="text-muted">
+  <center>Copyright &copy; 2016-2017  <br>
+  Nathan Lin - Andrew Ton - Mansoor Syed  </center>
+  </div>
+</footer>
 
 
 </div>
