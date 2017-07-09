@@ -4,3 +4,5 @@
 Our primary two files to conduct analysis: 'Lin_Ton_Syed_FinalElectionProject.R' and 'Lin_Ton_Syed_FinalElectionProject_ML.R'
 
 Our webpage is located at https://github.com/theNathanLin/election2016
+
+Additionally, view our releases (https://github.com/theNathanLin/election2016/releases) to download a ZIP of our code and output.
